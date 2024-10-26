@@ -1,0 +1,13 @@
+Round <%= @round.number %>
+Word to guess: <%= @round.word %>
+<%= form_with(url: round_messages_path(@round), id: "input-form", data: { action: 'game#handleSubmit' }) do |form| %>
+  <input type="text" name="message[content]" data-game-target="textInput">
+  <%= form.submit "Send", data: { game_target: "submitButton" }  %>
+<% end %>
+
+<div>
+  <%= turbo_stream_from @round, "messages" %>
+  <%= turbo_frame_tag "messages" do %>
+    <%= render @round.messages %>
+  <% end %>
+</div>
