@@ -1,0 +1,70 @@
+<%= turbo_frame_tag "round" do %>
+  <div class="text-center">
+    <h1 class="text-4xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent pb-4">
+      Round <%= round.number %>
+    </h1>
+  </div>
+
+  <%= turbo_frame_tag "countdown" do %>
+    <%= render "rounds/countdown", round: round %>
+  <% end %>
+
+  <% if round.running? %>
+    <% if round.user == user %>
+      <p class="text-gray-800 mb-2">Word to draw: <span class="font-semibold text-purple-600 text-2xl"><%= round.word %></span></p>
+      <p class="text-gray-600 mb-2">Enter a prompt to draw the word:</p>
+
+      <%= form_with(url: round_messages_path(round), class: "flex gap-2 items-center mb-4") do |form| %>
+        <input
+          type="text"
+          name="message[content]"
+          class="flex-grow px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+          placeholder="Describe what you want to draw..."
+        >
+        <%= button_tag type: 'submit',
+                       class: "px-4 py-2 text-white font-medium rounded-lg bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 inline-flex items-center gap-1",
+                       onclick: "setTimeout(() => this.form.reset(), 0)" do %>
+          Generate
+        <% end %>
+      <% end %>
+    <% else %>
+      <% if round.current_score %>
+        <p class="text-gray-800">Score: <span class="font-semibold text-purple-600 text-2xl"><%= round.current_score %></span></p>
+      <% else %>
+        <p class="text-gray-600 mb-2">Enter the word to guess:</p>
+        <%= form_with(url: answer_round_path(round), class: "flex gap-2 items-center mb-4") do |form| %>
+          <input
+            type="text"
+            name="answer"
+            class="flex-grow px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+            placeholder="Your guess..."
+            autocomplete="off"
+          >
+          <%= form.submit "Send",
+            class: "px-6 py-2 text-white font-medium rounded-lg bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600"
+          %>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% else %>
+    <% if round.number != 1 && !round.running? %>
+      <p class="text-gray-600 mb-4">The Previous Word Was: <span class="font-semibold text-purple-600 text-2xl"><%= round.previous_word %></span></p>
+    <% end %>
+  <% end %>
+
+  <div class="flex flex-row gap-4">
+    <div class="w-1/2">
+      <%= turbo_stream_from round, "messages" %>
+      <%= turbo_frame_tag "messages" do %>
+        <%= render "rounds/message_carousel", round: round.running? ? round : round.previous_round %>
+      <% end %>
+    </div>
+
+    <div class="w-1/2">
+      <%= turbo_stream_from game, "players" %>
+      <%= turbo_frame_tag "players" do %>
+        <%= render "rounds/player_list", game: game, round: round %>
+      <% end %>
+    </div>
+  </div>
+<% end %>

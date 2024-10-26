@@ -1,0 +1,40 @@
+<%= turbo_stream_from @game, Current.user, "round" %>
+<%= turbo_frame_tag "round" do %>
+  <%= render "rounds/round", round: @round, game: @game, user: Current.user if @round %>
+  <% unless @round %>
+    <div class="flex flex-row justify-between">
+      <div class="text-4xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent pb-4">
+        New Game
+      </div>
+      <% if @game.created_by == Current.user %>
+        <div class="mt-4">
+          <%= link_to "Start Game", start_game_path(@game), method: :post, class: "rounded bg-blue-600 text-white p-2 hover:bg-blue-700" %>
+        </div>
+      <% end %>
+    </div>
+    <div class='flex flex-col gap-4 mb-4'>
+      <p><%= @game.created_by == Current.user ? "You are the host, you can start the game when you are ready." : "Waiting for the host to start the game..." %></p>
+      <p>To invite more players, simply share a link to this page<p>
+      <div class="flex">
+        <input
+          type="text"
+          value="<%= request.url %>"
+          readonly
+          class="flex-1 p-2 bg-gray-50 border border-r-0 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-inset"
+        >
+        <button
+          onclick="navigator.clipboard.writeText('<%= request.url %>').then(() => { this.innerText='Copied!'; setTimeout(() => this.innerText='Copy', 2000) })"
+          class="px-4 py-2 bg-blue-600 text-white border border-blue-600 rounded-r-lg hover:bg-blue-700 transition-colors"
+        >
+          Copy
+        </button>
+      </div>
+    </div>
+    <div class="mt-4">
+      <%= turbo_stream_from @game, "players" %>
+      <%= turbo_frame_tag "players" do %>
+        <%= render "players", game: @game %>
+      <% end %>
+    </div>
+  <% end %>
+<% end %>

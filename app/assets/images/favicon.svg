@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a90e2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#50e3c2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="20" fill="url(#grad)"/>
+
+  <!-- Robot Face -->
+  <rect x="10" y="10" width="44" height="44" rx="6" ry="6" fill="#EEEEEE" />
+
+  <!-- Eyes -->
+  <circle cx="22" cy="26" r="4" fill="#F33" />
+  <circle cx="42" cy="26" r="4" fill="#F33" />
+
+  <!-- Mouth -->
+  <rect x="25" y="38" width="14" height="4" fill="#222" />
+
+  <!-- Stylus -->
+  <!-- Stylus Body -->
+  <rect x="32" y="49" width="22" height="4" transform="rotate(-45 42 42)" fill="#555" />
+
+  <!-- Eraser -->
+  <rect x="55" y="49" width="4" height="4" transform="rotate(-45 42 42)" fill="#F77" />
+
+  <!-- Pointy Tip -->
+  <polygon points="39,55 42,58 38,59" fill="#999" />
+</svg>

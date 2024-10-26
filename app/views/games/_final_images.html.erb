@@ -1,0 +1,11 @@
+<div class="flex flex-wrap gap-4 w-full justify-center items-center">
+  <% game.rounds.each do |round| %>
+    <div class="flex flex-col float-left w-96 rounded-lg border border-2 border-solid border-slate-400 p-4 gap-4 justify-center items-center">
+      <span class="font-semibold text-purple-600 text-2xl"><%= round.word %></span>
+      <div class="flex w-full justify-center">
+        <%= render "rounds/message_carousel", round: round %>
+      </div>
+      <p><%= round.user.email_address %></p>
+    </div>
+  <% end %>
+</div>

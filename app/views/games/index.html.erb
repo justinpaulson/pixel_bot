@@ -1,0 +1,16 @@
+<% content_for :page_width, "w-96" %>
+
+<div class="flex flex-col m-4 gap-4">
+  <div class="text-center">
+    <h1 class="text-4xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+      Welcome to Pixel!
+    </h1>
+  </div>
+
+  <p>Pixel is a drawing game where players take turns drawing and guessing words.</p>
+  <p>The game is played in rounds, with each round consisting of a single player sending prompts to an LLM to generate images for a particular word while the other players guess the word.</p>
+
+  <div class="flex items-center justify-center">
+    <%= link_to "New Game", new_game_path, class: "rounded p-2 text-white bg-blue-500 hover:bg-blue-700" %>
+  </div>
+</div>

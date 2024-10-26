@@ -1,0 +1,85 @@
+<%= turbo_frame_tag "players" do %>
+  <div class="space-y-2" data-controller="player-list">
+    <h2 class="text-xl font-bold mb-2">Players</h2>
+    <div class="flex items-center px-2 py-1 text-sm font-medium text-gray-500 border-b">
+      <div class="w-8 text-center">#</div>
+      <div class="flex-grow">Player</div>
+      <%= '<div class="w-24 text-right">This Round</div>'.html_safe if round && round.running? %>
+      <%= '<div class="w-24 text-right">Last Round</div>'.html_safe if round && !round.running? %>
+      <div class="w-24 text-right">Total Score</div>
+    </div>
+
+    <% players_with_status = game.players.map do |player| %>
+      <% if round %>
+        <% {
+          player: player,
+          answered: Score.exists?(user_id: player.user_id, round_id: round.id),
+          current_score: (round.previous_round && !round.running?) ?  (Score.find_by(user_id: player.user_id, round_id: round.previous_round.id)&.points || 0) : (Score.find_by(user_id: player.user_id, round_id: round.id)&.points || 0),
+          total_score: player.total_points_for_game,
+          is_drawer: round.user_id == player.user_id
+        } %>
+      <% else %>
+        <% {
+          player: player,
+          total_score: player.total_points_for_game,
+          is_drawer: false
+        } %>
+      <% end %>
+    <% end %>
+
+    <% players_with_status.sort_by { |p| [-p[:total_score], p[:player].user.email_address] }.each_with_index do |player_data, index| %>
+      <div
+        class="flex items-center space-x-2 p-2 rounded-lg transition-all duration-300 ease-in-out transform"
+        data-controller="score-animation"
+        data-score-animation-current-value="<%= player_data[:current_score] %>"
+        data-score-animation-total-value="<%= player_data[:total_score] %>"
+        data-score-animation-position-value="<%= index + 1 %>"
+      >
+        <div class="w-8 text-center text-gray-500 font-medium">
+          <%= index + 1 %>
+        </div>
+
+        <% if round %>
+          <div class="flex-shrink-0">
+            <% if player_data[:answered] %>
+              <svg class="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+            <% elsif player_data[:is_drawer] %>
+              <svg class="w-5 h-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
+              </svg>
+            <% else %>
+              <div class="w-5 h-5 rounded-full border-2 border-gray-300"></div>
+            <% end %>
+          </div>
+        <% end %>
+
+        <span class="<%= player_data[:answered] ? 'text-green-700' : player_data[:is_drawer] ? 'text-blue-700 font-medium' : 'text-gray-700' %> flex-grow">
+          <%= player_data[:player].user.email_address %>
+        </span>
+
+        <% if round %>
+          <div class="w-24 text-right">
+            <span class="<%= player_data[:current_score] > 0 ? 'text-green-600 font-medium' : 'text-gray-500' %>">
+              <%= player_data[:is_drawer] && round && round.running? ? round.average_score : player_data[:current_score] %>
+            </span>
+          </div>
+        <% end %>
+
+        <div class="w-24 text-right">
+          <span class="<%= player_data[:total_score] > 0 ? 'font-medium text-gray-900' : 'text-gray-500' %>">
+            <%= player_data[:total_score] %>
+          </span>
+        </div>
+      </div>
+    <% end %>
+
+    <% if round %>
+      <div class="mt-4 text-sm text-gray-500 border-t pt-2">
+        <%= game.players.count %> players total •
+        <%= Score.where(round_id: round.id).count %> answered round <%= round.number %>
+      </div>
+    <% end %>
+  </div>
+<% end %>
