@@ -10,10 +10,14 @@ Rails.application.routes.draw do
   root "games#index"
 
   resources :games do
+    get "start", on: :member
+
     resources :rounds
   end
 
   resources :rounds do
+    post "answer", on: :member
+
     resources :images
     resources :messages
   end

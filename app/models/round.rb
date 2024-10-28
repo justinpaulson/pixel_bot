@@ -3,9 +3,20 @@ class Round < ApplicationRecord
 
   has_many :messages, dependent: :destroy
   belongs_to :game
+  belongs_to :user
+
+  before_validation :set_user
 
   before_create :set_number
   before_create :set_word
+
+  def current_score
+    Score.find_by(round: self, user: Current.user)&.points
+  end
+
+  def get_points_for_now
+    # TODO: user started_at and the current time to determine a score.
+  end
 
   private
 
@@ -14,10 +25,13 @@ class Round < ApplicationRecord
   end
 
   def set_word
-    while game.rounds.pluck(:word).include?(new_word = WORDS.sample)
-      next
-    end
-    self.word = new_word
+    self.word = (WORDS - game.rounds.pluck(:word)).sample.downcase
+  end
+
+  def set_user
+    puts "setting the user for the round!!!0"
+    puts "------------------------------------------------"
+    self.user_id = game.players.where.not(id: game.rounds.pluck(:user_id)).sample.user.id
   end
 
   WORDS = %w(

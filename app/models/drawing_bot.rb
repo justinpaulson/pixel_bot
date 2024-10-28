@@ -1,6 +1,12 @@
 class DrawingBot < RubyBots::OpenAITool
   def initialize(round:)
     @round = round
+    @messages = @round.messages.map do |message|
+      [
+        { role: :user, content: message.content },
+        { role: :assistant, content: message.image_content }
+      ]
+    end.flatten
     super(name: "Pixel Bot", description: "A bot that draws SVGs.")
   end
 
@@ -37,5 +43,22 @@ For subsequent queries:
 - Return only the modified SVG code
 
 Remember, your response should contain nothing but the SVG code itself."
+  end
+
+  private
+
+  def run(input)
+    messages = [
+      { role: :system, content: system_instructions }
+    ] + @messages
+    unless input.empty?
+      messages += [
+        { role: :user, content: input }
+      ]
+    end
+
+    response = client.chat(parameters: { messages: }.merge(default_params))
+
+    response.dig('choices', 0, 'message', 'content')
   end
 end

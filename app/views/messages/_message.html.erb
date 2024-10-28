@@ -1,7 +1,9 @@
 <div id="<%= dom_id(message) %>" class="flex flex-col">
-  <div class="flex">
-    <%= message.content %>
-  </div>
+  <% if message.round.user == Current.user %>
+    <div class="flex">
+      <%= message.content %>
+    </div>
+  <% end %>
   <div class="flex">
     <%= raw message.image_content.gsub("```svg", "").gsub("```", "") %>
   </div>
