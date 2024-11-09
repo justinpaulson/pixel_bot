@@ -19,7 +19,7 @@ class GamesController < ApplicationController
     @game = Game.find(params[:id])
     @game.started_at = Time.now
     @game.save!
-    Round.create!(game: @game)
+    round = Round.create!(game: @game)
     redirect_to @game
   end
 end

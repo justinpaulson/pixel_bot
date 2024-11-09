@@ -1,0 +1,4 @@
+<%= turbo_frame_tag "round" do %>
+  <h1>Game Over</h1>
+  <%= render "rounds/player_list", game: game, round: false %>
+<% end %>

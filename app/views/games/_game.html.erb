@@ -1,7 +1,17 @@
-<% if @round %>
-  <%= render "rounds/round" %>
-<% else %>
-  <% if @game.created_by == Current.user %>
-    <%= link_to "Start Game", start_game_path(@game), method: :post %>
+<%= turbo_stream_from @game, Current.user, "round" %>
+<%= turbo_frame_tag "round" do %>
+  <%= render "rounds/round", round: @round, game: @game, user: Current.user if @round %>
+  <% unless @round %>
+    <% if @game.created_by == Current.user %>
+      <div class="mt-4">
+        <%= link_to "Start Game", start_game_path(@game), method: :post, class: "rounded bg-blue-600 text-white p-2 hover:bg-blue-800" %>
+      </div>
+    <% end %>
+    <div class="mt-4">
+      <%= turbo_stream_from @game, "players" %>
+      <%= turbo_frame_tag "players" do %>
+        <%= render "players", game: @game %>
+      <% end %>
+    </div>
   <% end %>
 <% end %>

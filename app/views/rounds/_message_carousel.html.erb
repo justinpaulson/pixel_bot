@@ -1,0 +1,59 @@
+<div class="w-full max-w-3xl mr-4 mt-4" data-controller="carousel" data-carousel-index-value="0">
+  <!-- Main container with border -->
+  <div class="border border-gray-200 rounded-xl bg-white shadow-sm">
+    <!-- Header with title and navigation -->
+    <div class="flex items-center justify-between px-4 py-2 border-b border-gray-200">
+      <div class="flex items-center space-x-2">
+        <!-- Optional: Add a title or leave empty -->
+        <span class="text-sm font-medium text-gray-700">Generated Images</span>
+      </div>
+
+      <!-- Navigation controls -->
+      <div class="flex items-center space-x-1">
+        <button
+          class="p-1 rounded-md hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+          data-action="click->carousel#previous"
+          data-carousel-target="previousButton"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+
+        <!-- Indicators -->
+        <div class="flex items-center space-x-1 px-2">
+          <% round.messages.each_with_index do |_, index| %>
+            <button
+              class="w-1.5 h-1.5 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
+              data-carousel-target="indicator"
+              data-action="click->carousel#goToSlide"
+              data-index="<%= index %>"
+            ></button>
+          <% end %>
+        </div>
+
+        <button
+          class="p-1 rounded-md hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+          data-action="click->carousel#next"
+          data-carousel-target="nextButton"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Content area -->
+    <div class="p-4">
+      <div class="overflow-hidden rounded-lg">
+        <div id="carousel-container" class="flex transition-transform duration-300 ease-in-out"
+             data-carousel-target="container">
+          <% round.messages.reverse.each_with_index do |message, index| %>
+            <%= render message %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

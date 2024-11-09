@@ -6,16 +6,49 @@ class SessionsController < ApplicationController
   end
 
   def create
-    if user = User.authenticate_by(params.permit(:email_address, :password))
-      start_new_session_for user
-      redirect_to after_authentication_url
+    email = params.require(:email_address).downcase
+    password = params.require(:password)
+
+    user = User.find_by(email_address: email)
+
+    if user
+      # Existing user - attempt authentication
+      if user.authenticate_by(password: password)
+        start_new_session_for user
+        redirect_to after_authentication_url
+      else
+        redirect_to new_session_url, alert: "Invalid password."
+      end
     else
-      redirect_to new_session_url, alert: "Try another email address or password."
+      # New user - create account
+      user = User.new(
+        email_address: email,
+        password: password,
+        password_confirmation: password
+      )
+
+      if user.save
+        start_new_session_for user
+        redirect_to after_authentication_url, notice: "Account created successfully!"
+      else
+        redirect_to new_session_url, alert: user.errors.full_messages.to_sentence
+      end
     end
   end
 
   def destroy
     terminate_session
     redirect_to new_session_url
+  end
+
+  private
+
+  # Add protection against timing attacks by using secure_compare
+  def authenticate_user(user, password)
+    return false unless user
+    ActiveSupport::SecurityUtils.secure_compare(
+      user.authenticate_by(password: password),
+      true
+    )
   end
 end

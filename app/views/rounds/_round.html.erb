@@ -1,26 +1,46 @@
-<h1>Round <%= @round.number %></h1>
-<% if @round.user == Current.user %>
-  <p>Word to guess: <%= @round.word %></p>
-  <p>Enter a prompt to draw the word:</p>
-  <%= form_with(url: round_messages_path(@round)) do |form| %>
-    <input type="text" name="message[content]">
-    <%= form.submit "Send" %>
+<%= turbo_frame_tag "round" do %>
+  <h1>Round <%= round.number %></h1>
+  <%= turbo_frame_tag "countdown" do %>
+    <%= render "rounds/countdown", round: round %>
   <% end %>
-<% else %>
-  <% if @round.current_score %>
-    <p>Score: <%= @round.current_score %></p>
+  <% if round.running? %>
+    <% if round.user == user %>
+      <p>Word to guess: <%= round.word %></p>
+      <p>Enter a prompt to draw the word:</p>
+      <%= form_with(url: round_messages_path(round)) do |form| %>
+        <input type="text" name="message[content]">
+        <%= form.submit "Send" %>
+      <% end %>
+    <% else %>
+      <% if round.current_score %>
+        <p>Score: <%= round.current_score %></p>
+      <% else %>
+        <p>Enter the word to guess:</p>
+        <%= form_with(url: answer_round_path(round)) do |form| %>
+          <input type="text" name="answer">
+          <%= form.submit "Send" %>
+        <% end %>
+      <% end %>
+    <% end %>
   <% else %>
-    <p>Enter the word to guess:</p>
-    <%= form_with(url: answer_round_path(@round)) do |form| %>
-      <input type="text" name="answer">
-      <%= form.submit "Send" %>
+    <% if round.number != 1 && !round.running? %>
+      <p>The Previous Word Was: <%= round.previous_word %></p>
     <% end %>
   <% end %>
-<% end %>
 
-<div>
-  <%= turbo_stream_from @round, "messages" %>
-  <%= turbo_frame_tag "messages" do %>
-    <%= render @round.messages.reverse %>
-  <% end %>
-</div>
+  <div class="flex flex-row">
+    <div class="w-1/2">
+      <%= turbo_stream_from round, "messages" %>
+      <%= turbo_frame_tag "messages" do %>
+        <%= render "rounds/message_carousel", round: round %>
+      <% end %>
+    </div>
+
+    <div class="w-1/2 mt-4">
+      <%= turbo_stream_from game, "players" %>
+      <%= turbo_frame_tag "players" do %>
+        <%= render "rounds/player_list", game: game, round: round %>
+      <% end %>
+    </div>
+  </div>
+<% end %>

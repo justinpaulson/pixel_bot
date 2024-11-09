@@ -1,10 +1,13 @@
-<div id="<%= dom_id(message) %>" class="flex flex-col">
-  <% if message.round.user == Current.user %>
-    <div class="flex">
-      <%= message.content %>
+<div class="w-full flex-none" data-carousel-target="slide">
+  <div id="<%= dom_id(message) %>" class="flex flex-col">
+    <% if message.user == Current.user %>
+      <div class="flex">
+        <%= message.content %>
+      </div>
+    <% end %>
+
+    <div class="flex justify-center">
+      <%= raw message.image_content.gsub("```svg", "").gsub("```", "") %>
     </div>
-  <% end %>
-  <div class="flex">
-    <%= raw message.image_content.gsub("```svg", "").gsub("```", "") %>
   </div>
 </div>

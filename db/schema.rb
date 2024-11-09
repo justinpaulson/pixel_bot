@@ -10,12 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2024_10_27_030329) do
+ActiveRecord::Schema[8.0].define(version: 2024_11_08_185622) do
   create_table "games", id: :string, force: :cascade do |t|
     t.datetime "started_at"
     t.integer "created_by_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.datetime "completed_at"
     t.index ["created_by_id"], name: "index_games_on_created_by_id"
   end
 
@@ -46,6 +47,7 @@ ActiveRecord::Schema[8.0].define(version: 2024_10_27_030329) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "word"
+    t.datetime "started_at"
     t.index ["game_id"], name: "index_rounds_on_game_id"
     t.index ["user_id"], name: "index_rounds_on_user_id"
   end

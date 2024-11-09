@@ -10,15 +10,46 @@ class Round < ApplicationRecord
   before_create :set_number
   before_create :set_word
 
+  after_create_commit -> {
+    broadcast_new_round
+    StartRoundJob.set(wait: 20.seconds).perform_later(id)
+  }
+
   def current_score
     Score.find_by(round: self, user: Current.user)&.points
   end
 
   def get_points_for_now
-    # TODO: user started_at and the current time to determine a score.
+    # TODO: use started_at and the current time to determine a score with one minute being the max time and linear from
+    # 0 to 100 points with 100 at 0 seconds and 0 at 60 seconds
+    (100 - (Time.now - started_at) * 100 / 60).to_i
+  end
+
+  def start!
+    update!(started_at: Time.now)
+
+    game.players.each do |player|
+      broadcast_replace_to [game, player.user, "round"],
+        target: "round",
+        locals: { round: self, game: self.game, user: player.user }
+    end
+  end
+
+  def running?
+    started_at.present? && started_at > 1.minutes.ago
+  end
+
+  def previous_word
+    game.rounds.where("number < ?", number).last&.word
   end
 
   private
+
+  def broadcast_new_round
+    self.game.players.each do |player|
+      broadcast_replace_to [self.game, player.user, "round"], target: "round", partial: "rounds/round", locals: { round: self, game: self.game, user: player.user }
+    end
+  end
 
   def set_number
     self.number = game.rounds.count + 1
@@ -29,9 +60,11 @@ class Round < ApplicationRecord
   end
 
   def set_user
-    puts "setting the user for the round!!!0"
-    puts "------------------------------------------------"
-    self.user_id = game.players.where.not(id: game.rounds.pluck(:user_id)).sample.user.id
+    until self.user_id
+      id = game.players.sample.user.id
+      next if game.rounds.where(user_id: id).exists?
+      self.user_id = id
+    end
   end
 
   WORDS = %w(
