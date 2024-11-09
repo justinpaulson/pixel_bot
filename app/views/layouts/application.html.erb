@@ -25,8 +25,12 @@
 
   <body>
     <main class="container mx-auto mt-28 px-5">
-      <%= "Logged in as #{Current.user.email_address}" if Current.user %>
-      <%= yield %>
+      <div class="flex flex-col">
+        <div class="flex flex-row justify-right">
+          <p><%= "Logged in as #{Current.user.email_address}" if Current.user %></p>
+        </div>
+        <%= yield %>
+      </div>
     </main>
   </body>
 </html>
