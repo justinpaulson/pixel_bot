@@ -1,5 +1,9 @@
 <%= turbo_frame_tag "round" do %>
-  <h1>Round <%= round.number %></h1>
+  <div class="text-center">
+    <h1 class="text-4xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+      Round <%= round.number %>
+    </h1>
+  </div>
   <%= turbo_frame_tag "countdown" do %>
     <%= render "rounds/countdown", round: round %>
   <% end %>

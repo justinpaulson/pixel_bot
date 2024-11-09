@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= content_for(:title) || "Pixel Bot" %></title>
+    <title><%= content_for(:title) || "Pixel" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
@@ -38,7 +38,7 @@
         <div class="flex flex-row justify-end w-full">
           <div class="text-white m-4">
             <% if Current.user %>
-              <%= "Logged in as #{Current.user.email_address}" %> |
+              <%= Current.user.email_address %> |
               <%= link_to "Logout", session_path(Current.session),
                   data: { turbo_method: :delete },
                   class: "hover:text-purple-200 transition-colors duration-200" %>
