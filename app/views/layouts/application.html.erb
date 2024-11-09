@@ -23,13 +23,31 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <main class="container mx-auto mt-28 px-5">
-      <div class="flex flex-col">
-        <div class="flex flex-row justify-right">
-          <p><%= "Logged in as #{Current.user.email_address}" if Current.user %></p>
+  <body class="min-h-screen bg-gradient-to-br from-purple-600 to-blue-500 relative">
+    <!-- Decorative blobs with negative z-index -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
+      <div class="absolute top-10 left-[10%] w-64 h-64 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+      <div class="absolute top-10 right-[10%] w-64 h-64 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+      <div class="absolute bottom-10 left-[20%] w-64 h-64 bg-pink-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+      <div class="absolute bottom-10 right-[20%] w-64 h-64 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+    </div>
+
+    <!-- Main content with positive z-index -->
+    <main class="container mx-auto mt-28 px-5 relative z-10">
+      <div class="flex flex-col w-full">
+        <div class="flex flex-row justify-end w-full">
+          <div class="text-white m-4">
+            <% if Current.user %>
+              <%= "Logged in as #{Current.user.email_address}" %> |
+              <%= link_to "Logout", session_path(Current.session),
+                  data: { turbo_method: :delete },
+                  class: "hover:text-purple-200 transition-colors duration-200" %>
+            <% end %>
+          </div>
         </div>
-        <%= yield %>
+        <div class="w-full bg-white bg-opacity-90 backdrop-blur-sm rounded-lg p-4 shadow-lg">
+          <%= yield %>
+        </div>
       </div>
     </main>
   </body>

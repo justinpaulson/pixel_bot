@@ -12,8 +12,8 @@ class SessionsController < ApplicationController
     user = User.find_by(email_address: email)
 
     if user
-      # Existing user - attempt authentication
-      if user.authenticate_by(password: password)
+      if user = User.authenticate_by(email_address: email, password: password)
+        # Existing user - attempt authentication
         start_new_session_for user
         redirect_to after_authentication_url
       else
