@@ -10,6 +10,11 @@ class DrawingBot < RubyBots::OpenAITool
     super(name: "Pixel Bot", description: "A bot that draws SVGs.")
   end
 
+  def client
+    puts "We are setting access token to: #{Rails.application.credentials.openai_access_token}"
+    @client ||= OpenAI::Client.new(access_token: Rails.application.credentials.openai_access_token)
+  end
+
   def default_params
     { model: "gpt-4o" }
   end
