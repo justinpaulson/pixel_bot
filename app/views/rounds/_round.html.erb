@@ -21,7 +21,9 @@
           class="flex-grow px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
           placeholder="Describe what you want to draw..."
         >
-        <%= button_tag type: 'submit', class: "px-4 py-2 text-white font-medium rounded-lg bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 inline-flex items-center gap-1" do %>
+        <%= button_tag type: 'submit',
+                       class: "px-4 py-2 text-white font-medium rounded-lg bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 inline-flex items-center gap-1",
+                       onclick: "setTimeout(() => this.form.reset(), 0)" do %>
           Generate
         <% end %>
       <% end %>

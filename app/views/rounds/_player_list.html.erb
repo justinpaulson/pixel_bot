@@ -65,7 +65,7 @@
         <% if round %>
           <div class="w-24 text-right">
             <span class="<%= player_data[:current_score] > 0 ? 'text-green-600 font-medium' : 'text-gray-500' %>">
-              <%= player_data[:current_score] unless player_data[:is_drawer] && round && round.running? %>
+              <%= player_data[:is_drawer] ? round.average_score : player_data[:current_score] %>
             </span>
           </div>
         <% end %>

@@ -49,7 +49,7 @@ class Round < ApplicationRecord
   end
 
   def average_score
-    scores.average(:points).to_i
+    (scores.sum(:points) / (game.players.count - 1)).to_i
   end
 
   private
