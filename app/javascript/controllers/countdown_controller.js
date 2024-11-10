@@ -33,7 +33,7 @@ export default class extends Controller {
 
       // Update timer text
       const secondsRemaining = Math.ceil(remaining / 1000)
-      this.timerTarget.textContent = `Next round in ${secondsRemaining} seconds`
+      this.timerTarget.textContent = `Round starts in ${secondsRemaining} seconds`
     } else {
       const totalDuration = this.durationValue * 1000
       const elapsed = now - this.startTime

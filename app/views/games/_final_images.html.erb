@@ -1,0 +1,11 @@
+<div class="flex flex-wrap gap-4 w-full justify-center items-center">
+  <% game.rounds.each do |round| %>
+    <div class="flex flex-col float-left w-96 rounded-lg border border-2 border-solid border-slate-400 p-4 justify-center items-center">
+      <p><%= round.word %></p>
+      <div class="flex justify-center">
+        <%= raw round.messages.where.not(image_content:nil).last&.image_content&.gsub("```svg", "")&.gsub("```", "") || "No Image Available" %>
+      </div>
+      <p><%= round.user.email_address %></p>
+    </div>
+  <% end %>
+</div>

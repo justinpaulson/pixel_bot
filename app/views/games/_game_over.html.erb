@@ -1,8 +1,12 @@
 <%= turbo_frame_tag "round" do %>
   <div class="text-center">
-    <h1 class="text-4xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+    <h1 class="text-4xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent pb-4">
       Game Over!
     </h1>
   </div>
+  <div class="flex items-right justify-end">
+    <%= link_to "New Game", new_game_path, class: "rounded p-2 text-white bg-blue-500 hover:bg-blue-800", data: { turbo_action: "advance" } %>
+  </div>
   <%= render "rounds/player_list", game: game, round: false %>
+  <%= render "games/final_images", game: game %>
 <% end %>

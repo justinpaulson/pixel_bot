@@ -8,6 +8,8 @@ class EndRoundJob < ApplicationJob
 
     game = round.game
 
+    Score.create!(round: round, user: round.user, points: round.average_score)
+
     if game.rounds.count < game.players.count
       puts "We are creating a new round!!"
       new_round = Round.create!(game: game)

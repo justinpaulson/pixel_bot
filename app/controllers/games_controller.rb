@@ -5,8 +5,12 @@ class GamesController < ApplicationController
 
   def show
     @game = Game.find(params[:id])
-    @current_player = @game.players.find_or_create_by(user: Current.session.user)
-    @round = @game.current_round
+    if @game.completed?
+      render "games/_game_over", locals: { game: @game }
+    else
+      @current_player = @game.players.find_or_create_by(user: Current.session.user)
+      @round = @game.current_round
+    end
   end
 
   def new

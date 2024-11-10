@@ -1,21 +1,23 @@
-<div class="space-y-2" data-controller="player-list">
-  <h2 class="text-xl font-bold mb-2">Players in Game</h2>
+<%= turbo_frame_tag "players" do %>
+  <div class="space-y-2" data-controller="player-list">
+    <h2 class="text-xl font-bold mb-2">Players in Game</h2>
 
-  <div class="space-y-1">
-    <% game.players.includes(:user).each do |player| %>
-      <div class="player-row flex items-center space-x-2 p-2 rounded-lg bg-gray-50 transition-all duration-300 ease-in-out"
-           data-player-list-target="player">
-        <span class="text-gray-700">
-          <%= player.user.email_address %>
-          <% if game.created_by == player.user %>
-            <span class="text-sm text-blue-500 ml-2">(host)</span>
-          <% end %>
-        </span>
-      </div>
-    <% end %>
-  </div>
+    <div class="space-y-1">
+      <% game.players.includes(:user).each do |player| %>
+        <div class="player-row flex items-center space-x-2 p-2 rounded-lg bg-gray-50 transition-all duration-300 ease-in-out"
+            data-player-list-target="player">
+          <span class="text-gray-700">
+            <%= player.user.email_address %>
+            <% if game.created_by == player.user %>
+              <span class="text-sm text-blue-500 ml-2">(host)</span>
+            <% end %>
+          </span>
+        </div>
+      <% end %>
+    </div>
 
-  <div class="mt-4 text-sm text-gray-500">
-    <%= game.players.count %> <%= 'player'.pluralize(game.players.count) %> waiting
+    <div class="mt-4 text-sm text-gray-500">
+      <%= game.players.count %> <%= 'player'.pluralize(game.players.count) %> waiting
+    </div>
   </div>
-</div>
+<% end %>

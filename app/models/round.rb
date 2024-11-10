@@ -2,6 +2,7 @@ class Round < ApplicationRecord
   default_scope { order(number: :asc) }
 
   has_many :messages, dependent: :destroy
+  has_many :scores, dependent: :destroy
   belongs_to :game
   belongs_to :user
 
@@ -41,6 +42,14 @@ class Round < ApplicationRecord
 
   def previous_word
     game.rounds.where("number < ?", number).last&.word
+  end
+
+  def previous_round
+    game.rounds.where("number < ?", number).last
+  end
+
+  def average_score
+    scores.average(:points).to_i
   end
 
   private
