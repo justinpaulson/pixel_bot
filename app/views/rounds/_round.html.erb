@@ -27,7 +27,7 @@
       <% end %>
     <% else %>
       <% if round.current_score %>
-        <p class="text-gray-800">Score: <span class="font-semibold text-purple-600"><%= round.current_score %></span></p>
+        <p class="text-gray-800">Score: <span class="font-semibold text-purple-600 text-2xl"><%= round.current_score %></span></p>
       <% else %>
         <p class="text-gray-600 mb-2">Enter the word to guess:</p>
         <%= form_with(url: answer_round_path(round), class: "flex gap-2 items-center mb-4") do |form| %>
@@ -46,7 +46,7 @@
     <% end %>
   <% else %>
     <% if round.number != 1 && !round.running? %>
-      <p class="text-gray-600 mb-4">The Previous Word Was: <span class="font-semibold text-purple-600"><%= round.previous_word %></span></p>
+      <p class="text-gray-600 mb-4">The Previous Word Was: <span class="font-semibold text-purple-600 text-2xl"><%= round.previous_word %></span></p>
     <% end %>
   <% end %>
 
