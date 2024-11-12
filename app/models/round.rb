@@ -77,141 +77,44 @@ class Round < ApplicationRecord
   end
 
   WORDS = %w(
-    Dog
-    Cat
-    Fish
-    Bird
-    Elephant
-    Lion
-    Turtle
-    Owl
-    Snake
-    Dolphin
-    Butterfly
-    Kangaroo
-    Penguin
-    Squirrel
-    Tiger
-    Lamp
-    Chair
-    Table
-    Sofa
-    Bed
-    Clock
-    Mirror
-    Vase
-    Shelf
-    Pillow
-    Blanket
-    Mug
-    Plate
-    Spoon
-    Toothbrush
-    Apple
-    Banana
-    Burger
-    Pizza
-    Ice cream
-    Carrot
-    Hotdog
-    Cake
-    Cookie
-    Orange
-    Sandwich
-    Candy
-    Grape
-    Lemon
-    Pineapple
-    Tree
-    Flower
-    Mountain
-    River
-    Sun
-    Cloud
-    Rainbow
-    Snowflake
-    Lightning
-    Beach
-    Leaf
-    Volcano
-    Ocean
-    Moon
-    Star
-    Car
-    Bus
-    Bike
-    Plane
-    Train
-    Boat
-    Motorcycle
-    Tractor
-    Scooter
-    Helicopter
-    Submarine
-    Skateboard
-    Spaceship
-    Taxi
-    Truck
-    Hat
-    Shirt
-    Pants
-    Shoes
-    Gloves
-    Belt
-    Sunglasses
-    Tie
-    Scarf
-    Purse
-    Backpack
-    Umbrella
-    Watch
-    Boots
-    Suit
-    Phone
-    Computer
-    Laptop
-    Tablet
-    Headphones
-    Camera
-    Mouse
-    Keyboard
-    Printer
-    Microphone
-    Television
-    Remote
-    Drone
-    Smartwatch
-    Flashlight
-    Game Controller
-    Baseball
-    Bat
-    Skate
-    Bicycle
-    Kite
-    Soccer ball
-    Basketball
-    Tennis racket
-    Paintbrush
-    Guitar
-    Drum
-    Trumpet
-    Violin
-    Puzzle
-    Book
-    Hammer
-    Screwdriver
-    Wrench
-    Drill
-    Saw
-    Axe
-    Scissors
-    Tape
-    Nail
-    Pliers
-    Shovel
-    Rake
-    Ladder
-    Toolbelt
-    Sandpaper
+    Airplane Anchor Angel Ant Apple Armor Arrow
+    Bacon Backpack Bag Balloon Baseball Basket Basketball Bat
+    Beach Bear Beaver Bed Bee Bell Belt Bench Berry Bicycle Bird
+    Blanket Boat Bone Book Boot Bottle Bowl Brain Bridge
+    Brush Bubble Bucket Bug Button Butterfly
+    Cactus Cage Calculator Camera Candle Candy Car Carrot Castle
+    Cat Chain Chair Cheese Chess Chicken Church Clock Cloud Clover Coin
+    Compass Computer Cookie Cow Crayon Crown Cup
+    Dart Diamond Dice Dinosaur Dolphin Door Dragon Drawer Dress Drill Drum
+    Duck Dumbbell
+    Eagle Ear Egg Elephant Envelope Eye
+    Fan Feather Fence Fire Fish Flag Flame Flashlight Flower Foot
+    Fork Fox Frog
+    Gate Ghost Giraffe Globe Glove Grape Goat Guitar
+    Hammer Hand Harbor Hat Heart Helicopter Hook Horse Hourglass House
+    Ice Igloo Island
+    Jacket Jar Jellyfish Jewelry Juggler
+    Kangaroo Key Kite Knife Knight
+    Ladder Lamp Leaf Leg Lemon Lighthouse Lightning Lion Lock
+    Magnifier Map Mask Medal Microscope Mirror Monkey Moon Mountain Mouse Mushroom
+    Nail Necklace Nest Net
+    Octopus Onion Owl
+    Paint Palette Palm Panda Parachute Peacock Pen
+    Pencil Penguin Piano Pie Pig Pillow Pineapple Pipe Pizza Plant
+    Pond Present Pretzel Printer Puzzle Pyramid
+    Queen Quill
+    Rabbit Rainbow Rake Ring River Robot Rocket Rose Ruler
+    Sailboat Salt Sandwich Satellite Saw Saxophone Scale Scarf
+    Scissors Scorpion Screw Seahorse Seal Shell Shield Ship Shirt Shoe
+    Shovel Skateboard Skyscraper Snail Snake Snowflake Soap
+    Spaceship Spider Spoon Spring Stopwatch Storm Sun Sword
+    Table Target Tea Telescope Television Tent Thermometer Thread
+    Tiger Toaster Toilet Tomato Tooth Torch Tornado Tower
+    Train Tree Trophy Truck Tuba Turtle
+    Umbrella Unicorn
+    Vase Violin Volcano
+    Waffle Wallet Watch Waterfall Wave Web Whale Wheel Window
+    Wizard Wolf
+    Zebra Zipper
   )
 end
