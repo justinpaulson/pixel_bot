@@ -35,15 +35,16 @@ jobs:
           gem install specific_install
           gem specific_install https://github.com/basecamp/kamal.git
 
-      - name: Setup SSH passphrase
+      - name: Set up SSH connection
         run: |
-          ssh-agent -a $SSH_AUTH_SOCK > /dev/null
-          echo 'echo $SSH_PASSPHRASE' > ~/.ssh_askpass && chmod +x ~/.ssh_askpass
-          echo "$SSH_PRIVATE_KEY" | tr -d '\r' | DISPLAY=None SSH_ASKPASS=~/.ssh_askpass ssh-add - >/dev/null
+          # Create SSH directory and write the private key
+          mkdir -p ~/.ssh && echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa && chmod 600 ~/.ssh/id_rsa
+          # Enable current SSH key
+          eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa
+          # Add the server to known_hosts (use `-p 2222` for custom port if needed)
+          ssh-keyscan $SERVER_ADDR >> ~/.ssh/known_hosts
         env:
-          SSH_PASSPHRASE: ${{secrets.SSH_PASSPHRASE}}
-          SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
-
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: Set up Docker Buildx
         id: buildx
