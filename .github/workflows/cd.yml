@@ -35,9 +35,16 @@ jobs:
           gem install specific_install
           gem specific_install https://github.com/basecamp/kamal.git
 
-      - uses: webfactory/ssh-agent@v0.7.0
-        with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: Set up SSH connection
+        run: |
+          # Create SSH directory and write the private key
+          mkdir -p ~/.ssh && echo "$SSH_PRIVATE_KEY" > ~/.ssh/kamal && chmod 600 ~/.ssh/kamal
+          # Enable current SSH key
+          eval $(ssh-agent -s) && ssh-add ~/.ssh/kamal
+          # Add the server to known_hosts (use `-p 2222` for custom port if needed)
+          ssh-keyscan $SERVER_ADDR >> ~/.ssh/known_hosts
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: Set up Docker Buildx
         id: buildx
