@@ -1,4 +1,4 @@
-WORDS = %w(
+WORDS = %w[
   Airplane Anchor Angel Ant Apple Armor Arrow
   Bacon Backpack Bag Balloon Baseball Basket Basketball Bat
   Beach Bear Beaver Bed Bee Bell Belt Bench Berry Bicycle Bird
@@ -38,7 +38,7 @@ WORDS = %w(
   Waffle Wallet Watch Waterfall Wave Web Whale Wheel Window
   Wizard Wolf
   Zebra Zipper
-)
+]
 
 # Find duplicates
 duplicates = WORDS.group_by(&:itself).select { |k, v| v.length > 1 }.keys

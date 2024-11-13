@@ -12,7 +12,7 @@ class Player < ApplicationRecord
   private
 
   def broadcast_player_update
-    broadcast_replace_to [game, "players"],
+    broadcast_replace_to [ game, "players" ],
       target: "players",
       partial: "games/players",
       locals: { game: game }

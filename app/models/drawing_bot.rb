@@ -64,6 +64,6 @@ Remember, your response should contain nothing but the SVG code itself."
 
     response = client.chat(parameters: { messages: }.merge(default_params))
 
-    response.dig('choices', 0, 'message', 'content')
+    response.dig("choices", 0, "message", "content")
   end
 end

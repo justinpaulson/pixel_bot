@@ -24,7 +24,7 @@ class Game < ApplicationRecord
 
   def broadcast_game_over
     self.players.each do |player|
-      broadcast_replace_to [self, player.user, "round"],
+      broadcast_replace_to [ self, player.user, "round" ],
         target: "round",
         partial: "games/game_over",
         locals: { game: self }

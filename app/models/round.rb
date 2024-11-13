@@ -30,7 +30,7 @@ class Round < ApplicationRecord
     update!(started_at: Time.now)
 
     game.players.each do |player|
-      broadcast_replace_to [game, player.user, "round"],
+      broadcast_replace_to [ game, player.user, "round" ],
         target: "round",
         locals: { round: self, game: self.game, user: player.user }
     end
@@ -56,7 +56,7 @@ class Round < ApplicationRecord
 
   def broadcast_new_round
     self.game.players.each do |player|
-      broadcast_replace_to [self.game, player.user, "round"], target: "round", partial: "rounds/round", locals: { round: self, game: self.game, user: player.user }
+      broadcast_replace_to [ self.game, player.user, "round" ], target: "round", partial: "rounds/round", locals: { round: self, game: self.game, user: player.user }
     end
   end
 
@@ -76,7 +76,7 @@ class Round < ApplicationRecord
     end
   end
 
-  WORDS = %w(
+  WORDS = %w[
     Airplane Anchor Angel Ant Apple Armor Arrow
     Bacon Backpack Bag Balloon Baseball Basket Basketball Bat
     Beach Bear Beaver Bed Bee Bell Belt Bench Berry Bicycle Bird
@@ -116,5 +116,5 @@ class Round < ApplicationRecord
     Waffle Wallet Watch Waterfall Wave Web Whale Wheel Window
     Wizard Wolf
     Zebra Zipper
-  )
+  ]
 end
