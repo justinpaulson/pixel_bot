@@ -48,3 +48,9 @@ jobs:
 
       - name: Run deploy command
         run: kamal deploy
+
+      - name: Remove old images from Container Registry
+        uses: ripplr-io/docr-image-remove@v1
+        with:
+          image_repository: pixel/pixel_bot
+          buffer_size: 3
