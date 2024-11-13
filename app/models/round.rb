@@ -13,7 +13,7 @@ class Round < ApplicationRecord
 
   after_create_commit -> {
     broadcast_new_round
-    StartRoundJob.set(wait: 20.seconds).perform_later(id)
+    StartRoundJob.set(wait: 10.seconds).perform_later(id)
   }
 
   def current_score
@@ -85,10 +85,10 @@ class Round < ApplicationRecord
     Cactus Cage Calculator Camera Candle Candy Car Carrot Castle
     Cat Chain Chair Cheese Chess Chicken Church Clock Cloud Clover Coin
     Compass Computer Cookie Cow Crayon Crown Cup
-    Dart Diamond Dice Dinosaur Dolphin Door Dragon Drawer Dress Drill Drum
+    Dart Diamond Dice Dinosaur Dolphin Door Dragon Dress Drill Drum
     Duck Dumbbell
     Eagle Ear Egg Elephant Envelope Eye
-    Fan Feather Fence Fire Fish Flag Flame Flashlight Flower Foot
+    Fan Feather Fence Fire Fish Flag Flashlight Flower Foot
     Fork Fox Frog
     Gate Ghost Giraffe Globe Glove Grape Goat Guitar
     Hammer Hand Harbor Hat Heart Helicopter Hook Horse Hourglass House
