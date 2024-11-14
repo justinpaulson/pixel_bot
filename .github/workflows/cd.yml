@@ -11,8 +11,6 @@ jobs:
     if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
 
-    environment: production
-
     env:
       DOCKER_BUILDKIT: 1
       RAILS_ENV: production
