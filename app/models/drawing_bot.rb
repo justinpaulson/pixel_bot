@@ -11,7 +11,6 @@ class DrawingBot < RubyBots::OpenAITool
   end
 
   def client
-    puts "We are setting access token to: #{Rails.application.credentials.openai_access_token}"
     @client ||= OpenAI::Client.new(access_token: Rails.application.credentials.openai_access_token)
   end
 

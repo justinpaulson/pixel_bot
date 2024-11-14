@@ -1,13 +1,13 @@
 # Name of your application. Used to uniquely configure containers.
-service: pixel_bot
+service: pixel
 
 # Name of the container image.
-image: pixel/pixel_bot
+image: justinpaulson/pixel
 
 # Deploy to these servers.
 servers:
   web:
-    - 64.227.108.224
+    - 159.223.205.26
   # job:
   #   hosts:
   #     - 192.168.0.1
@@ -26,8 +26,6 @@ registry:
   # Specify the registry server, if you're not using Docker Hub
   server: registry.digitalocean.com
   username: justinapaulson@gmail.com
-
-  # Always use an access token rather than real password when possible.
   password:
     - KAMAL_REGISTRY_PASSWORD
 
