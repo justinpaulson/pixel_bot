@@ -46,7 +46,7 @@ COPY . .
 RUN bundle exec bootsnap precompile app/ lib/
 
 # different comment again
-RUN RAILS_MASTER_KEY=fake ./bin/rails assets:precompile
+RUN RAILS_MASTER_KEY={$RAILS_MASTER_KEY} ./bin/rails assets:precompile
 
 
 
