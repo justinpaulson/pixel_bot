@@ -1,4 +1,4 @@
-<div class="w-full max-w-3xl mr-4 mt-4" data-controller="carousel" data-carousel-index-value="0">
+<div class="w-full max-w-3xl" data-controller="carousel" data-carousel-index-value="0">
   <div class="border border-gray-200 rounded-xl bg-white shadow-sm bg-opacity-100 z-20">
     <div class="flex items-center justify-between px-4 py-2 border-b border-gray-200">
       <div class="flex items-center space-x-2">
@@ -19,7 +19,7 @@
 
         <!-- Indicators -->
         <div class="flex items-center space-x-1 px-2">
-          <% round.messages.each_with_index do |_, index| %>
+          <% round&.messages&.each_with_index do |_, index| %>
             <button
               class="w-1.5 h-1.5 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors"
               data-carousel-target="indicator"
@@ -46,7 +46,7 @@
       <div class="overflow-hidden rounded-lg">
         <div id="carousel-container" class="flex transition-transform duration-300 ease-in-out"
              data-carousel-target="container">
-          <% round.messages.reverse.each_with_index do |message, index| %>
+          <% round&.messages&.reverse&.each_with_index do |message, index| %>
             <%= render message %>
           <% end %>
         </div>

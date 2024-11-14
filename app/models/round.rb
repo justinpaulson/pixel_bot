@@ -40,6 +40,10 @@ class Round < ApplicationRecord
     started_at.present? && started_at > 1.minutes.ago
   end
 
+  def completed?
+    started_at.present? && started_at < 1.minutes.ago
+  end
+
   def previous_word
     game.rounds.where("number < ?", number).last&.word
   end

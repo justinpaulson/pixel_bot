@@ -1,5 +1,5 @@
 <%= turbo_frame_tag "players" do %>
-  <div class="space-y-2 m-4" data-controller="player-list">
+  <div class="space-y-2" data-controller="player-list">
     <h2 class="text-xl font-bold mb-2">Players</h2>
     <div class="flex items-center px-2 py-1 text-sm font-medium text-gray-500 border-b">
       <div class="w-8 text-center">#</div>
@@ -57,9 +57,6 @@
 
         <span class="<%= player_data[:answered] ? 'text-green-700' : player_data[:is_drawer] ? 'text-blue-700 font-medium' : 'text-gray-700' %> flex-grow">
           <%= player_data[:player].user.email_address %>
-          <% if round && player_data[:is_drawer] %>
-            <span class="text-sm text-blue-500 ml-2">(drawing)</span>
-          <% end %>
         </span>
 
         <% if round %>

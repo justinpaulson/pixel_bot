@@ -54,5 +54,5 @@ jobs:
       - name: Remove old images from Container Registry
         uses: ripplr-io/docr-image-remove@v1
         with:
-          image_repository: pixel/pixel_bot
+          image_repository: justinpaulson/pixel
           buffer_size: 3

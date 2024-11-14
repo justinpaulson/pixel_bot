@@ -52,15 +52,15 @@
     <% end %>
   <% end %>
 
-  <div class="flex flex-row">
+  <div class="flex flex-row gap-4">
     <div class="w-1/2">
       <%= turbo_stream_from round, "messages" %>
       <%= turbo_frame_tag "messages" do %>
-        <%= render "rounds/message_carousel", round: round %>
+        <%= render "rounds/message_carousel", round: round.running? ? round : round.previous_round %>
       <% end %>
     </div>
 
-    <div class="w-1/2 mt-4">
+    <div class="w-1/2">
       <%= turbo_stream_from game, "players" %>
       <%= turbo_frame_tag "players" do %>
         <%= render "rounds/player_list", game: game, round: round %>

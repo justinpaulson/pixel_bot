@@ -1,6 +1,6 @@
 <div class="w-full flex-none" data-carousel-target="slide">
   <div id="<%= dom_id(message) %>" class="flex flex-col">
-    <% if message.user == Current.user %>
+    <% if message.user == Current.user || message.round.completed? %>
       <div class="flex">
         <%= message.content %>
       </div>
