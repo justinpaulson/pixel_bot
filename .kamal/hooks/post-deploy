@@ -53,4 +53,4 @@ done
 echo "Cleanup complete. Kept the latest $KEEP_IMAGES_COUNT images."
 
 echo "Running garbage collection..."
-doctl registry garbage-collection start "$REPOSITORY_NAME" --force
+doctl registry garbage-collection start --force
