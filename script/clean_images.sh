@@ -1,23 +1,20 @@
-#!/bin/sh
+#!/bin/bash
 
-# A sample post-deploy hook
-#
-# These environment variables are available:
-# KAMAL_RECORDED_AT
-# KAMAL_PERFORMER
-# KAMAL_VERSION
-# KAMAL_HOSTS
-# KAMAL_ROLE (if set)
-# KAMAL_DESTINATION (if set)
-# KAMAL_RUNTIME
-
-echo "$KAMAL_PERFORMER deployed $KAMAL_VERSION to $KAMAL_DESTINATION in $KAMAL_RUNTIME seconds"
-
+# Configuration
 REPOSITORY_NAME="pixel"
 REGISTRY_NAME="justinpaulson"
 KEEP_IMAGES_COUNT=3
 
 doctl auth init --access-token $KAMAL_REGISTRY_PASSWORD
+
+# Check if the "commit" argument is provided
+DRY_RUN=true
+if [[ $1 == "commit" ]]; then
+  DRY_RUN=false
+  echo "Running in commit mode. Images will be deleted."
+else
+  echo "Dry run mode. No images will be deleted."
+fi
 
 # Fetch all image manifests sorted by date (oldest to newest)
 echo "Fetching image manifests for repository: $REPOSITORY_NAME"
@@ -42,15 +39,27 @@ counter=0
 echo "$manifest_list" | while IFS= read -r line; do
   if [[ $counter -lt $manifests_to_delete ]]; then
     digest=$(echo "$line" | awk '{print $1}')
-    echo "Deleting manifest with digest: $digest"
-    doctl registry repository delete-manifest "$REPOSITORY_NAME" "$digest" --force
+    if [[ $DRY_RUN == true ]]; then
+      echo "[Dry Run] Would delete manifest with digest: $digest"
+    else
+      echo "Deleting manifest with digest: $digest"
+      doctl registry repository delete-manifest "$REPOSITORY_NAME" "$digest" --force
+    fi
     ((counter++))
   else
     break
   fi
 done
 
-echo "Cleanup complete. Kept the latest $KEEP_IMAGES_COUNT images."
+if [[ $DRY_RUN == true ]]; then
+  echo "Dry run complete. No images were deleted."
+else
+  echo "Cleanup complete. Kept the latest $KEEP_IMAGES_COUNT images."
 
-echo "Running garbage collection..."
-doctl registry garbage-collection start "$REPOSITORY_NAME" --force
+  echo "Would you like to run garbage collection? (y/n)"
+  read -r run_gc
+  if [[ $run_gc == "y" ]]; then
+    echo "Running garbage collection..."
+    doctl registry garbage-collection start
+  fi
+fi
