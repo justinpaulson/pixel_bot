@@ -45,8 +45,8 @@ COPY . .
 # Precompile bootsnap code for faster boot times
 RUN bundle exec bootsnap precompile app/ lib/
 
-# different comment again
-RUN RAILS_MASTER_KEY={$RAILS_MASTER_KEY} ./bin/rails assets:precompile
+# precompile without needing RAILS_MASTER_KEY
+RUN SECRET_KEY_BASE_DUMMY=1 ./bin/rails assets:precompile
 
 
 
