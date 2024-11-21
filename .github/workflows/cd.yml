@@ -56,8 +56,7 @@ jobs:
         with:
           token: ${{ secrets.KAMAL_REGISTRY_PASSWORD }}
 
-      - name: Remove old images from Container Registry
-        uses: ripplr-io/docr-image-remove@v1
-        with:
-          image_repository: pixel
-          buffer_size: 2
+      - name: Clean up images
+        run: ./scripts/clean_images.sh
+        env:
+          KAMAL_REGISTRY_PASSWORD: ${{ secrets.KAMAL_REGISTRY_PASSWORD }}

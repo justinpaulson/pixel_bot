@@ -56,10 +56,6 @@ if [[ $DRY_RUN == true ]]; then
 else
   echo "Cleanup complete. Kept the latest $KEEP_IMAGES_COUNT images."
 
-  echo "Would you like to run garbage collection? (y/n)"
-  read -r run_gc
-  if [[ $run_gc == "y" ]]; then
-    echo "Running garbage collection..."
-    doctl registry garbage-collection start --force
-  fi
+  echo "Running garbage collection..."
+  doctl registry garbage-collection start --force
 fi
