@@ -51,6 +51,23 @@ echo "$manifest_list" | while IFS= read -r line; do
   fi
 done
 
+echo "Finished first delete, now let's delete again"
+
+echo "$manifest_list" | while IFS= read -r line; do
+  if [[ $counter -lt $manifests_to_delete ]]; then
+    digest=$(echo "$line" | awk '{print $1}')
+    if [[ $DRY_RUN == true ]]; then
+      echo "[Dry Run] Would delete manifest with digest: $digest"
+    else
+      echo "Deleting manifest with digest: $digest"
+      doctl registry repository delete-manifest "$REPOSITORY_NAME" "$digest" --force
+    fi
+    ((counter++))
+  else
+    break
+  fi
+done
+
 if [[ $DRY_RUN == true ]]; then
   echo "Dry run complete. No images were deleted."
 else

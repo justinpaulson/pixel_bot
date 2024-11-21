@@ -56,7 +56,7 @@ jobs:
         with:
           token: ${{ secrets.KAMAL_REGISTRY_PASSWORD }}
 
-      - name: Clean up images
+      - name: Clean up images 1
         run: ./scripts/clean_images.sh
         env:
           KAMAL_REGISTRY_PASSWORD: ${{ secrets.KAMAL_REGISTRY_PASSWORD }}
