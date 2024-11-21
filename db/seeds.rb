@@ -3,10 +3,6 @@ puts "Starting Seeds..."
 
 users = [
   {
-    email: "justinapaulson@gmail.com",
-    password: "1234"
-  },
-  {
     email: "test@example.com",
     password: "1234"
   }
