@@ -8,7 +8,11 @@
       </div>
       <% if @game.created_by == Current.user %>
         <div class="mt-4">
-          <%= link_to "Start Game", start_game_path(@game), method: :post, class: "rounded bg-blue-600 text-white p-2 hover:bg-blue-700" %>
+          <% if @game.players.count > 2 %>
+            <%= link_to "Start Game", start_game_path(@game), method: :post, class: "rounded bg-blue-600 text-white p-2 hover:bg-blue-700" %>
+          <% else %>
+            <p>Invite players to start</>
+          <% end %>
         </div>
       <% end %>
     </div>
