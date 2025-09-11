@@ -28,7 +28,7 @@ gem "image_processing", "~> 1.2"
 
 gem "ruby_bots"
 
-gem "rails_tipjar"
+gem "rails_tipjar", "0.2.2"
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
