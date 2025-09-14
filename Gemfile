@@ -26,7 +26,7 @@ gem "thruster", require: false
 
 gem "image_processing", "~> 1.2"
 
-gem "ruby_bots"
+gem "ruby_llm"
 
 gem "rails_tipjar"
 

@@ -1,4 +1,4 @@
-class DrawingBot < RubyBots::OpenAITool
+class DrawingBot
   def initialize(round:)
     @round = round
     @messages = @round.messages.map do |message|
@@ -7,15 +7,14 @@ class DrawingBot < RubyBots::OpenAITool
         { role: :assistant, content: message.image_content }
       ]
     end.flatten
-    super(name: "Pixel Bot", description: "A bot that draws SVGs.")
   end
 
-  def client
-    @client ||= OpenAI::Client.new(access_token: Rails.application.credentials.openai_access_token)
+  def name
+    "Pixel Bot"
   end
 
-  def default_params
-    { model: "gpt-4o" }
+  def description
+    "A bot that draws SVGs."
   end
 
   def system_instructions
@@ -49,20 +48,28 @@ For subsequent queries:
 Remember, your response should contain nothing but the SVG code itself."
   end
 
-  private
-
   def run(input)
-    messages = [
-      { role: :system, content: system_instructions }
-    ] + @messages
-    unless input.empty?
-      messages += [
-        { role: :user, content: input }
-      ]
+    # Create a new chat instance with the GPT-4o model
+    chat = RubyLLM.chat(model: "gpt-4o")
+
+    # Set system instructions
+    chat.with_instructions(system_instructions)
+
+    # Add previous messages to maintain conversation context
+    @messages.each do |message|
+      chat.add_message(message)
     end
 
-    response = client.chat(parameters: { messages: }.merge(default_params))
+    # Add the new user input if provided
+    unless input.empty?
+      chat.add_message(role: :user, content: input)
+    end
 
-    response.dig("choices", 0, "message", "content")
+    # Get the response from the model
+    response = chat.complete
+
+    # Return the content of the response
+    response.content
   end
+
 end

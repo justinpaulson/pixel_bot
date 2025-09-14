@@ -6,7 +6,7 @@ class MessagesController < ApplicationController
   def create
     @round = Round.find(params[:round_id])
 
-    ai_response = DrawingBot.new(round: @round).response(message_params[:content])
+    ai_response = DrawingBot.new(round: @round).run(message_params[:content])
 
     @message = Message.create(message_params.merge(round: @round, user: Current.session.user))
 
