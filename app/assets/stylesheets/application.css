@@ -633,7 +633,7 @@ select {
   color: var(--danger);
 }
 .category-pill:empty,
-.guess-feedback:empty,
+.guess-area > form[hidden] + .guess-feedback:empty,
 .connection-message:empty,
 .waiting-note:empty,
 .canvas-message p:empty {
@@ -1013,7 +1013,6 @@ select {
   }
   .game-setup input,
   .game-setup select {
-    font-size: 11px !important;
     padding-left: 9px !important;
   }
   .button {
@@ -1158,5 +1157,13 @@ select {
   }
   .answer-reveal {
     padding: 20px;
+  }
+}
+@media (max-width: 740px), (pointer: coarse) {
+  /* Keep mobile browsers from zooming into small form controls on focus. */
+  input:not([type="radio"]):not([type="submit"]),
+  select,
+  .invite-card input {
+    font-size: 16px !important;
   }
 }

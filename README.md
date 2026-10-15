@@ -34,6 +34,7 @@ Development uses the in-process Active Job adapter. Production runs Solid Queue 
 
 ```sh
 bin/rails db:test:prepare test
+bin/rails test:system
 node --test test/javascript/*.mjs
 bin/rubocop
 bin/brakeman --no-pager

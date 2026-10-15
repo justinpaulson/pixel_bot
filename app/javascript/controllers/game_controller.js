@@ -85,7 +85,6 @@ export default class extends Controller {
     const generating = ["pending", "generating", "ready"].includes(phase);
     const roundChanged = this.roundId !== round?.id;
     if (roundChanged) {
-      if (this.roundId) this.headingTarget.scrollIntoView({ block: "start" });
       this.roundId = round?.id;
       this.guessInputTarget.value = "";
       this.feedbackTarget.textContent = "";
@@ -151,7 +150,10 @@ export default class extends Controller {
     this.renderScores(state.players);
     this.renderGallery(state.gallery);
     this.updateClock();
-    if ((sketchbookHadFocus || roundChanged) && playing && !round.solved) this.guessInputTarget.focus();
+    if ((sketchbookHadFocus || roundChanged) && playing && !round.solved &&
+        window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+      this.guessInputTarget.focus({ preventScroll: true });
+    }
   }
 
   renderScores(players) {
@@ -214,8 +216,10 @@ export default class extends Controller {
         ? "✓"
         : "—";
     this.timerTarget.classList.toggle("urgent", active && seconds <= 5);
-    this.guessInputTarget.disabled = !active || seconds <= 0 || this.submitting;
-    this.guessButtonTarget.disabled = this.guessInputTarget.disabled;
+    // Keep the keyboard open while a guess is in flight. Disabling the focused
+    // input dismisses it on mobile and makes the viewport jump on every guess.
+    this.guessInputTarget.disabled = !active || seconds <= 0 || Boolean(this.state.round?.solved);
+    this.guessButtonTarget.disabled = this.guessInputTarget.disabled || this.submitting;
     const nextRoundAt = this.state.phase === "revealed" && this.state.round?.next_round_at;
     this.nextCountdownTarget.hidden = !nextRoundAt;
     if (nextRoundAt) {
@@ -237,29 +241,39 @@ export default class extends Controller {
     if (
       this.submitting ||
       !this.state?.round ||
+      this.guessInputTarget.disabled ||
       !this.guessInputTarget.value.trim()
     )
       return;
     const roundId = this.state.round.id;
+    const answer = this.guessInputTarget.value;
+    if (document.activeElement === this.guessButtonTarget) {
+      this.guessInputTarget.focus({ preventScroll: true });
+    }
     this.submitting = true;
     this.updateClock();
     try {
       const response = await this.post(`/rounds/${roundId}/answer`, {
-        answer: this.guessInputTarget.value,
+        answer,
       });
       const result = await response.json();
       if (roundId !== this.roundId) return;
       this.feedbackTarget.textContent = result.message;
       this.feedbackTarget.classList.toggle("correct", Boolean(result.accepted));
-      if (response.ok) this.guessInputTarget.value = "";
+      if (response.ok && this.guessInputTarget.value === answer) this.guessInputTarget.value = "";
       clearTimeout(this.pollTimer);
       await this.poll();
     } catch (error) {
-      this.feedbackTarget.textContent = "Couldn't send guess. Try again.";
+      if (roundId === this.roundId) this.feedbackTarget.textContent = "Couldn't send guess. Try again.";
     } finally {
       this.submitting = false;
       this.updateClock();
-      if (!this.guessFormTarget.hidden) this.guessInputTarget.focus();
+    }
+  }
+
+  keepGuessFocus(event) {
+    if (event.button === 0 && document.activeElement === this.guessInputTarget) {
+      event.preventDefault();
     }
   }
 
