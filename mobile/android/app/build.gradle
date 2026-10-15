@@ -1,5 +1,9 @@
 apply plugin: 'com.android.application'
 
+def uploadSigning = new Properties()
+def signingFile = rootProject.file('signing.properties')
+if (signingFile.exists()) signingFile.withInputStream { uploadSigning.load(it) }
+
 android {
     namespace = "com.lillybitgames.pixel"
     compileSdk = rootProject.ext.compileSdkVersion
@@ -16,8 +20,19 @@ android {
             ignoreAssetsPattern = '!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~'
         }
     }
+    signingConfigs {
+        if (!uploadSigning.isEmpty()) {
+            upload {
+                storeFile file(uploadSigning.getProperty('storeFile'))
+                storePassword uploadSigning.getProperty('storePassword')
+                keyAlias uploadSigning.getProperty('keyAlias')
+                keyPassword uploadSigning.getProperty('keyPassword')
+            }
+        }
+    }
     buildTypes {
         release {
+            if (!uploadSigning.isEmpty()) signingConfig signingConfigs.upload
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }

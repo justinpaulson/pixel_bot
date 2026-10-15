@@ -899,6 +899,10 @@ function PixelApp() {
             />
           </label>
           <p className="quiet">No account needed.</p>
+          <div className="room-actions">
+            <a className="text-button" href="https://pixel.justinpaulson.com/privacy" target="_blank" rel="noreferrer">Privacy</a>
+            <a className="text-button" href="https://pixel.justinpaulson.com/support" target="_blank" rel="noreferrer">Help</a>
+          </div>
           <button className="primary launch" onClick={() => setSheet(null)}>
             Done
             <Check size={20} />

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get "privacy", to: "pages#privacy"
+  get "support", to: "pages#support"
   namespace :api do
     namespace :v1 do
       get "config", to: "config#show"

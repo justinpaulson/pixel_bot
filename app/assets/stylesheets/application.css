@@ -1209,3 +1209,8 @@ select {
 /* Installed mobile clients can join the same invitation as browser players. */
 .native-app-link { display: none; }
 @media (pointer: coarse) { .native-app-link { display: inline-flex; margin-top: 1rem; } }
+
+.policy-page { max-width: 720px; margin: 2rem auto 4rem; line-height: 1.7; }
+.policy-page h1 { font-size: 2.8rem; }
+.policy-page h2 { margin-top: 2rem; font-size: 1.3rem; }
+.policy-page a { text-decoration: underline; }

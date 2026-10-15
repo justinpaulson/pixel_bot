@@ -102,3 +102,6 @@ app/src/main/res/xml/config.xml
 
 *.jks
 *.keystore
+
+# Local upload credentials
+signing.properties
