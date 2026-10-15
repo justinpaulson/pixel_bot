@@ -290,7 +290,18 @@ input::placeholder {
   color: #8a8e83;
 }
 select {
-  appearance: auto;
+  appearance: none;
+  padding-right: 42px;
+  background-image: url("chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 16px 16px;
+}
+@media (forced-colors: active) {
+  select {
+    appearance: auto;
+    background-image: none;
+  }
 }
 .play-buttons {
   display: flex;
