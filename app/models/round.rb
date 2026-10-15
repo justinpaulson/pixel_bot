@@ -1,5 +1,6 @@
 class Round < ApplicationRecord
   DURATION = 20.seconds
+  DRAWING_REVEAL_DURATION = 6.seconds
   REVEAL_DURATION = 12.seconds
   HINT_DELAY = 5.seconds
   GENERATION_TIMEOUT = 3.minutes

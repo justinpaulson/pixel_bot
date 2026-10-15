@@ -59,6 +59,8 @@ class GameFlowTest < ActionDispatch::IntegrationTest
     assert_response :forbidden
     get drawing_round_path(round)
     assert_response :forbidden
+    get drawing_round_path(round, format: :json)
+    assert_response :forbidden
     post answer_round_path(round), params: { answer: round.word }, as: :json
     assert_response :forbidden
     post skip_round_path(round), as: :json
@@ -75,11 +77,23 @@ class GameFlowTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_not_includes response.body, round.word
     assert_not_includes response.body, "Secret Future"
+    assert_equal round.started_at.iso8601(3), response.parsed_body.dig("round", "started_at")
+    assert_equal 6000, response.parsed_body["drawing_duration_ms"]
+    assert_equal drawing_round_path(round, format: :json), response.parsed_body.dig("round", "scene_url")
     get drawing_round_path(round)
     assert_response :success
     assert_equal "image/svg+xml", response.media_type
     assert_includes response.headers["Content-Security-Policy"], "sandbox"
+    get drawing_round_path(round, format: :json)
+    assert_response :success
+    assert_equal "application/json", response.media_type
+    assert_equal "0 0 512 512", response.parsed_body["view_box"]
+    assert_equal "circle", response.parsed_body.dig("art", "children", 0, "tag")
+    assert_not_includes response.body, round.word
+    assert_includes response.headers["Cache-Control"], "no-store"
     get drawing_round_path(future)
+    assert_response :not_found
+    get drawing_round_path(future, format: :json)
     assert_response :not_found
     post skip_round_path(future), as: :json
     assert_response :forbidden

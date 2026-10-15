@@ -15,7 +15,11 @@ class RoundsController < ApplicationController
     response.headers["Cache-Control"] = "private, no-store"
     response.headers["X-Content-Type-Options"] = "nosniff"
     # Revalidate on delivery as defense in depth; this endpoint never returns raw model content.
-    send_data SvgSanitizer.call(@round.svg), type: "image/svg+xml", disposition: "inline"
+    if request.format.json?
+      render json: DrawingScene.call(@round.svg)
+    else
+      send_data SvgSanitizer.call(@round.svg), type: "image/svg+xml", disposition: "inline"
+    end
   end
 
   def skip

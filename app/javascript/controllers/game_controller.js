@@ -108,11 +108,15 @@ export default class extends Controller {
     this.sketchbookTarget.dataset.sketchbookRoundValue = generating ? String(round.id) : "";
     this.drawingTarget.hidden = generating || !round?.image_url;
     this.placeholderTarget.hidden = generating || Boolean(round?.image_url);
-    if (
-      round?.image_url &&
-      this.drawingTarget.getAttribute("src") !== round.image_url
-    )
-      this.drawingTarget.src = round.image_url;
+    this.drawingTarget.dataset.drawingPresentationValue = JSON.stringify({
+      id: !generating && round?.image_url ? round.id : null,
+      sceneUrl: round?.scene_url,
+      imageUrl: round?.image_url,
+      startedAt: round?.started_at,
+      serverTime: state.server_time,
+      duration: state.drawing_duration_ms,
+      complete: revealed,
+    });
     this.canvasTitleTarget.textContent =
       phase === "lobby"
         ? "Ready?"

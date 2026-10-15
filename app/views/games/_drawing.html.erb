@@ -1,0 +1,8 @@
+<div class="puzzle-drawing" data-controller="drawing" data-game-target="drawing" hidden>
+  <svg data-drawing-target="svg" viewBox="0 0 512 512" role="img" aria-label="Guess the drawing" hidden>
+    <g data-drawing-target="art"></g>
+    <g data-drawing-target="pencil" visibility="hidden" aria-hidden="true"><%= render "pencil" %></g>
+  </svg>
+  <img data-drawing-target="fallback" alt="Guess the drawing" width="512" height="512" hidden>
+  <span class="drawing-caption" data-drawing-target="caption">Uncapping the pencil…</span>
+</div>

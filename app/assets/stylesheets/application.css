@@ -471,12 +471,32 @@ select {
   max-height: 580px;
   overflow: hidden;
 }
-.canvas > img {
+.puzzle-drawing {
+  position: relative;
   width: 100%;
   height: 100%;
   max-height: 530px;
-  object-fit: contain;
   min-height: 0;
+}
+.puzzle-drawing > svg,
+.puzzle-drawing > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.drawing-caption {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: var(--canvas);
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--muted);
 }
 .canvas-message {
   padding: 35px 20px;
