@@ -1035,9 +1035,6 @@ select {
 .artist-preview figcaption > :first-child { font-size: 8px; letter-spacing: 1px; color: var(--muted); }
 .artist-preview figcaption strong { font-size: 11px; }
 .artist-preview figcaption > :last-child { margin-left: auto; font-size: 9px; color: var(--muted); }
-.menu-how-to { list-style: none; display: flex; justify-content: space-between; gap: 12px; padding: 0; margin: 26px 0 0; }
-.menu-how-to li { display: flex; align-items: center; gap: 7px; font-size: 10px; font-weight: 600; }
-.menu-how-to li span { display: grid; place-items: center; border: 1px solid var(--line); width: 24px; height: 24px; border-radius: 50%; color: var(--pine); }
 .setup-panel { padding: 28px; background: var(--surface); border: 1px solid var(--line); border-radius: 24px; box-shadow: 0 12px 40px #173f4008; }
 .setup-heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 26px; }
 .setup-heading .eyebrow { color: var(--muted); font-size: 9px; }
@@ -1101,7 +1098,6 @@ select {
   .setup-panel { padding: 24px; }
   .artist-preview figcaption { flex-wrap: wrap; gap: 6px; }
   .artist-preview figcaption > :last-child { width: 100%; margin-left: 0; }
-  .menu-how-to { flex-wrap: wrap; }
   .mode-option { gap: 7px; padding: 12px 9px; }
   .mode-option > svg { width: 20px; }
 }
@@ -1120,7 +1116,6 @@ select {
   .artist-preview figcaption > :first-child { font-size: 7px; }
   .artist-preview figcaption > :last-child { display: none; }
   .artist-preview figcaption strong { font-size: 10px; }
-  .menu-how-to { grid-column: 1 / -1; margin-top: 22px; flex-wrap: nowrap; }
 }
 @media (max-width: 480px) {
   .game-menu { padding-top: 22px; gap: 24px; }
@@ -1130,9 +1125,6 @@ select {
   .menu-kicker { font-size: 7px; }
   .preview-heading { font-size: 8px; }
   .preview-live-dot { width: 5px; height: 5px; }
-  .menu-how-to { gap: 7px; }
-  .menu-how-to li { font-size: 9px; gap: 5px; }
-  .menu-how-to li span { width: 20px; height: 20px; }
   .setup-panel { padding: 22px 17px; border-radius: 19px; }
   .setup-heading h2 { font-size: 24px; }
   .setup-heading { margin-bottom: 23px; }
