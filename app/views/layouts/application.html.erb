@@ -2,11 +2,12 @@
 <html lang="en">
   <head>
     <% page_title = content_for(:title) || "Pixel — Guess the drawing" %>
+    <% mobile_menu = controller_name == "games" && action_name == "index" %>
     <% page_description = "A fresh drawing. A secret answer. A room full of guesses. Play Pixel solo or with friends, with movies, music, TV and more." %>
     <% social_image_url = "https://pixel.justinpaulson.com/og-image-v2.jpg" %>
     <% social_image_alt = "Pixel draws. You guess. A friendly mint robot holds a pencil and doodles in a sketchbook. Play solo or with friends." %>
     <title><%= page_title %></title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1<%= ",viewport-fit=cover" if mobile_menu %>">
     <meta name="description" content="<%= page_description %>">
     <meta name="theme-color" content="#f0f5f1">
     <meta property="og:type" content="website">
@@ -30,9 +31,12 @@
     <%= yield :head %>
     <%= favicon_link_tag "favicon.svg", type: "image/svg+xml" %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <% if mobile_menu %>
+      <%= stylesheet_link_tag "mobile_menu", "data-turbo-track": "reload" %>
+    <% end %>
     <%= javascript_importmap_tags %>
   </head>
-  <body>
+  <body <%= tag.attributes(class: "mobile-menu-page", data: { controller: "mobile-menu" }) if mobile_menu %>>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <%= link_to root_path, class: "brand", aria: { label: "Pixel home" } do %>
@@ -46,6 +50,9 @@
           <%= link_to "Sign in", new_session_path, class: "text-button" %>
         <% end %>
       </nav>
+      <% if mobile_menu %>
+        <button type="button" class="mobile-menu-settings menu-icon-button" aria-label="Player settings" data-action="mobile-menu#open" data-sheet="settings"><%= render "games/menu_icon", name: :settings %></button>
+      <% end %>
     </header>
     <main id="main" class="page-shell">
       <% flash.each do |kind, message| %>

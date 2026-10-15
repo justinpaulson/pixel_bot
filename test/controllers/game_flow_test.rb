@@ -9,10 +9,14 @@ class GameFlowTest < ActionDispatch::IntegrationTest
   test "home is public and a guest can start solo without email" do
     get root_path
     assert_response :success
-    assert_select "form[action=?] input[name=mode][value=solo][checked]", games_path
-    assert_select "select[name=category] option", count: PromptCatalog::CATEGORIES.size
-    assert_select "input[name=drawing_model]", count: 3
-    assert_select "input[name=drawing_model][value='gpt-6-astra'][checked]"
+    [ ".game-menu", ".mobile-menu" ].each do |menu|
+      assert_select menu do
+        assert_select "form[action=?] input[name=mode][value=solo][checked]", games_path
+        assert_select "select[name=category] option", count: PromptCatalog::CATEGORIES.size
+        assert_select "input[name=drawing_model]", count: 3
+        assert_select "input[name=drawing_model][value='gpt-6-astra'][checked]"
+      end
+    end
     assert_difference({ "User.count" => 1, "Game.count" => 1, "Player.count" => 1, "Round.count" => 3 }) do
       post games_path, params: { mode: "solo", category: "music", display_name: "Guest Artist", round_limit: 3 }
     end

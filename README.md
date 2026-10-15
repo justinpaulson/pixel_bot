@@ -68,3 +68,5 @@ The October 2026 migrations preserve historical games and users. Legacy rooms di
 ## iOS and Android
 
 The [`mobile/`](mobile/README.md) directory contains the bundled mobile interface and native iOS/Android projects. It keeps the web game’s modes, artists, timing, scoring, and shared rooms with a compact interface, native sharing, secure guest sessions, and resume support. The `/api/v1` endpoints use scoped bearer sessions and the same game rules and sanitized drawing service as the web. Browser cookie authentication and CSRF protection remain in the web controllers.
+
+The website’s phone menu (up to 740px wide) mirrors the app’s compact header, drawing preview, setup controls, and help/player/join sheets. Its styles live in `app/assets/stylesheets/mobile_menu.css`; keep them aligned with `mobile/src/styles.css` when changing the app menu. A Stimulus controller remembers setup choices and nicknames, while creating and joining rooms still use the website’s CSRF-protected forms. Desktop and browsers without JavaScript retain the full setup page.

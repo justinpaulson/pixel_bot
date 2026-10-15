@@ -22,8 +22,9 @@ class GameInputTest < ApplicationSystemTestCase
     fill_in "Email address", with: users(:one).email_address
     fill_in "Password", with: "password"
     click_button "Sign in / create account"
-    assert_button "Sign out"
+    assert_current_path root_path
     visit game_path(game)
+    assert_button "Sign out"
     assert_selector "#guess:not([disabled])"
     assert_not page.evaluate_script("document.activeElement.id === 'guess'")
     assert_equal "16px", page.evaluate_script("getComputedStyle(document.querySelector('#guess')).fontSize")

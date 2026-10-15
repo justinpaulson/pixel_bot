@@ -1,0 +1,93 @@
+<section class="mobile-menu" aria-labelledby="mobile-menu-title">
+  <div class="menu-hero">
+    <h1 id="mobile-menu-title">THE AI DRAWING GAME</h1>
+    <button type="button" class="menu-icon-button menu-help" aria-label="How to play" data-action="mobile-menu#open" data-sheet="help"><%= render "menu_icon", name: :help, size: 21 %></button>
+  </div>
+  <figure class="menu-preview">
+    <% @models.each do |id, model| %>
+      <%= image_tag model[:preview], alt: "#{model[:name]} drawing Jurassic Park", width: 512, height: 512, hidden: id != @default_model, data: { mobile_menu_target: "preview", model: id } %>
+    <% end %>
+    <figcaption><span><%= render "menu_icon", name: :sparkles, size: 13 %><span data-mobile-menu-target="previewName"><%= @models.fetch(@default_model)[:name] %>’s sketchbook</span></span><span>Jurassic Park · example</span></figcaption>
+  </figure>
+  <%= form_with url: games_path, class: "menu-form", data: { turbo: false, action: "change->mobile-menu#update", mobile_menu_target: "form" } do %>
+    <%= hidden_field_tag :display_name, Current.user&.display_name, id: "mobile-player-name", data: { mobile_menu_target: "nickname" } %>
+    <fieldset class="menu-modes menu-segmented">
+      <legend class="sr-only">Play mode</legend>
+      <% { solo: "Solo", party: "Friends" }.each do |mode, label| %>
+        <label class="menu-choice">
+          <%= radio_button_tag :mode, mode, mode == :solo, id: "mobile-mode-#{mode}", aria: { label: label }, data: { mobile_menu_target: "mode" } %>
+          <%= render "menu_icon", name: mode == :solo ? :solo : :friends, size: mode == :solo ? 19 : 21 %><span><%= label %></span>
+        </label>
+      <% end %>
+    </fieldset>
+    <div class="menu-setup-row">
+      <div class="menu-category">
+        <%= label_tag "mobile-category", "Category", class: "menu-label" %>
+        <%= select_tag :category, options_for_select(@categories.map { |key, category| [category[:name], key] }, "mix"), id: "mobile-category" %>
+      </div>
+      <fieldset class="menu-rounds">
+        <legend class="menu-label">Rounds</legend>
+        <div class="menu-segmented">
+          <% [3, 5, 10].each do |rounds| %>
+            <label class="menu-choice"><%= radio_button_tag :round_limit, rounds, rounds == 5, id: "mobile-rounds-#{rounds}", aria: { label: "#{rounds} rounds" } %><span><%= rounds %></span></label>
+          <% end %>
+        </div>
+      </fieldset>
+    </div>
+    <fieldset class="menu-artists">
+      <legend class="menu-label">Artist</legend>
+      <div>
+        <% @models.each do |id, model| %>
+          <label class="menu-choice menu-artist menu-artist--<%= model[:color] %>">
+            <%= radio_button_tag :drawing_model, id, id == @default_model, id: "mobile-artist-#{model[:name].downcase}", aria: { label: "#{model[:name]} #{model[:challenge]}" }, data: { mobile_menu_target: "artist", name: model[:name] } %>
+            <span class="menu-artist-dot"></span><strong><%= model[:name] %></strong><small><%= model[:challenge] %></small><%= render "menu_icon", name: :check, size: 14 %>
+          </label>
+        <% end %>
+      </div>
+    </fieldset>
+    <button type="submit" class="menu-primary menu-launch"><span data-mobile-menu-target="submitLabel">Play</span><%= render "menu_icon", name: :arrow, size: 22 %></button>
+  <% end %>
+  <div class="menu-home-links"><button type="button" class="menu-text-button" data-action="mobile-menu#open" data-sheet="join"><%= render "menu_icon", name: :link, size: 16 %>Join room</button></div>
+</section>
+
+<dialog class="menu-sheet" data-mobile-menu-target="sheet" data-sheet="settings" data-action="click->mobile-menu#backdrop" aria-labelledby="mobile-settings-title">
+  <div class="menu-sheet-handle"></div>
+  <header><h2 id="mobile-settings-title">Your player</h2><button type="button" class="menu-icon-button" aria-label="Close" data-action="mobile-menu#close"><%= render "menu_icon", name: :close %></button></header>
+  <label class="menu-field" for="mobile-nickname">Nickname
+    <%= text_field_tag :nickname, Current.user&.display_name, id: "mobile-nickname", maxlength: 24, placeholder: "You", autocomplete: "nickname", data: { mobile_menu_target: "nickname", action: "input->mobile-menu#nameChanged" } %>
+  </label>
+  <p class="menu-quiet">No account needed.</p>
+  <div class="menu-sheet-links">
+    <%= link_to "Privacy", privacy_path, class: "menu-text-button" %><%= link_to "Help", support_path, class: "menu-text-button" %>
+    <% if Current.user %>
+      <%= button_to "Sign out", session_path, method: :delete, class: "menu-text-button" %>
+    <% else %>
+      <%= link_to "Sign in", new_session_path, class: "menu-text-button" %>
+    <% end %>
+  </div>
+  <button type="button" class="menu-primary menu-launch" data-action="mobile-menu#close">Done<%= render "menu_icon", name: :check, size: 20 %></button>
+</dialog>
+
+<dialog class="menu-sheet" data-mobile-menu-target="sheet" data-sheet="help" data-action="click->mobile-menu#backdrop" aria-labelledby="mobile-help-title">
+  <div class="menu-sheet-handle"></div>
+  <header><h2 id="mobile-help-title">See it. Guess it.</h2><button type="button" class="menu-icon-button" aria-label="Close" data-action="mobile-menu#close"><%= render "menu_icon", name: :close %></button></header>
+  <div class="menu-how-to"><p><span>1</span>Pixel draws a mystery picture.</p><p><span>2</span>You have <%= Round::DURATION.to_i %> seconds to guess.</p><p><span>3</span>Faster guesses score more.</p></div>
+  <p class="menu-quiet">Play solo or invite up to 11 friends. Everyone guesses.</p>
+  <button type="button" class="menu-primary menu-launch" data-action="mobile-menu#close">Got it<%= render "menu_icon", name: :check, size: 20 %></button>
+</dialog>
+
+<dialog class="menu-sheet" data-mobile-menu-target="sheet" data-sheet="join" data-action="click->mobile-menu#backdrop" aria-labelledby="mobile-join-title">
+  <div class="menu-sheet-handle"></div>
+  <header><h2 id="mobile-join-title">Join room</h2><button type="button" class="menu-icon-button" aria-label="Close" data-action="mobile-menu#close"><%= render "menu_icon", name: :close %></button></header>
+  <%# The invite determines the action at submit time, so use a session token rather than a path-bound token. %>
+  <%= form_with url: root_path, authenticity_token: form_authenticity_token, data: { turbo: false, action: "submit->mobile-menu#join" } do %>
+    <label class="menu-field" for="mobile-invite">Invite link
+      <input id="mobile-invite" data-mobile-menu-target="invite" placeholder="Paste your invite" autocomplete="off" autocapitalize="off" spellcheck="false" required>
+    </label>
+    <label class="menu-field" for="mobile-join-nickname">Nickname
+      <%= text_field_tag :display_name, Current.user&.display_name, id: "mobile-join-nickname", maxlength: 24, placeholder: "You", autocomplete: "nickname", data: { mobile_menu_target: "nickname", action: "input->mobile-menu#nameChanged" } %>
+    </label>
+    <p class="menu-sheet-error" data-mobile-menu-target="error" role="alert" hidden></p>
+    <button type="submit" class="menu-primary menu-launch">Join<%= render "menu_icon", name: :arrow, size: 20 %></button>
+  <% end %>
+</dialog>
