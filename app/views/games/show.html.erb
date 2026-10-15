@@ -19,7 +19,7 @@
           <div class="drawing-toolbar"><span class="category-pill" data-game-target="category"></span><span class="round-label" data-game-target="roundLabel"></span><span class="timer" data-game-target="timer" aria-label="Seconds remaining">—</span></div>
           <div class="canvas">
             <img data-game-target="drawing" alt="Guess the drawing" width="512" height="512" hidden>
-            <div class="canvas-message" data-game-target="placeholder"><span class="drawing-mascot" data-game-target="mascot" aria-hidden="true">✳</span><h2 data-game-target="canvasTitle">Loading…</h2><p data-game-target="canvasCopy"></p></div>
+            <div class="canvas-message" data-game-target="placeholder"><%= image_tag "favicon.svg", class: "drawing-mascot", alt: "", width: 105, height: 105, data: { game_target: "mascot" } %><h2 data-game-target="canvasTitle">Loading…</h2><p data-game-target="canvasCopy"></p></div>
           </div>
         </div>
         <div class="guess-area">

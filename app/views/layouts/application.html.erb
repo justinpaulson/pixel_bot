@@ -16,7 +16,7 @@
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <%= link_to root_path, class: "brand", aria: { label: "Pixel home" } do %>
-        <span class="brand-mark" aria-hidden="true">✳</span> pixel<span class="brand-period">.</span>
+        <%= image_tag "favicon.svg", class: "brand-mark", alt: "", width: 43, height: 43 %> pixel<span class="brand-period">.</span>
       <% end %>
       <nav aria-label="Main navigation">
         <% if Current.user %>

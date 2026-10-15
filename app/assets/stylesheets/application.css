@@ -94,16 +94,10 @@ select:focus-visible {
   line-height: 1;
 }
 .brand-mark {
-  display: inline-grid;
-  place-items: center;
-  background: var(--canyon);
+  display: block;
   height: 43px;
   width: 43px;
-  border: 1.5px solid var(--ink);
-  border-radius: 50%;
-  font-size: 39px;
-  letter-spacing: 0;
-  padding-top: 3px;
+  flex-shrink: 0;
 }
 .brand-period {
   color: var(--canyon);
@@ -490,21 +484,15 @@ select {
   max-width: 440px;
 }
 .drawing-mascot {
-  display: inline-grid;
-  place-items: center;
+  display: inline-block;
   width: 105px;
   height: 105px;
-  background: var(--canyon);
-  border: 2px solid var(--ink);
-  border-radius: 50%;
-  font-size: 100px;
-  line-height: 1;
-  padding-top: 8px;
+  border-radius: 25%;
   box-shadow: 5px 5px 0 var(--shadow);
   margin-bottom: 29px;
 }
 .is-drawing {
-  animation: pencil-spin 5s ease-in-out infinite;
+  animation: pencil-draw 1.8s ease-in-out infinite;
 }
 .canvas-message h2 {
   font-size: 26px;
@@ -784,13 +772,13 @@ select {
   text-decoration: underline;
   gap: 10px;
 }
-@keyframes pencil-spin {
+@keyframes pencil-draw {
   0%,
   100% {
-    transform: rotate(-12deg);
+    transform: translateY(0) rotate(-5deg);
   }
   50% {
-    transform: rotate(150deg);
+    transform: translateY(-4px) rotate(5deg);
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -850,7 +838,6 @@ select {
   .brand-mark {
     height: 36px;
     width: 36px;
-    font-size: 32px;
   }
   .site-header nav {
     gap: 16px;
@@ -985,7 +972,6 @@ select {
   .drawing-mascot {
     width: 80px;
     height: 80px;
-    font-size: 75px;
     margin-bottom: 22px;
   }
   .guess-area {

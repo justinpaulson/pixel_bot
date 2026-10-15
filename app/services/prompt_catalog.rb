@@ -1,6 +1,6 @@
 class PromptCatalog
   CATEGORIES = {
-    "mix" => { name: "Everything", icon: "✳", description: "The full pop-culture lucky dip" },
+    "mix" => { name: "Everything", icon: "⇄", description: "The full pop-culture lucky dip" },
     "movies" => { name: "Movies", icon: "↗", description: "Big screens. Iconic scenes." },
     "tv" => { name: "TV shows", icon: "▣", description: "Just one more episode" },
     "music" => { name: "Songs", icon: "♫", description: "You know it when you see it" },
