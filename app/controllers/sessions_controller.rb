@@ -38,17 +38,6 @@ class SessionsController < ApplicationController
 
   def destroy
     terminate_session
-    redirect_to new_session_url
-  end
-
-  private
-
-  # Add protection against timing attacks by using secure_compare
-  def authenticate_user(user, password)
-    return false unless user
-    ActiveSupport::SecurityUtils.secure_compare(
-      user.authenticate_by(password: password),
-      true
-    )
+    redirect_to root_path, status: :see_other
   end
 end

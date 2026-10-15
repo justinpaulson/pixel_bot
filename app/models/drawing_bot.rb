@@ -1,75 +1,52 @@
+require "net/http"
+
 class DrawingBot
-  def initialize(round:)
-    @round = round
-    @messages = @round.messages.map do |message|
-      [
-        { role: :user, content: message.content },
-        { role: :assistant, content: message.image_content }
-      ]
-    end.flatten
+  class Error < StandardError; end
+  DEFAULT_MODEL = "gpt-6-astra"
+
+  def initialize(round:, model: ENV.fetch("PIXEL_MODEL", DEFAULT_MODEL))
+    @round, @model = round, model
   end
 
-  def name
-    "Pixel Bot"
+  def run
+    key = ENV["OPENAI_API_KEY"].presence || Rails.application.credentials.openai_access_token
+    raise Error, "Drawing service is not configured" if key.blank?
+
+    uri = URI("https://api.openai.com/v1/responses")
+    request = Net::HTTP::Post.new(uri)
+    request["Authorization"] = "Bearer #{key}"
+    request["Content-Type"] = "application/json"
+    request.body = {
+      model: @model, store: false, reasoning: { effort: "low" }, max_output_tokens: 9000,
+      instructions: instructions,
+      input: "Category: #{@round.category}. Secret answer: #{@round.word}. Context: #{@round.hint}. Fresh composition seed: #{SecureRandom.hex(8)}. Draw a new visual riddle for this answer."
+    }.to_json
+    response = Net::HTTP.start(uri.host, uri.port, use_ssl: true, open_timeout: 10, read_timeout: 150, write_timeout: 15) { |http| http.request(request) }
+    raise Error, "Drawing provider returned HTTP #{response.code}" unless response.is_a?(Net::HTTPSuccess)
+
+    data = JSON.parse(response.body)
+    raise Error, "Drawing was not completed" unless data["status"] == "completed"
+
+    text = data.fetch("output", []).flat_map { |item| item.fetch("content", []) }.select { |item| item["type"] == "output_text" }.map { |item| item["text"] }.join
+    { svg: SvgSanitizer.call(text), model: data.fetch("model", @model) }
+  rescue JSON::ParserError, Timeout::Error, IOError, SystemCallError, SocketError, OpenSSL::SSL::SSLError => e
+    raise Error, "Drawing service unavailable (#{e.class.name})"
   end
 
-  def description
-    "A bot that draws SVGs."
+  def instructions
+    <<~PROMPT
+      You are Pixel, an exceptional illustrator making a visual guessing game for general audiences.
+      Everyone guesses the secret answer; nobody is told it. Create a clear, delightful visual riddle.
+      For a movie, show its iconic scene or 2-3 unmistakable props. For TV, use its distinctive setting or ensemble silhouettes.
+      For a song, illustrate memorable imagery or a literal visual rebus of its title. For a pop star, combine recognizable hair,
+      costume, instrument and stage props, not a generic singer. For an object, show its distinctive silhouette.
+      Use a confident, polished editorial illustration: bold clean outlines, layered flat color, expressive shapes, thoughtful composition.
+      Fill the 512 by 512 canvas with 2-4 purposeful visual clues, generous breathing room and a warm ivory background (#fffdf7).
+      Make it guessable without text. No letters, numbers, words, logos, signatures, captions, or spelling the answer with shapes.
+      Return ONLY a complete SVG with viewBox="0 0 512 512". Use only svg, g, path, circle, ellipse, rect, line, polygon, polyline.
+      Use direct geometry and presentation attributes with solid hex fills and strokes. No text, titles, descriptions, comments,
+      metadata, IDs, classes, style tags/attributes, scripts, external resources, images, use, defs, gradients, filters or animation.
+      Give each new request a fresh composition. Keep the SVG compact, under 6500 output tokens. Complete all closing tags.
+    PROMPT
   end
-
-  def system_instructions
-    "You are an AI artist tasked with creating and modifying SVG images based on user descriptions for a Pictionary-style game. Your role is to interpret the user's prompts and generate or alter SVG code accordingly.
-
-Guidelines for interpretation:
-- Focus on the key elements described by the user
-- Keep the drawings simple and recognizable
-- Use basic shapes (circles, rectangles, lines, paths) to create the image
-- Interpret colors, sizes, and positions as described by the user
-
-When creating or modifying SVG code:
-- Use a 300x300 viewport size
-- Utilize appropriate SVG elements and attributes
-- Ensure all shapes are properly closed and valid
-- Use descriptive class names for major elements
-
-Output format:
-- Respond with only the SVG code, nothing else
-- Enclose the entire SVG code within <svg></svg> tags
-- Do not include any explanations or comments outside the SVG code
-
-Interpret the description and create an SVG image based on it. Output only the SVG code.
-
-For subsequent queries:
-- Modify the existing SVG code based on the new description
-- Add, remove, or alter elements as necessary
-- Maintain the overall structure and viewport size
-- Return only the modified SVG code
-
-Remember, your response should contain nothing but the SVG code itself."
-  end
-
-  def run(input)
-    # Create a new chat instance with the GPT-4o model
-    chat = RubyLLM.chat(model: "gpt-4o")
-
-    # Set system instructions
-    chat.with_instructions(system_instructions)
-
-    # Add previous messages to maintain conversation context
-    @messages.each do |message|
-      chat.add_message(message)
-    end
-
-    # Add the new user input if provided
-    unless input.empty?
-      chat.add_message(role: :user, content: input)
-    end
-
-    # Get the response from the model
-    response = chat.complete
-
-    # Return the content of the response
-    response.content
-  end
-
 end

@@ -10,13 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2024_11_08_185622) do
+ActiveRecord::Schema[8.0].define(version: 2026_10_15_094000) do
   create_table "games", id: :string, force: :cascade do |t|
     t.datetime "started_at"
     t.integer "created_by_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.datetime "completed_at"
+    t.string "mode", default: "party", null: false
+    t.string "category", default: "mix", null: false
+    t.integer "round_limit", default: 5, null: false
+    t.integer "edition", default: 1, null: false
+    t.integer "active_round_number", default: 1, null: false
     t.index ["created_by_id"], name: "index_games_on_created_by_id"
   end
 
@@ -36,6 +41,8 @@ ActiveRecord::Schema[8.0].define(version: 2024_11_08_185622) do
     t.string "game_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.datetime "last_seen_at"
+    t.index ["game_id", "user_id"], name: "index_players_on_game_id_and_user_id", unique: true
     t.index ["game_id"], name: "index_players_on_game_id"
     t.index ["user_id"], name: "index_players_on_user_id"
   end
@@ -48,6 +55,18 @@ ActiveRecord::Schema[8.0].define(version: 2024_11_08_185622) do
     t.datetime "updated_at", null: false
     t.string "word"
     t.datetime "started_at"
+    t.string "category"
+    t.json "aliases", default: [], null: false
+    t.string "hint"
+    t.string "status", default: "pending", null: false
+    t.text "svg"
+    t.string "model"
+    t.string "generation_token"
+    t.datetime "generation_started_at"
+    t.float "generation_seconds"
+    t.datetime "ended_at"
+    t.string "error_message"
+    t.index ["game_id", "number"], name: "index_rounds_on_game_id_and_number", unique: true
     t.index ["game_id"], name: "index_rounds_on_game_id"
     t.index ["user_id"], name: "index_rounds_on_user_id"
   end
@@ -58,6 +77,7 @@ ActiveRecord::Schema[8.0].define(version: 2024_11_08_185622) do
     t.integer "points"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["round_id", "user_id"], name: "index_scores_on_round_id_and_user_id", unique: true
     t.index ["round_id"], name: "index_scores_on_round_id"
     t.index ["user_id"], name: "index_scores_on_user_id"
   end
@@ -76,6 +96,8 @@ ActiveRecord::Schema[8.0].define(version: 2024_11_08_185622) do
     t.string "password_digest", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "display_name"
+    t.boolean "guest", default: false, null: false
     t.index ["email_address"], name: "index_users_on_email_address", unique: true
   end
 

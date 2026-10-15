@@ -27,6 +27,7 @@ env:
     - RAILS_MASTER_KEY
   clear:
     SOLID_QUEUE_IN_PUMA: true
+    PIXEL_MODEL: gpt-6-astra
 
 aliases:
   console: app exec --interactive --reuse "bin/rails console"
@@ -41,5 +42,3 @@ asset_path: /rails/public/assets
 
 builder:
   arch: amd64
-  secrets:
-    - RAILS_MASTER_KEY

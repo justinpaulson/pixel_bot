@@ -1,0 +1,23 @@
+[
+  {
+    "requested": "gpt-6-astra",
+    "returned": "gpt-6-astra",
+    "seconds": 61.4,
+    "bytes": 5801,
+    "success": true
+  },
+  {
+    "requested": "gpt-6.1-sol",
+    "returned": "gpt-6.1-sol",
+    "seconds": 68.0,
+    "bytes": 5142,
+    "success": true
+  },
+  {
+    "requested": "gpt-6-luna",
+    "returned": "gpt-6-luna",
+    "seconds": 12.9,
+    "bytes": 2870,
+    "success": true
+  }
+]

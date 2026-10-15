@@ -1,24 +1,22 @@
 Rails.application.routes.draw do
-  resource :session
-  resources :passwords, param: :token
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
-  # Can be used by load balancers and uptime monitors to verify that the app is live.
+  resource :session, only: %i[new create destroy]
+  resources :passwords, param: :token, only: %i[new create edit update]
   get "up" => "rails/health#show", as: :rails_health_check
-
   root "games#index"
-
-  resources :games do
-    get "start", on: :member
-
-    resources :rounds
+  resources :games, only: %i[create show] do
+    member do
+      post :join
+      post :start
+      post :advance
+      get :state
+    end
   end
-
-  resources :rounds do
-    post "answer", on: :member
-
-    resources :images
-    resources :messages
+  resources :rounds, only: [] do
+    member do
+      post :answer
+      post :skip
+      post :retry_drawing
+      get :drawing
+    end
   end
 end

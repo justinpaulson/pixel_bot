@@ -2,20 +2,6 @@ class EndRoundJob < ApplicationJob
   queue_as :default
 
   def perform(round_id)
-    round = Round.find(round_id)
-    puts "Found the round with id: #{round_id}"
-    return unless round
-
-    game = round.game
-
-    Score.create!(round: round, user: round.user, points: round.average_score)
-
-    if game.rounds.count < game.players.count
-      puts "We are creating a new round!!"
-      new_round = Round.create!(game: game)
-    else
-      puts "Game is over, we are completing the game!!"
-      game.update!(completed_at: Time.current)
-    end
+    Round.find_by(id: round_id)&.refresh!
   end
 end

@@ -1,0 +1,42 @@
+[
+  {
+    "category": "tv",
+    "answer": "SpongeBob SquarePants",
+    "model": "gpt-6-astra",
+    "seconds": 55.8,
+    "bytes": 5655,
+    "success": true
+  },
+  {
+    "category": "music",
+    "answer": "Rocket Man",
+    "model": "gpt-6-astra",
+    "seconds": 48.5,
+    "bytes": 5069,
+    "success": true
+  },
+  {
+    "category": "games",
+    "answer": "Super Mario Bros",
+    "model": "gpt-6-astra",
+    "seconds": 47.1,
+    "bytes": 5099,
+    "success": true
+  },
+  {
+    "category": "places",
+    "answer": "Taj Mahal",
+    "model": "gpt-6-astra",
+    "seconds": 52.0,
+    "bytes": 5653,
+    "success": true
+  },
+  {
+    "category": "objects",
+    "answer": "Telescope",
+    "model": "gpt-6-astra",
+    "seconds": 28.0,
+    "bytes": 2527,
+    "success": true
+  }
+]

@@ -1,16 +1,46 @@
-<% content_for :page_width, "w-96" %>
-
-<div class="flex flex-col m-4 gap-4">
-  <div class="text-center">
-    <h1 class="text-4xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
-      Welcome to Pixel!
-    </h1>
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow"><span class="status-dot"></span> THE EVERYBODY-GUESSES GAME</p>
+    <h1>Everybody<br>guesses.<br><span class="hero-last">Pixel draws.<svg viewBox="0 0 480 22" aria-hidden="true"><path d="M5 13Q240 -4 475 10M65 20Q290 4 430 17" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg></span></h1>
+    <p class="hero-description">A fresh drawing. A secret answer. A room full of<br class="desktop-break"> “wait, I know this!”</p>
+    <div class="hero-tags"><span>↗ Play solo or with friends</span><span>✧ New art every round</span></div>
   </div>
-
-  <p>Pixel is a drawing game where players take turns drawing and guessing words.</p>
-  <p>The game is played in rounds, with each round consisting of a single player sending prompts to an LLM to generate images for a particular word while the other players guess the word.</p>
-
-  <div class="flex items-center justify-center">
-    <%= link_to "New Game", new_game_path, class: "rounded p-2 text-white bg-blue-500 hover:bg-blue-700" %>
+  <div class="hero-art" aria-label="A sample Pixel drawing of a dinosaur and a tour vehicle">
+    <div class="art-spark spark-one" aria-hidden="true">✳</div>
+    <div class="sample-card">
+      <div class="sample-top"><span class="category-pill">MOVIES</span><span class="tiny-label">A LITTLE PREVIEW</span></div>
+      <%= image_tag "sample-dinosaur.svg", alt: "A dinosaur towers over a colorful tour vehicle beside a fence", width: 512, height: 512 %>
+      <div class="sample-bottom"><span>Any guesses?</span><span class="scribble-arrow" aria-hidden="true">↗</span></div>
+    </div>
+    <div class="guess-sticker sticker-one">“Is that Jurassic Park?”</div>
+    <div class="guess-sticker sticker-two">That's the one! <span>✦</span></div>
+    <div class="art-spark spark-two" aria-hidden="true">✧</div>
   </div>
-</div>
+</section>
+
+<section id="play" class="play-section">
+  <div class="section-heading"><div><p class="eyebrow">LET'S PLAY</p><h2>Pick your rabbit hole.</h2></div><p>Big obsessions. Tiny masterpieces.</p></div>
+  <%= form_with url: games_path, class: "setup-form", data: { turbo: false } do |form| %>
+    <fieldset class="category-picker">
+      <legend class="sr-only">Choose a category</legend>
+      <% @categories.each do |key, category| %>
+        <label class="category-option <%= "mix-option" if key == "mix" %>">
+          <%= radio_button_tag :category, key, key == "mix" %>
+          <span class="category-icon" aria-hidden="true"><%= category[:icon] %></span>
+          <span class="category-text"><strong><%= category[:name] %></strong><small><%= category[:description] %></small></span><span class="category-check" aria-hidden="true">✓</span>
+        </label>
+      <% end %>
+    </fieldset>
+    <div class="game-setup">
+      <div class="name-field"><%= label_tag :display_name, "What should we call you?" %><%= text_field_tag :display_name, Current.user&.display_name, placeholder: "Your nickname", maxlength: 24, autocomplete: "nickname" %></div>
+      <div class="rounds-field"><%= label_tag :round_limit, "How many rounds?" %><%= select_tag :round_limit, options_for_select([["3 · A quick one", 3], ["5 · The sweet spot", 5], ["10 · Keep them coming", 10]], 5) %></div>
+      <div class="play-buttons"><button type="submit" name="mode" value="solo" class="button primary">Play solo <span>↗</span></button><button type="submit" name="mode" value="party" class="button secondary">Play with friends <span>＋</span></button></div>
+    </div>
+    <p class="setup-footnote">No account needed. Just bring your best guess. Up to 12 players.</p>
+  <% end %>
+</section>
+<section class="how-to" aria-label="How to play">
+  <div><span class="step-number">01</span><h3>Pixel makes the art.</h3><p>A brand-new illustration, drawn just for your round. Even the host doesn't know the answer.</p></div>
+  <div><span class="step-number">02</span><h3>Everybody takes a guess.</h3><p>You've got 90 seconds. Look for the clues, connect the dots, and type your answer.</p></div>
+  <div><span class="step-number">03</span><h3>Have your aha moment.</h3><p>Faster guesses earn more points. See the answer, admire the art, and do it all again.</p></div>
+</section>
