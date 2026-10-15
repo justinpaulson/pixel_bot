@@ -7,7 +7,7 @@ class AdvanceRoundJobTest < ActiveSupport::TestCase
     game = build_game
     first = ready_round(game)
     ready_round(game, number: 2, status: "ready", word: "Titanic")
-    travel 20.seconds do
+    travel 30.seconds do
       assert_enqueued_with job: AdvanceRoundJob, args: [ first.id ], at: Time.current + 12.seconds do
         EndRoundJob.perform_now(first.id)
       end
@@ -44,7 +44,7 @@ class AdvanceRoundJobTest < ActiveSupport::TestCase
       end
       assert_equal second, game.reload.current_round
       assert_equal Time.current, second.reload.started_at
-      assert_equal Time.current + 20.seconds, second.deadline
+      assert_equal Time.current + 30.seconds, second.deadline
       second.skip!
       AdvanceRoundJob.perform_now(first.id)
       assert_equal second, game.reload.current_round
@@ -65,7 +65,7 @@ class AdvanceRoundJobTest < ActiveSupport::TestCase
       assert_equal "playing", state[:phase]
       assert_nil state[:round][:answer]
       assert_nil state[:round][:next_round_at]
-      assert_equal (Time.current + 20.seconds).iso8601(3), state[:round][:ends_at]
+      assert_equal (Time.current + 30.seconds).iso8601(3), state[:round][:ends_at]
       AdvanceRoundJob.perform_now(first.id)
       assert_equal second, game.reload.current_round
     end
@@ -105,15 +105,17 @@ class AdvanceRoundJobTest < ActiveSupport::TestCase
     end
   end
 
-  test "an end job from the old fifteen second duration reschedules the remaining time" do
+  test "end jobs from earlier durations reschedule the remaining time" do
     round = ready_round(build_game)
-    travel 15.seconds do
-      assert_enqueued_with job: EndRoundJob, args: [ round.id ], at: round.deadline do
-        EndRoundJob.perform_now(round.id)
+    [ 15, 20 ].each do |seconds|
+      travel seconds.seconds do
+        assert_enqueued_with job: EndRoundJob, args: [ round.id ], at: round.deadline do
+          EndRoundJob.perform_now(round.id)
+        end
+        assert_equal "playing", round.reload.status
       end
-      assert_equal "playing", round.reload.status
     end
-    travel 20.seconds do
+    travel 30.seconds do
       EndRoundJob.perform_now(round.id)
       assert_equal "revealed", round.reload.status
     end

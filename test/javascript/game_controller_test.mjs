@@ -43,7 +43,7 @@ function playing(options) {
   const fixture = setup(options);
   const c = fixture.controller;
   c.roundId = 1;
-  c.state = { phase: "playing", round: { id: 1, status: "playing", ends_at: fixture.timestamp(20) } };
+  c.state = { phase: "playing", round: { id: 1, status: "playing", ends_at: fixture.timestamp(30) } };
   c.updateClock();
   return fixture;
 }
@@ -58,14 +58,17 @@ function deferred() {
 
 const wrongGuess = { ok: true, json: async () => ({ message: "Not quite.", accepted: false }) };
 
-test("guessing uses the server deadline for the full twenty seconds", () => {
+test("guessing uses the server deadline for the full thirty seconds", () => {
   const { controller: c, timestamp, tick } = setup();
-  c.state = { phase: "playing", round: { status: "playing", ends_at: timestamp(20) } };
+  c.state = { phase: "playing", round: { status: "playing", ends_at: timestamp(30) } };
   c.updateClock();
-  assert.equal(c.timerTarget.textContent, "20s");
+  assert.equal(c.timerTarget.textContent, "30s");
   assert.equal(c.guessInputTarget.disabled, false);
   assert.equal(c.nextCountdownTarget.hidden, true);
-  tick(19);
+  tick(20);
+  assert.equal(c.timerTarget.textContent, "10s");
+  assert.equal(c.guessInputTarget.disabled, false);
+  tick(9);
   assert.equal(c.timerTarget.textContent, "1s");
   assert.equal(c.guessInputTarget.disabled, false);
   tick(1);
@@ -198,7 +201,7 @@ test("the input still closes when the round is solved or expires during submissi
   c.updateClock();
   assert.equal(c.guessInputTarget.disabled, true);
   c.state.round.solved = false;
-  tick(20);
+  tick(30);
   assert.equal(c.guessInputTarget.disabled, true);
   assert.equal(c.guessButtonTarget.disabled, true);
 });

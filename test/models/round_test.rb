@@ -1,13 +1,13 @@
 require "test_helper"
 
 class RoundTest < ActiveSupport::TestCase
-  test "correct solo guess earns points once and reveals the answer" do
+  test "correct solo guess after twenty seconds earns points once and reveals the answer" do
     game = build_game
     round = ready_round(game)
-    travel 10.seconds do
+    travel 25.seconds do
       result = round.guess!(users(:one), "jurassic  park!")
       assert result[:accepted]
-      assert_in_delta 900, result[:points], 1
+      assert_in_delta 750, result[:points], 1
       assert_equal "revealed", round.reload.status
       assert_no_difference "Score.count" do
         round.guess!(users(:one), "Jurassic Park")
@@ -35,11 +35,11 @@ class RoundTest < ActiveSupport::TestCase
     game = build_game
     round = ready_round(game)
     assert_not round.guess!(users(:two), round.word)[:accepted]
-    travel 19.seconds do
+    travel 29.seconds do
       assert round.running?
       assert_equal "playing", GameState.new(game, users(:one)).as_json[:phase]
     end
-    travel 20.seconds do
+    travel 30.seconds do
       assert_not round.guess!(users(:one), round.word)[:accepted]
       assert_equal "revealed", round.reload.status
       assert_empty round.scores
@@ -50,7 +50,7 @@ class RoundTest < ActiveSupport::TestCase
     game = build_game
     round = ready_round(game, number: 3)
     game.update!(active_round_number: 3)
-    travel 20.seconds do
+    travel 30.seconds do
       2.times { EndRoundJob.perform_now(round.id) }
       assert game.reload.completed?
       assert_equal "complete", GameState.new(game, users(:one)).as_json[:phase]
@@ -80,7 +80,7 @@ class RoundTest < ActiveSupport::TestCase
     state = GameState.new(game, users(:one)).as_json
     assert_nil state[:round][:hint]
     assert_not state.to_json.include?("Future Secret")
-    assert_equal 20, state[:round_duration_seconds]
+    assert_equal 30, state[:round_duration_seconds]
     travel 4.seconds do
       assert_nil GameState.new(game, users(:one)).as_json[:round][:hint]
     end
