@@ -6,9 +6,10 @@ Solo or private rooms for up to 12 players, with 3, 5, or 10 rounds. Every round
 
 ## How the game works
 
-- Join with a nickname; accounts are optional. Share the room's private URL for multiplayer.
+- Choose Solo or With friends, a category, 3/5/10 rounds, and a drawing artist. Astra (GPT-6 Astra) favors clearer clues, Sol (GPT-6.1 Sol) offers a balanced option, and Luna (GPT-6 Luna) is a smaller model with more unpredictable clues. These are play-style guides, not guaranteed difficulty ratings. Switching artists previews real drawings of the same example prompt. Native radios/selects support keyboard and touch, with an expandable preview beside the artist choices on phones.
+- Join with a nickname; accounts are optional. Share the room's private URL for multiplayer. The chosen artist is shown in the room and remains fixed for all players and rounds, including background preparation and retries.
 - The current round and two upcoming rounds are prepared as soon as a game starts. That buffer refills on every advance, up to the selected round limit. Production has three drawing workers and a separate worker for cache lookups and round timers.
-- Completed drawings are reused for the same answer, category, hint, model, and artwork version, including artwork saved before this feature. They are sanitized again before reuse. Cache misses call GPT-6 Astra through OpenAI's Responses API and typically take about a minute; cache hits need no provider call. Future answers and artwork are never sent to clients early.
+- Completed drawings are reused for the same answer, category, hint, model, and artwork version, including artwork saved before this feature. They are sanitized again before reuse. Cache misses call the room’s chosen model through OpenAI's Responses API; frontier drawings can take about a minute; cache hits need no provider call. Future answers and artwork are never sent to clients early.
 - While waiting, Pixel’s sketchbook draws five playful warm-up illustrations stroke by stroke, adds color, and cycles every 12 seconds. Players can choose the next doodle; these are clearly labeled as unrelated to the answer. An elapsed wait clock reassures players that the round timer has not started. Reduced-motion mode shows a finished doodle with manual switching, and animation pauses in hidden tabs and stops when the round is ready.
 - Actual puzzles trace themselves with a moving pencil and color fills during the first six seconds of the 30-second guessing window, then remain fully visible. This works for both saved and freshly generated art. Players can guess throughout; a descriptive hint appears after 5 seconds. The reveal follows the shared server clock, catches up after a late join or hidden tab, and never restarts on a state poll. Reduced-motion mode reveals the same layers without a moving pencil.
 - All players, including the host, can guess. Matching ignores case, punctuation, accents, and articles, supports curated aliases, and tolerates small typos in longer answers.
@@ -26,7 +27,7 @@ bin/rails db:prepare
 bin/dev
 ```
 
-Provide `OPENAI_API_KEY`, or keep the existing encrypted Rails credential `openai_access_token` and supply its `config/master.key` / `RAILS_MASTER_KEY`. Never commit keys. `PIXEL_MODEL` overrides the default `gpt-6-astra` when evaluating other Responses-compatible reasoning models. Production explicitly sets Astra in `config/deploy.yml`.
+Provide `OPENAI_API_KEY`, or keep the existing encrypted Rails credential `openai_access_token` and supply its `config/master.key` / `RAILS_MASTER_KEY`. Never commit keys. `PIXEL_MODEL` chooses the default artist when it matches the allowlisted models; otherwise new games default to `gpt-6-astra`. Each game persists its selection in `games.drawing_model`, so changing that environment variable cannot change an existing room’s artist. Production defaults to Astra in `config/deploy.yml`. Offline evaluations can pass an explicit `model:` to `DrawingBot`. The three choices follow the [OpenAI model catalog](https://developers.openai.com/api/docs/models) and the project’s real SVG evaluation; public requests cannot select arbitrary model IDs.
 
 Development uses the in-process Active Job adapter. Production runs Solid Queue under Puma and persists its queue in the existing storage volume. Restarting a development server can interrupt a drawing; the retry flow recovers it.
 
@@ -42,7 +43,7 @@ bin/importmap audit
 RAILS_ENV=production SECRET_KEY_BASE_DUMMY=1 bin/rails assets:precompile
 ```
 
-Tests stub the provider and require no production key. They cover scoring, timeouts, answer secrecy, membership/host authorization, a three-round preparation window, cache compatibility and safety, idempotent jobs, safe SVG/geometry delivery, synchronized drawing animation, model requests, and guest play. See [the model evaluation](docs/svg-evaluation.md) for real provider samples and browser verification. Increment `DrawingBot::ARTWORK_VERSION` when changing illustration instructions enough to invalidate saved art.
+Tests stub the provider and require no production key. They cover scoring, timeouts, answer secrecy, membership/host authorization, a three-round preparation window, cache compatibility and safety, idempotent jobs, safe SVG/geometry delivery, synchronized drawing animation, model requests, artist selection and cache isolation, and guest play. See [the model evaluation](docs/svg-evaluation.md) for real provider samples and browser verification. Increment `DrawingBot::ARTWORK_VERSION` when changing illustration instructions enough to invalidate saved art.
 
 ## Privacy and drawing safety
 

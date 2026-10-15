@@ -9,11 +9,14 @@ class GamesController < ApplicationController
 
   def index
     @categories = PromptCatalog::CATEGORIES
+    @models = DrawingModels::OPTIONS
+    @default_model = DrawingModels.default
   end
 
   def create
     ensure_player_identity!
-    @game = Game.new(created_by: Current.user, category: params[:category].presence || "mix", mode: params[:mode].presence || "solo", round_limit: params[:round_limit].presence || 5, edition: 2)
+    @game = Game.new(created_by: Current.user, category: params[:category].presence || "mix", mode: params[:mode].presence || "solo", round_limit: params[:round_limit].presence || 5,
+      drawing_model: params[:drawing_model].presence || DrawingModels.default, edition: 2)
     if @game.save
       @game.join!(Current.user)
       @game.start! if @game.mode == "solo"

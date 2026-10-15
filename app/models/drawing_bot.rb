@@ -10,8 +10,8 @@ class DrawingBot
     ENV.fetch("PIXEL_MODEL", DEFAULT_MODEL)
   end
 
-  def initialize(round:, model: self.class.configured_model)
-    @round, @model = round, model
+  def initialize(round:, model: nil)
+    @round, @model = round, model || round.game.drawing_model
   end
 
   def run

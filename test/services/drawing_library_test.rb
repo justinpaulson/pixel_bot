@@ -37,4 +37,16 @@ class DrawingLibraryTest < ActiveSupport::TestCase
     @source.update!(svg: "also broken")
     assert_nil DrawingLibrary.find_for(@target)
   end
+
+  test "a smaller artist never receives saved frontier art for the same answer" do
+    game = build_game(drawing_model: "gpt-6-luna")
+    target = game.rounds.create!(user: users(:one), number: 1, word: @source.word, category: @source.category, hint: @source.hint)
+    assert_nil DrawingLibrary.find_for(target)
+    source = ready_round(build_game(drawing_model: "gpt-6-luna"), status: "revealed")
+    source.update!(model: "gpt-6-luna")
+    drawing = DrawingLibrary.find_for(target)
+    assert_equal "gpt-6-luna", drawing[:model]
+    assert_equal SvgSanitizer.call(source.svg), drawing[:svg]
+    assert_equal "gpt-6-astra", DrawingLibrary.find_for(@target)[:model]
+  end
 end

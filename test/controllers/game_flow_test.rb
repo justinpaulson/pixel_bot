@@ -9,7 +9,10 @@ class GameFlowTest < ActionDispatch::IntegrationTest
   test "home is public and a guest can start solo without email" do
     get root_path
     assert_response :success
-    assert_select "form[action=?] button[name=mode][value=solo]", games_path
+    assert_select "form[action=?] input[name=mode][value=solo][checked]", games_path
+    assert_select "select[name=category] option", count: PromptCatalog::CATEGORIES.size
+    assert_select "input[name=drawing_model]", count: 3
+    assert_select "input[name=drawing_model][value='gpt-6-astra'][checked]"
     assert_difference({ "User.count" => 1, "Game.count" => 1, "Player.count" => 1, "Round.count" => 3 }) do
       post games_path, params: { mode: "solo", category: "music", display_name: "Guest Artist", round_limit: 3 }
     end
@@ -17,10 +20,36 @@ class GameFlowTest < ActionDispatch::IntegrationTest
     assert game.created_by.guest?
     assert_equal "Guest Artist", game.created_by.name
     assert_equal "music", game.current_round.category
+    assert_equal "gpt-6-astra", game.drawing_model
     get state_game_path(game)
     assert_response :success
     assert_nil response.parsed_body.dig("round", "answer")
     follow_redirect! if response.redirect?
+  end
+
+  test "setup carries every artist into both solo games and private rooms" do
+    sign_in
+    DrawingModels::OPTIONS.each_key do |model|
+      %w[solo party].each do |mode|
+        post games_path, params: { mode: mode, category: "objects", round_limit: 3, drawing_model: model }
+        assert_response :see_other
+        game = Game.find(response.location.split("/").last)
+        assert_equal model, game.drawing_model
+        assert_equal mode, game.mode
+        assert_equal(mode == "solo" ? 3 : 0, game.rounds.count)
+        get state_game_path(game)
+        assert_equal model, response.parsed_body["drawing_model"]
+      end
+    end
+  end
+
+  test "unsupported models cannot create a room or queue drawing requests" do
+    sign_in
+    assert_no_difference [ "Game.count", "Round.count" ] do
+      post games_path, params: { mode: "solo", drawing_model: "unapproved-expensive-model" }
+    end
+    assert_redirected_to root_path
+    assert_match(/Drawing model/, flash[:alert])
   end
 
   test "party guest joins only with a post and cannot control host actions" do

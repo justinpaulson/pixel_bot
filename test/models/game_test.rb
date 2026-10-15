@@ -3,6 +3,14 @@ require "test_helper"
 class GameTest < ActiveSupport::TestCase
   include ActiveJob::TestHelper
 
+  test "artist is restricted to the supported models and stays fixed for the room" do
+    game = build_game(drawing_model: "gpt-6-luna")
+    assert_equal "Luna", game.artist[:name]
+    assert_raises(ActiveRecord::ReadonlyAttributeError) { game.update!(drawing_model: "gpt-6-astra") }
+    assert_equal "gpt-6-luna", game.reload.drawing_model
+    assert_raises(ActiveRecord::RecordInvalid) { build_game(drawing_model: "unsupported-model") }
+  end
+
   test "solo starts once and the host can guess without a drawer" do
     game = build_game
     assert_difference "Round.count", 3 do

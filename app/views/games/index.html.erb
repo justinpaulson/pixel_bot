@@ -1,27 +1,79 @@
-<section class="hero">
-  <h1>Pixel draws.<br><span class="hero-last">You guess.</span></h1>
-  <div class="sample-card">
-    <%= image_tag "sample-dinosaur.svg", alt: "Example drawing: a dinosaur and a tour vehicle", width: 512, height: 512 %>
-  </div>
-</section>
+<div class="game-menu" data-controller="setup" data-setup-duration-value="<%= Round::DURATION.to_i %>">
+  <section class="menu-intro" aria-labelledby="menu-title">
+    <span class="menu-kicker"><span aria-hidden="true">✦</span> THE AI DRAWING GAME</span>
+    <h1 id="menu-title">Pixel draws.<br><span>You guess.</span></h1>
+    <p class="menu-description">A moving pencil. A mystery picture.<br>A little “wait… I know this!”</p>
+    <figure class="artist-preview">
+      <div class="preview-heading"><span class="preview-live-dot" aria-hidden="true"></span><span data-setup-target="previewName"><%= @models.fetch(@default_model)[:name] %>’s sketchbook</span><span aria-hidden="true">✎</span></div>
+      <div class="preview-paper">
+        <% @models.each do |id, model| %>
+          <%= image_tag model[:preview], alt: "Jurassic Park drawn by #{model[:full_name]}", width: 512, height: 512,
+            hidden: id != @default_model, data: { setup_target: "preview", model: id } %>
+        <% end %>
+      </div>
+      <figcaption><span>EXAMPLE CLUE</span><strong>Jurassic Park</strong><span>Switch artists to compare ↗</span></figcaption>
+    </figure>
+    <ol class="menu-how-to" aria-label="How to play">
+      <li><span>1</span> Watch it draw</li><li><span>2</span> Make your guess</li><li><span>3</span> Go again</li>
+    </ol>
+  </section>
 
-<section id="play" class="play-section">
-  <div class="section-heading"><h2>Category</h2></div>
-  <%= form_with url: games_path, class: "setup-form", data: { turbo: false } do |form| %>
-    <fieldset class="category-picker">
-      <legend class="sr-only">Choose a category</legend>
-      <% @categories.each do |key, category| %>
-        <label class="category-option <%= "mix-option" if key == "mix" %>">
-          <%= radio_button_tag :category, key, key == "mix" %>
-          <span class="category-icon" aria-hidden="true"><%= category[:icon] %></span>
-          <span class="category-text"><strong><%= category[:name] %></strong></span><span class="category-check" aria-hidden="true">✓</span>
-        </label>
-      <% end %>
-    </fieldset>
-    <div class="game-setup">
-      <div class="name-field"><%= label_tag :display_name, "Nickname" %><%= text_field_tag :display_name, Current.user&.display_name, maxlength: 24, autocomplete: "nickname" %></div>
-      <div class="rounds-field"><%= label_tag :round_limit, "Rounds" %><%= select_tag :round_limit, options_for_select([3, 5, 10], 5) %></div>
-      <div class="play-buttons"><button type="submit" name="mode" value="solo" class="button primary">Play solo <span aria-hidden="true">↗</span></button><button type="submit" name="mode" value="party" class="button secondary">Play with friends <span aria-hidden="true">＋</span></button></div>
-    </div>
-  <% end %>
-</section>
+  <section class="setup-panel" aria-labelledby="setup-title">
+    <div class="setup-heading"><div><span class="eyebrow">LET’S PLAY</span><h2 id="setup-title">Make it your game.</h2></div><span class="setup-spark" aria-hidden="true">✳</span></div>
+    <%= form_with url: games_path, class: "setup-form", data: { turbo: false, action: "change->setup#update" } do |form| %>
+      <fieldset class="mode-picker">
+        <legend class="field-label">Who’s playing?</legend>
+        <div class="mode-options">
+          <label class="choice-option mode-option">
+            <%= radio_button_tag :mode, "solo", true, data: { setup_target: "mode" } %>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="7" r="3.5"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/></svg>
+            <span><strong>Solo</strong><small>You vs. the clock</small></span><span class="choice-check" aria-hidden="true">✓</span>
+          </label>
+          <label class="choice-option mode-option">
+            <%= radio_button_tag :mode, "party", false, data: { setup_target: "mode" } %>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="9" cy="7" r="3.5"/><path d="M2 21v-2a7 7 0 0 1 14 0v2M16 4a3.5 3.5 0 0 1 0 7M18 13a6 6 0 0 1 4 6v2"/></svg>
+            <span><strong>With friends</strong><small>Your own private room</small></span><span class="choice-check" aria-hidden="true">✓</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="setup-details">
+        <div><%= label_tag :category, "Pick a category", class: "field-label" %><%= select_tag :category, options_for_select(@categories.map { |key, category| [category[:name], key, { "data-description" => category[:description] }] }, "mix"), data: { setup_target: "category" }, aria: { describedby: "category-hint" } %></div>
+        <div><%= label_tag :round_limit, "Rounds", class: "field-label" %><%= select_tag :round_limit, options_for_select([["3 · Quick game", 3], ["5 · A little longer", 5], ["10 · Settle in", 10]], 5), data: { setup_target: "rounds" } %></div>
+        <p id="category-hint" class="field-hint" data-setup-target="categoryHint"><%= @categories.fetch("mix")[:description] %></p>
+      </div>
+
+      <fieldset class="artist-picker" aria-describedby="artist-hint">
+        <legend class="field-label">Choose your artist <span>AI model</span></legend>
+        <p id="artist-hint" class="field-hint">Smaller models can make clues more unpredictable.</p>
+        <div class="artist-options">
+          <% @models.each do |id, model| %>
+            <label class="choice-option artist-option artist-option--<%= model[:color] %>">
+              <%= radio_button_tag :drawing_model, id, id == @default_model, data: { setup_target: "model", name: model[:name], challenge: model[:challenge] } %>
+              <span class="artist-choice-top"><span class="challenge-badge"><%= model[:challenge] %></span><span class="choice-check" aria-hidden="true">✓</span></span>
+              <strong><%= model[:name] %></strong><span class="artist-model-name"><%= model[:full_name] %></span><span class="artist-description"><%= model[:description] %></span>
+            </label>
+          <% end %>
+        </div>
+        <details class="artist-preview-drawer">
+          <summary><span>Preview <span data-setup-target="previewArtist"><%= @models.fetch(@default_model)[:name] %></span>’s drawing</span><span aria-hidden="true">＋</span></summary>
+          <div class="preview-paper">
+            <% @models.each do |id, model| %>
+              <%= image_tag model[:preview], alt: "Example: Jurassic Park drawn by #{model[:full_name]}", width: 512, height: 512,
+                hidden: id != @default_model, data: { setup_target: "preview", model: id } %>
+            <% end %>
+          </div>
+          <p>Example clue: <strong>Jurassic Park</strong></p>
+        </details>
+      </fieldset>
+
+      <div class="nickname-field"><%= label_tag :display_name, class: "field-label" do %>Your nickname <span>Optional</span><% end %><%= text_field_tag :display_name, Current.user&.display_name, maxlength: 24, autocomplete: "nickname", placeholder: "What should we call you?" %></div>
+
+      <div class="setup-launch">
+        <p class="setup-summary" data-setup-target="summary">5 rounds · <%= Round::DURATION.to_i %>s to guess · <%= @models.fetch(@default_model)[:challenge] %></p>
+        <button type="submit" class="button primary setup-start"><span data-setup-target="submitLabel">Start game</span><span aria-hidden="true">↗</span></button>
+        <p class="launch-hint" data-setup-target="modeHint">Just you, Pixel, and the clock.</p>
+      </div>
+    <% end %>
+  </section>
+</div>

@@ -4,7 +4,7 @@ class DrawingLibrary
   def self.find_for(round)
     candidates = Round.joins(:game).where(games: { edition: 2 })
       .where(category: round.category, word: round.word, hint: round.hint,
-        model: DrawingBot.configured_model, artwork_version: DrawingBot::ARTWORK_VERSION,
+        model: round.game.drawing_model, artwork_version: DrawingBot::ARTWORK_VERSION,
         status: %w[ready playing revealed])
       .where.not(id: round.id).where.not(svg: [ nil, "" ])
       .reorder(id: :desc).limit(5)

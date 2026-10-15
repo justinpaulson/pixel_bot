@@ -13,7 +13,7 @@ class DrawingBotTest < ActiveSupport::TestCase
   end
 
   test "uses Responses with compatible reasoning and sanitizes output" do
-    round = Struct.new(:category, :word, :hint).new("movies", "Jurassic Park", "A prehistoric adventure")
+    round = ready_round(build_game)
     result = { status: "completed", model: "gpt-6-astra", output: [ { type: "message", content: [ { type: "output_text", text: '<svg viewBox="0 0 512 512"><title>Jurassic Park</title><circle r="10"/></svg>' } ] } ] }
     transport = fake_request(result) do |request|
       assert_equal "/v1/responses", request.path
@@ -39,7 +39,7 @@ class DrawingBotTest < ActiveSupport::TestCase
   test "incomplete responses are not displayed as drawings" do
     original = ENV["OPENAI_API_KEY"]
     ENV["OPENAI_API_KEY"] = "test-only"
-    round = Struct.new(:category, :word, :hint).new("objects", "Robot", "A helper")
+    round = ready_round(build_game)
     Net::HTTP.stub :start, fake_request({ status: "incomplete", output: [] }) do
       assert_raises(DrawingBot::Error) { DrawingBot.new(round: round).run }
     end
@@ -49,5 +49,21 @@ class DrawingBotTest < ActiveSupport::TestCase
     end
   ensure
     ENV["OPENAI_API_KEY"] = original
+  end
+
+  test "each artist sends the room's saved model to the provider including after a default change" do
+    original_key, original_model = ENV.values_at("OPENAI_API_KEY", "PIXEL_MODEL")
+    ENV["OPENAI_API_KEY"] = "test-only"
+    DrawingModels::OPTIONS.each_key do |model|
+      round = ready_round(build_game(drawing_model: model))
+      ENV["PIXEL_MODEL"] = model == "gpt-6-astra" ? "gpt-6-luna" : "gpt-6-astra"
+      response = { status: "completed", model: model, output: [ { content: [ { type: "output_text", text: '<svg viewBox="0 0 512 512"><circle r="10"/></svg>' } ] } ] }
+      transport = fake_request(response) { |request| assert_equal model, JSON.parse(request.body)["model"] }
+      Net::HTTP.stub :start, transport do
+        assert_equal model, DrawingBot.new(round: round).run[:model]
+      end
+    end
+  ensure
+    ENV["OPENAI_API_KEY"], ENV["PIXEL_MODEL"] = original_key, original_model
   end
 end

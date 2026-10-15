@@ -33,6 +33,7 @@
         </div>
       </div>
       <aside class="room-sidebar">
+        <div class="room-artist"><span class="artist-dot artist-dot--<%= @game.artist[:color] %>" aria-hidden="true"></span><p>Drawing with <strong><%= @game.artist[:name] %></strong><small><%= @game.artist[:full_name] %> · <%= @game.artist[:challenge] %></small></p></div>
         <section class="score-card"><div class="score-heading"><h2 data-game-target="scoreTitle">Scores</h2><span aria-hidden="true">✦</span></div><ol class="scoreboard" data-game-target="scoreboard"></ol></section>
         <% if @game.mode == "party" %>
           <section class="invite-card" aria-label="Invite friends"><label class="sr-only" for="invite-link">Invite link</label><input id="invite-link" data-game-target="shareUrl" value="<%= game_url(@game) %>" readonly><button class="button secondary" data-action="game#copyInvite" data-game-target="copyButton">Copy invite link</button></section>

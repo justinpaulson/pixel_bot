@@ -13,6 +13,7 @@ class GameState
     {
       phase: @game.completed? ? "complete" : (round&.status || "lobby"),
       host: @game.created_by_id == @user.id, mode: @game.mode, round_limit: @game.round_limit,
+      drawing_model: @game.drawing_model,
       server_time: Time.current.iso8601(3), round_duration_seconds: Round::DURATION.to_i,
       drawing_duration_ms: Round::DRAWING_REVEAL_DURATION.in_milliseconds,
       players: @game.players.includes(:user).map { |p| { name: p.user.name, me: p.user_id == @user.id, points: scores.fetch(p.user_id, 0), solved: solved.include?(p.user_id) } }.sort_by { |p| -p[:points] },

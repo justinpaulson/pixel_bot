@@ -1,5 +1,7 @@
 class Game < ApplicationRecord
   ROUNDS_AHEAD = 2
+  attribute :drawing_model, :string, default: -> { DrawingModels.default }
+  attr_readonly :drawing_model
   before_create -> { self.id ||= SecureRandom.uuid }
   has_many :players, dependent: :destroy
   has_many :rounds, -> { order(:number) }, dependent: :destroy
@@ -8,6 +10,11 @@ class Game < ApplicationRecord
   validates :mode, inclusion: { in: %w[solo party] }
   validates :category, inclusion: { in: PromptCatalog::CATEGORIES.keys }
   validates :round_limit, inclusion: { in: [ 3, 5, 10 ] }
+  validates :drawing_model, inclusion: { in: DrawingModels::OPTIONS.keys }
+
+  def artist
+    DrawingModels::OPTIONS.fetch(drawing_model)
+  end
 
   def current_round
     rounds.find_by(number: active_round_number)

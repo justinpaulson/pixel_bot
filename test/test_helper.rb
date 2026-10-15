@@ -7,8 +7,8 @@ class ActiveSupport::TestCase
   fixtures :users
   setup { freeze_time }
 
-  def build_game(mode: "solo", players: [ users(:one) ], rounds: 3)
-    game = Game.create!(created_by: players.first, mode: mode, category: "movies", round_limit: rounds, edition: 2)
+  def build_game(mode: "solo", players: [ users(:one) ], rounds: 3, drawing_model: DrawingModels.default)
+    game = Game.create!(created_by: players.first, mode: mode, category: "movies", round_limit: rounds, drawing_model: drawing_model, edition: 2)
     players.each { |user| game.join!(user) }
     game
   end
