@@ -8,7 +8,7 @@ Solo or private rooms for up to 12 players, with 3, 5, or 10 rounds. Every round
 
 - Join with a nickname; accounts are optional. Share the room's private URL for multiplayer.
 - GPT-6 Astra creates a fresh drawing through OpenAI's Responses API. The initial drawing typically takes about a minute. One drawing is prepared ahead during play; it is never sent to clients early.
-- The 90-second timer starts only when the drawing becomes playable. A descriptive hint appears after 35 seconds.
+- The 15-second timer starts only when the drawing becomes playable. A descriptive hint appears after 5 seconds.
 - All players, including the host, can guess. Matching ignores case, punctuation, accents, and articles, supports curated aliases, and tolerates small typos in longer answers.
 - A correct answer earns 1,000 minus 10 points per elapsed second, with a floor of 100. Each player can score once per round. Others continue guessing without seeing the correct answer.
 - The round reveals when everyone has guessed, time runs out, or the host explicitly ends it. The host advances after a reveal; the final round completes the game. Finished illustrations form a gallery.

@@ -1,5 +1,6 @@
 class Round < ApplicationRecord
-  DURATION = 90.seconds
+  DURATION = 15.seconds
+  HINT_DELAY = 5.seconds
   GENERATION_TIMEOUT = 3.minutes
   has_many :messages, dependent: :destroy
   has_many :scores, dependent: :destroy

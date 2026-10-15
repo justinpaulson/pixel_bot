@@ -101,7 +101,7 @@ export default class extends Controller {
     this.categoryTarget.textContent = round?.category || "";
     this.roundLabelTarget.textContent = round
       ? `Round ${round.number} / ${state.round_limit}`
-      : `${state.round_limit} rounds · 90 seconds each`;
+      : `${state.round_limit} rounds · ${state.round_duration_seconds} seconds each`;
     this.drawingTarget.hidden = !round?.image_url;
     this.placeholderTarget.hidden = Boolean(round?.image_url);
     if (
@@ -214,7 +214,7 @@ export default class extends Controller {
       : this.state.round?.status === "revealed"
         ? "✓"
         : "—";
-    this.timerTarget.classList.toggle("urgent", active && seconds <= 15);
+    this.timerTarget.classList.toggle("urgent", active && seconds <= 5);
     this.guessInputTarget.disabled = !active || seconds <= 0 || this.submitting;
     this.guessButtonTarget.disabled = this.guessInputTarget.disabled;
   }

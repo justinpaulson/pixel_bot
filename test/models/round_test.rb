@@ -35,7 +35,11 @@ class RoundTest < ActiveSupport::TestCase
     game = build_game
     round = ready_round(game)
     assert_not round.guess!(users(:two), round.word)[:accepted]
-    travel 90.seconds do
+    travel 14.seconds do
+      assert round.running?
+      assert_equal "playing", GameState.new(game, users(:one)).as_json[:phase]
+    end
+    travel 15.seconds do
       assert_not round.guess!(users(:one), round.word)[:accepted]
       assert_equal "revealed", round.reload.status
       assert_empty round.scores
@@ -46,7 +50,7 @@ class RoundTest < ActiveSupport::TestCase
     game = build_game
     round = ready_round(game, number: 3)
     game.update!(active_round_number: 3)
-    travel 91.seconds do
+    travel 15.seconds do
       2.times { EndRoundJob.perform_now(round.id) }
       assert game.reload.completed?
       assert_equal "complete", GameState.new(game, users(:one)).as_json[:phase]
@@ -69,14 +73,18 @@ class RoundTest < ActiveSupport::TestCase
     end
   end
 
-  test "hints appear after thirty five seconds and future art is omitted from state" do
+  test "hints appear after five seconds and future art is omitted from state" do
     game = build_game
     round = ready_round(game)
     ready_round(game, number: 2, status: "ready", word: "Future Secret")
     state = GameState.new(game, users(:one)).as_json
     assert_nil state[:round][:hint]
     assert_not state.to_json.include?("Future Secret")
-    travel 36.seconds do
+    assert_equal 15, state[:round_duration_seconds]
+    travel 4.seconds do
+      assert_nil GameState.new(game, users(:one)).as_json[:round][:hint]
+    end
+    travel 5.seconds do
       assert_equal round.hint, GameState.new(game, users(:one)).as_json[:round][:hint]
     end
   end
