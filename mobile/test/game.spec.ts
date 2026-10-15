@@ -53,7 +53,11 @@ function state(phase = "playing") {
     gallery: [] as any[],
   };
 }
-async function mock(page: Page, initial = state()) {
+async function mock(
+  page: Page,
+  initial = state(),
+  success = { phase: "complete", points: 930 },
+) {
   let current = initial;
   let creates: any[] = [];
   let guesses: string[] = [];
@@ -92,9 +96,12 @@ async function mock(page: Page, initial = state()) {
     if (path.endsWith("/answer")) {
       guesses.push(data.answer);
       if (data.answer.toLowerCase() === "jurassic park") {
-        current = state("complete");
-        current.players[0].points = 930;
+        const priorPoints = current.players[0].points;
+        const mode = current.mode;
+        current = { ...state(success.phase), mode };
+        current.players[0].points = priorPoints + success.points;
         current.players[0].solved = true;
+        current.round!.solved = true;
         current.gallery = [
           {
             number: 1,
@@ -102,7 +109,11 @@ async function mock(page: Page, initial = state()) {
             image_url: "/rounds/42/drawing",
           },
         ];
-        return reply({ accepted: true, points: 930, message: "Correct! +930" });
+        return reply({
+          accepted: true,
+          points: success.points,
+          message: `Correct! +${success.points}`,
+        });
       }
       return reply({ accepted: false, message: "Not quite." });
     }
@@ -163,6 +174,7 @@ test("drawing, repeated guesses, focus, results, and gallery work", async ({
   await page.getByLabel("Your guess").fill("Titanic");
   await page.getByRole("button", { name: "Send guess" }).tap();
   await expect(page.getByText("Not quite.")).toBeVisible();
+  await expect(page.locator(".correct-answer, .confetti")).toHaveCount(0);
   await expect(page.getByLabel("Your guess")).toBeFocused();
   await page.getByLabel("Your guess").fill("Jaws");
   await page.waitForTimeout(1800);
@@ -178,6 +190,7 @@ test("drawing, repeated guesses, focus, results, and gallery work", async ({
     page.getByRole("button", { name: "Scores, 930 points" }),
   ).toBeVisible();
   await expect(page.locator(".final-score")).toHaveText("930points");
+  await expect(page.locator(".correct-answer")).toContainText("+930");
   await page.getByRole("button", { name: "Drawings 1" }).click();
   await expect(page.getByRole("dialog").locator("circle")).toBeVisible();
   expect(errors).toEqual([]);
@@ -239,6 +252,91 @@ test("host reveal confirms once and exposes the gallery only after reveal", asyn
     page.getByRole("heading", { name: "Jurassic Park" }),
   ).toBeVisible();
   await expect(page.getByText(/Next drawing in/)).toBeVisible();
+  await expect(page.locator(".correct-answer, .confetti")).toHaveCount(0);
+});
+
+test("solo celebration survives immediate reveal, shows the round award, and resets next round", async ({
+  page,
+}, testInfo) => {
+  const initial = state();
+  initial.players[0].points = 700;
+  const api = await mock(page, initial, { phase: "revealed", points: 930 });
+  await page.goto("/");
+  await page.getByRole("button", { name: "Play", exact: true }).click();
+  await page.getByLabel("Your guess").fill("Jurassic Park");
+  await page.getByRole("button", { name: "Send guess" }).tap();
+  await expect(
+    page.getByRole("heading", { name: "Jurassic Park" }),
+  ).toBeVisible();
+  await expect(page.locator(".correct-answer")).toHaveText("Got it!+930points");
+  await expect(
+    page.getByRole("button", { name: "Scores, 1630 points" }),
+  ).toBeVisible();
+  await expect(page.locator(".confetti")).toBeVisible();
+  await page.waitForTimeout(350);
+  await page.screenshot({
+    path: `artifacts/${testInfo.project.name.toLowerCase()}-correct-answer.png`,
+    fullPage: true,
+  });
+  await page
+    .locator(".confetti")
+    .evaluate((el) => el.setAttribute("data-original", "true"));
+  await page.waitForTimeout(3000);
+  await expect(page.locator(".correct-answer")).toContainText("+930");
+  await expect(page.locator(".confetti")).toHaveAttribute(
+    "data-original",
+    "true",
+  );
+  expect(
+    await page
+      .locator(".confetti i")
+      .evaluateAll((nodes) =>
+        nodes.every((el) => getComputedStyle(el).opacity === "0"),
+      ),
+  ).toBe(true);
+  await page.setViewportSize({ width: 320, height: 568 });
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBe(true);
+  await expect(page.locator(".correct-answer")).toBeInViewport();
+  const next = state();
+  next.round!.id = 43;
+  next.round!.number = 2;
+  api.set(next);
+  await expect(page.getByLabel("Your guess")).toBeVisible();
+  await expect(page.locator(".correct-answer, .confetti")).toHaveCount(0);
+});
+
+test("party players keep their earned points while waiting, with reduced motion respected", async ({
+  page,
+}) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  const api = await mock(
+    page,
+    { ...state(), mode: "party" },
+    { phase: "playing", points: 0 },
+  );
+  await page.goto("/");
+  await page.getByRole("button", { name: "Play", exact: true }).click();
+  await page.getByLabel("Your guess").fill("Jurassic Park");
+  await page.getByRole("button", { name: "Send guess" }).tap();
+  await expect(page.locator(".correct-answer")).toHaveText("Got it!+0points");
+  await expect(page.getByText("Waiting for everyone")).toBeVisible();
+  await expect(page.locator(".confetti")).toBeHidden();
+  expect(
+    await page
+      .locator(".correct-answer")
+      .evaluate((el) => getComputedStyle(el).animationName),
+  ).toBe("none");
+  const revealed = { ...state("revealed"), mode: "party" };
+  revealed.round!.solved = true;
+  api.set(revealed);
+  await expect(
+    page.getByRole("heading", { name: "Jurassic Park" }),
+  ).toBeVisible();
+  await expect(page.locator(".correct-answer")).toContainText("+0");
 });
 
 test("small screens, tablets, and large text stay usable", async ({

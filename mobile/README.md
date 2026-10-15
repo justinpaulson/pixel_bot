@@ -5,6 +5,7 @@ A small, bundled mobile interface for the existing Pixel service. Native project
 - Solo and private rooms for up to 12 players; web and mobile players share rooms.
 - Eight categories, three artists with previews, and 3/5/10 rounds.
 - Animated drawings, warm-up sketchbook, hints, repeated guesses, scores, automatic round changes, and the finished gallery.
+- Correct guesses celebrate once with confetti, a success haptic, and the awarded points. The banner stays through the reveal, clears next round, and respects reduced motion.
 - Native share sheet, haptics, saved nickname/setup, resume, invite links, background recovery, and connection errors.
 - No account setup. Guest credentials are stored in iOS Keychain or encrypted with Android Keystore. Preferences store only nickname, setup, and the last room ID. Tokens expire after 180 days; expired sessions return to the menu.
 
@@ -50,13 +51,15 @@ Share sends the existing HTTPS room URL so friends can play on the web. In Pixel
 
 ## Release
 
-App identifiers: `com.lillybitgames.pixel` on both platforms; initial version 1.0 (1). iOS supports iPhone and iPad on iOS 15+, Android supports API 24+. Gameplay requires an internet connection, just like the web game. No analytics, ads, tip jar, or purchases are included in the mobile client.
+App identifiers: `com.lillybitgames.pixel` on both platforms; current version 1.0 (2). iOS supports iPhone and iPad on iOS 15+, Android supports API 24+. Gameplay requires an internet connection, just like the web game. No analytics, ads, tip jar, or purchases are included in the mobile client.
 
 Beta releases use Lilly Bit Games / LILLY BIT LLC (Apple team `SD8D6GX2BC`). `release/ExportOptions.plist` uploads an archive to App Store Connect using the signed-in Xcode account. Public support and privacy pages are `/support` and `/privacy`. See `release/beta-1.0.json` for verified distribution status. Public store release still requires screenshots, complete store disclosures/ratings, and production review. The iOS privacy manifest declares the UserDefaults access used by Preferences; no tracking permission is requested.
 
 ## Physical Android beta smoke test
 
 This opt-in instrumentation test uses the live service and creates one three-round solo game. It verifies the signed release's native HTTP bridge, drawing screen, wrong-guess response, saved credential/room recovery after activity recreation, three reveals, and return to the menu. It does not test a physical keyboard or native sharing.
+
+A second test uses deterministic game responses in the test process to verify the correct-answer celebration on the physical device, including an immediate final reveal, the per-round award versus total score, and reset on leaving. Native storage and haptics remain real; fixture code is not included in the shipped app.
 
 ```sh
 cd android

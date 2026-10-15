@@ -32,6 +32,7 @@ import {
 } from "./api";
 import type { Config, Game, Setup } from "./types";
 import { Drawing, Sketchbook } from "./Drawings";
+import { Confetti, CorrectAnswer } from "./Celebration";
 import { startDrawingControllers } from "./drawing";
 import "./styles.css";
 
@@ -125,6 +126,11 @@ function PixelApp() {
   const [guess, setGuess] = useState("");
   const [feedback, setFeedback] = useState("");
   const [accepted, setAccepted] = useState(false);
+  const [award, setAward] = useState<{
+    gameId: string;
+    roundId: number;
+    points: number;
+  } | null>(null);
   const [now, setNow] = useState(Date.now());
   const [active, setActive] = useState(true);
   const input = useRef<HTMLInputElement>(null);
@@ -268,7 +274,8 @@ function PixelApp() {
     setGuess("");
     setFeedback("");
     setAccepted(false);
-  }, [game?.round?.id]);
+    setAward(null);
+  }, [game?.id, game?.round?.id]);
   useEffect(() => {
     if (game?.phase === "complete") {
       setLastGame(null);
@@ -361,7 +368,8 @@ function PixelApp() {
   }
   async function submit(event: React.FormEvent) {
     event.preventDefault();
-    if (!game?.round || busy || !guess.trim()) return;
+    if (!game?.round || busy || accepted || game.round.solved || !guess.trim())
+      return;
     const roundId = game.round.id,
       epoch = generation.current,
       submitted = guess;
@@ -379,16 +387,13 @@ function PixelApp() {
         gameRef.current?.round?.id !== roundId
       )
         return;
-      setFeedback(
-        result.accepted
-          ? result.points
-            ? `+${result.points}`
-            : "Got it!"
-          : result.message,
-      );
+      setFeedback(result.accepted ? "Got it!" : result.message);
       setAccepted(result.accepted);
       setGuess((current) => (current === submitted ? "" : current));
       if (result.accepted) {
+        if (result.points !== undefined) {
+          setAward({ gameId: game.id, roundId, points: result.points });
+        }
         feedbackHaptic();
         input.current?.blur();
       }
@@ -423,6 +428,8 @@ function PixelApp() {
     game && ["pending", "generating", "ready"].includes(game.phase);
   const playing = game?.phase === "playing";
   const revealed = game && ["revealed", "complete"].includes(game.phase);
+  const currentAward =
+    award?.gameId === game?.id && award?.roundId === round?.id ? award : null;
 
   return (
     <div className="app-shell">
@@ -714,7 +721,18 @@ function PixelApp() {
                 )}
               </div>
             )}
+            {currentAward && (
+              <Confetti
+                key={`${currentAward.gameId}-${currentAward.roundId}`}
+              />
+            )}
           </section>
+          {currentAward && (
+            <CorrectAnswer
+              key={`${currentAward.gameId}-${currentAward.roundId}`}
+              points={currentAward.points}
+            />
+          )}
           {game.phase === "lobby" && (
             <>
               <div className="player-chips">
@@ -745,11 +763,15 @@ function PixelApp() {
           {playing && (
             <div className="guess-area">
               {solved ? (
-                <div className="got-it" role="status">
-                  <Check size={24} />
-                  <strong>{accepted ? feedback : "Got it!"}</strong>
-                  <span>Waiting for everyone</span>
-                </div>
+                currentAward ? (
+                  <p className="quiet centered">Waiting for everyone</p>
+                ) : (
+                  <div className="got-it" role="status">
+                    <Check size={24} />
+                    <strong>{accepted ? feedback : "Got it!"}</strong>
+                    <span>Waiting for everyone</span>
+                  </div>
+                )
               ) : (
                 <form className="guess-form" onSubmit={submit}>
                   <input
@@ -786,7 +808,7 @@ function PixelApp() {
                   {feedback || (seconds === 0 ? "Time’s up" : "\u00a0")}
                 </p>
               )}
-              {round?.hint && <p className="hint">{round.hint}</p>}
+              {!solved && round?.hint && <p className="hint">{round.hint}</p>}
             </div>
           )}
           {revealed && (
@@ -900,8 +922,22 @@ function PixelApp() {
           </label>
           <p className="quiet">No account needed.</p>
           <div className="room-actions">
-            <a className="text-button" href="https://pixel.justinpaulson.com/privacy" target="_blank" rel="noreferrer">Privacy</a>
-            <a className="text-button" href="https://pixel.justinpaulson.com/support" target="_blank" rel="noreferrer">Help</a>
+            <a
+              className="text-button"
+              href="https://pixel.justinpaulson.com/privacy"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Privacy
+            </a>
+            <a
+              className="text-button"
+              href="https://pixel.justinpaulson.com/support"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Help
+            </a>
           </div>
           <button className="primary launch" onClick={() => setSheet(null)}>
             Done
