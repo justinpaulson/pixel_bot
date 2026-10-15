@@ -1,0 +1,66 @@
+{
+  "version": "1.0",
+  "build": 2,
+  "bundle_id": "com.lillybitgames.pixel",
+  "apple_app_id": "6823369834",
+  "google_play_app_id": "4974257085578662094",
+  "android": {
+    "status": "Available to internal testers",
+    "track_id": "4701610559008255593",
+    "release_id": 2,
+    "tester_lists": [
+      "Deco Beta",
+      "Pin the Hex Internal"
+    ],
+    "join_url": "https://play.google.com/apps/internaltest/4701610559008255593",
+    "device_install": "Moto G (2025), Android 16, signed versionCode 2 installed",
+    "device_test": "Live 3-round solo smoke passed (75.985s); deterministic correct-answer UI regression passed (5.275s)",
+    "temporary_store_name": "com.lillybitgames.pixel (unreviewed)",
+    "console_url": "https://play.google.com/console/u/1/developers/8869960870896496455/app/4974257085578662094/tracks/4701610559008255593/releases/2/details"
+  },
+  "ios": {
+    "upload": "accepted 2026-10-15T22:36:15Z",
+    "internal_group": "Lilly Bit Games",
+    "internal_testers": 3,
+    "external_group": "Pixel Beta",
+    "review_status": "Waiting for Review",
+    "internal_status": "Testing; 3 testers Invited",
+    "build_id": "868d310d-ec48-434b-96b9-87f502528745",
+    "external_join_url": "https://testflight.apple.com/join/nktWNchB",
+    "external_link_limit": 100,
+    "external_link_status": "Testers cannot join until the group has an approved build",
+    "console_url": "https://appstoreconnect.apple.com/teams/69a6de6e-7a34-47e3-e053-5b8c7c11a4d1/apps/6823369834/testflight/ios/868d310d-ec48-434b-96b9-87f502528745",
+    "supersedes": "Build 1 removed from Beta App Review; build 2 submitted with automatic tester notification"
+  },
+  "validation": {
+    "mobile_browser": "16 tests passed: WebKit iPhone and Chromium Android",
+    "android_release_and_lint": "Passed",
+    "android_release_instrumentation": "Both live-service smoke and deterministic correct-answer regression passed on physical Moto G",
+    "ios": "Signed archive and App Store Connect upload succeeded; build processed successfully",
+    "ci": "Both verification jobs passed",
+    "workflow": "https://github.com/justinpaulson/pixel_bot/actions/runs/38818378842"
+  },
+  "artifacts": {
+    "Pixel-1.0-2-beta.apk": {
+      "sha256": "bc43aadf4619fea2ddbb001120f72bea551cdab5346b0000c3bbf0df794ef637",
+      "bytes": 3214547
+    },
+    "Pixel-1.0-2-beta.aab": {
+      "sha256": "5c5a1baaeee74818ef4ac3113f4aaa6e7d9dabc2a99f9f4a1b107832f6cb89ca",
+      "bytes": 3056807
+    }
+  },
+  "evidence": [
+    "../artifacts/android-device-correct-build2.png",
+    "../artifacts/play-build2-published.png",
+    "../artifacts/testflight-build2-internal.png",
+    "../artifacts/testflight-build2-review.png"
+  ],
+  "verified_at": "2026-10-15T22:41:03.311453+00:00",
+  "source_commit": "bf5703ed094fac3861deb296a2db080cb1027bee",
+  "changes": [
+    "One confetti burst and a persistent per-round points banner for correct guesses",
+    "Success feedback survives immediate solo and final answer reveals",
+    "No animation when reduced motion is enabled"
+  ]
+}

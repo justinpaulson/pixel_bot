@@ -53,7 +53,7 @@ Share sends the existing HTTPS room URL so friends can play on the web. In Pixel
 
 App identifiers: `com.lillybitgames.pixel` on both platforms; current version 1.0 (2). iOS supports iPhone and iPad on iOS 15+, Android supports API 24+. Gameplay requires an internet connection, just like the web game. No analytics, ads, tip jar, or purchases are included in the mobile client.
 
-Beta releases use Lilly Bit Games / LILLY BIT LLC (Apple team `SD8D6GX2BC`). `release/ExportOptions.plist` uploads an archive to App Store Connect using the signed-in Xcode account. Public support and privacy pages are `/support` and `/privacy`. See `release/beta-1.0.json` for verified distribution status. Public store release still requires screenshots, complete store disclosures/ratings, and production review. The iOS privacy manifest declares the UserDefaults access used by Preferences; no tracking permission is requested.
+Beta releases use Lilly Bit Games / LILLY BIT LLC (Apple team `SD8D6GX2BC`). `release/ExportOptions.plist` uploads an archive to App Store Connect using the signed-in Xcode account. Public support and privacy pages are `/support` and `/privacy`. See `release/beta-1.0-2.json` for the latest verified distribution status (`release/beta-1.0.json` preserves the first beta receipt). Public store release still requires screenshots, complete store disclosures/ratings, and production review. The iOS privacy manifest declares the UserDefaults access used by Preferences; no tracking permission is requested.
 
 ## Physical Android beta smoke test
 
