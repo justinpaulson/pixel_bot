@@ -494,14 +494,7 @@ function PixelApp() {
       {!game ? (
         <main className="home">
           <section className="hero">
-            <div>
-              <span className="eyebrow">THE DRAWING GAME</span>
-              <h1>
-                Pixel draws.
-                <br />
-                <span>You guess.</span>
-              </h1>
-            </div>
+            <h1 className="eyebrow">THE AI DRAWING GAME</h1>
             <button
               className="icon-button help-button"
               aria-label="How to play"

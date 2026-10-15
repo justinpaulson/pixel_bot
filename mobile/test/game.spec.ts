@@ -137,7 +137,7 @@ test("simple setup preserves options and fits phone widths", async ({
   const api = await mock(page);
   await page.goto("/");
   await expect(
-    page.getByRole("heading", { name: "Pixel draws. You guess." }),
+    page.getByRole("heading", { name: "THE AI DRAWING GAME" }),
   ).toBeVisible();
   await page.getByRole("button", { name: "Friends", exact: true }).click();
   await page.getByLabel("Category", { exact: true }).selectOption("music");

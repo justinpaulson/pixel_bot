@@ -141,9 +141,12 @@ h1 {
 h1 span {
   color: #6d9281;
 }
-.hero h1 {
-  font-size: 30px;
-  margin-top: 4px;
+.hero .eyebrow {
+  font-size: 11px;
+  letter-spacing: 1.9px;
+  line-height: 1.4;
+  margin: 0;
+  font-weight: 800;
 }
 h2 {
   font-size: 22px;
@@ -154,8 +157,6 @@ p {
   line-height: 1.5;
 }
 .help-button {
-  align-self: flex-end;
-  margin-bottom: 4px;
   color: #789086;
 }
 .preview-card {
@@ -164,12 +165,12 @@ p {
   border: 1px solid #dde4d8;
   border-radius: 24px;
   overflow: hidden;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
   box-shadow: 0 5px 0 #e6eadd;
 }
 .preview-card > img {
   width: 100%;
-  height: clamp(100px, 16dvh, 140px);
+  height: clamp(100px, 18dvh, 160px);
   display: block;
   object-fit: contain;
   padding: 9px;
@@ -214,12 +215,12 @@ p {
   box-shadow: 0 2px 5px #173f400c;
 }
 .modes {
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 .setup-row {
   display: flex;
   gap: 16px;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 .category {
   width: 56%;
@@ -351,7 +352,7 @@ fieldset {
 }
 .launch {
   width: 100%;
-  margin-top: 16px;
+  margin-top: 20px;
 }
 .launch svg {
   margin-left: auto;
