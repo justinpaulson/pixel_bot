@@ -4,8 +4,8 @@ class GamesController < ApplicationController
   before_action :set_game, except: %i[index create]
   before_action :require_membership, only: %i[state start advance]
   before_action :require_host, only: %i[start advance]
-  rate_limit to: 12, within: 1.hour, only: :create, with: -> { redirect_to root_path, alert: "That's a lot of games! Please try again in a little while." }
-  rate_limit to: 30, within: 5.minutes, only: :join, with: -> { redirect_to root_path, alert: "Please wait a moment before joining again." }
+  rate_limit to: 12, within: 1.hour, only: :create, with: -> { redirect_to root_path, alert: "Game limit reached. Try again later." }
+  rate_limit to: 30, within: 5.minutes, only: :join, with: -> { redirect_to root_path, alert: "Please wait before joining again." }
 
   def index
     @categories = PromptCatalog::CATEGORIES
@@ -32,7 +32,7 @@ class GamesController < ApplicationController
     if @game.join!(Current.user)
       redirect_to @game, status: :see_other
     else
-      redirect_to root_path, alert: "This room is full, finished, or reserved for solo play. Start a new game!"
+      redirect_to root_path, alert: "This game is unavailable. Start a new game."
     end
   end
 

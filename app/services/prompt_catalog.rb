@@ -1,13 +1,13 @@
 class PromptCatalog
   CATEGORIES = {
-    "mix" => { name: "A little of everything", icon: "✳", description: "The full pop-culture lucky dip" },
+    "mix" => { name: "Everything", icon: "✳", description: "The full pop-culture lucky dip" },
     "movies" => { name: "Movies", icon: "↗", description: "Big screens. Iconic scenes." },
     "tv" => { name: "TV shows", icon: "▣", description: "Just one more episode" },
     "music" => { name: "Songs", icon: "♫", description: "You know it when you see it" },
     "stars" => { name: "Pop stars", icon: "★", description: "Legends of the main stage" },
     "games" => { name: "Video games", icon: "✚", description: "A different kind of high score" },
     "places" => { name: "Places", icon: "◎", description: "Around the world in a doodle" },
-    "objects" => { name: "Everyday things", icon: "◇", description: "Small things. Big aha moments." }
+    "objects" => { name: "Objects", icon: "◇", description: "Small things. Big aha moments." }
   }.freeze
 
   # Curated answers keep judging fair; the artwork is newly generated every round.

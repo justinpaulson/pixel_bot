@@ -1,7 +1,7 @@
-<section class="auth-card"><p class="eyebrow">BACK IN THE GAME</p><h1>Forgot your password?</h1><p>Enter your account email to request a reset link. You can also play as a guest anytime.</p>
+<section class="auth-card"><h1>Reset password</h1>
   <%= form_with url: passwords_path do |form| %>
     <%= form.label :email_address, "Email address" %><%= form.email_field :email_address, required: true, autofocus: true, autocomplete: "username", value: params[:email_address] %>
-    <%= form.submit "Send reset link →", class: "button primary" %>
+    <%= form.submit "Send reset link", class: "button primary" %>
   <% end %>
   <div class="auth-links"><%= link_to "Back to sign in", new_session_path %><%= link_to "Play as a guest", root_path %></div>
 </section>

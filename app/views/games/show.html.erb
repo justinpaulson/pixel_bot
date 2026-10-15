@@ -1,53 +1,52 @@
 <% if @game.edition != 2 %>
-  <section class="welcome-card"><p class="eyebrow">A FRESH START</p><h1>Pixel learned a few new tricks.</h1><p>This room belongs to the original game. Start a new one to try fresh drawings and let everybody guess.</p><%= link_to "Let's play ↗", root_path, class: "button primary" %></section>
+  <section class="welcome-card"><h1>This game has ended.</h1><%= link_to "New game", root_path, class: "button primary" %></section>
 <% elsif !@member %>
-  <section class="welcome-card"><span class="welcome-star" aria-hidden="true">✳</span><p class="eyebrow">YOU'RE INVITED</p><h1>Good company.<br>Wild guesses.</h1><p>Join a game of <strong><%= PromptCatalog::CATEGORIES.fetch(@game.category)[:name] %></strong>. Pixel draws. Everybody guesses.</p>
+  <section class="welcome-card">
     <% if @game.mode == "solo" || @game.completed? %>
-      <p>This game is <%= @game.completed? ? "finished" : "a solo game" %>. Your own fresh drawings are one click away.</p><%= link_to "Start your own game ↗", root_path, class: "button primary" %>
+      <h1><%= @game.completed? ? "Game over" : "Solo game" %></h1><%= link_to "New game", root_path, class: "button primary" %>
     <% else %>
-      <%= form_with url: join_game_path(@game), data: { turbo: false } do |form| %><%= label_tag :display_name, "Your nickname" %><%= text_field_tag :display_name, Current.user&.display_name, placeholder: "Your nickname", maxlength: 24, autocomplete: "nickname" %><%= form.submit "I'm in →", class: "button primary" %><% end %>
+      <h1>Join game</h1><p><%= PromptCatalog::CATEGORIES.fetch(@game.category)[:name] %></p>
+      <%= form_with url: join_game_path(@game), data: { turbo: false } do |form| %><%= label_tag :display_name, "Nickname" %><%= text_field_tag :display_name, Current.user&.display_name, maxlength: 24, autocomplete: "nickname" %><%= form.submit "Join game", class: "button primary" %><% end %>
     <% end %>
   </section>
 <% else %>
   <section class="game-room" data-controller="game" data-game-state-url-value="<%= state_game_path(@game) %>" data-game-base-url-value="<%= game_path(@game) %>">
-    <div class="room-heading"><div><p class="eyebrow"><%= @game.mode == "solo" ? "A LITTLE YOU-TIME" : "GOOD COMPANY. WILD GUESSES." %></p><h1 data-game-target="heading">Opening your sketchbook…</h1></div><%= link_to "New game ↗", root_path, class: "text-button" %></div>
+    <div class="room-heading"><h1 data-game-target="heading">Pixel</h1><%= link_to "New game", root_path, class: "text-button" %></div>
     <p class="connection-message" data-game-target="connection" role="status"></p>
     <div class="room-grid">
       <div class="drawing-column">
         <div class="drawing-card">
-          <div class="drawing-toolbar"><span class="category-pill" data-game-target="category">PIXEL'S STUDIO</span><span class="round-label" data-game-target="roundLabel"></span><span class="timer" data-game-target="timer" aria-label="Seconds remaining">—</span></div>
+          <div class="drawing-toolbar"><span class="category-pill" data-game-target="category"></span><span class="round-label" data-game-target="roundLabel"></span><span class="timer" data-game-target="timer" aria-label="Seconds remaining">—</span></div>
           <div class="canvas">
-            <img data-game-target="drawing" alt="Pixel's drawing. Guess what it represents." width="512" height="512" hidden>
-            <div class="canvas-message" data-game-target="placeholder"><span class="drawing-mascot" data-game-target="mascot" aria-hidden="true">✳</span><h2 data-game-target="canvasTitle">One moment…</h2><p data-game-target="canvasCopy">Pixel is getting the pencils out.</p></div>
+            <img data-game-target="drawing" alt="Guess the drawing" width="512" height="512" hidden>
+            <div class="canvas-message" data-game-target="placeholder"><span class="drawing-mascot" data-game-target="mascot" aria-hidden="true">✳</span><h2 data-game-target="canvasTitle">Loading…</h2><p data-game-target="canvasCopy"></p></div>
           </div>
-          <div class="canvas-caption"><span class="status-dot"></span><span data-game-target="caption">A fresh drawing, just for this game.</span><span class="canvas-signature">by pixel.</span></div>
         </div>
         <div class="guess-area">
           <form data-game-target="guessForm" data-action="submit->game#guess" hidden>
-            <label for="guess" class="guess-label">What's your best guess?</label><div class="guess-input-row"><input id="guess" name="answer" data-game-target="guessInput" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="120" placeholder="I think it's…" required><button class="button primary" data-game-target="guessButton">Guess <span>↵</span></button></div>
+            <label for="guess" class="sr-only">Your guess</label><div class="guess-input-row"><input id="guess" name="answer" data-game-target="guessInput" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="120" placeholder="Your guess" required><button class="button primary" data-game-target="guessButton">Guess <span aria-hidden="true">↵</span></button></div>
           </form>
           <p data-game-target="feedback" class="guess-feedback" role="status" aria-live="polite"></p>
           <p data-game-target="hint" class="hint" hidden></p>
-          <div data-game-target="reveal" class="answer-reveal" hidden><span class="eyebrow">THE ANSWER WAS</span><h2 data-game-target="answer"></h2><p data-game-target="revealCopy"></p></div>
+          <div data-game-target="reveal" class="answer-reveal" hidden><span class="eyebrow">ANSWER</span><h2 data-game-target="answer"></h2></div>
         </div>
       </div>
       <aside class="room-sidebar">
-        <section class="score-card"><div class="score-heading"><h2 data-game-target="scoreTitle">The guessing crew</h2><span aria-hidden="true">✦</span></div><ol class="scoreboard" data-game-target="scoreboard"></ol><p class="score-note">Big aha energy. Faster guesses earn more points.</p></section>
+        <section class="score-card"><div class="score-heading"><h2 data-game-target="scoreTitle">Scores</h2><span aria-hidden="true">✦</span></div><ol class="scoreboard" data-game-target="scoreboard"></ol></section>
         <% if @game.mode == "party" %>
-          <section class="invite-card"><p class="eyebrow">BETTER TOGETHER</p><h2>Save a seat.</h2><p>Send this link to your friends. Everyone plays on their own device.</p><label class="sr-only" for="invite-link">Invite link</label><input id="invite-link" data-game-target="shareUrl" value="<%= game_url(@game) %>" readonly><button class="button secondary" data-action="game#copyInvite" data-game-target="copyButton">Copy invite link ↗</button></section>
+          <section class="invite-card" aria-label="Invite friends"><label class="sr-only" for="invite-link">Invite link</label><input id="invite-link" data-game-target="shareUrl" value="<%= game_url(@game) %>" readonly><button class="button secondary" data-action="game#copyInvite" data-game-target="copyButton">Copy invite link</button></section>
         <% end %>
-        <div class="host-controls" data-game-target="hostControls">
-          <button class="button primary full-width" data-game-target="startButton" data-action="game#start" hidden>Everybody in? Let's play ↗</button>
-          <button class="button primary full-width" data-game-target="nextButton" data-action="game#next" hidden>Next drawing ↗</button>
-          <button class="button primary full-width" data-game-target="retryButton" data-action="game#retry" hidden>Try drawing again ↻</button>
-          <button class="text-button reveal-button" data-game-target="skipButton" data-action="game#skip" hidden>Stumped? Reveal & end round</button>
+        <div class="host-controls">
+          <button class="button primary full-width" data-game-target="startButton" data-action="game#start" hidden>Start game</button>
+          <button class="button primary full-width" data-game-target="nextButton" data-action="game#next" hidden>Next drawing</button>
+          <button class="button primary full-width" data-game-target="retryButton" data-action="game#retry" hidden>Retry drawing</button>
+          <button class="text-button reveal-button" data-game-target="skipButton" data-action="game#skip" hidden>Reveal & end round</button>
           <p class="waiting-note" data-game-target="waitingNote"></p>
         </div>
-        <%= link_to "One more game? ↗", root_path, class: "button primary full-width", data: { game_target: "againButton" }, hidden: true %>
-        <div class="rules-note"><span aria-hidden="true">✧</span><p>Look for iconic details.<br>Small typos are okay.<br>The host is guessing, too.</p></div>
+        <%= link_to "Play again", root_path, class: "button primary full-width", data: { game_target: "againButton" }, hidden: true %>
       </aside>
     </div>
-    <section class="gallery-section" data-game-target="gallerySection" hidden><div class="section-heading"><div><p class="eyebrow">YOUR LITTLE ART COLLECTION</p><h2>The ones you figured out.<br>And the ones you didn't.</h2></div></div><div class="round-gallery" data-game-target="gallery"></div></section>
-    <noscript><p class="flash">Please enable JavaScript to play this live guessing game.</p></noscript>
+    <section class="gallery-section" data-game-target="gallerySection" hidden><div class="section-heading"><h2>Drawings</h2></div><div class="round-gallery" data-game-target="gallery"></div></section>
+    <noscript><p class="flash">Enable JavaScript to play.</p></noscript>
   </section>
 <% end %>

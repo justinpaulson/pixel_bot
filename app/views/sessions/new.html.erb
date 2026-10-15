@@ -1,8 +1,8 @@
-<section class="auth-card"><p class="eyebrow">WELCOME BACK</p><h1>Your next aha awaits.</h1><p>Sign in to keep using your account, or head home to play as a guest.</p>
+<section class="auth-card"><h1>Sign in</h1>
   <%= form_with url: session_path do |form| %>
     <%= form.label :email_address, "Email address" %><%= form.email_field :email_address, required: true, autofocus: true, autocomplete: "username", placeholder: "you@example.com" %>
     <%= form.label :password, "Password" %><%= form.password_field :password, required: true, autocomplete: "current-password", maxlength: 72 %>
-    <%= form.submit "Sign in / create account →", class: "button primary" %>
+    <%= form.submit "Sign in / create account", class: "button primary" %>
   <% end %>
   <div class="auth-links"><%= link_to "Play as a guest", root_path %><%= link_to "Forgot password?", new_password_path %></div>
 </section>

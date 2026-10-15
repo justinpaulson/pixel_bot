@@ -106,9 +106,6 @@ select:focus-visible {
   align-items: center;
   font-size: 13px;
 }
-.header-note {
-  color: var(--muted);
-}
 .user-name {
   font-weight: 700;
   max-width: 160px;
@@ -132,11 +129,10 @@ select:focus-visible {
 }
 .hero {
   display: grid;
-  grid-template-columns: 1.15fr 1fr;
+  grid-template-columns: 1fr 190px;
   gap: 40px;
   align-items: center;
-  padding: 66px 0 72px;
-  min-height: 600px;
+  padding: 30px 0;
 }
 .eyebrow {
   font-size: 10px;
@@ -144,24 +140,10 @@ select:focus-visible {
   font-weight: 750;
   line-height: 1.6;
 }
-.hero .eyebrow {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  margin-bottom: 25px;
-}
-.status-dot {
-  display: inline-block;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--green);
-  flex-shrink: 0;
-}
 .hero h1 {
-  font-size: clamp(64px, 6.4vw, 89px);
-  letter-spacing: -5px;
-  line-height: 0.99;
+  font-size: clamp(36px, 4.5vw, 56px);
+  letter-spacing: -2px;
+  line-height: 1.05;
   font-weight: 850;
 }
 .hero-last {
@@ -169,44 +151,13 @@ select:focus-visible {
   display: inline-block;
   color: var(--green);
 }
-.hero-last svg {
-  position: absolute;
-  bottom: -21px;
-  left: 0;
-  width: 100%;
-  height: 20px;
-  color: var(--orange);
-}
-.hero-description {
-  font-size: 17px;
-  line-height: 1.65;
-  margin-top: 38px;
-  color: #575f54;
-}
-.hero-tags {
-  display: flex;
-  gap: 24px;
-  margin-top: 23px;
-  font-size: 11px;
-  font-weight: 600;
-}
-.hero-art {
-  position: relative;
-  padding: 15px 26px 30px 18px;
-}
 .sample-card {
   background: var(--white);
   border: 1px solid var(--ink);
   border-radius: 6px;
-  padding: 21px 23px 14px;
+  padding: 10px;
   transform: rotate(4deg);
-  box-shadow: 8px 9px 0 #e8e5da;
-}
-.sample-top,
-.sample-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  box-shadow: 4px 5px 0 #e8e5da;
 }
 .category-pill {
   display: inline-block;
@@ -218,93 +169,28 @@ select:focus-visible {
   padding: 8px 11px;
   color: #3a5544;
 }
-.tiny-label {
-  font-size: 8px;
-  letter-spacing: 1px;
-  color: var(--muted);
-}
 .sample-card img {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 360px;
+  max-height: 170px;
   object-fit: contain;
-}
-.sample-bottom {
-  border-top: 1px solid var(--line);
-  padding-top: 11px;
-  font-size: 14px;
-  font-weight: 650;
-}
-.scribble-arrow {
-  font-size: 26px;
-}
-.guess-sticker {
-  position: absolute;
-  border: 1px solid var(--ink);
-  border-radius: 8px;
-  font-size: 12px;
-  font-weight: 700;
-  box-shadow: 3px 3px 0 var(--ink);
-  padding: 14px 18px;
-}
-.sticker-one {
-  bottom: 3px;
-  left: -8px;
-  transform: rotate(-6deg);
-  background: var(--white);
-}
-.sticker-two {
-  bottom: -30px;
-  right: 12px;
-  transform: rotate(3deg);
-  background: var(--yellow);
-}
-.sticker-two span {
-  font-size: 17px;
-  margin-left: 15px;
-}
-.art-spark {
-  position: absolute;
-  z-index: 1;
-  color: var(--orange);
-  line-height: 1;
-}
-.spark-one {
-  font-size: 65px;
-  top: -16px;
-  right: -5px;
-  transform: rotate(12deg);
-}
-.spark-two {
-  font-size: 65px;
-  bottom: 16px;
-  left: -37px;
 }
 .section-heading {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   gap: 20px;
-  margin-bottom: 27px;
-}
-.section-heading .eyebrow {
-  color: var(--green);
-  margin-bottom: 8px;
+  margin-bottom: 18px;
 }
 .section-heading h2 {
-  font-size: 31px;
+  font-size: 22px;
   letter-spacing: -1px;
   line-height: 1.14;
 }
-.section-heading > p {
-  font-size: 12px;
-  color: var(--muted);
-  padding-bottom: 4px;
-}
 .play-section {
   border-top: 1px solid var(--line);
-  padding: 37px 0 42px;
+  padding: 28px 0 36px;
 }
 .category-picker {
   border: 0;
@@ -319,11 +205,11 @@ select:focus-visible {
   cursor: pointer;
   border: 1px solid var(--line);
   border-radius: 10px;
-  padding: 20px 16px;
+  padding: 16px;
   display: flex;
   gap: 13px;
   align-items: center;
-  min-height: 85px;
+  min-height: 64px;
   background: #faf9f3;
   transition:
     background 0.16s,
@@ -365,11 +251,6 @@ select:focus-visible {
 .category-text strong {
   font-size: 12px;
   letter-spacing: -0.1px;
-}
-.category-text small {
-  font-size: 9px;
-  color: #6c7267;
-  line-height: 1.4;
 }
 .category-check {
   display: none;
@@ -457,38 +338,6 @@ select {
 .full-width {
   width: 100%;
 }
-.setup-footnote {
-  margin-top: 14px;
-  font-size: 10px;
-  color: var(--muted);
-  text-align: right;
-}
-.how-to {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  border-top: 1px solid var(--line);
-  padding: 36px 0 46px;
-}
-.step-number {
-  font-family: Georgia, serif;
-  font-style: italic;
-  font-size: 22px;
-  color: #7c8a73;
-  display: block;
-  margin-bottom: 16px;
-}
-.how-to h3 {
-  font-size: 16px;
-  letter-spacing: -0.3px;
-  margin-bottom: 10px;
-}
-.how-to p {
-  font-size: 12px;
-  line-height: 1.8;
-  color: var(--muted);
-  max-width: 300px;
-}
 .site-footer {
   max-width: 1312px;
   margin: auto;
@@ -497,7 +346,7 @@ select {
   font-size: 10px;
   color: var(--muted);
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 20px;
 }
 .site-footer a {
@@ -545,12 +394,8 @@ select {
   justify-content: space-between;
   gap: 20px;
 }
-.room-heading .eyebrow {
-  color: var(--green);
-  margin-bottom: 9px;
-}
 .room-heading h1 {
-  font-size: 35px;
+  font-size: 30px;
   letter-spacing: -1.4px;
   line-height: 1.15;
 }
@@ -645,22 +490,6 @@ select {
   line-height: 1.8;
   color: var(--muted);
 }
-.canvas-caption {
-  border-top: 1px solid #e9eadd;
-  padding: 15px 22px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 10px;
-  color: var(--muted);
-}
-.canvas-signature {
-  margin-left: auto;
-  font-style: italic;
-  font-family: Georgia, serif;
-  font-size: 17px;
-  color: var(--green);
-}
 .guess-area {
   padding: 24px 0 0;
 }
@@ -682,6 +511,13 @@ select {
   min-height: 20px;
   margin-top: 13px;
   color: #a04c2b;
+}
+.category-pill:empty,
+.guess-feedback:empty,
+.connection-message:empty,
+.waiting-note:empty,
+.canvas-message p:empty {
+  display: none;
 }
 .guess-feedback.correct {
   color: #2b6548;
@@ -706,11 +542,6 @@ select {
   font-size: 30px;
   letter-spacing: -0.8px;
   margin-top: 7px;
-}
-.answer-reveal p {
-  font-size: 12px;
-  margin-top: 12px;
-  line-height: 1.6;
 }
 .score-card {
   border: 1px solid var(--line);
@@ -744,6 +575,10 @@ select {
   gap: 10px;
   border-bottom: 1px solid var(--line);
   padding: 13px 0;
+}
+.scoreboard li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
 }
 .player-avatar {
   height: 32px;
@@ -779,29 +614,8 @@ select {
   font-size: 16px;
   font-variant-numeric: tabular-nums;
 }
-.score-note {
-  font-size: 10px;
-  line-height: 1.7;
-  color: var(--muted);
-  margin-top: 15px;
-}
 .invite-card {
   padding: 23px 0;
-}
-.invite-card .eyebrow {
-  color: var(--green);
-  font-size: 9px;
-}
-.invite-card h2 {
-  font-size: 23px;
-  letter-spacing: -0.6px;
-  margin: 7px 0 10px;
-}
-.invite-card p:not(.eyebrow) {
-  font-size: 12px;
-  color: var(--muted);
-  line-height: 1.7;
-  margin-bottom: 15px;
 }
 .invite-card input {
   font-size: 10px !important;
@@ -830,20 +644,6 @@ select {
   color: var(--muted);
   line-height: 1.6;
   text-align: center;
-}
-.rules-note {
-  display: flex;
-  gap: 14px;
-  margin: 26px 6px;
-}
-.rules-note > span {
-  font-size: 33px;
-  color: var(--orange);
-}
-.rules-note p {
-  font-size: 11px;
-  line-height: 1.9;
-  color: var(--muted);
 }
 .connection-message {
   font-size: 12px;
@@ -904,15 +704,6 @@ select {
   border-radius: 12px;
   background: var(--white);
 }
-.welcome-star {
-  font-size: 70px;
-  line-height: 1.4;
-  color: var(--green);
-}
-.welcome-card .eyebrow {
-  color: var(--green);
-  margin: 15px 0;
-}
 .welcome-card h1 {
   font-size: 44px;
   letter-spacing: -2px;
@@ -923,6 +714,9 @@ select {
   color: var(--muted);
   font-size: 14px;
   line-height: 1.8;
+}
+.welcome-card > .button {
+  margin-top: 24px;
 }
 .welcome-card form {
   margin: 25px auto 0;
@@ -984,14 +778,6 @@ select {
     scroll-behavior: auto !important;
   }
 }
-@media (min-width: 1400px) {
-  .hero {
-    gap: 80px;
-  }
-  .hero-art {
-    max-width: 490px;
-  }
-}
 @media (max-width: 1050px) {
   .site-header,
   .page-shell,
@@ -1001,14 +787,10 @@ select {
   }
   .hero {
     gap: 20px;
-    padding-top: 52px;
+    padding-top: 30px;
   }
   .hero h1 {
-    font-size: 73px;
-  }
-  .hero-tags {
-    gap: 12px;
-    font-size: 10px;
+    font-size: 48px;
   }
   .category-picker {
     grid-template-columns: repeat(3, 1fr);
@@ -1029,26 +811,8 @@ select {
   .round-gallery {
     grid-template-columns: repeat(3, 1fr);
   }
-  .header-note {
-    display: none;
-  }
-  .hero-art {
-    padding-right: 14px;
-  }
-  .spark-one {
-    right: -15px;
-  }
   .sample-card {
-    padding: 16px;
-  }
-  .tiny-label {
-    font-size: 7px;
-  }
-  .sticker-one {
-    left: 0;
-  }
-  .sticker-two {
-    right: 0;
+    padding: 10px;
   }
 }
 @media (max-width: 740px) {
@@ -1078,65 +842,20 @@ select {
     padding: 0 22px;
   }
   .hero {
-    grid-template-columns: 1fr;
-    gap: 28px;
-    padding: 34px 0 53px;
+    grid-template-columns: 1fr 110px;
+    gap: 16px;
+    padding: 26px 0;
   }
   .hero h1 {
-    font-size: 65px;
-    letter-spacing: -3.8px;
-  }
-  .hero .eyebrow {
-    font-size: 8px;
-    letter-spacing: 1.6px;
-    margin-bottom: 22px;
-  }
-  .hero-description {
-    font-size: 15px;
-    margin-top: 32px;
-  }
-  .hero-tags {
-    font-size: 10px;
-    gap: 19px;
-    margin-top: 16px;
-  }
-  .hero-art {
-    width: 85%;
-    max-width: 350px;
-    margin: 5px auto 22px;
-    padding: 15px 8px 15px;
+    font-size: clamp(27px, 7.5vw, 40px);
+    letter-spacing: -1px;
   }
   .sample-card img {
-    max-height: 280px;
+    max-height: 100px;
   }
   .sample-card {
     transform: rotate(3deg);
-    padding: 15px;
-  }
-  .spark-one {
-    font-size: 50px;
-    right: -22px;
-    top: 0;
-  }
-  .spark-two {
-    font-size: 49px;
-    left: -31px;
-    bottom: 4px;
-  }
-  .sample-bottom {
-    font-size: 12px;
-  }
-  .guess-sticker {
-    font-size: 10px;
-    padding: 11px 13px;
-  }
-  .sticker-one {
-    bottom: -5px;
-    left: -18px;
-  }
-  .sticker-two {
-    right: -20px;
-    bottom: -34px;
+    padding: 5px;
   }
   .section-heading {
     align-items: flex-start;
@@ -1145,10 +864,7 @@ select {
     margin-bottom: 22px;
   }
   .section-heading h2 {
-    font-size: 27px;
-  }
-  .section-heading > p {
-    font-size: 11px;
+    font-size: 22px;
   }
   .play-section {
     padding-top: 28px;
@@ -1160,13 +876,10 @@ select {
   .category-option {
     padding: 17px 11px;
     gap: 9px;
-    min-height: 88px;
+    min-height: 60px;
   }
   .category-text strong {
     font-size: 11px;
-  }
-  .category-text small {
-    font-size: 8px;
   }
   .category-icon {
     font-size: 25px;
@@ -1195,38 +908,9 @@ select {
   .play-buttons {
     gap: 8px;
   }
-  .setup-footnote {
-    text-align: center;
-    font-size: 9px;
-    line-height: 1.7;
-  }
-  .how-to {
-    grid-template-columns: 1fr;
-    gap: 29px;
-    padding: 29px 0;
-  }
-  .how-to > div {
-    padding-left: 38px;
-    position: relative;
-  }
-  .step-number {
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-size: 20px;
-  }
-  .how-to h3 {
-    font-size: 15px;
-  }
-  .how-to p {
-    font-size: 12px;
-    max-width: none;
-  }
   .site-footer {
     padding: 23px 22px;
-    flex-direction: column;
-    gap: 14px;
-    font-size: 9px;
+    font-size: 10px;
   }
   .room-heading {
     padding-top: 27px;
@@ -1235,10 +919,6 @@ select {
   .room-heading h1 {
     font-size: 26px;
     letter-spacing: -1px;
-  }
-  .room-heading .eyebrow {
-    font-size: 8px;
-    letter-spacing: 1.3px;
   }
   .room-heading > .text-button {
     flex-shrink: 0;
@@ -1284,14 +964,6 @@ select {
     font-size: 75px;
     margin-bottom: 22px;
   }
-  .canvas-caption {
-    padding: 12px;
-    font-size: 8px;
-    gap: 6px;
-  }
-  .canvas-signature {
-    font-size: 13px;
-  }
   .guess-area {
     padding-top: 22px;
   }
@@ -1320,9 +992,6 @@ select {
   .score-card {
     padding: 19px;
   }
-  .rules-note {
-    margin: 22px 0 0;
-  }
   .invite-card {
     border-bottom: 1px solid var(--line);
   }
@@ -1346,9 +1015,6 @@ select {
   .auth-card {
     margin-top: 30px;
     padding: 25px;
-  }
-  .desktop-break {
-    display: none;
   }
   .answer-reveal h2 {
     font-size: 25px;

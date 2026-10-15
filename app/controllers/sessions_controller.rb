@@ -29,7 +29,7 @@ class SessionsController < ApplicationController
 
       if user.save
         start_new_session_for user
-        redirect_to after_authentication_url, notice: "Account created successfully!"
+        redirect_to after_authentication_url, notice: "Account created."
       else
         redirect_to new_session_url, alert: user.errors.full_messages.to_sentence
       end

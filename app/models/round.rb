@@ -31,7 +31,7 @@ class Round < ApplicationRecord
       if status == "playing" && Time.current >= deadline
         reveal!
       elsif %w[pending generating].include?(status) && (generation_started_at || created_at) < GENERATION_TIMEOUT.ago
-        update!(status: "failed", generation_token: nil, error_message: "Pixel took too long to finish this drawing. Please try again.")
+        update!(status: "failed", generation_token: nil, error_message: "Drawing timed out. Try again.")
       end
     end
   end
@@ -41,14 +41,14 @@ class Round < ApplicationRecord
       reload
       return { message: "Join this game first.", accepted: false } unless game.players.exists?(user: user)
       reveal! if status == "playing" && Time.current >= deadline
-      return { message: "This round is no longer taking guesses.", accepted: false } unless running?
-      return { message: "You already got it! Let the others guess.", accepted: true } if scores.exists?(user: user)
-      return { message: "Not quite. Take another look!", accepted: false } unless AnswerMatcher.match?(answer, [ word, *aliases ])
+      return { message: "Round over.", accepted: false } unless running?
+      return { message: "Already correct!", accepted: true } if scores.exists?(user: user)
+      return { message: "Not quite.", accepted: false } unless AnswerMatcher.match?(answer, [ word, *aliases ])
 
       points = [ 100, (1000 - (Time.current - started_at) * 10).round ].max
       scores.create!(user: user, points: points)
       reveal! if scores.count >= game.players.count
-      { message: "You got it! +#{points} points", accepted: true, points: points }
+      { message: "Correct! +#{points}", accepted: true, points: points }
     end
   end
 

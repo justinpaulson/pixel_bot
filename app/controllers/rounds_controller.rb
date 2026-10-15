@@ -1,7 +1,7 @@
 class RoundsController < ApplicationController
   before_action :set_round
   before_action :require_host, only: %i[skip retry_drawing]
-  rate_limit to: 60, within: 1.minute, only: :answer, with: -> { render json: { message: "Take a breath, then try again.", accepted: false }, status: :too_many_requests }
+  rate_limit to: 60, within: 1.minute, only: :answer, with: -> { render json: { message: "Please wait, then try again.", accepted: false }, status: :too_many_requests }
   rate_limit to: 6, within: 10.minutes, only: :retry_drawing, with: -> { head :too_many_requests }
 
   def answer

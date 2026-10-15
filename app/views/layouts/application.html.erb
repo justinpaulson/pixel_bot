@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title><%= content_for(:title) || "Pixel — Everybody guesses. Pixel draws." %></title>
+    <title><%= content_for(:title) || "Pixel — Guess the drawing" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="A fresh drawing. A secret answer. A room full of guesses. Play Pixel solo or with friends, with movies, music, TV and more.">
     <meta name="theme-color" content="#f6f4ed">
@@ -19,10 +19,9 @@
         <span class="brand-mark" aria-hidden="true">✳</span> pixel<span class="brand-period">.</span>
       <% end %>
       <nav aria-label="Main navigation">
-        <span class="header-note">A little art. A lot of aha.</span>
         <% if Current.user %>
           <span class="user-name"><%= Current.user.name %></span>
-          <%= button_to "Leave session", session_path, method: :delete, class: "text-button" %>
+          <%= button_to "Sign out", session_path, method: :delete, class: "text-button" %>
         <% else %>
           <%= link_to "Sign in", new_session_path, class: "text-button" %>
         <% end %>
@@ -34,6 +33,6 @@
       <% end %>
       <%= yield %>
     </main>
-    <footer class="site-footer"><span>Made for curious minds & questionable guesses.</span><a href="https://buy.stripe.com/9B600i4VY3Be3CT4AOfrW00" target="_blank" rel="noopener">Buy Pixel a pencil ↗</a></footer>
+    <footer class="site-footer"><a href="https://buy.stripe.com/9B600i4VY3Be3CT4AOfrW00" target="_blank" rel="noopener">Support Pixel</a></footer>
   </body>
 </html>

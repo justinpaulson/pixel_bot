@@ -9,7 +9,7 @@ class GameFlowTest < ActionDispatch::IntegrationTest
   test "home is public and a guest can start solo without email" do
     get root_path
     assert_response :success
-    assert_select "h1", /Everybody/
+    assert_select "form[action=?] button[name=mode][value=solo]", games_path
     assert_difference [ "User.count", "Game.count", "Player.count", "Round.count" ], 1 do
       post games_path, params: { mode: "solo", category: "music", display_name: "Guest Artist", round_limit: 3 }
     end

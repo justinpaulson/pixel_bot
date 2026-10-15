@@ -13,7 +13,6 @@ export default class extends Controller {
     "mascot",
     "canvasTitle",
     "canvasCopy",
-    "caption",
     "guessForm",
     "guessInput",
     "guessButton",
@@ -21,12 +20,10 @@ export default class extends Controller {
     "hint",
     "reveal",
     "answer",
-    "revealCopy",
     "scoreTitle",
     "scoreboard",
     "shareUrl",
     "copyButton",
-    "hostControls",
     "startButton",
     "nextButton",
     "retryButton",
@@ -72,7 +69,7 @@ export default class extends Controller {
     } catch (error) {
       if (error.name !== "AbortError")
         this.connectionTarget.textContent =
-          "Reconnecting to your game… If this continues, refresh the page.";
+          "Reconnecting… Refresh if this continues.";
     } finally {
       this.polling = false;
       if (!this.disconnected)
@@ -93,18 +90,15 @@ export default class extends Controller {
       this.feedbackTarget.textContent = "";
       this.feedbackTarget.classList.remove("correct");
     }
-    const headings = {
-      lobby: "Assemble your guessing crew.",
-      pending: "A little mystery in the making.",
-      generating: "A little mystery in the making.",
-      ready: "A little mystery in the making.",
-      playing: "See it. Guess it. Get it.",
-      revealed: "Ohhh. Now you see it.",
-      failed: "Even artists have off days.",
-      complete: "That's a wrap. Nice guessing!",
-    };
-    this.headingTarget.textContent = headings[phase] || "Welcome to Pixel.";
-    this.categoryTarget.textContent = round?.category || "PIXEL'S STUDIO";
+    this.headingTarget.textContent =
+      phase === "lobby"
+        ? "Lobby"
+        : phase === "complete"
+          ? "Game over"
+          : phase === "revealed"
+            ? "Round over"
+            : "Guess the drawing";
+    this.categoryTarget.textContent = round?.category || "";
     this.roundLabelTarget.textContent = round
       ? `Round ${round.number} / ${state.round_limit}`
       : `${state.round_limit} rounds · 90 seconds each`;
@@ -118,38 +112,25 @@ export default class extends Controller {
     this.mascotTarget.classList.toggle("is-drawing", generating);
     this.canvasTitleTarget.textContent =
       phase === "lobby"
-        ? "Everyone's a guesser."
+        ? "Ready?"
         : phase === "failed"
-          ? "Let's give that another go."
-          : "Pixel is drawing…";
+          ? "Drawing failed"
+          : "Drawing…";
     this.canvasCopyTarget.textContent =
       phase === "lobby"
-        ? "Share the link, gather your people, and let Pixel do the drawing. You can start with just one player."
+        ? ""
         : phase === "failed"
           ? round.error
-          : "Making something brand new takes a moment, usually about a minute. Your clock starts when the art is ready.";
-    this.captionTarget.textContent = generating
-      ? "A brand-new drawing. No peeking."
-      : revealed
-        ? "Mystery solved. Art collected."
-        : playing
-          ? "The answer is a secret. Even from the host."
-          : "A fresh drawing, just for this game.";
+          : "Usually about a minute.";
     this.guessFormTarget.hidden = !playing || round?.solved;
     this.revealTarget.hidden = !revealed;
     this.answerTarget.textContent = revealed ? round.answer : "";
-    this.revealCopyTarget.textContent = round?.solved
-      ? "You connected the dots. Nicely done."
-      : "Some drawings are trickier than others. That's part of the fun.";
     if (playing && round.solved && !this.feedbackTarget.textContent) {
-      this.feedbackTarget.textContent =
-        "You got it! Let the others have their aha moment.";
+      this.feedbackTarget.textContent = "Correct!";
       this.feedbackTarget.classList.add("correct");
     }
     this.hintTarget.hidden = !playing || !round.hint;
-    this.hintTarget.textContent = round?.hint
-      ? `A little nudge: ${round.hint}`
-      : "";
+    this.hintTarget.textContent = round?.hint ? `Hint: ${round.hint}` : "";
     this.startButtonTarget.hidden = !state.host || phase !== "lobby";
     this.nextButtonTarget.hidden = !state.host || phase !== "revealed";
     this.retryButtonTarget.hidden = !state.host || phase !== "failed";
@@ -157,14 +138,10 @@ export default class extends Controller {
     this.againButtonTarget.hidden = phase !== "complete";
     this.waitingNoteTarget.textContent =
       !state.host && ["lobby", "revealed", "failed"].includes(phase)
-        ? "Waiting for the host to start the next drawing."
+        ? "Waiting for host…"
         : "";
     this.scoreTitleTarget.textContent =
-      phase === "complete"
-        ? "The final scores"
-        : state.mode === "solo"
-          ? "Your score"
-          : "The guessing crew";
+      state.mode === "solo" ? "Score" : "Scores";
     this.renderScores(state.players);
     this.renderGallery(state.gallery);
     this.updateClock();
@@ -187,7 +164,7 @@ export default class extends Controller {
         points.textContent = player.points.toLocaleString();
         if (player.solved) {
           const solved = document.createElement("small");
-          solved.textContent = "Got it!";
+          solved.textContent = "Correct";
           name.append(document.createElement("br"), solved);
         }
         row.append(avatar, name, points);
@@ -265,8 +242,7 @@ export default class extends Controller {
       clearTimeout(this.pollTimer);
       await this.poll();
     } catch (error) {
-      this.feedbackTarget.textContent =
-        "That guess didn't get through. Please try again.";
+      this.feedbackTarget.textContent = "Couldn't send guess. Try again.";
     } finally {
       this.submitting = false;
       this.updateClock();
@@ -300,8 +276,7 @@ export default class extends Controller {
       clearTimeout(this.pollTimer);
       await this.poll();
     } catch (error) {
-      this.connectionTarget.textContent =
-        "Couldn't complete that action. Wait a moment and try again.";
+      this.connectionTarget.textContent = "Something went wrong. Try again.";
     } finally {
       this.actionPending = false;
     }
@@ -323,10 +298,10 @@ export default class extends Controller {
   async copyInvite() {
     try {
       await navigator.clipboard.writeText(this.shareUrlTarget.value);
-      this.copyButtonTarget.textContent = "Link copied ✓";
+      this.copyButtonTarget.textContent = "Copied ✓";
     } catch (error) {
       this.shareUrlTarget.select();
-      this.copyButtonTarget.textContent = "Select and copy the link above";
+      this.copyButtonTarget.textContent = "Copy the selected link";
     }
   }
 }

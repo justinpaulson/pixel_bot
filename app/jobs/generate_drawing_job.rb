@@ -32,7 +32,7 @@ class GenerateDrawingJob < ApplicationJob
     round&.game&.with_lock do
       round.reload
       if round.status == "generating" && round.generation_token == token
-        round.update!(status: "failed", generation_token: nil, error_message: "Pixel couldn't finish this drawing. Please try again.")
+        round.update!(status: "failed", generation_token: nil, error_message: "Couldn't finish the drawing. Try again.")
       end
     end
   end
