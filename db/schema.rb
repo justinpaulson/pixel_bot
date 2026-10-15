@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2026_10_15_094000) do
+ActiveRecord::Schema[8.1].define(version: 2026_10_15_130000) do
   create_table "games", id: :string, force: :cascade do |t|
     t.datetime "started_at"
     t.integer "created_by_id", null: false
@@ -66,6 +66,8 @@ ActiveRecord::Schema[8.0].define(version: 2026_10_15_094000) do
     t.float "generation_seconds"
     t.datetime "ended_at"
     t.string "error_message"
+    t.integer "artwork_version", default: 1, null: false
+    t.index ["category", "word", "model", "artwork_version"], name: "index_rounds_on_reusable_artwork"
     t.index ["game_id", "number"], name: "index_rounds_on_game_id_and_number", unique: true
     t.index ["game_id"], name: "index_rounds_on_game_id"
     t.index ["user_id"], name: "index_rounds_on_user_id"

@@ -1,14 +1,46 @@
 require "test_helper"
 
 class GameTest < ActiveSupport::TestCase
+  include ActiveJob::TestHelper
+
   test "solo starts once and the host can guess without a drawer" do
     game = build_game
-    assert_difference "Round.count", 1 do
+    assert_difference "Round.count", 3 do
       assert game.start!
       assert_not game.start!
     end
     assert_equal "pending", game.current_round.status
+    assert_equal [ 1, 2, 3 ], game.rounds.pluck(:number)
+    assert_equal 3, game.rounds.pluck(:word).uniq.size
     assert_equal 1, game.players.count
+  end
+
+  test "prepares two rounds ahead immediately and refills even when the next drawing is pending" do
+    game = build_game(rounds: 5)
+    assert_enqueued_jobs 3, only: PrepareDrawingJob do
+      game.start!
+    end
+    assert_no_difference "Round.count" do
+      2.times { game.prepare_ahead! }
+    end
+    first = game.current_round
+    first.update!(status: "revealed")
+    assert game.advance!(first.id)
+    assert_equal "pending", game.current_round.status
+    assert_equal [ 1, 2, 3, 4 ], game.rounds.pluck(:number)
+
+    (2..4).each do |number|
+      round = game.current_round
+      assert_equal number, round.number
+      round.update!(status: "revealed")
+      assert game.advance!(round.id)
+    end
+    assert_equal 5, game.rounds.count
+    assert_equal 5, game.rounds.pluck(:word).uniq.size
+    game.update!(completed_at: Time.current)
+    assert_no_enqueued_jobs do
+      game.prepare_ahead!
+    end
   end
 
   test "solo and completed rooms cannot admit new players" do

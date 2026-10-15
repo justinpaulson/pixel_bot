@@ -3,8 +3,14 @@ require "net/http"
 class DrawingBot
   class Error < StandardError; end
   DEFAULT_MODEL = "gpt-6-astra"
+  # Increment when illustration instructions change enough to invalidate saved art.
+  ARTWORK_VERSION = 1
 
-  def initialize(round:, model: ENV.fetch("PIXEL_MODEL", DEFAULT_MODEL))
+  def self.configured_model
+    ENV.fetch("PIXEL_MODEL", DEFAULT_MODEL)
+  end
+
+  def initialize(round:, model: self.class.configured_model)
     @round, @model = round, model
   end
 
@@ -28,7 +34,7 @@ class DrawingBot
     raise Error, "Drawing was not completed" unless data["status"] == "completed"
 
     text = data.fetch("output", []).flat_map { |item| item.fetch("content", []) }.select { |item| item["type"] == "output_text" }.map { |item| item["text"] }.join
-    { svg: SvgSanitizer.call(text), model: data.fetch("model", @model) }
+    { svg: SvgSanitizer.call(text), model: data.fetch("model", @model), artwork_version: ARTWORK_VERSION }
   rescue JSON::ParserError, Timeout::Error, IOError, SystemCallError, SocketError, OpenSSL::SSL::SSLError => e
     raise Error, "Drawing service unavailable (#{e.class.name})"
   end

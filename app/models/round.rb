@@ -8,7 +8,32 @@ class Round < ApplicationRecord
   belongs_to :user
 
   validates :status, inclusion: { in: %w[pending generating ready playing revealed failed] }
-  after_create_commit -> { GenerateDrawingJob.perform_later(id) if game.edition == 2 }
+  after_create_commit -> { PrepareDrawingJob.perform_later(id) if game.edition == 2 && status == "pending" }
+
+  # Both cached art and provider results use the same guarded activation path.
+  # A stale provider response must not replace a timeout or a newer attempt.
+  def complete_drawing!(result, token: nil)
+    activated = false
+    accepted = game.with_lock do
+      reload
+      eligible = token ? status == "generating" && generation_token == token : status == "pending"
+      next false unless eligible && !game.completed?
+      update!(svg: result.fetch(:svg), model: result.fetch(:model),
+        artwork_version: result.fetch(:artwork_version, DrawingBot::ARTWORK_VERSION), status: "ready",
+        generation_seconds: token ? Time.current - generation_started_at : 0,
+        generation_token: nil, error_message: nil)
+      if game.active_round_number == number
+        activate!
+        activated = true
+      end
+      true
+    end
+    if activated
+      EndRoundJob.set(wait_until: deadline).perform_later(id)
+      game.prepare_ahead!
+    end
+    accepted
+  end
 
   def activate!
     update!(status: "playing", started_at: Time.current)
@@ -73,7 +98,7 @@ class Round < ApplicationRecord
       return false unless status == "failed"
       update!(status: "pending", generation_started_at: Time.current, generation_token: nil, error_message: nil)
     end
-    GenerateDrawingJob.perform_later(id)
+    PrepareDrawingJob.perform_later(id)
     true
   end
 end

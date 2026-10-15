@@ -10,7 +10,7 @@ class PromptCatalog
     "objects" => { name: "Objects", icon: "◇", description: "Small things. Big aha moments." }
   }.freeze
 
-  # Curated answers keep judging fair; the artwork is newly generated every round.
+  # Curated answers keep judging fair; matching saved artwork can be reused.
   # Pipe-separated: canonical answer | accepted alternate names | delayed hint.
   DATA = {
     "movies" => <<~LIST,

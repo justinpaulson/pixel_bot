@@ -12,7 +12,7 @@ All three models received the same Jurassic Park drawing instructions through th
 | [GPT-6.1 Sol](svg-evaluation/gpt-6.1-sol.svg) | 68.0 | 5,142 | Recognizable dinosaur and vehicle, plus amber. Good result, no observed speed advantage in this sample. |
 | [GPT-6 Luna](svg-evaluation/gpt-6-luna.svg) | 12.9 | 2,870 | Fast, but the gate and fragmented shapes made the intended movie substantially harder to identify. |
 
-**Default: GPT-6 Astra.** Preserve the stronger illustration quality, start the clock only after generation, and generate one fresh drawing ahead during the active round to reduce subsequent waiting. The initial wait remains visible and honestly described in the game.
+**Default: GPT-6 Astra.** Preserve the stronger illustration quality and start the clock only when the drawing is playable. The original release prepared one drawing ahead after the active drawing finished. The later October 15 update prepares the current round plus two future rounds immediately and reuses compatible saved drawings; uncached art still takes approximately the times observed here.
 
 The current [OpenAI model guidance](https://developers.openai.com/api/docs/guides/latest-model) and [migration guidance](https://developers.openai.com/api/docs/guides/latest-model/gpt-6-astra.md#migration-quickstart) were checked before implementation. The authenticated model list and actual requests confirmed access to all three evaluated models.
 
@@ -34,4 +34,4 @@ A real three-round solo game generated Post Malone, Cher, and KISS. Verified inc
 
 Two independent local browser sessions verified the invite/join flow and synchronized multiplayer state. A round timed out and revealed automatically. On the next round, the host correctly guessed The Matrix while the guest retained an active guess form and no visible answer; the guest then guessed “matrix,” both scores appeared, and the shared answer was revealed. Browser console inspection reported no errors or warnings. Automated request tests separately verify that outsiders cannot read state or artwork, a guest cannot start/skip another host's round, prepared future artwork is inaccessible, and the first correct party guess does not reveal the answer to other players.
 
-Raw timing/size results are stored beside the SVGs in `svg-evaluation/results.json` and `svg-evaluation/categories.json`. These samples are evaluation artifacts, not a cache used by gameplay. The landing page uses one clearly labeled sample; actual rounds always call the model for new art.
+Raw timing/size results are stored beside the SVGs in `svg-evaluation/results.json` and `svg-evaluation/categories.json`. These files remain evaluation artifacts and are not imported into gameplay. The landing page uses one clearly labeled sample. Since the later October 15 update, gameplay reuses compatible completed round records before requesting new art.

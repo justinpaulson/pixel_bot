@@ -1,7 +1,7 @@
 require "test_helper"
 
 class GenerateDrawingJobTest < ActiveSupport::TestCase
-  test "generates once starts clock after the response and prepares only one round ahead" do
+  test "generates once and starts only the active clock while two future rounds prepare" do
     game = build_game
     game.start!
     first = game.current_round
@@ -14,7 +14,7 @@ class GenerateDrawingJobTest < ActiveSupport::TestCase
     bot.verify
     assert_equal "playing", first.reload.status
     assert first.started_at
-    assert_equal 2, game.rounds.count
+    assert_equal 3, game.rounds.count
     second = game.rounds.find_by(number: 2)
     DrawingBot.stub :new, Struct.new(:run).new({ svg: first.svg, model: "test-model" }) do
       GenerateDrawingJob.perform_now(second.id)
@@ -22,7 +22,34 @@ class GenerateDrawingJobTest < ActiveSupport::TestCase
     assert_equal "ready", second.reload.status
     assert_nil second.started_at
     assert_equal first, game.reload.current_round
-    assert_equal 2, game.rounds.count
+    assert_equal 3, game.rounds.count
+  end
+
+  test "a future drawing can finish before the current one without starting its timer" do
+    game = build_game
+    game.start!
+    future = game.rounds.find_by(number: 3)
+    DrawingBot.stub :new, Struct.new(:run).new({ svg: '<svg viewBox="0 0 512 512"><circle r="10"/></svg>', model: "test-model" }) do
+      GenerateDrawingJob.perform_now(future.id)
+    end
+    assert_equal "ready", future.reload.status
+    assert_nil future.started_at
+    assert_nil future.deadline
+    assert_equal "pending", game.current_round.status
+    assert_nil GameState.new(game, users(:one)).as_json[:round][:image_url]
+  end
+
+  test "checks the library again when a queued request reaches a drawing worker" do
+    game = build_game
+    game.start!
+    round = game.current_round
+    source = ready_round(build_game, status: "revealed", word: round.word)
+    source.update!(category: round.category, hint: round.hint, model: DrawingBot.configured_model)
+    DrawingBot.stub :new, ->(*) { flunk "A completed drawing should avoid a provider call" } do
+      GenerateDrawingJob.perform_now(round.id)
+    end
+    assert_equal "playing", round.reload.status
+    assert_equal SvgSanitizer.call(source.svg), round.svg
   end
 
   test "provider failures become recoverable without leaking the provider message" do

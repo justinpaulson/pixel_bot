@@ -1,4 +1,5 @@
 class Game < ApplicationRecord
+  ROUNDS_AHEAD = 2
   before_create -> { self.id ||= SecureRandom.uuid }
   has_many :players, dependent: :destroy
   has_many :rounds, -> { order(:number) }, dependent: :destroy
@@ -20,7 +21,7 @@ class Game < ApplicationRecord
     with_lock do
       return false if started_at? || edition != 2
       update!(started_at: Time.current)
-      add_round!
+      prepare_rounds!
     end
     true
   end
@@ -31,7 +32,8 @@ class Game < ApplicationRecord
       round = current_round
       return false unless round && round.id == round_id.to_i && round.status == "revealed" && !completed?
       update!(active_round_number: active_round_number + 1)
-      next_round = current_round || add_round!
+      prepare_rounds!
+      next_round = current_round
       if next_round.status == "ready"
         next_round.activate!
         activated = next_round
@@ -39,16 +41,14 @@ class Game < ApplicationRecord
     end
     if activated
       EndRoundJob.set(wait_until: activated.deadline).perform_later(activated.id)
-      prepare_next!
     end
     true
   end
 
-  def prepare_next!
+  def prepare_ahead!
     with_lock do
-      return if completed? || active_round_number >= round_limit
-      return unless %w[playing revealed].include?(current_round&.status)
-      add_round! unless rounds.exists?(number: active_round_number + 1)
+      return if !started_at? || completed? || edition != 2
+      prepare_rounds!
     end
   end
 
@@ -62,8 +62,14 @@ class Game < ApplicationRecord
 
   private
 
-  def add_round!
-    entry = PromptCatalog.pick(category: category, excluding: rounds.pluck(:word))
-    rounds.create!(entry.merge(user: created_by, number: rounds.count + 1))
+  # Called under the game lock. Pick answers once, without repeats, and enqueue
+  # the whole window on commit so all three drawings can run concurrently.
+  def prepare_rounds!
+    last_number = [ active_round_number + ROUNDS_AHEAD, round_limit ].min
+    (active_round_number..last_number).each do |number|
+      next if rounds.exists?(number: number)
+      entry = PromptCatalog.pick(category: category, excluding: rounds.pluck(:word))
+      rounds.create!(entry.merge(user: created_by, number: number))
+    end
   end
 end

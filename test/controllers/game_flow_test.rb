@@ -10,7 +10,7 @@ class GameFlowTest < ActionDispatch::IntegrationTest
     get root_path
     assert_response :success
     assert_select "form[action=?] button[name=mode][value=solo]", games_path
-    assert_difference [ "User.count", "Game.count", "Player.count", "Round.count" ], 1 do
+    assert_difference({ "User.count" => 1, "Game.count" => 1, "Player.count" => 1, "Round.count" => 3 }) do
       post games_path, params: { mode: "solo", category: "music", display_name: "Guest Artist", round_limit: 3 }
     end
     game = Game.order(:created_at).last
@@ -46,7 +46,7 @@ class GameFlowTest < ActionDispatch::IntegrationTest
       post start_game_path(game), as: :json
       assert_response :success
     end
-    assert_equal 1, game.rounds.count
+    assert_equal 3, game.rounds.count
     get start_game_path(game)
     assert_response :not_found
   end
