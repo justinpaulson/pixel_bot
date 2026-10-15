@@ -1,12 +1,23 @@
 Pixel social preview
 
-Published asset: public/og-image-v1.jpg
+Published asset: public/og-image-v2.jpg
 Dimensions: 1200 x 630 pixels
 Generation mode: built-in image_gen tool
 Delivery: resized and JPEG-encoded with macOS sips at quality 88.
 Use a new versioned filename when replacing the artwork so social crawlers can refresh their image cache.
 
-Final generation prompt:
+Final edit prompt (reference: public/og-image-v1.jpg):
+
+Use case: precise-object-edit
+Asset type: final Open Graph social sharing card for Pixel.
+Edit target: the attached Pixel social preview.
+Primary request: Replace the dinosaur illustration on the right with an adorable, distinctive little robot artist holding the oversized mint-and-orange pencil. The robot should be the clear central character of the right half, looking delighted to draw. Use a rounded boxy head, two expressive dark petrol oval eyes, a tiny friendly smile, simple articulated arms and legs, warm ivory and mint panels, deep petrol outlines and a few orange details. Its hand must visibly grip the pencil, naturally and clearly. The pencil tip can touch a small ivory sketchbook page below, tracing a lively curved line. Keep the right-side composition airy, charming and readable at thumbnail size. Keep the speech bubble "Any guesses?" above it. This is a friendly drawing-game mascot, not an industrial robot.
+Style/medium: same polished flat editorial graphic design with subtle papery hand-drawn texture as the original, no 3D render or photorealism.
+Invariants: preserve the entire left-side typography, wording, colors and hierarchy exactly. Preserve background mint #f0f5f1, petrol #173f40, pine #24665b, orange #ef965e, mint #b9e6d2, ivory #fffdf7. Preserve the website spelling. Preserve landscape aspect ratio 1200:630 with all main content safely inside the frame.
+Exact text unchanged: "pixel." / "THE AI DRAWING GAME" / "Pixel draws." / "You guess." / "Play solo or with friends." / "Any guesses?" / "pixel.justinpaulson.com"
+Avoid: dinosaur as the main subject, extra text, extra fingers or arms, metallic chrome, futuristic neon, gradients, watermarks, unrelated decorations. Output the whole revised card, precisely 1200x630 if possible.
+
+Initial generation prompt for the reference artwork:
 
 Use case: ads-marketing
 Asset type: finished Open Graph social link preview for the game Pixel at pixel.justinpaulson.com.
