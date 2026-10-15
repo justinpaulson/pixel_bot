@@ -1,0 +1,18 @@
+Pixel social preview
+
+Published asset: public/og-image-v1.jpg
+Dimensions: 1200 x 630 pixels
+Generation mode: built-in image_gen tool
+Delivery: resized and JPEG-encoded with macOS sips at quality 88.
+Use a new versioned filename when replacing the artwork so social crawlers can refresh their image cache.
+
+Final generation prompt:
+
+Use case: ads-marketing
+Asset type: finished Open Graph social link preview for the game Pixel at pixel.justinpaulson.com.
+Primary request: Design a beautiful, polished, distinctive 1200 x 630 pixel landscape link-preview card (aspect ratio 1.90476:1). It must feel like an inviting drawing and guessing game, with excellent thumbnail legibility.
+Style/medium: crisp editorial graphic design mixed with charming hand-drawn flat illustrations, a premium playful sketchbook aesthetic. Flat 2D shapes, bold clean sans-serif type, subtle paper texture, tiny offset shadows. No photographic or 3D style.
+Color palette: very pale mint background #f0f5f1, deep petrol ink #173f40, pine green #24665b, warm orange #ef965e, mint #b9e6d2, ivory drawing paper #fffdf7.
+Composition: generous safe margins of at least 60 pixels. Left 55 percent: a small lowercase bold wordmark "pixel." with the period in orange, then a tiny spaced all-caps eyebrow "THE AI DRAWING GAME", then very large bold headline on two lines: "Pixel draws." / "You guess." First line dark petrol, second pine green. Below, a short quiet line "Play solo or with friends." This copy must remain legible as a small social card. Right 45 percent: a slightly tilted ivory rounded sketchbook card with a dark green whimsical T-rex doodle, a little tropical leaf detail, orange corner accents, and a large mint-and-orange drawing pencil crossing the lower corner as if finishing the sketch. A small outlined speech bubble above the sketch contains "Any guesses?" Sparse hand-drawn sparkles and a looping pencil stroke connect the illustration to the layout, without crowding it. Everything comfortably inside canvas. Bottom left small understated website text "pixel.justinpaulson.com".
+Text (verbatim): "pixel." / "THE AI DRAWING GAME" / "Pixel draws." / "You guess." / "Play solo or with friends." / "Any guesses?" / "pixel.justinpaulson.com"
+Constraints: Exact spelling; no extra words, no logos of other brands, no watermark, no UI controls, no gradient, no neon, no pixel-art aesthetic despite the brand name. Keep composition clean and purposeful, with clear hierarchy and delightful illustration. Render the whole finished design as one image, precisely 1200x630 if possible.
