@@ -1,0 +1,489 @@
+Yellow Submarine||A colorful Beatles song
+Purple Rain||A colorful Prince song
+Rocket Man||An Elton John song about space
+Dancing Queen||An ABBA dance-floor classic
+Firework|Fireworks|A Katy Perry anthem
+Umbrella||A Rihanna hit about shelter
+Flowers||A Miley Cyrus song about independence
+Watermelon Sugar||A sweet Harry Styles song
+Bad Romance||A Lady Gaga hit
+Single Ladies|Single Ladies Put a Ring on It|A Beyoncé dance anthem
+Blinding Lights||A neon-lit hit by The Weeknd
+Shake It Off||A Taylor Swift dance hit
+Eye of the Tiger||A motivational rock anthem
+Hotel California||An Eagles classic
+Here Comes the Sun||A hopeful Beatles song
+Stairway to Heaven||A Led Zeppelin classic
+Ring of Fire||A Johnny Cash classic
+Blackbird||A bird-inspired Beatles song
+Wrecking Ball||A Miley Cyrus hit
+Ice Ice Baby||A Vanilla Ice rap hit
+Castle on the Hill||An Ed Sheeran song
+Octopus's Garden|Octopus Garden;Octopuses Garden|An underwater Beatles song
+Walking on Sunshine||An upbeat song by Katrina and the Waves
+Sweet Caroline||A Neil Diamond singalong
+True Colors||A chart hit by Cyndi Lauper|Paintbrush revealing a rainbow beneath gray paint.
+Two Of Hearts||A chart hit by Stacey Q|Two large heart-shaped playing-card symbols side by side, without letters or numbers.
+The Rain||A chart hit by Oran 'Juice' Jones|A lone person beneath a small cloud with heavy raindrops.
+Hip To Be Square||A chart hit by Huey Lewis & The News|A dancing square wearing sunglasses beside round dancers.
+Walk Like An Egyptian||A chart hit by The Bangles|A sideways dancer in an ancient Egyptian pose beside a pyramid.
+Open Your Heart||A chart hit by Madonna|A heart-shaped door opening to golden light.
+Ballerina Girl||A chart hit by Lionel Richie|A ballerina in a pink tutu balancing on one pointed shoe.
+Jacob's Ladder||A chart hit by Huey Lewis & The News|A long wooden ladder climbing from earth into bright clouds.
+Mandolin Rain||A chart hit by Bruce Hornsby & The Range|Raindrops falling onto a mandolin with a rounded wooden body.
+Lean On Me||A chart hit by Club Nouveau|One person leaning their weight on a supportive friend's shoulder.
+The Final Countdown||A chart hit by Europe|A rocket on a launchpad with a nearly empty hourglass; no digits.
+Midnight Blue||A chart hit by Lou Gramm|A deep-blue sky above a sleeping city and crescent moon.
+La Isla Bonita||A chart hit by Madonna|A beautiful tropical island with palms and a beach at sunset.
+The Lady In Red||A chart hit by Chris de Burgh|A woman in a flowing bright red evening gown on a dance floor.
+Head To Toe||A chart hit by Lisa Lisa And Cult Jam|A full-body silhouette with arrows pointing to the head and toes.
+Diamonds||A chart hit by Herb Alpert|A cluster of sparkling cut diamonds on a velvet cushion.
+I Wanna Dance With Somebody|I Wanna Dance With Somebody (Who Loves Me)|A chart hit by Whitney Houston|Two joyful people reaching for each other on a colorful dance floor.
+Songbird||A chart hit by Kenny G|A small bird singing with sound-wave curves around its beak.
+Heart And Soul||A chart hit by T'Pau|A bright heart beside a friendly glowing spirit silhouette.
+Only In My Dreams||A chart hit by Debbie Gibson|A sleeping person with a surreal floating castle inside a dream cloud.
+Touch Of Grey||A chart hit by Grateful Dead|A paintbrush adding a small gray streak to bright colored hair.
+Paper In Fire||A chart hit by John Mellencamp|Loose paper sheets curling in a small flame, without writing.
+Little Lies||A chart hit by Fleetwood Mac|A small wooden puppet with a slightly growing nose and fingers crossed.
+Heaven Is A Place On Earth||A chart hit by Belinda Carlisle|A tiny globe with clouds, a halo and heavenly gates on its surface.
+Cherry Bomb||A chart hit by John Mellencamp|A pair of red cherries with a lit cartoon fuse instead of stems.
+Candle In The Wind||A chart hit by Elton John|A candle flame bending sideways in a visible gust of wind.
+Hazy Shade Of Winter||A chart hit by The Bangles|A snowy bare tree partly obscured by gray mist.
+Hungry Eyes|Hungry Eyes (From "Dirty Dancing")|A chart hit by Eric Carmen|A pair of wide eyes gazing hungrily at a plate of food.
+Tunnel Of Love||A chart hit by Bruce Springsteen|A heart-shaped tunnel with a small boat carrying a couple.
+Man In The Mirror||A chart hit by Michael Jackson|A man facing his reflection in a tall mirror.
+Get Outta My Dreams, Get Into My Car||A chart hit by Billy Ocean|A dream-cloud figure stepping down into an open car door.
+Rocket 2 U||A chart hit by The Jets|A small rocket flying toward an outstretched hand; no lettering.
+Devil Inside||A chart hit by INXS|A friendly cartoon devil visible inside a person's transparent silhouette.
+Wishing Well||A chart hit by Terence Trent D'Arby|A stone well with a coin falling toward sparkling water.
+Angel||A chart hit by Aerosmith|A gentle winged figure with a halo above clouds.
+Pink Cadillac||A chart hit by Natalie Cole|A pink vintage Cadillac-style convertible with prominent tail fins, no badges.
+Electric Blue||A chart hit by Icehouse|Blue lightning bolts surrounding a glowing blue light bulb.
+Shattered Dreams||A chart hit by Johnny Hates Jazz|A sleeping person's dream cloud breaking into glass-like pieces.
+Piano In The Dark||A chart hit by Brenda Russell|A grand piano picked out by a tiny spotlight in a dark room.
+Circle In The Sand||A chart hit by Belinda Carlisle|A finger tracing a perfect circle on a sandy beach.
+The Valley Road||A chart hit by Bruce Hornsby & The Range|A winding road running between two green mountain slopes.
+The Flame||A chart hit by Cheap Trick|A single bright flame above a candle wick against darkness.
+Pour Some Sugar On Me||A chart hit by Def Leppard|A person under a tipped sugar bowl with white crystals falling.
+Hands To Heaven||A chart hit by Breathe|Two hands reaching upward toward bright clouds.
+Rush Hour||A chart hit by Jane Wiedlin|A traffic jam of tiny cars with a crowded bus and a clock without digits.
+Monkey||A chart hit by George Michael|A monkey swinging from a branch with a curled tail.
+Fast Car||A chart hit by Tracy Chapman|A car speeding along an open road with motion streaks.
+Sweet Child O' Mine||A chart hit by Guns N' Roses|A smiling child surrounded by candy shapes and a protective parent's arms.
+Red Red Wine||A chart hit by UB40|A glass and bottle of deep red wine with red grapes.
+Wild Wild West||A chart hit by The Escape Club|A cowboy, cactus and tumbleweed on a desert frontier street.
+Kokomo|Kokomo (From"Cocktail" )|A chart hit by The Beach Boys|A tropical beach with palms, a hammock and two bright vacation drinks.
+The Loco-Motion||A chart hit by Kylie Minogue|A line of dancers moving like the carriages of a steam train.
+Bad Medicine||A chart hit by Bon Jovi|An ominous medicine bottle with a sickly green cloud, no label.
+Every Rose Has Its Thorn||A chart hit by Poison|A beautiful red rose with large sharp thorns on its stem.
+Waiting For A Star To Fall||A chart hit by Boy Meets Girl|A person holding a basket under a falling star.
+Walk On Water||A chart hit by Eddie Money|A person stepping across a lake without sinking.
+Welcome To The Jungle||A chart hit by Guns N' Roses|Open vines revealing a lush jungle full of animals.
+In Your Room||A chart hit by The Bangles|A cozy bedroom with a bed, lamp and personal belongings.
+Smooth Criminal||A chart hit by Michael Jackson|A white-suited dancer with fedora leaning impossibly forward, a dark alley behind.
+Paradise City||A chart hit by Guns N' Roses|A sparkling city surrounded by palms, gardens and clear blue water.
+Eternal Flame||A chart hit by The Bangles|A bright flame enclosed in an unbroken circular loop.
+Walk The Dinosaur||A chart hit by Was (Not Was)|A person taking a friendly dinosaur for a walk on a leash.
+Like A Prayer||A chart hit by Madonna|Clasped praying hands beneath a stained-glass window.
+Superwoman||A chart hit by Karyn White|A woman in a cape flying over a city.
+Soldier Of Love||A chart hit by Donny Osmond|A toy soldier holding a heart-shaped shield and a flower.
+Wind Beneath My Wings|Wind Beneath My Wings (From "Beaches")|A chart hit by Bette Midler|A bird held aloft by sweeping visible wind currents under its wings.
+I Drove All Night||A chart hit by Cyndi Lauper|A car on a dark highway beneath moon and stars.
+Toy Soldiers||A chart hit by Martika|A row of small green toy soldiers on a child's bedroom floor.
+Batdance|Batdance (From "Batman")|A chart hit by Prince|A bat-eared masked hero dancing among flying bats.
+The Doctor||A chart hit by The Doobie Brothers|A doctor with a stethoscope and a medical bag.
+Cold Hearted||A chart hit by Paula Abdul|A heart-shaped block of ice with frosty edges.
+Angel Eyes||A chart hit by The Jeff Healey Band|A pair of eyes framed by tiny white wings and a halo.
+If I Could Turn Back Time||A chart hit by Cher|Hands turning a clock backward beside a reversing hourglass, no numbers.
+Listen To Your Heart||A chart hit by Roxette|A person holding a stethoscope to a large heart.
+Sowing The Seeds Of Love||A chart hit by Tears For Fears|Hands scattering heart-shaped seeds into neat garden furrows.
+Love In An Elevator||A chart hit by Aerosmith|A couple holding a heart inside an open elevator.
+Love Shack||A chart hit by The B-52s|A little wooden shack decorated with hearts and party lights.
+Blame It On The Rain||A chart hit by Milli Vanilli|A frustrated person pointing accusingly at a rain cloud over a puddle.
+Poison||A chart hit by Alice Cooper|An ornate bottle dripping ominous green liquid, no lettering.
+We Didn't Start The Fire||A chart hit by Billy Joel|People with empty hands looking at an already burning campfire.
+Pump Up The Jam||A chart hit by Technotronic|A bicycle pump connected to an overflowing jar of fruit jam.
+Downtown Train||A chart hit by Rod Stewart|A train passing between tall city buildings at night.
+Free Fallin'||A chart hit by Tom Petty|A person in free fall through clouds, shown safely with a parachute pack.
+Opposites Attract||A chart hit by Paula Abdul (Duet|A red magnet pulling together black and white spheres.
+Black Velvet||A chart hit by Alannah Myles|A rich black velvet curtain folded beside a vintage microphone.
+All Around The World||A chart hit by Lisa Stansfield|A plane circling a globe with a dotted trail.
+Vogue||A chart hit by Madonna|A stylish dancer striking angular fashion poses in a spotlight.
+U Can't Touch This|You Can't Touch This|A chart hit by M.C. Hammer|A dancer in oversized parachute pants beside a hand held back from a sparkling object.
+Step By Step||A chart hit by New Kids On The Block|Feet ascending a staircase one step at a time.
+Cradle Of Love|Cradle Of Love (From "Ford Fairlane")|A chart hit by Billy Idol|A baby cradle shaped like a heart.
+Enjoy The Silence||A chart hit by Depeche Mode|A crowned figure sitting peacefully in a deck chair on an empty hill.
+Thieves In The Temple||A chart hit by Prince|Masked cartoon thieves carrying treasure out of an ancient temple.
+Black Cat||A chart hit by Janet Jackson|A black cat with arched back and bright eyes beneath a moon.
+Cherry Pie||A chart hit by Warrant|A lattice-topped pie with bright red cherries spilling out.
+Groove Is In The Heart||A chart hit by Deee-Lite|A heart containing a disco ball and a dancing silhouette.
+Tom's Diner||A chart hit by DNA|A diner counter with coffee, a window and a lone customer; no signs.
+After The Rain||A chart hit by Nelson|Sunlight and a rainbow above wet streets after a passing cloud.
+This House||A chart hit by Tracie Spencer|A single welcoming house with a porch and lit windows.
+Joyride||A chart hit by Roxette|Friends smiling in an open-top car on a sunny coastal road.
+Playground||A chart hit by Another Bad Creation|An empty playground with swings, a slide and a seesaw.
+Summertime||A chart hit by D.J. Jazzy Jeff & The Fresh Prince|A bright sun above a beach chair, sunglasses and melting ice cream.
+Fading Like A Flower|Fading Like A Flower (Every Time You Leave)|A chart hit by Roxette|A colorful flower becoming pale and dropping petals.
+Wind Of Change||A chart hit by Scorpions|A gust turning brown leaves into green leaves around a windmill.
+Too Many Walls||A chart hit by Cathy Dennis|A person surrounded by an absurd maze of brick walls.
+Shiny Happy People||A chart hit by R.E.M.|A group of smiling people sparkling in warm sunshine.
+Hole Hearted||A chart hit by Extreme|A heart with a clear circular hole through its center.
+Cream||A chart hit by Prince And The N.P.G.|A pitcher pouring cream into a bowl with a soft swirl.
+Black Or White||A chart hit by Michael Jackson|A split black-and-white silhouette with contrasting hands reaching together.
+Don't Let The Sun Go Down On Me||A chart hit by George Michael/Elton John|A person trying to hold a setting sun above the horizon.
+Smells Like Teen Spirit||A chart hit by Nirvana|A grunge guitarist in front of gym bleachers and cheerleaders, no writing.
+Diamonds And Pearls||A chart hit by Prince And The N.P.G.|A sparkling diamond resting on a loop of white pearls.
+Tears In Heaven||A chart hit by Eric Clapton|Large teardrops falling from clouds with a soft halo of light.
+Beauty And The Beast||A chart hit by Celine Dion And Peabo Bryson|A woman in a yellow ball gown dancing with a gentle horned beast.
+Bohemian Rhapsody||A chart hit by Queen|Four dramatic faces in a diamond arrangement under theatrical light.
+Jump||A chart hit by Kris Kross|Two young performers in oversized backward clothes jumping high.
+Under The Bridge||A chart hit by Red Hot Chili Peppers|A small figure beneath a large arching city bridge.
+Achy Breaky Heart||A chart hit by Billy Ray Cyrus|A cracked heart wrapped in a bandage beside a cowboy boot.
+Wishing On A Star||A chart hit by The Cover Girls|A person clasping hands as a shooting star crosses the sky.
+This Used To Be My Playground||A chart hit by Madonna|An adult looking at an old empty swing set through a memory cloud.
+Life Is A Highway||A chart hit by Tom Cochrane|A long highway winding from a sunrise through mountains to a distant sunset.
+End Of The Road|End Of The Road (From "Boomerang")|A chart hit by Boyz II Men|A road ending abruptly at a cliff edge with a safe barrier.
+November Rain||A chart hit by Guns N' Roses|Rain falling through bare branches and orange autumn leaves.
+Jump Around||A chart hit by House Of Pain|A circle of energetic people jumping in different directions.
+A Whole New World|A Whole New World (Aladdin's Theme)|A chart hit by Peabo Bryson & Regina Belle|A couple on a flying carpet above a palace under stars.
+Bed Of Roses||A chart hit by Bon Jovi|A bed made entirely from red roses and green stems.
+Cat's In The Cradle||A chart hit by Ugly Kid Joe|A curled-up cat sleeping in a rocking baby cradle.
+Two Princes||A chart hit by Spin Doctors|Two young princes with different crowns standing side by side.
+I'm Gonna Be (500 Miles)|500 Miles|A chart hit by The Proclaimers|Two bespectacled hikers walking a very long winding road with worn boots.
+Runaway Train||A chart hit by Soul Asylum|An unattended steam train racing down tracks with loose luggage flying.
+The River Of Dreams||A chart hit by Billy Joel|A winding river flowing through a sleeping person's dream cloud.
+Hero||A chart hit by Mariah Carey|A caped figure lifting someone safely above a dangerous gap.
+The Sign||A chart hit by Ace Of Base|A large blank roadside sign lit by a ray of sunlight.
+Gin And Juice||A chart hit by Snoop Doggy Dogg|A clear bottle, orange juice carton and a glass with citrus; no labels.
+Streets Of Philadelphia|Streets Of Philadelphia (From "Philadelphia")|A chart hit by Bruce Springsteen|A lonely walk past Philadelphia row houses with the Liberty Bell in the distance.
+Can You Feel The Love Tonight|Can You Feel The Love Tonight (From "The Lion King")|A chart hit by Elton John|Two lions nuzzling beneath a starry savanna sky.
+Fantastic Voyage||A chart hit by Coolio|A fantastical boat journey past floating islands and giant sea creatures.
+On Bended Knee||A chart hit by Boyz II Men|A person kneeling with an open ring box.
+Take A Bow||A chart hit by Madonna|A performer bending into a deep bow beneath stage curtains.
+Candy Rain||A chart hit by Soul For Real|Colorful candies falling from a cloud into outstretched hands.
+Hold My Hand||A chart hit by Hootie & The Blowfish|Two hands clasping tightly in the foreground.
+Water Runs Dry||A chart hit by Boyz II Men|A cracked riverbed beneath a dry tap with one last drop.
+Total Eclipse Of The Heart||A chart hit by Nicki French|A heart-shaped sun partly covered by a dark moon.
+Waterfalls||A chart hit by TLC|Three streams of water plunging over a tall cliff.
+Kiss From A Rose||A chart hit by Seal|A rose with softly shaped lips leaving a kiss near a face.
+Colors Of The Wind|Colors Of The Wind (From "Pocahontas")|A chart hit by Vanessa Williams|Colorful autumn leaves spiraling around a person in a strong breeze.
+Carnival||A chart hit by Natalie Merchant|A colorful fairground with a Ferris wheel, carousel and striped tents.
+Breakfast At Tiffany's||A chart hit by Deep Blue Something|A woman with a high bun eating a pastry outside an elegant jewelry window; no writing.
+Free As A Bird||A chart hit by The Beatles|A bird flying away from an open cage.
+Wonderwall||A chart hit by Oasis|A brick wall with a magical glowing opening and an acoustic guitar leaning beside it.
+Tha Crossroads|The Crossroads;Crossroads|A chart hit by Bone Thugs-N-Harmony|A lone traveler at a crossroads beneath a dramatic cloudy sky.
+Macarena|Macarena (Bayside Boys Mix)|A chart hit by Los Del Rio|A line of dancers with arms extended in the recognizable synchronized dance pose.
+C'mon N' Ride It (The Train)|The Train|A chart hit by Quad City DJ's|A party train with passengers dancing in a line beside it.
+Un-Break My Heart||A chart hit by Toni Braxton|Hands carefully repairing a cracked heart with a ribbon.
+Pony||A chart hit by Ginuwine|A small pony trotting with a flowing mane.
+I Believe I Can Fly|I Believe I Can Fly (From "Space Jam")|A chart hit by R. Kelly|A person spreading arms like wings above a basketball court and clouds.
+Fly Like An Eagle|Fly Like An Eagle (From "Space Jam")|A chart hit by Seal|A large eagle gliding over a basketball hoop and clouds.
+Discotheque||A chart hit by U2|A bright disco ball above a multicolored dance floor.
+Where Have All The Cowboys Gone?||A chart hit by Paula Cole|An empty western street with abandoned cowboy hats and boots.
+Quit Playing Games (With My Heart)||A chart hit by Backstreet Boys|Hands moving a heart-shaped piece across a board game.
+Barbie Girl||A chart hit by Aqua|A blonde fashion doll in a pink plastic dream house.
+Honey||A chart hit by Mariah Carey|Golden honey dripping from a dipper into a jar beside a bee.
+Tubthumping||A chart hit by Chumbawamba|A drummer enthusiastically beating an overturned metal wash tub.
+My Heart Will Go On||A chart hit by Celine Dion|A glowing heart above the bow of an ocean liner at sunset.
+Frozen||A chart hit by Madonna|A figure enclosed in clear blue ice with drifting snowflakes.
+Ray Of Light||A chart hit by Madonna|A single bright sunbeam breaking through clouds onto a dark landscape.
+When The Lights Go Out||A chart hit by Five|A room of lamps switching off with one candle left glowing.
+Iris||A chart hit by Goo Goo Dolls|A close view of a purple iris flower beside an eye with a matching iris.
+Hands||A chart hit by Jewel|Two open hands reaching toward a small warm light.
+Slide||A chart hit by Goo Goo Dolls|A playground slide with a person sliding down.
+Heartbreak Hotel||A chart hit by Whitney Houston|A small hotel with a broken-heart symbol above its door, no letters.
+Bills, Bills, Bills||A chart hit by Destiny's Child|Three overflowing piles of blank bills and empty wallets.
+All Star||A chart hit by Smash Mouth|A star-shaped athlete holding a trophy under stadium lights.
+Genie In A Bottle||A chart hit by Christina Aguilera|A smiling genie emerging as smoke from a glass bottle.
+Scar Tissue||A chart hit by Red Hot Chili Peppers|A healed scar shown as a stitched patch on a heart, no injury detail.
+Heartbreaker||A chart hit by Mariah Carey|A cartoon hammer splitting a heart into two clean pieces.
+Steal My Sunshine||A chart hit by Len|A sneaky figure putting a smiling sun into a sack.
+Girl On TV||A chart hit by LFO|A girl appearing inside a vintage television screen.
+Blue (Da Ba Dee)||A chart hit by Eiffel 65|A blue-skinned figure in a blue house beside a blue car.
+All The Small Things||A chart hit by Blink-182|A collection of tiny everyday objects beside an oversized hand and guitar.
+Bye Bye Bye||A chart hit by 'N Sync|Three puppet dancers waving goodbye as their strings snap.
+Kryptonite||A chart hit by 3 Doors Down|A glowing green crystal beside a weakened caped superhero.
+With Arms Wide Open||A chart hit by Creed|A person standing on a hill with both arms spread wide.
+Bag Lady||A chart hit by Erykah Badu|A woman carrying many colorful shopping bags and a suitcase.
+Shape Of My Heart||A chart hit by Backstreet Boys|A pair of hands sculpting a red heart from clay.
+Butterfly||A chart hit by Crazy Town|A vivid butterfly resting on a flower beside a small guitar.
+Survivor||A chart hit by Destiny's Child|A determined person standing on a deserted island beside a shelter.
+Lady Marmalade||A chart hit by Christina Aguilera, Lil' Kim, Mya & P!nk|A glamorous cabaret performer beside a jar of orange marmalade.
+I'm Like A Bird||A chart hit by Nelly Furtado|A woman with outstretched arms transforming into a flying bird.
+Drops Of Jupiter|Drops Of Jupiter (Tell Me)|A chart hit by Train|Drops of water falling from the striped planet Jupiter into a hand.
+Peaches & Cream||A chart hit by 112|Sliced peaches in a bowl with cream pouring over them.
+Drive||A chart hit by Incubus|Hands steering a car along a winding road.
+Turn Off The Light||A chart hit by Nelly Furtado|A hand reaching to switch off a glowing bedside lamp.
+7 Days|Seven Days|A chart hit by Craig David|Seven sun-and-moon pairs arranged in a circle without digits.
+A Thousand Miles||A chart hit by Vanessa Carlton|A piano traveling along a long winding highway beneath distant mountains.
+Hot in Herre|Hot in Here|A chart hit by Nelly|A room with heat waves, fans and a sweating dancer.
+Just Like A Pill||A chart hit by P!nk|An oversized capsule on a palm beside a small glass of water.
+Cleanin' Out My Closet||A chart hit by Eminem|A person sweeping clutter and old boxes out of a wardrobe.
+Sk8er Boi|Skater Boy;Skater Boi|A chart hit by Avril Lavigne|A teenage skateboarder wearing a backward cap and carrying a guitar.
+Air Force Ones||A chart hit by Nelly|A pair of clean white high-top basketball sneakers without branding.
+Landslide||A chart hit by Dixie Chicks|Earth and rocks sliding down a hillside away from people.
+Cry Me A River||A chart hit by Justin Timberlake|A person's teardrops flowing into a winding river.
+In Da Club||A chart hit by 50 Cent|A crowded dance floor with a DJ and colorful spotlights.
+Picture||A chart hit by Kid Rock|A framed photograph of a smiling couple on a bedside table.
+Magic Stick||A chart hit by Lil' Kim|A sparkling magic wand sending out stars.
+Flying Without Wings||A chart hit by Ruben Studdard|A person floating peacefully above clouds with no wings.
+In Those Jeans||A chart hit by Ginuwine|A pair of blue jeans hanging prominently on a clothesline.
+Shake Ya Tailfeather||A chart hit by Nelly, P. Diddy & Murphy Lee|A colorful bird shaking its tail feathers on a dance floor.
+Milkshake||A chart hit by Kelis|A tall milkshake with whipped cream, cherry and striped straw.
+Hotel||A chart hit by Cassidy|A grand hotel entrance with luggage and a bellhop, no signs.
+Salt Shaker||A chart hit by Ying Yang Twins|A glass salt shaker scattering grains over a tabletop.
+Dirt Off Your Shoulder||A chart hit by JAY-Z|A person brushing a little dirt off a suit shoulder.
+Toxic||A chart hit by Britney Spears|A glamorous secret-agent flight attendant beside a vial of green liquid.
+Solitaire||A chart hit by Clay Aiken|Playing cards laid out in solitaire formation with suit shapes but no text or digits.
+Roses||A chart hit by OutKast|A bouquet of red roses beside a piano.
+Slow Motion||A chart hit by Juvenile|A dancer shown in several widely spaced ghosted poses beside a snail.
+Sunshine||A chart hit by Lil' Flip|Warm sunlight bursting over a cheerful field of flowers.
+Locked Up||A chart hit by Akon|A padlock closing around a set of prison bars with no person inside.
+Diary||A chart hit by Alicia Keys|An open private journal with a small lock and blank pages.
+Drop It Like It's Hot||A chart hit by Snoop Dogg|A hand dropping a steaming object with heat waves.
+Soldier||A chart hit by Destiny's Child|A toy soldier with boots, helmet and a small shield.
+Disco Inferno||A chart hit by 50 Cent|A disco ball over a dance floor surrounded by stylized safe cartoon flames.
+Boulevard Of Broken Dreams||A chart hit by Green Day|A lone walker on a city boulevard strewn with broken dream bubbles.
+Candy Shop||A chart hit by 50 Cent|A shop counter filled with candy jars, lollipops and striped sweets, no signs.
+Rich Girl||A chart hit by Gwen Stefani|A girl with a crown surrounded by gold coins and fancy shopping bags.
+Speed Of Sound||A chart hit by Coldplay|Sound-wave arcs racing alongside an airplane across the sky.
+Gold Digger|Golddigger|A chart hit by Kanye West|A person digging with a shovel and uncovering gold bars.
+Sugar, We're Goin' Down||A chart hit by Fall Out Boy|A sugar cube descending under a tiny parachute.
+Wake Me Up When September Ends||A chart hit by Green Day|A sleeping person under orange autumn leaves beside a ringing alarm clock with no digits.
+Beverly Hills||A chart hit by Weezer|Palm-lined streets, hillside mansions and a convertible; no signs.
+Photograph||A chart hit by Nickelback|A hand holding an old photograph beside an acoustic guitar.
+Laffy Taffy||A chart hit by D4L|A smiling strip of stretchy candy being pulled apart.
+Grillz||A chart hit by Nelly|A wide smile displaying decorative gold teeth.
+Unwritten||A chart hit by Natasha Bedingfield|An open book of blank pages with an unused pen.
+Temperature||A chart hit by Sean Paul|A thermometer with rising red liquid beside a glowing sun; no digits.
+Over My Head (Cable Car)||A chart hit by The Fray|A cable car traveling directly above a person's head.
+Buttons||A chart hit by The Pussycat Dolls|Large colorful clothing buttons falling onto a dress.
+London Bridge||A chart hit by Fergie|A bridge across the Thames with London's clock tower in the background.
+Chasing Cars||A chart hit by Snow Patrol|A runner following two cars along a road.
+Lips Of An Angel||A chart hit by Hinder|Soft lips framed by white wings and a golden halo.
+Chain Hang Low||A chart hit by Jibbs|An oversized chain hanging nearly to the ground from a person's neck.
+Money Maker||A chart hit by Ludacris|A whimsical machine producing stacks of blank banknotes.
+White & Nerdy||A chart hit by "Weird Al" Yankovic|A bespectacled man with a pocket protector, calculator without digits and a toy lightsaber.
+Wind It Up||A chart hit by Gwen Stefani|A hand winding the large key on a mechanical toy.
+Welcome To The Black Parade||A chart hit by My Chemical Romance|A marching band in black uniforms with a skeletal parade leader.
+The Sweet Escape||A chart hit by Gwen Stefani|A person escaping a candy-colored cage through an open door.
+Home||A chart hit by Daughtry|A cozy house with warm windows and a welcoming doorstep.
+Lip Gloss||A chart hit by Lil Mama|A tube of shiny lip gloss beside sparkling lips.
+Bartender||A chart hit by T-Pain|A bartender shaking a cocktail behind a bar of unlabeled bottles.
+Rockstar||A chart hit by Nickelback|A long-haired guitarist standing on a star-shaped stage.
+Bed||A chart hit by J. Holiday|A large neatly made bed with pillows and a glowing bedside lamp.
+Cyclone||A chart hit by Baby Bash|A swirling tornado above a flat landscape.
+Pocketful Of Sunshine||A chart hit by Natasha Bedingfield|A tiny smiling sun peeking out of a jeans pocket.
+Paper Planes||A chart hit by M.I.A.|Several folded paper airplanes soaring across a blue sky.
+Hot N Cold||A chart hit by Katy Perry|A heart split between orange flames and blue ice.
+Love Story||A chart hit by Taylor Swift|A storybook opening to a castle balcony with two lovers.
+Circus||A chart hit by Britney Spears|A striped circus tent with an acrobat and colorful juggling balls.
+Poker Face||A chart hit by Lady Gaga|An expressionless face above a fan of playing cards with no letters or numbers.
+Kiss Me Thru The Phone||A chart hit by Soulja Boy Tell 'em|Two phones with a kiss-shaped trail connecting their screens.
+The Climb||A chart hit by Miley Cyrus|A person ascending a steep mountain toward sunlight.
+Day 'N' Nite||A chart hit by Kid Cudi|One landscape split between sunny daylight and moonlit night.
+Halo||A chart hit by Beyonce|A bright golden halo floating above a person's head.
+Waking Up In Vegas||A chart hit by Katy Perry|A person waking beside casino chips and a neon-lit desert city window.
+Fire Burning||A chart hit by Sean Kingston|A dance floor surrounded by stylized orange flames.
+Party In The U.S.A.||A chart hit by Miley Cyrus|A joyful outdoor dance party with a map-shaped American backdrop and red-white-blue bunting.
+Empire State Of Mind||A chart hit by Jay-Z + Alicia Keys|A person's silhouette filled with the New York skyline and Empire State Building.
+Paparazzi||A chart hit by Lady Gaga|A glamorous performer surrounded by photographers and flashing cameras.
+Fireflies||A chart hit by Owl City|Glowing fireflies floating above a bedside lamp in a whimsical bedroom.
+Sweet Dreams||A chart hit by Beyonce|A sleeping person dreaming of candy clouds and cupcakes.
+TiK ToK||A chart hit by Ke$ha|A large alarm clock vibrating with motion strokes, no digits.
+Today Was A Fairytale||A chart hit by Taylor Swift|An open storybook with a castle, crown and couple riding a white horse.
+Telephone||A chart hit by Lady Gaga|A brightly colored old-fashioned telephone with a coiled cord.
+Airplanes||A chart hit by B.o.B|Airplanes crossing a night sky among shooting stars.
+California Gurls||A chart hit by Katy Perry|Women on a whimsical California beach made of candy and ice cream.
+Bulletproof||A chart hit by La Roux|A shiny shield deflecting harmless cartoon projectiles.
+Billionaire||A chart hit by Travie McCoy|A smiling traveler atop an enormous pile of gold coins beside a private jet.
+Dynamite||A chart hit by Taio Cruz|A bundle of cartoon dynamite sticks with a short sparkling fuse.
+Magic||A chart hit by B.o.B|A top hat releasing a rabbit and a swirl of stars.
+Like A G6||A chart hit by Far*East Movement|A sleek private jet soaring above clouds.
+Raise Your Glass||A chart hit by P!nk|Several hands lifting glasses together in a toast.
+Grenade||A chart hit by Bruno Mars|A cartoon grenade resting beside a heart-shaped gift, no explosion or injury.
+Rocketeer||A chart hit by Far*East Movement|A helmeted pilot flying with a rocket pack.
+E.T.||A chart hit by Katy Perry|A friendly extraterrestrial reaching toward a starry sky.
+The Lazy Song||A chart hit by Bruno Mars|A person lounging in pajamas on a sofa beside a banana and a relaxed monkey.
+Party Rock Anthem||A chart hit by LMFAO|A robot-headed dancer shuffling on a bright party dance floor.
+Dirt Road Anthem||A chart hit by Jason Aldean|A pickup traveling down a dusty country road beside fields and a guitar.
+Super Bass||A chart hit by Nicki Minaj|An oversized bass speaker vibrating beside a bass guitar.
+Skyscraper||A chart hit by Demi Lovato|A tall glass skyscraper rising above surrounding clouds.
+Lighters||A chart hit by Bad Meets Evil|Several hands holding glowing lighters in a dark concert crowd.
+Pumped Up Kicks||A chart hit by Foster The People|A pair of sneakers being inflated with a bicycle pump.
+Stereo Hearts||A chart hit by Gym Class Heroes|A heart-shaped stereo with twin speakers sending out sound waves.
+Strange Clouds||A chart hit by B.o.B|Clouds shaped like unusual animals and floating objects.
+It Will Rain||A chart hit by Bruno Mars|A dark cloud approaching a person with an unopened umbrella.
+Set Fire To The Rain||A chart hit by Adele|Raindrops transforming into orange flame shapes above a wet street.
+Domino||A chart hit by Jessie J|A chain of falling domino tiles with dots only.
+Starships||A chart hit by Nicki Minaj|Several spaceships cruising between bright stars and planets.
+Call Me Maybe||A chart hit by Carly Rae Jepsen|A hesitant person holding a ringing phone between reaching and pulling away.
+Payphone||A chart hit by Maroon 5|A vintage public payphone with a dangling receiver and coin slot.
+Lights||A chart hit by Ellie Goulding|A dark forest filled with floating warm lights.
+Whistle||A chart hit by Flo Rida|A silver whistle emitting visible curved sound waves.
+Gangnam Style||A chart hit by PSY|A sunglasses-wearing dancer doing a horse-riding pose beside a carousel horse.
+Red||A chart hit by Taylor Swift|A red scarf, red leaves and a red heart arranged as a vivid color study.
+Skyfall||A chart hit by Adele|A secret-agent silhouette beneath a sky cracking and falling into pieces.
+Locked Out Of Heaven||A chart hit by Bruno Mars|A person standing outside locked golden gates in the clouds.
+Thrift Shop||A chart hit by Macklemore & Ryan Lewis|A secondhand clothing rack with a giant fur coat, odd shoes and a small piggy bank.
+Suit & Tie||A chart hit by Justin Timberlake|A stylish suit jacket with a prominent necktie on a hanger.
+Radioactive||A chart hit by Imagine Dragons|Glowing green barrels and a gas mask in an abandoned landscape, no symbols or writing.
+Cruise||A chart hit by Florida Georgia Line|A pickup cruising along a sunny country road with windows down.
+Mirrors||A chart hit by Justin Timberlake|Two people facing each other across a row of mirrors.
+Treasure||A chart hit by Bruno Mars|An open treasure chest overflowing with gold and gems.
+Cups|Cups (Pitch Perfect's When I'm Gone);When I'm Gone;The Cup Song|A chart hit by Anna Kendrick|Hands performing a rhythm with an upside-down plastic cup on a table.
+Holy Grail||A chart hit by Jay Z|A golden chalice glowing on a stone pedestal.
+Applause||A chart hit by Lady Gaga|Many hands clapping toward a theatrical performer on stage.
+Roar||A chart hit by Katy Perry|A confident tiger roaring in a lush jungle.
+Royals||A chart hit by Lorde|A crown and royal robe beside ordinary sneakers and a humble room.
+The Fox|What Does the Fox Say|A chart hit by Ylvis|A bright orange fox calling into a woodland clearing.
+Counting Stars||A chart hit by OneRepublic|A person pointing to individual stars above an open notebook with no writing.
+Demons||A chart hit by Imagine Dragons|Small mischievous horned silhouettes hiding inside a shadow.
+The Monster||A chart hit by Eminem|A friendly shaggy monster peeking from beneath a bed.
+Timber||A chart hit by Pitbull|A tree tipping over beside a lumberjack and stacked logs.
+Dark Horse||A chart hit by Katy Perry|A mysterious black horse beneath a crescent moon.
+Pompeii||A chart hit by Bastille|An ancient Roman town beneath a smoking volcano with ash in the sky.
+Let It Go||A chart hit by Keyshia Cole|An ice queen releasing snowflakes from her hands beside an ice palace.
+A Sky Full Of Stars||A chart hit by Coldplay|A sweeping night sky packed with glowing stars above a tiny observer.
+Maps||A chart hit by Maroon 5|Folded maps with winding paths and compass arrows, no labels.
+Chandelier||A chart hit by Sia|An ornate chandelier with a dancer swinging beneath it.
+Black Widow||A chart hit by Iggy Azalea|A glossy black widow spider with a red hourglass marking.
+Anaconda||A chart hit by Nicki Minaj|An enormous green snake coiled around a jungle branch.
+Animals||A chart hit by Maroon 5|A group of wild animals emerging from a forest.
+Take Me To Church||A chart hit by Hozier|A person leading another toward a church with stained-glass windows.
+Blank Space||A chart hit by Taylor Swift|An ornate empty picture frame beside a blank sheet and fountain pen.
+Lips Are Movin||A chart hit by Meghan Trainor|Several colorful mouths speaking with motion-wave shapes.
+Sugar||A chart hit by Flo Rida|A mound of white sugar beside a sugar bowl and spoon.
+Cheerleader||A chart hit by OMI|A cheerleader leaping with bright pom-poms on a playing field.
+The Hills||A chart hit by The Weeknd|Layered dark hills under city lights and a dramatic night sky.
+Hotline Bling||A chart hit by Drake|A jewel-encrusted telephone glowing inside a colorful light box.
+Stitches||A chart hit by Shawn Mendes|A torn fabric heart being carefully sewn together.
+My House||A chart hit by Flo Rida|A cozy house throwing a colorful living-room party.
+Pillowtalk||A chart hit by Zayn|Two pillows facing each other with empty speech-bubble shapes.
+Cake By The Ocean||A chart hit by DNCE|A large frosted cake sitting on a sandy beach beside ocean waves.
+Work From Home||A chart hit by Fifth Harmony|A person using a laptop at a kitchen table in slippers.
+Panda||A chart hit by Desiigner|A black-and-white panda holding bamboo.
+When Doves Cry||A chart hit by Prince|Two white doves with teardrops falling from their eyes.
+Just Like Fire||A chart hit by P!nk|A person with a flowing cape made of bright flame shapes.
+Cold Water||A chart hit by Major Lazer|A glass of icy water beside a person entering a cool blue lake.
+Broccoli||A chart hit by D.R.A.M.|A large fresh broccoli floret beside a small bowl.
+Starboy||A chart hit by The Weeknd|A young person made of glowing stars against a dark sky.
+24K Magic|24 Karat Magic|A chart hit by Bruno Mars|Gold jewelry and a sparkling magician's hat releasing golden stars.
+Paris||A chart hit by The Chainsmokers|The Eiffel Tower above Paris rooftops and a riverside couple.
+Chained To The Rhythm||A chart hit by Katy Perry|A dancer linked by loose chains to a giant vibrating speaker.
+Tunnel Vision||A chart hit by Kodak Black|A person's eye looking directly through a long illuminated tunnel.
+Passionfruit||A chart hit by Drake|A sliced purple passionfruit showing golden seeded pulp.
+Mask Off||A chart hit by Future|A person lifting a theatrical mask away from their face.
+DNA.||A chart hit by Kendrick Lamar|A bright double helix twisting above an open palm.
+Malibu||A chart hit by Miley Cyrus|A sunlit California coastline with beach houses, surfboards and palm trees.
+Thunder||A chart hit by Imagine Dragons|A dark storm cloud with jagged lightning and concentric sound waves.
+Havana||A chart hit by Camila Cabello|A colorful Cuban street with a vintage car, balconies and a dancing couple.
+All I Want For Christmas Is You||A chart hit by Mariah Carey|A person with a heart-shaped gift ignoring other presents to embrace a loved one by a tree.
+Stir Fry||A chart hit by Migos|A wok tossing colorful vegetables over a kitchen flame.
+All The Stars||A chart hit by Kendrick Lamar & SZA|An expansive galaxy of bright stars reflected in dark water.
+ATM||A chart hit by J. Cole|A cash machine dispensing blank banknotes, no writing.
+Stargazing||A chart hit by Travis Scott|A person looking through a telescope at a star-filled sky.
+Mona Lisa||A chart hit by Lil Wayne|A framed portrait of a seated woman with a subtle smile and folded hands.
+Sunflower|Sunflower (Spider-Man: Into The Spider-Verse)|A chart hit by Post Malone & Swae Lee|A bright sunflower beside a small spiderweb and red-blue sneakers.
+High Hopes||A chart hit by Panic! At The Disco|A person reaching up toward a bright star from a very tall ladder.
+Jingle Bell Rock||A chart hit by Bobby Helms|Jingle bells rocking beside an electric guitar in snow.
+Rockin' Around The Christmas Tree||A chart hit by Brenda Lee|Dancers circling a decorated Christmas tree with a guitar nearby.
+7 Rings|Seven Rings|A chart hit by Ariana Grande|Seven sparkling rings arranged in a circle, no digits.
+Old Town Road||A chart hit by Lil Nas X|A horse and rider following a dirt road into an old western town.
+Circles||A chart hit by Post Malone|Several concentric circles rippling around a lone walker.
+Panini||A chart hit by Lil Nas X|A grilled panini sandwich beside a tiny futuristic robot.
+Dance Monkey||A chart hit by Tones And I|A monkey dancing beneath a spotlight with a small keyboard nearby.
+The Box||A chart hit by Roddy Ricch|A mysterious open cardboard box casting a dramatic shadow.
+Godzilla||A chart hit by Eminem|A giant spiky-backed lizard towering above a city skyline.
+Lo Mein||A chart hit by Lil Uzi Vert|A bowl of lo mein noodles lifted by chopsticks.
+Silly Watch||A chart hit by Lil Uzi Vert|A wristwatch with a playful face and wobbly hands, no digits.
+Rain On Me||A chart hit by Ashanti|A person dancing directly under a heavy rain cloud.
+Blueberry Faygo||A chart hit by Lil Mosey|A cup of blue-purple soda with blueberries and a plain bottle.
+Cardigan||A chart hit by Taylor Swift|A cozy knitted cardigan draped over a wooden chair.
+Lemonade||A chart hit by Internet Money & Gunna|A pitcher of lemonade with lemon slices and ice.
+Willow||A chart hit by Taylor Swift|A weeping willow tree with branches trailing over water.
+Let It Snow|Let It Snow Let It Snow Let It Snow|A chart hit by Dean Martin|A cozy cabin surrounded by falling snow and a snowman.
+Run Rudolph Run||A chart hit by Chuck Berry|A red-nosed reindeer sprinting through snow with motion trails.
+Levitating||A chart hit by Dua Lipa|A person floating above the ground beneath a glittering moon.
+Drivers License||A chart hit by Olivia Rodrigo|A young driver holding a small blank photo license beside a car steering wheel.
+Save Your Tears||A chart hit by The Weeknd & Ariana Grande|A person catching teardrops in a little glass jar.
+Calling My Phone||A chart hit by Lil Tjay|A ringing mobile phone with repeated curved vibration lines.
+Leave The Door Open||A chart hit by Silk Sonic (Bruno Mars & Anderson .Paak)|A warmly lit room visible through a wide-open doorway.
+Peaches||A chart hit by Justin Bieber|A bowl of ripe peaches with one sliced fruit.
+Astronaut In The Ocean||A chart hit by Masked Wolf|An astronaut in a spacesuit floating underwater among fish.
+Butter||A chart hit by BTS|A golden stick of butter melting on toast.
+Hurricane||A chart hit by Kanye West|A spiral storm seen over a tropical coastline with bending palms.
+Jail||A chart hit by Kanye West|An empty cartoon jail cell with heavy bars and a dangling key.
+My Universe||A chart hit by Coldplay x BTS|A person holding a tiny galaxy full of planets in their hands.
+Shivers||A chart hit by Ed Sheeran|A person bundled in a sweater with visible trembling motion lines.
+Heat Waves||A chart hit by Glass Animals|Shimmering heat waves rising above a summer road and swimming pool.
+Sleigh Ride||A chart hit by The Ronettes|A horse pulling a red sleigh across a snowy landscape.
+Cold Heart|Cold Heart (PNAU Remix)|A chart hit by Elton John & Dua Lipa|A heart encased in translucent blue ice.
+Surface Pressure||A chart hit by Jessica Darrow|A strong woman struggling under a teetering stack of boulders with a donkey nearby.
+Ghost||A chart hit by Justin Bieber|A friendly translucent ghost hovering in a quiet room.
+First Class||A chart hit by Jack Harlow|A luxurious airplane seat with champagne and a window view above clouds.
+Moscow Mule||A chart hit by Bad Bunny|A copper mug with lime and ginger beside a cartoon mule in a winter hat.
+Music For A Sushi Restaurant||A chart hit by Harry Styles|A sushi bar with a small band playing beside colorful sushi plates.
+Running Up That Hill|Running Up That Hill (A Deal With God)|A chart hit by Kate Bush|A person running up a steep grassy hill toward storm clouds.
+Sunroof||A chart hit by Nicky Youre & dazy|A smiling passenger looking through an open car sunroof at bright sunshine.
+Bejeweled||A chart hit by Taylor Swift|A person in a dress sparkling with large colorful gemstones.
+Lavender Haze||A chart hit by Taylor Swift|Purple mist rolling through a field of lavender.
+Maroon||A chart hit by Taylor Swift|A deep maroon scarf and wineglass against matching velvet fabric.
+Midnight Rain||A chart hit by Taylor Swift|Rain falling onto a dark street beneath a moon and starry sky.
+Snow On The Beach||A chart hit by Taylor Swift|Snowflakes settling on a sandy beach beside the sea.
+Kill Bill||A chart hit by SZA|A woman in a yellow tracksuit holding a sheathed sword, no violence.
+Something In The Orange||A chart hit by Zach Bryan|A dark cowboy silhouette standing in an intensely orange sunset.
+Golden Hour||A chart hit by JVKE|Warm golden sunlight bathing a piano and a couple near sunset.
+Rock And A Hard Place||A chart hit by Bailey Zimmerman|A person squeezed safely between a large boulder and a brick wall.
+Search & Rescue||A chart hit by Drake|A rescue helicopter shining a searchlight over a tiny stranded figure.
+Barbie World||A chart hit by Nicki Minaj & Ice Spice|A globe transformed into a bright pink doll town.
+Vampire||A chart hit by Olivia Rodrigo|A pale cartoon vampire with a dramatic cape and tiny fangs.
+Paint The Town Red||A chart hit by Doja Cat|A huge paintbrush coating a miniature town in bright red paint.
+Fear Of Heights||A chart hit by Drake|A nervous person looking over a high balcony with secure railings.
+Virginia Beach||A chart hit by Drake|A broad sandy beach, boardwalk and gentle Atlantic waves.
+Water||A chart hit by Tyla|Clear water splashing around a dancer's ankles.
+Stick Season||A chart hit by Noah Kahan|Bare tree branches above brown fallen leaves in a chilly rural landscape.
+Texas Hold 'Em||A chart hit by Beyonce|A cowboy hat beside poker chips and playing cards with suit shapes only.
+Saturn||A chart hit by SZA|The ringed planet Saturn floating above a starry landscape.
+Cinderella||A chart hit by Future, Metro Boomin & Travis Scott|A glass slipper on palace steps beside a pumpkin carriage.
+Too Sweet||A chart hit by Hozier|A coffee cup overwhelmed by a huge pile of sugar cubes.
+Espresso||A chart hit by Sabrina Carpenter|A small espresso cup with rich crema beside coffee beans.
+Florida!!!||A chart hit by Taylor Swift|A Florida-shaped island with palms, an alligator and a beach umbrella.
+My Boy Only Breaks His Favorite Toys||A chart hit by Taylor Swift|A boy sadly holding a broken wind-up toy beside a toy box.
+The Tortured Poets Department||A chart hit by Taylor Swift|A weary poet at a cluttered desk with blank papers, a quill and dramatic rain outside.
+Million Dollar Baby||A chart hit by Tommy Richman|A baby wearing a gold crown sitting on a pile of blank banknotes.
+Lunch||A chart hit by Billie Eilish|An open lunchbox with a sandwich, fruit and a small drink.
+Pink Skies||A chart hit by Zach Bryan|A peaceful landscape beneath vivid pink sunset clouds.
+Houdini||A chart hit by Eminem|A magician escaping loose chains beside a locked trunk.
+Birds Of A Feather||A chart hit by Billie Eilish|Matching colorful birds flying together with loose feathers drifting down.
+APT.||A chart hit by ROSE & Bruno Mars|An apartment building with a playful party visible through one window.
+Man At The Garden||A chart hit by Kendrick Lamar|A lone man standing inside a lush walled garden.
+TV Off||A chart hit by Kendrick Lamar|A hand switching off a television as its screen fades to black.
+Underneath The Tree||A chart hit by Kelly Clarkson|Presents stacked underneath a decorated Christmas tree.
+4X4|Four By Four|A chart hit by Travis Scott|A rugged four-wheel-drive vehicle climbing a muddy hill.
+Pink Pony Club||A chart hit by Chappell Roan|A pink pony dancing under a disco ball in a western club.
+Nokia||A chart hit by Drake|An old-style sturdy mobile phone with blank screen and unmarked keypad.
+Superman||A chart hit by Morgan Wallen|A caped superhero flying over a farm and city, no chest lettering.
+Golden||A chart hit by HUNTR/X: EJAE, Audrey Nuna & REI AMI|Three pop performers against a glowing gold backdrop with a protective golden dome.
+Daisies||A chart hit by Justin Bieber|A bunch of white daisies with yellow centers in a glass vase.
+The Subway||A chart hit by Chappell Roan|A subway train arriving at an underground platform.
+Soda Pop||A chart hit by Saja Boys: Andrew Choi, Neckwav, Danny Chung, Kevin Woo & samUIL Lee|Bubbles bursting out of a fizzy soda bottle beside a singing boy band.
+Tears||A chart hit by Sabrina Carpenter|Large teardrops falling from a pair of expressive eyes.
+Opalite||A chart hit by Taylor Swift|A milky iridescent gemstone glowing with blue and orange highlights.
+The Fate of Ophelia|Fate of Ophelia|A chart hit by Taylor Swift|A woman in a flowing dress floating peacefully among water flowers, no distress or injury.
+The Life Of A Showgirl||A chart hit by Taylor Swift|A glamorous showgirl in a feathered stage costume beneath spotlights.
+Wood||A chart hit by Taylor Swift|A neat stack of logs beside a tree stump and wood shavings.
+Mutt||A chart hit by Leon Thomas|A friendly mixed-breed dog with mismatched ears and a patchy coat.
+Folded||A chart hit by Kehlani|A neat stack of folded shirts and towels on a chair.
+Thriller||A chart hit by Michael Jackson|A red-jacketed dancer leading friendly cartoon zombies beneath a full moon.
+Choosin' Texas||A chart hit by Ella Langley|A cowboy hat moving toward a Texas-shaped map with boots and wildflowers.
+Aperture||A chart hit by Harry Styles|A camera lens with its iris opening to let in a beam of light.
+The Great Divide||A chart hit by Noah Kahan|Two cliffs separated by a vast canyon with a tiny bridge in the distance.
+Swim||A chart hit by BTS|A swimmer making clear strokes across a bright blue pool.
+Doors||A chart hit by Noah Kahan|Several colorful open and closed doors standing in a row.
+Dracula||A chart hit by Tame Impala & JENNIE|A gothic vampire in a high-collared cape outside a moonlit castle.
+Dust||A chart hit by Drake|A shaft of light revealing swirling dust above an old tabletop.
+National Treasures||A chart hit by Drake|An open museum vault containing a crown, ancient vase and golden statue.
+Honeybee||A chart hit by Olivia Rodrigo|A golden honeybee hovering beside a flower and honeycomb.
+Petal||A chart hit by Ariana Grande|A single delicate flower petal floating onto a pond.
+Pink Clouding||A chart hit by Taylor Swift|Soft pink clouds wrapping around a dreamy person's silhouette.

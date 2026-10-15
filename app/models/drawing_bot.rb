@@ -25,7 +25,7 @@ class DrawingBot
     request.body = {
       model: @model, store: false, reasoning: { effort: "low" }, max_output_tokens: 9000,
       instructions: instructions,
-      input: "Category: #{@round.category}. Secret answer: #{@round.word}. Context: #{@round.hint}. Fresh composition seed: #{SecureRandom.hex(8)}. Draw a new visual riddle for this answer."
+      input: drawing_prompt
     }.to_json
     response = Net::HTTP.start(uri.host, uri.port, use_ssl: true, open_timeout: 10, read_timeout: 150, write_timeout: 15) { |http| http.request(request) }
     raise Error, "Drawing provider returned HTTP #{response.code}" unless response.is_a?(Net::HTTPSuccess)
@@ -37,6 +37,15 @@ class DrawingBot
     { svg: SvgSanitizer.call(text), model: data.fetch("model", @model), artwork_version: ARTWORK_VERSION }
   rescue JSON::ParserError, Timeout::Error, IOError, SystemCallError, SocketError, OpenSSL::SSL::SSLError => e
     raise Error, "Drawing service unavailable (#{e.class.name})"
+  end
+
+  def drawing_prompt
+    clue = PromptCatalog.visual_clue(category: @round.category, word: @round.word)
+    [
+      "Category: #{@round.category}. Secret answer: #{@round.word}. Context: #{@round.hint}.",
+      ("Suggested visual composition (never render these words as text): #{clue}" if clue.present?),
+      "Fresh composition seed: #{SecureRandom.hex(8)}. Draw a new visual riddle for this answer."
+    ].compact.join(" ")
   end
 
   def instructions

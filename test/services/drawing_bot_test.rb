@@ -1,6 +1,20 @@
 require "test_helper"
 
 class DrawingBotTest < ActiveSupport::TestCase
+  test "new answers give the artist a private visual brief while historical answers still work" do
+    round = ready_round(build_game, word: "Spirited Away")
+    prompt = DrawingBot.new(round: round).drawing_prompt
+    assert_includes prompt, "Secret answer: Spirited Away"
+    assert_includes prompt, "Suggested visual composition"
+    assert_includes prompt, "white dragon"
+    assert_includes prompt, "never render these words as text"
+
+    round.word = "Historical uncatalogued answer"
+    prompt = DrawingBot.new(round: round).drawing_prompt
+    assert_includes prompt, "Historical uncatalogued answer"
+    assert_not_includes prompt, "Suggested visual composition"
+  end
+
   def fake_request(body, status: Net::HTTPOK, &check)
     response = status.new("1.1", status == Net::HTTPOK ? "200" : "429", "test")
     response.define_singleton_method(:body) { body.to_json }

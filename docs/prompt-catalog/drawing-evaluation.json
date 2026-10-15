@@ -1,0 +1,52 @@
+[
+  {
+    "category": "music",
+    "answer": "Walk Like An Egyptian",
+    "model": "gpt-6-astra",
+    "seconds": 33.9,
+    "bytes": 3456,
+    "success": true,
+    "path": "samples/walk-like-an-egyptian.svg",
+    "visual_review": "Recognizable composition, readable silhouettes, no text."
+  },
+  {
+    "category": "music",
+    "answer": "Espresso",
+    "model": "gpt-6-astra",
+    "seconds": 26.1,
+    "bytes": 2670,
+    "success": true,
+    "path": "samples/espresso.svg",
+    "visual_review": "Recognizable composition, readable silhouettes, no text."
+  },
+  {
+    "category": "movies",
+    "answer": "Spirited Away",
+    "model": "gpt-6-astra",
+    "seconds": 61.4,
+    "bytes": 5633,
+    "success": true,
+    "path": "samples/spirited-away.svg",
+    "visual_review": "Recognizable composition, readable silhouettes, no text."
+  },
+  {
+    "category": "tv",
+    "answer": "Gravity Falls",
+    "model": "gpt-6-astra",
+    "seconds": 65.2,
+    "bytes": 6758,
+    "success": true,
+    "path": "samples/gravity-falls.svg",
+    "visual_review": "Recognizable composition, readable silhouettes, no text."
+  },
+  {
+    "category": "games",
+    "answer": "Hollow Knight",
+    "model": "gpt-6-astra",
+    "seconds": 45.0,
+    "bytes": 4536,
+    "success": true,
+    "path": "samples/hollow-knight.svg",
+    "visual_review": "Recognizable composition, readable silhouettes, no text."
+  }
+]

@@ -1,0 +1,333 @@
+Friends||A sitcom about six friends
+The Simpsons|Simpsons|An animated suburban family
+Stranger Things||A small town's supernatural mystery
+Game of Thrones||A battle for a fantasy throne
+The Office|Office|A workplace comedy
+Breaking Bad||A chemistry teacher's double life
+SpongeBob SquarePants|Spongebob|An underwater cartoon
+Doctor Who|Dr Who|A time-traveling science-fiction series
+The Mandalorian|Mandalorian|A space western
+Wednesday||A gothic school mystery
+Squid Game||A deadly competition series
+Ted Lasso||A fish-out-of-water sports comedy
+The Great British Bake Off|Great British Baking Show;Bake Off;GBBO|A very polite baking competition
+Sesame Street||A friendly educational neighborhood
+Scooby-Doo|Scooby Doo;Scoobydoo|A mystery-solving cartoon gang
+The Flintstones|Flintstones|A prehistoric family sitcom
+The Jetsons|Jetsons|A futuristic family sitcom
+Adventure Time||A surreal animated adventure
+Bluey||An Australian animated family
+Pokémon|Pokemon|A monster-catching adventure
+Lost||A mysterious island drama
+The Addams Family|Addams Family|A delightfully spooky family
+Teenage Mutant Ninja Turtles|Ninja Turtles;TMNT|A team of sewer-dwelling heroes
+Peppa Pig||A little pink cartoon family
+Futurama||A delivery crew works in the far future|A delivery boy, one-eyed purple-haired woman and gray bending robot beside a green spaceship.
+Family Guy||An animated family lives in Rhode Island|A round bespectacled father, football-headed baby and upright white dog on a living-room sofa.
+Bob's Burgers||A family runs a small restaurant|A mustached cook and family behind a burger counter, with a girl wearing pink bunny ears.
+King of the Hill||An animated family lives in Texas|A bespectacled man with a propane tank beside a backyard fence and lawnmower.
+South Park||Four children live in a snowy mountain town|Four round cartoon children in red, blue, green and orange winter outfits beside snowy mountains.
+Rick and Morty||A scientist takes his grandson on strange adventures|A spiky blue-haired scientist and anxious boy beside a swirling green portal.
+BoJack Horseman||A former television star navigates Hollywood|A horse-headed man in a sweater beside a hillside swimming pool and Hollywood-style skyline.
+American Dad!||An animated family shares its home with an alien|A square-jawed suited father, gray alien and goldfish bowl in a suburban living room.
+The Boondocks||Two brothers move in with their grandfather|Two boys with a large afro and cornrows beside an elderly man on a suburban porch.
+Daria||A dry-witted teenager observes school life|A teenage girl with round glasses, green jacket and orange shirt beside a school locker.
+Beavis and Butt-Head||Two animated teenagers watch the world badly|Two slack-jawed teenagers with exaggerated hair sitting on a sofa watching television.
+DuckTales||A wealthy duck and his nephews seek adventure|A top-hatted duck diving into a gold-filled vault beside three small ducks in colored caps.
+Darkwing Duck||A caped duck protects his city|A duck in a purple cape and broad hat standing on a rooftop beside a sidekick pilot.
+Chip 'n Dale: Rescue Rangers|Rescue Rangers;Chip and Dale|Tiny detectives solve oversized problems|Two chipmunks, one in a fedora and one in a tropical shirt, beside a tiny airplane and a fly.
+TaleSpin||A laid-back bear pilots cargo adventures|A large bear pilot in a yellow shirt beside a red-and-yellow seaplane and a young bear.
+Gargoyles||Stone guardians awaken after sunset|Winged stone creatures coming alive atop a moonlit skyscraper.
+Animaniacs||Three cartoon siblings escape a studio tower|Three black-and-white cartoon siblings, one with a red cap and one with a pink bow, atop a water tower.
+Pinky and the Brain||Two laboratory mice plan grand schemes|Two white mice, one tall and thin and one with an enormous head, studying a globe in a laboratory.
+Tiny Toon Adventures|Tiny Toons|Young cartoon characters learn their craft|A blue rabbit, pink rabbit and green duck outside a cartoon school.
+Looney Tunes||A collection of classic cartoon rivals|A gray rabbit with a carrot, black duck and stammering pig in concentric colored circles.
+Tom and Jerry||A cat and mouse maintain an endless rivalry|A gray cat chasing a small brown mouse past a wedge of cheese.
+The Smurfs||Small blue villagers live in a forest|Tiny blue people in white hats beside mushroom houses and a white-bearded elder in red.
+The Care Bears||Colorful bears help through feelings and friendship|Pastel bears with simple heart and rainbow belly symbols standing on clouds.
+My Little Pony: Friendship Is Magic|My Little Pony|Magical ponies build friendships|A purple unicorn and rainbow-maned pegasus beside colorful pony friends and a small dragon.
+He-Man and the Masters of the Universe|He Man;Masters of the Universe|A hero protects a fantasy realm|A muscular blond hero holding a sword above a green armored tiger and skull-shaped castle.
+She-Ra and the Princesses of Power|She Ra;She-Ra|A warrior joins a magical rebellion|A blonde warrior with a golden tiara and sword beside a winged unicorn and cat-eared rival.
+ThunderCats||Feline heroes defend their new home|A red-haired lionlike warrior with a sword beside striped feline companions.
+Transformers||Robots disguise themselves as everyday machines|A red-and-blue truck unfolding into a tall robot beside a yellow car robot.
+Inspector Gadget||A clumsy detective has extraordinary equipment|A trench-coated detective with a propeller hat, extending arms and spring-loaded legs beside a dog.
+Danger Mouse||A tiny secret agent saves the day|A white mouse with an eye patch beside a bespectacled hamster and a miniature spy car.
+Count Duckula||An unusual vampire lives in a traveling castle|A green vampire duck with a cape beside a castle, vegetables and a large hen.
+The Powerpuff Girls||Three tiny heroes protect a city|Three small round-eyed girls in pink, blue and green flying above a city beside a laboratory flask.
+Dexter's Laboratory||A young inventor hides a huge laboratory|A small red-haired boy in a lab coat beside a giant machine and his tall blonde sister.
+Johnny Bravo||A confident cartoon hero rarely gets his way|A muscular man with a huge blond pompadour, black shirt and sunglasses posing beside a mirror.
+Ed, Edd n Eddy|Ed Edd and Eddy|Three friends chase small-town schemes|Three lanky cartoon boys beside an enormous jawbreaker candy and a backyard fence.
+Courage the Cowardly Dog|Courage|A nervous dog protects his unusual family|A small pink dog trembling outside an isolated farmhouse beneath a strange moon.
+Samurai Jack||A warrior is stranded in a strange future|A white-robed samurai with a topknot beside a huge black horned shadow and a red sun.
+The Fairly OddParents||A child has two magical guardians|A pink-hatted boy beside tiny green-haired and pink-haired fairies with crowns and wands.
+Danny Phantom||A teenager gains ghostly abilities|A white-haired teenage ghost with green eyes hovering above his dark-haired ordinary self.
+Jimmy Neutron|The Adventures of Jimmy Neutron Boy Genius|A young genius invents extraordinary devices|A boy with a towering brown quiff beside a robotic dog and homemade rocket.
+The Wild Thornberrys||A traveling family films wildlife|A red-haired girl with round glasses beside a chimpanzee and a large safari vehicle.
+Rugrats||Babies explore a world they barely understand|A diapered baby with a screwdriver-shaped toy beside a red-haired baby with glasses and a green dinosaur doll.
+Hey Arnold!||A city boy grows up in a boarding house|A football-headed boy with a tiny blue cap beside a girl with a pink bow on city steps.
+Doug||A shy teenager draws his way through adolescence|A boy in a green sweater vest beside a blue friend, white dog and drawing journal.
+Rocko's Modern Life||An immigrant wallaby navigates modern life|A small wallaby in a blue patterned shirt beside a large yellow steer and nervous turtle.
+CatDog||Two very different companions share one body|A cat and dog joined as opposite ends of one long orange body.
+The Angry Beavers||Two brothers make their home in the woods|Two beavers with contrasting tall hair and dark fur beside a dam and wooden lodge.
+Aaahh!!! Real Monsters|Real Monsters|Young monsters study the art of frightening humans|A striped walking mouth, a small red monster with large ears and a hairy monster holding its eyes.
+Avatar: The Last Airbender|ATLA|A young traveler must master four elements|A bald boy with a blue arrow on his head riding a giant white flying bison beside water and flame swirls.
+The Legend of Korra|Korra|A new guardian balances a changing world|A dark-haired woman bending water and fire beside a giant white polar-bear dog and a city skyline.
+Gravity Falls||Twins investigate a mysterious summer town|A boy in a pine-tree cap and a girl in a star sweater beside a triangular one-eyed figure and forest cabin.
+Phineas and Ferb||Two brothers turn summer days into inventions|A triangle-headed boy and green-haired boy beside a huge homemade machine and teal platypus in a fedora.
+Kim Possible||A teenager balances school with saving the world|A red-haired girl in a black top and cargo pants beside a blond boy and naked mole rat.
+Recess||Schoolchildren navigate playground society|Six children around a playground with a backwards red cap, enormous glasses and a tire swing.
+The Proud Family||An animated teenager grows up with a lively family|A teenage girl with pigtails beside an elderly woman in a tracksuit and a tiny poodle.
+Lilo & Stitch: The Series|Lilo and Stitch|A girl and her alien friend rescue unusual experiments|A Hawaiian girl and blue alien beside several colorful small alien cousins.
+Star vs. the Forces of Evil||A magical princess adjusts to life on Earth|A blonde girl with heart cheek marks holding a star-tipped wand beside a boy in a red hoodie.
+The Owl House||A teenager discovers a magical other world|A girl in a hoodie beside a wild-haired witch, tiny skull-headed creature and owl-shaped house.
+Amphibia||A teenager finds herself in a frog-filled world|A girl with a leaf in her hair beside a pink frog family and a large lily pad.
+Steven Universe||A young hero grows up among magical guardians|A boy in a red star shirt beside three gemstone warriors and a house built into a seaside temple.
+Regular Show||Two park workers encounter bizarre problems|A blue jay and brown raccoon beside a golf cart in a public park.
+The Amazing World of Gumball|Gumball|An unusual family lives in a mixed-media town|A blue cat boy and orange walking fish beside a pink rabbit father outside a school.
+We Bare Bears||Three bears try to fit into human life|A grizzly, panda and polar bear stacked vertically like a tower.
+Craig of the Creek||Children build their own society by a stream|A boy carrying a staff with a colored diamond-shaped top beside a creek, map and two friends.
+Over the Garden Wall||Two brothers travel through a strange woodland|A boy in a pointed red hat, a small boy with a teapot hat and a bluebird in an autumn forest.
+Infinity Train||Passengers solve mysteries aboard an endless train|A red-haired girl beside a floating two-faced robot and a train carriage opening into another world.
+Ben 10|Ben Ten|A child gains a device that changes his form|A boy displaying a glowing green wrist device with several alien silhouettes behind him.
+Teen Titans||Young superheroes live and work together|A masked boy, purple-cloaked girl, green shapeshifter, orange-haired alien and half-robot beside a T-shaped tower.
+Batman: The Animated Series||A dark city needs a masked protector|A caped bat-eared hero above an angular art-deco city with a yellow spotlight.
+Batman Beyond||A young successor protects a future city|A sleek black-suited hero with red bat-shaped wings flying above a futuristic skyline.
+Justice League||A team of heroes handles global threats|A caped strongman, bat-eared hero and lasso-bearing warrior beside a space station.
+X-Men: The Animated Series|X Men;X-Men|Mutant heroes protect a world that fears them|A visor-wearing hero, white-haired woman and clawed yellow-suited fighter beside a wheelchair mentor.
+Invincible||A teenager discovers his heroic inheritance|A young hero in a blue-and-yellow suit with goggles beside a white-caped mustached father.
+Arcane||Two sisters are divided by a troubled city|A blue-braided young woman and pink-haired boxer beside glowing blue crystals and a divided city.
+Castlevania||Hunters confront a powerful vampire ruler|A whip-wielding hunter, pale swordsman and robed mage outside a dark gothic castle.
+One Piece||A young pirate searches for a legendary treasure|A straw-hatted pirate with a stretching arm beside a ship with a ram-shaped bow.
+Naruto||A young ninja dreams of earning recognition|A blond ninja in orange clothing beside a huge fox silhouette and a bowl of ramen.
+Dragon Ball Z|Dragon Ball;DBZ|Powerful warriors defend their world|A spiky-haired martial artist in orange beside seven orange star-marked orbs and a green dragon.
+Sailor Moon||Schoolgirls become magical planetary guardians|A blonde twin-bun heroine in a sailor outfit beside a crescent-moon wand and black cat.
+Yu-Gi-Oh!||A card game unlocks ancient mysteries|A boy with sharp multicolored hair holding blank fantasy cards beside a golden pyramid pendant.
+Digimon Adventure|Digimon|Children partner with creatures from a digital world|A goggle-wearing boy beside an orange dinosaur-like creature and small digital device.
+Death Note||A student finds a notebook with a terrible power|A dark notebook with a blank cover beside an apple and a tall feathered supernatural figure.
+Attack on Titan||Humanity shelters behind enormous walls|Cloaked soldiers with cable gear beside a giant face peering above a massive wall, no violence.
+Demon Slayer|Kimetsu no Yaiba|A young swordsman searches for a cure|A boy in a green checkered coat carrying a wooden box beside a girl with a bamboo mouthpiece.
+My Hero Academia||Students train for a world of superpowers|A green-haired student in a hero costume beside an enormous smiling blond mentor.
+One-Punch Man||An ordinary-looking hero has extraordinary strength|A bald man in a yellow suit, red gloves and white cape carrying a grocery bag.
+Fullmetal Alchemist|Fullmetal Alchemist Brotherhood|Two brothers seek to restore what they lost|A blond boy with a metal arm beside a huge empty suit of armor and an alchemy circle without writing.
+Cowboy Bebop||Space bounty hunters search for their next job|A lanky man in a blue suit beside a red spacecraft, a corgi and a jazz saxophone.
+Neon Genesis Evangelion|Evangelion|Teenagers pilot enormous defensive machines|A purple-and-green giant robot beside a teenage pilot and a red-eyed white-haired girl.
+Spy x Family|Spy Family|An unlikely family conceals three secret lives|A suited spy, pink-haired little girl and black-dressed woman beside a large white dog.
+Blue's Clues||A friendly host follows a puppy's hints|A blue spotted puppy beside a striped-shirt host, pawprints and a small notebook.
+Dora the Explorer|Dora|A young traveler solves problems with friends|A bob-haired girl with a purple backpack beside a monkey in red boots and a rolled map.
+PAW Patrol||A young leader and rescue pups help their town|Rescue puppies in police, firefighter and construction hats beside a lookout tower.
+PJ Masks||Three children become nighttime heroes|Three small heroes in blue cat, red owl and green lizard suits above moonlit rooftops.
+Octonauts||An underwater crew protects ocean creatures|A polar-bear captain, orange cat and penguin beside an octopus-shaped underwater base.
+The Magic School Bus||A class takes impossible science field trips|A curly red-haired teacher beside a yellow school bus shrinking among huge red blood cells.
+Arthur||An aardvark grows up with family and friends|A young aardvark with round glasses and yellow sweater beside a little sister and school backpack.
+Clifford the Big Red Dog|Clifford|An enormous pet shares everyday adventures|A giant red dog towering over a blonde girl and her house.
+Thomas & Friends|Thomas the Tank Engine|Engines work together on an island railway|A smiling blue steam engine beside a round railway controller and smaller locomotives.
+Bob the Builder||A construction crew solves local problems|A builder in a yellow hard hat beside smiling construction vehicles and a toolbox.
+Fireman Sam||A firefighter protects a small town|A firefighter in a yellow helmet beside a red fire engine and hillside village.
+Postman Pat||A postal worker makes countryside deliveries|A bespectacled postal worker beside a red van and black-and-white cat.
+Teletubbies||Four colorful friends live in a playful landscape|Four rounded creatures in purple, green, yellow and red with antennae and belly screens beneath a baby-faced sun.
+In the Night Garden||Gentle characters explore a dreamy garden|A blue figure with a red blanket beside a flower-haired doll and a colorful garden train.
+Winnie the Pooh|The New Adventures of Winnie the Pooh|Friends share adventures in a quiet wood|A golden bear in a red shirt beside a pink piglet, bouncing tiger and honey pot.
+Mickey Mouse Clubhouse||Classic cartoon friends solve problems together|A black-eared mouse beside a clubhouse shaped like a mouse head and a flying helping-hand tool.
+Masha and the Bear||A small child disrupts a bear's quiet life|A little girl in a magenta hood beside a large brown bear and forest cabin.
+Shaun the Sheep||A clever flock keeps farm life interesting|A black-faced sheep leading a flock beside a farm dog and bespectacled farmer.
+Pingu||A young penguin gets into snowy mischief|A small clay-like penguin with an orange beak beside an igloo and a seal.
+Wallace and Gromit||An inventor and his dog test unusual machines|A bald inventor in a green vest beside a silent clever dog, cheese and a homemade machine.
+The Muppet Show||A variety theater hosts an unpredictable cast|A green frog presenting a stage with a glamorous pig, wild drummer and two balcony critics.
+Fraggle Rock||Small creatures live beneath the human world|Colorful furry cave creatures beside tiny hard-hat builders and crystalline towers.
+ALF||A furry visitor hides with a suburban family|A brown furry alien with a long snout beside a sofa and a nervous cat.
+Dinosaurs||A prehistoric family deals with everyday life|A large plaid-shirt dinosaur father beside a pink baby dinosaur in a high chair.
+The Fresh Prince of Bel-Air|Fresh Prince|A teenager moves in with wealthy relatives|A teenager in a sideways cap beside a grand mansion, basketball and formal butler.
+The Big Bang Theory||Scientists navigate work and relationships|A slim scientist in a superhero shirt beside a couch, a molecular model and takeout boxes.
+Young Sheldon||A young prodigy grows up in Texas|A small boy with a bow tie and briefcase beside a train set and oversized science books.
+How I Met Your Mother|HIMYM|Friends seek love and direction in New York|Five friends in a pub booth beside a yellow umbrella and blue French horn.
+Seinfeld||Four friends find problems in ordinary city life|A curly-haired comedian and friends in a diner booth beside a bowl of cereal and apartment door.
+Frasier||A radio psychiatrist reunites with family|A suited psychiatrist at a radio microphone beside a terrier and a worn recliner.
+Cheers||Regulars gather at a neighborhood bar|A curved wooden bar with a bartender, seated regulars and a baseball glove.
+The Golden Girls||Four older women share a Miami home|Four older women around a cheesecake beside a tropical-patterned sofa and palm tree.
+Full House||An unconventional household raises three girls|Three men with three young girls outside colorful San Francisco row houses.
+Family Matters||A suburban family has an unusual neighbor|A teenage boy with huge glasses, suspenders and high trousers beside a police officer.
+Home Improvement||A family man hosts a home repair show|A man with a tool belt beside a bearded co-host and a neighbor whose face is hidden by a fence.
+The Nanny||A colorful newcomer joins a formal household|A curly-haired woman in a bold patterned suit beside three children and a stern butler.
+Sabrina the Teenage Witch|Sabrina|A teenager discovers magical family secrets|A blonde girl casting a spell beside a black talking cat and two aunts.
+Bewitched||A magical wife adapts to suburban life|A blonde woman twitching her nose beside a broom and a surprised suited husband.
+I Dream of Jeannie||An astronaut befriends a magical companion|A blonde genie in pink emerging from a decorated bottle beside an astronaut.
+I Love Lucy||A determined performer creates comic chaos|A red-haired woman struggling with chocolates on a fast conveyor belt.
+The Brady Bunch||Two families combine into one household|Six children and their parents arranged in a three-by-three window grid with a housekeeper.
+Gilligan's Island||Shipwrecked travelers make an island home|A red-shirted sailor in a white hat beside a skipper, palm huts and a stranded little boat.
+The Beverly Hillbillies||A rural family moves into sudden wealth|A country family in an old truck outside a mansion with an oil well behind them.
+Happy Days||Teenagers grow up around a local diner|A leather-jacketed man giving two thumbs up beside a jukebox and diner counter.
+Mork & Mindy||An alien learns about human life|A man in red suspenders making a split-finger greeting beside a giant egg-shaped spaceship.
+The Munsters||An unusual monster family lives in the suburbs|A square-headed father, vampire grandfather and white-streak-haired mother beside a gothic house.
+The A-Team||A fugitive crew takes on dangerous jobs|Four men beside a black van with a red stripe, including a mohawked man with gold chains.
+Knight Rider||A driver works with an intelligent vehicle|A black sports car with a red scanning light beside a leather-jacketed driver.
+MacGyver||A resourceful agent solves impossible problems|A man improvising with a paper clip, duct tape and a pocketknife beside a tangled device.
+Baywatch||Lifeguards patrol a busy coastline|Red-swimsuited lifeguards running with rescue floats beside a beach tower.
+Magnum, P.I.||A private investigator works in Hawaii|A mustached man in a tropical shirt beside a red sports car and palm-lined estate.
+Miami Vice||Undercover detectives work a sunlit coastal city|Two detectives in pastel suits beside a white sports car, speedboat and neon palm trees.
+The Dukes of Hazzard||Two cousins outwit local authorities|An orange muscle car jumping a creek beside two country cousins; no flag or lettering.
+CHiPs||Motorcycle officers patrol California roads|Two highway patrol officers with mirrored glasses riding white police motorcycles.
+The X-Files||Two agents investigate unexplained events|Two suited agents with flashlights beside a UFO and misty forest.
+Twin Peaks||A strange mystery unsettles a small town|A detective with coffee and cherry pie beside red curtains and a black-and-white zigzag floor.
+Buffy the Vampire Slayer|Buffy|A student protects her town from supernatural threats|A blonde teenager holding a wooden stake beside a library and friendly monster silhouettes.
+Charmed||Three sisters inherit magical responsibilities|Three women around a candlelit spellbook in a Victorian attic.
+Supernatural||Two brothers hunt unusual threats|Two brothers beside a black vintage car, salt circle and angel wings in shadow.
+The Vampire Diaries||A teenager meets mysterious brothers|A young woman between two pale brothers beside an old journal and gothic house.
+Teen Wolf||A teenager adjusts to a supernatural change|A teenage lacrosse player with glowing eyes and a wolf shadow.
+Smallville||A young hero grows up in a farming town|A young man in a red jacket beside a barn, tractor and glowing green meteor fragment.
+Arrow||A wealthy survivor becomes a masked archer|A hooded green archer with a bow standing above city rooftops.
+The Flash||A scientist gains extraordinary speed|A red-suited hero running through yellow lightning above a city street.
+Supergirl||A young visitor becomes her city's protector|A blonde caped heroine flying above a city beside ordinary office glasses, no logo.
+WandaVision||An unusual couple lives through television eras|A red-haired woman and red-faced android in a living room split between black-and-white and color.
+Loki||A trickster confronts branching realities|A horned-helmet trickster beside a clock, branching timelines and a tiny alligator.
+The Umbrella Academy||Estranged siblings reunite around a family mystery|A group of unusual siblings beneath a black umbrella beside a chimpanzee in formal clothing.
+The Boys||A cynical look behind public superheroes|A bearded man in a dark coat facing a smiling blond caped hero above a city.
+The Walking Dead||Survivors navigate a changed world|A sheriff's hat, crossbow and abandoned road with distant shambling figures, no gore.
+The Last of Us||Two travelers cross a world changed by infection|A bearded traveler and teenage girl beside fungal growth and an abandoned overgrown city.
+Fallout||Vault dwellers encounter a strange wasteland|A woman in a blue-and-yellow jumpsuit beside a bulky power-armor helmet and a loyal dog.
+The Witcher||A monster hunter journeys across a troubled land|A white-haired swordsman with two swords beside a wolf medallion and a horse.
+House of the Dragon||A royal family struggles over a succession|Silver-haired riders and two dragons facing an iron throne.
+The Rings of Power|Lord of the Rings The Rings of Power|Ancient powers rise in a fantasy world|An elf beside a glowing forge, golden rings and a distant dark mountain.
+The Wheel of Time||Travelers become part of an ancient struggle|A woman channeling bright woven threads beside a great spoked wheel and serpent-shaped ring.
+The Sandman||A mysterious ruler seeks to restore his realm|A pale dark-haired figure with a pouch of sand beside a raven and a strange long-snouted mask.
+His Dark Materials||A girl journeys among connected worlds|A girl with a golden instrument beside an armored polar bear and a small animal companion.
+Good Omens||Unlikely supernatural friends try to avert disaster|A white-haired angel and red-haired demon with sunglasses beside an old car and bookshop.
+Lucifer||An unusual consultant helps a detective|A sharply suited man at a piano beside a detective and a shadow of devil wings.
+Once Upon a Time||Fairy-tale figures live in an ordinary town|A modern sheriff beside a storybook, poisoned apple and small-town clock tower.
+Merlin||A young servant hides powerful magic|A dark-haired boy with a scarf beside a young king, sword and chained dragon.
+Xena: Warrior Princess|Xena|A warrior seeks redemption through adventure|A dark-haired armored woman holding a circular throwing ring beside a blond companion with a staff.
+Hercules: The Legendary Journeys|Hercules|A hero travels through a mythic world|A long-haired muscular hero in a leather vest beside a golden club and ancient temple.
+Star Trek||A crew explores the final frontier|A saucer-shaped spaceship beside a pointed-eared officer and a captain in gold.
+Star Trek: The Next Generation|The Next Generation;Star Trek TNG|A new crew explores a later frontier|A bald red-uniformed captain, pale android and visor-wearing engineer beside a sleek saucer spaceship.
+Star Trek: Deep Space Nine|Deep Space Nine;DS9|A space station guards a strategic crossroads|A circular space station with three curved pylons beside a bright swirling wormhole.
+Star Trek: Voyager|Voyager|A stranded crew searches for a way home|A woman captain beside a sleek elongated spaceship and a holographic doctor.
+The Orville||An unusual crew explores space|A round-edged exploratory spaceship with three looping rear arcs beside colorful uniformed crew.
+Battlestar Galactica||Survivors flee a relentless mechanical enemy|A huge battleship carrying smaller fighters beside a silver robot with one red scanning eye.
+Stargate SG-1|Stargate;SG1|A team travels through a planetary gateway|A circular stone portal filled with blue water-like light beside a four-person exploration team.
+Firefly||A small crew survives on the edge of space|A brown-coated captain beside a battered insect-shaped spaceship and a frontier settlement.
+The Expanse||Tensions grow across a settled solar system|A compact angular spaceship beside Earth, Mars and an asteroid station with blue alien glow.
+Lost in Space||A family struggles far from Earth|A family in spacesuits beside a friendly robot with a glowing face and a stranded saucer.
+The Book of Boba Fett|Boba Fett|An armored figure claims a desert throne|A green-helmeted bounty hunter beside a desert throne and enormous friendly beast.
+Obi-Wan Kenobi|Kenobi|A hidden guardian faces an old enemy|A bearded robed man with a blue light blade beside twin desert suns.
+Ahsoka||A former warrior investigates a growing threat|An orange-skinned woman with white-striped head-tails holding two white light blades.
+Andor||An ordinary man becomes part of a rebellion|A dark-haired rebel beside a squat red droid, industrial prison and distant moon-sized station.
+The Clone Wars|Star Wars The Clone Wars|A galactic conflict tests familiar heroes|A young orange-skinned apprentice, robed generals and white-armored clone soldiers beneath starships.
+Star Wars Rebels|Rebels|A small crew challenges a galactic empire|A colorful rebel crew beside a rounded gray freighter and orange astromech droid.
+The Bad Batch||An unusual squad finds its place after war|Five distinctive armored clone soldiers with a small blonde girl beside a shuttle.
+Better Call Saul||An ambitious lawyer changes course|A brightly suited lawyer beside scales of justice, a yellow car and inflatable waving figure.
+The Sopranos||A crime boss balances family and therapy|A heavyset man in a robe beside a swimming pool with ducks and a therapist's chair.
+Peaky Blinders||A family builds power in postwar Britain|Men in flat caps and dark overcoats beside a horse and smoky industrial street.
+Sherlock||A famous detective works in modern London|A curly-haired man in a long coat and scarf beside a magnifying glass and London taxi.
+Columbo||An underestimated detective asks one more question|A rumpled detective with a raincoat and cigar beside a basset hound and battered car.
+Monk||A meticulous investigator solves difficult cases|A detective carefully straightening objects beside cleaning wipes and a magnifying glass.
+Psych||A perceptive investigator pretends to have unusual powers|Two friends beside a pineapple, magnifying glass and playful crystal ball.
+Only Murders in the Building|Only Murders|Three neighbors investigate through a podcast|Three neighbors with microphones inside an ornate apartment building beside a magnifying glass.
+Murder, She Wrote||A novelist repeatedly encounters real mysteries|An older woman at a typewriter beside a magnifying glass and coastal cottage.
+Death in Paradise||An investigator adjusts to a tropical island|A suited detective beside a beach shack, small green lizard and palm trees.
+House|House MD;House M.D.|A doctor tackles baffling medical cases|A stubbled doctor leaning on a cane beside an enormous diagnostic puzzle and hospital bed.
+Grey's Anatomy||Doctors build careers and relationships|A group of surgeons in blue scrubs beside a ferryboat and Seattle skyline.
+Scrubs||Young doctors learn their profession|Two doctors in blue scrubs beside a janitor, stethoscope and daydream cloud.
+ER||A busy emergency department faces daily crises|Doctors and nurses rushing a stretcher through a crowded emergency room, no injury detail.
+MASH|M*A*S*H|Medical staff work through a distant war|A field hospital tent with a helicopter, olive medical bags and a bespectacled surgeon.
+Call the Midwife||Nurses care for an East London community|A nurse cycling with a medical bag beside nuns and a baby carriage on a cobbled street.
+Downton Abbey||An aristocratic household faces social change|A grand country house with formally dressed family upstairs and servants carrying silver trays below.
+The Crown||A royal family navigates decades of change|A jeweled crown beside a young queen, corgi and royal palace.
+Bridgerton||Courtship unfolds in a colorful society|A Regency couple dancing beneath wisteria beside a feathered quill and a tiny bee.
+Outlander||A traveler crosses into another century|A woman between modern clothes and tartan beside a standing stone circle.
+Vikings||Warriors sail toward new horizons|A longship with a dragon prow beside a braided warrior and round shields.
+The Last Kingdom||A warrior is torn between rival cultures|A long-haired warrior with an amber pendant beside a fortified Saxon town and Viking longship.
+Shogun||An outsider enters a world of competing lords|A samurai lord, a woman in a kimono and a European sailor beside a Japanese castle.
+The Queen's Gambit||A young prodigy rises through competitive chess|A red-haired woman facing a chessboard with oversized chess pieces imagined above her.
+Severance||Office workers live unusually divided lives|A suited worker at an old computer in a stark green-carpeted office with a mysterious white corridor.
+Black Mirror||Technology reveals unsettling human possibilities|A dark cracked screen reflecting a person's face with small futuristic devices around it.
+The Twilight Zone||Ordinary situations turn uncanny|A floating door, eye and clock without digits in a starry black void.
+American Horror Story||A changing cast explores unsettling tales|A gothic mansion, carnival tent and eerie theatrical masks, without gore.
+Goosebumps||Young people encounter strange scares|A ventriloquist dummy, haunted mask and glowing green slime beside a school backpack.
+Are You Afraid of the Dark?||Friends tell frightening stories by a fire|A circle of children telling stories around a campfire with ghostly shapes in the smoke.
+Tales from the Crypt||An eerie host introduces frightening stories|A grinning skeletal storyteller holding an open book in a cobwebbed crypt.
+Superstore||Employees work through life in a big-box shop|Store workers in blue vests beside shelves, a checkout and a shopping cart, no branding.
+Brooklyn Nine-Nine|Brooklyn 99|An eccentric police team solves cases together|A diverse detective squad with badges beside a police desk, yogurt cup and corgi.
+Parks and Recreation|Parks and Rec|A local-government team serves its town|An enthusiastic blonde woman with waffles beside a mustached colleague and miniature pony in a park office.
+Community||An unlikely study group attends a local college|A mixed-age study group around a library table beside a paper fortune teller and a paintball splatter.
+The Good Place||A newcomer questions her surprising afterlife|A colorful neighborhood with frozen yogurt, a cactus and a glowing doorway among clouds.
+New Girl||An optimistic teacher moves into a shared loft|A woman with large glasses beside three male roommates, a loft window and a cookie jar.
+Schitt's Creek||A wealthy family starts over in a small town|A glamorous wig-wearing woman and family beside a modest roadside motel and suitcases.
+Arrested Development||An eccentric wealthy family faces trouble|A family beside a banana stand, blue-painted man and stair car with no airplane.
+It's Always Sunny in Philadelphia|Always Sunny|A dysfunctional group runs a neighborhood bar|Five chaotic friends in an Irish-style pub beside a green bodysuit and a rum-filled ham.
+The IT Crowd||A basement support team handles office problems|Two computer technicians and their manager beside tangled cables and old desktop computers in a basement.
+Blackadder||A schemer navigates different historical eras|A sharp-faced Elizabethan courtier beside a scruffy servant holding a turnip.
+Mr. Bean||A mostly silent man creates everyday chaos|A man in a tweed jacket beside a small teddy bear and a green compact car.
+Fawlty Towers||A hotel owner struggles with guests and staff|A tall mustached hotelier beside a small waiter and a hotel reception bell.
+Monty Python's Flying Circus|Monty Python|A troupe performs surreal comedy|A giant cutout foot above a flying circus tent, a knight and a dead-looking toy parrot.
+The Vicar of Dibley||A village welcomes an unconventional minister|A woman vicar beside a tiny English church, chocolate and a duck.
+Absolutely Fabulous|Ab Fab|Two fashionable friends pursue an extravagant life|Two flamboyantly dressed older women with oversized sunglasses, champagne and shopping bags.
+Derry Girls||Teenage friends grow up in Northern Ireland|Five teenagers in green school uniforms beside a stern nun and city walls.
+The Inbetweeners||Four awkward friends navigate school life|Four teenage boys in school uniforms beside a battered yellow car and a briefcase.
+Glee||A school singing club seeks recognition|A diverse group of students singing beside school lockers, a piano and a red slush drink.
+Hannah Montana||A teenager hides a famous second life|A brunette schoolgirl holding a blonde wig beside a concert microphone and schoolbag.
+Lizzie McGuire||A teenager navigates school and family|A blonde teenage girl beside a tiny cartoon version of herself and school lockers.
+That's So Raven||A teenager glimpses possible futures|A teenage girl looking startled beside a glowing vision cloud and colorful clothes.
+Wizards of Waverly Place||A family hides magic above its sandwich shop|Three siblings holding wands beside a sandwich counter and a hidden magic room.
+The Suite Life of Zack & Cody|Suite Life;Zack and Cody|Twin boys grow up in a luxury hotel|Twin blond boys riding a luggage cart through a grand hotel lobby.
+Drake & Josh||Two very different stepbrothers share a home|Two teenage boys, one holding a guitar and one wearing a movie-theater vest, beside a shared bedroom.
+iCarly||Friends create their own internet show|Three teenagers filming with a camera beside a laptop and a bag of spaghetti tacos.
+Victorious||A teenager joins a performing-arts school|A dark-haired teenager singing beside a microphone, guitar and colorful school lockers.
+Zoey 101||Teenagers attend a coastal boarding school|Teenagers in casual school clothes beside a beachside campus, scooter and palm trees.
+Power Rangers|Mighty Morphin Power Rangers|A team transforms to defend Earth|Five heroes in colored helmets posing beside a giant combining robot.
+LazyTown||An energetic visitor encourages healthy habits|An athletic man in blue beside a pink-haired girl, striped villain and colorful town.
+Saved by the Bell||School friends navigate teenage life|Teenagers around a diner booth beside a giant early mobile phone and a school bell.
+Boy Meets World||A boy grows up with friends and family|A curly-haired schoolboy beside his best friend, girlfriend and an older teacher in a classroom.
+Malcolm in the Middle||A gifted child survives a chaotic household|A boy surrounded by rowdy brothers, an exhausted father and stern mother in a cluttered kitchen.
+Everybody Hates Chris||A teenager navigates family and school|A young boy with a schoolbag between a strict mother and frugal father on a Brooklyn stoop.
+The Wonder Years||An adult recalls growing up in suburbia|A teenage boy and girl beside a bicycle on an autumn suburban street.
+That '70s Show||Teenagers gather in a Wisconsin basement|Six teenagers in flared trousers gathered around a basement sofa and record player.
+Survivor||Contestants compete on a remote island|A tropical island camp, extinguished torch and a circle of contestants around a fire.
+The Amazing Race||Teams race around the world|Two backpacked travelers with a globe, airplane and yellow-and-red route flags.
+Big Brother||Housemates live under constant observation|People in a colorful house beneath oversized camera lenses and a giant eye motif.
+The Bachelor||One person searches for romance among many suitors|A suited man holding a single red rose before a mansion and waiting contestants.
+Love Island||Singles pair up at a sunny villa|Couples beside a heart-shaped pool, palm trees and a glowing fire pit.
+The Masked Singer||Hidden performers sing in elaborate disguises|A peacock-costumed singer and a monster-costumed singer holding microphones before judges.
+American Idol||Singers compete for a recording career|A young singer on a blue-lit stage facing three judges and a golden ticket with no text.
+The Voice||Singers audition for coaches who initially face away|Four large red chairs turning toward a singer on a brightly lit stage.
+Dancing with the Stars||Celebrities learn ballroom routines|A glamorous dance couple beneath a large mirror-ball trophy and spotlights.
+America's Got Talent|AGT|Performers of many kinds compete onstage|A magician, acrobat and singer before judges and a shower of golden confetti.
+RuPaul's Drag Race|Drag Race|Performers compete through fashion and performance|A glamorous tall performer with a huge wig beside runway contestants, makeup and a crown.
+Project Runway||Designers compete through clothing challenges|Designers fitting a mannequin beside a sewing machine, fabric rolls and a runway.
+Top Chef||Professional cooks face inventive challenges|Chefs with white jackets presenting plated food beside a chef's knife and judging table.
+MasterChef||Home cooks compete in a professional kitchen|Aproned cooks at kitchen stations presenting dishes beside a large chef's hat.
+Hell's Kitchen||Cooks compete under intense kitchen pressure|A stern blond chef between red and blue kitchen teams beneath cartoon flame shapes.
+Kitchen Nightmares||A chef tries to revive struggling restaurants|A stern chef inspecting a chaotic restaurant kitchen beside a broken plate and fresh ingredients.
+Nailed It!||Amateur bakers attempt ambitious creations|A beautiful tiered cake beside a hilariously collapsed copy and a cheerful amateur baker.
+Is It Cake?||Bakers disguise desserts as everyday objects|A knife slicing into a realistic shoe to reveal layers of sponge cake.
+Shark Tank||Entrepreneurs pitch to potential investors|Businesspeople seated before an inventor holding a product, with shark silhouettes and stacks of coins.
+Dragons' Den||Inventors seek support from business investors|An entrepreneur facing seated investors beneath dragon-shaped shadows beside a prototype.
+The Apprentice||Candidates compete through business challenges|Suited candidates around a boardroom table facing a stern executive and a rolling suitcase.
+The Traitors||Players search for hidden deceivers in a castle|Hooded figures around a round table beside a Scottish castle and a masked face.
+American Ninja Warrior|Ninja Warrior|Athletes tackle an elaborate obstacle course|An athlete leaping between suspended obstacles above water toward a curved wall.
+Wipeout||Contestants face a comically difficult obstacle course|A person bouncing between enormous red balls above a pool.
+Gladiators||Challengers face powerful arena competitors|Athletes with padded staffs on raised platforms beside climbing walls and bright arena lights.
+Robot Wars||Inventors send machines into an arena|Small armored robots with flippers and wheels inside a fenced arena with sparks.
+BattleBots||Builders compete with remote-controlled machines|Two compact combat robots with a spinning disc and hammer inside a glass-walled arena.
+MythBusters||Experimenters test familiar claims|Two experimenters, one with a beret and large mustache, beside goggles and a crash-test dummy.
+How It's Made||Everyday manufacturing is revealed|A conveyor belt carrying familiar objects past factory machines and a magnifying glass.
+Dirty Jobs||A host tries difficult and messy occupations|A muddy worker with gloves and hard hat beside a dirty machine and bucket.
+Deadliest Catch||Fishing crews face dangerous northern seas|A crab boat in rough icy seas with crab pots and orange-clad crew.
+Ice Road Truckers||Drivers haul cargo over frozen routes|A large truck crossing a frozen lake under blowing snow.
+Storage Wars||Bidders inspect abandoned storage units|A row of storage lockers with bidders peering into stacked boxes and hidden antiques.
+Pawn Stars||A family shop evaluates unusual objects|A pawnshop counter with historical objects, a guitar and three generations of staff.
+Antiques Roadshow||Experts evaluate treasured possessions|An expert with a magnifying glass examining an old vase beside an owner and vintage clock.
+The Repair Shop||Craftspeople restore treasured belongings|A watchmaker, teddy-bear repairer and woodworker around an old object in a barn workshop.
+Queer Eye||A team helps people make personal changes|Five stylish advisers around a guest with a mirror, meal, clothes and a plant.
+Fixer Upper||A couple transforms neglected homes|A couple holding renovation plans beside a farmhouse, hammer and shiplap wall.
+Grand Designs||Ambitious homeowners build unusual houses|A presenter beside a striking modern house, architectural model and muddy construction site.
+Pimp My Ride||Old cars receive extravagant transformations|A rusty car becoming a vivid custom car with giant speakers and unusual gadgets.
+Top Gear||Presenters test cars through unusual challenges|Three presenters beside a sports car, a wrecked caravan and a white-helmeted racing driver.
+The Grand Tour||Three presenters take motoring adventures|Three older presenters with sports cars crossing a dramatic desert landscape.
+Planet Earth||A documentary explores the natural world|A globe surrounded by a polar bear, rainforest bird, whale and mountain landscape.
+Blue Planet||A documentary explores life beneath the ocean|An Earth-like blue sphere filled with whales, coral, jellyfish and deep-sea creatures.
+The Crocodile Hunter||An enthusiastic naturalist meets wildlife|A khaki-clad wildlife presenter crouching near a crocodile beside a snake and tropical leaves.
+Meerkat Manor||A desert animal family faces everyday challenges|A family of meerkats standing upright outside a sandy burrow.
+Dog Whisperer|Dog Whisperer with Cesar Millan|A trainer works with dogs and their owners|A calm dog trainer walking a pack of different dogs beside attentive owners.
+The Joy of Painting||A gentle host teaches landscape painting|A curly-haired bearded painter with a palette adding happy little trees to a mountain canvas.
+Mister Rogers' Neighborhood|Mr Rogers Neighborhood;Mister Rogers|A kind host welcomes young viewers|A gentle man in a red cardigan changing sneakers beside a small trolley and puppet castle.
+Reading Rainbow||A presenter explores stories and books|An open book releasing a bright rainbow above a smiling presenter.
+Bill Nye the Science Guy|Bill Nye|A lively host demonstrates science|A bow-tied scientist in a blue lab coat beside bubbling flasks and a globe.

@@ -1,0 +1,511 @@
+Super Mario Bros|Super Mario;Mario;Super Mario Brothers|A classic platforming adventure
+Minecraft|Mine Craft|A world built from blocks
+Tetris||A falling-block puzzle
+Pac-Man|Pacman;Pac Man|An arcade maze chase
+The Legend of Zelda|Zelda;Legend of Zelda|A fantasy adventure in Hyrule
+Sonic the Hedgehog|Sonic|A very fast blue hero
+Animal Crossing||A cozy island life
+Pokémon|Pokemon|Catch and train little creatures
+Portal||A science-fiction puzzle game
+Among Us||Find the impostor in space
+Stardew Valley||A cozy farming adventure
+Donkey Kong||An arcade classic with barrels
+Space Invaders||An alien arcade invasion
+Angry Birds||A slingshot puzzle game
+Mario Kart||A chaotic kart racer
+Frogger||An amphibian crossing a road
+Fruit Ninja||A juicy slicing game
+Plants vs. Zombies|Plants vs Zombies;Plants versus Zombies|A garden defense game
+The Sims|Sims|A life simulation
+Fall Guys||A colorful obstacle course
+Fortnite||A building and battle royale game
+Street Fighter||A classic fighting game
+Guitar Hero||A musical rhythm game
+Wii Sports||A living-room sports collection
+Pong||An early arcade sports classic|Two vertical paddles and a square ball on a simple court without scores or text.
+Asteroids||An arcade challenge among drifting rocks|A tiny triangular spacecraft firing dots among angular drifting asteroids.
+Centipede||An arcade garden invasion|A segmented centipede winding through mushrooms toward a small player at the bottom.
+Galaga||A formation-based space arcade game|A tiny fighter beneath rows of colorful insect-shaped alien ships.
+Defender||An arcade rescue above an alien landscape|A small sideways spacecraft rescuing tiny people over jagged terrain while aliens hover.
+Missile Command||An arcade defense of vulnerable cities|Arcing missile trails and circular protective explosions above three bases and small cities.
+Tempest||An arcade challenge inside geometric tunnels|A claw-shaped ship on the rim of a glowing polygon tunnel with enemies climbing outward.
+Q*bert||An arcade hopper changes a pyramid's colors|An orange round creature with a long snout hopping across colored cube steps.
+Dig Dug||An underground arcade battle|A white-suited digger with a pump hose facing a round goggled creature in soil tunnels.
+BurgerTime||An arcade cook assembles giant meals|A chef walking across enormous burger ingredients on ladders while sausages chase.
+Paperboy||An arcade delivery route through a lively neighborhood|A boy throwing blank newspapers from a bicycle past mailboxes, dogs and garden obstacles.
+Tapper||A fast-paced arcade serving challenge|A bartender sliding drinks down several long counters toward waiting patrons.
+Joust||An arcade battle on flying mounts|Two armored riders on flying ostriches above floating platforms and lava.
+Rampage||Giant creatures climb and smash city buildings|A giant gorilla, wolf and lizard climbing skyscrapers, with no injured people.
+Gauntlet||A fantasy arcade dungeon crawl|A warrior, wizard, valkyrie and elf exploring a maze filled with treasure and food.
+Marble Madness||A rolling race over unusual courses|A shiny marble crossing a geometric isometric course with ramps and narrow ledges.
+Bubble Bobble||Two little dragons trap foes in bubbles|Two cute green and blue dragons blowing bubbles around small enemies on platforms.
+Puzzle Bobble|Bust-a-Move;Bust A Move|A bubble-matching arcade puzzle|Two small dragons operating a bubble launcher beneath clusters of colored bubbles.
+Snow Bros.|Snow Brothers|Two chilly heroes roll through platform stages|Two snowmen rolling giant snowballs around small enemies on stacked platforms.
+Bomberman||A maze game about carefully placed explosives|A white helmeted character with pink gloves beside round bombs in a block maze.
+Lode Runner||A platform puzzle about collecting treasure|A small runner climbing ladders and digging square holes beneath pursuers near gold piles.
+Pitfall!||A jungle platforming adventure|An explorer swinging on a vine above crocodiles, logs and a deep pit.
+Prince of Persia||An acrobatic escape through a palace|A young prince leaping across palace ledges beside an hourglass and curved sword.
+Another World|Out of This World|A scientist awakens on an alien planet|A red-haired scientist beside a tall alien companion under a strange red sky.
+Flashback||A traveler pieces together a lost identity|A brown-jacketed man on jungle platforms beside a small memory device and futuristic city.
+Lemmings||A puzzle about guiding a busy crowd|Tiny green-haired creatures in blue outfits walking toward a gap while one builds a staircase.
+Worms||Cartoon teams compete with improbable weapons|Pink cartoon worms on tiny islands beside a banana, sheep and bazooka, no injury.
+The Incredible Machine||A puzzle about elaborate chain reactions|A bowling ball, seesaw, hamster wheel and candle linked in a whimsical contraption.
+The Lost Vikings||Three travelers combine their different talents|Three Viking brothers with a shield, bow and red beard working together at a platform gap.
+Earthworm Jim||An unlikely hero wears a powerful suit|An earthworm's head emerging from a white muscular space suit beside a cow and cartoon ray gun.
+Battletoads||Amphibian heroes tackle outrageous challenges|Muscular green toads riding hovering bikes beside giant cartoon fists.
+Double Dragon||Two brothers battle through city streets|Two martial-artist brothers in red and blue beside a city alley and dragon silhouettes.
+Streets of Rage||A team cleans up a troubled city|Three street fighters under neon lights beside a police car and an abandoned city street.
+Golden Axe||A fantasy arcade quest|A muscular warrior, red-clad woman and dwarf beside a golden axe and rideable dragon.
+Altered Beast||A warrior transforms into powerful creatures|An ancient warrior transforming into a wolf-like creature beside ruined Greek columns.
+Shinobi||A ninja rescues hostages across dangerous stages|A white-clad ninja tossing a star beside rooftop platforms and a paper lantern.
+Ninja Gaiden||A ninja faces an extraordinary enemy|A blue-clad masked ninja with a sword scaling a city wall under moonlight.
+Contra||A pair of commandos confronts an alien threat|Two bandanna-wearing commandos on jungle platforms facing a huge alien structure, no gore.
+Metal Slug||A cartoon military arcade adventure|A tiny rounded tank with exaggerated treads beside two bandanna-wearing heroes.
+Mega Man||A blue hero acquires new powers|A small blue armored robot boy with an arm cannon beside a robotic dog.
+Metroid||A lone explorer enters an alien world|An orange armored space explorer with a green visor beside a floating jellyfish-like creature.
+Castlevania||A hunter enters a vampire's castle|A whip-wielding hunter outside a gothic castle with bats and a full moon.
+Castlevania: Symphony of the Night|Symphony of the Night|A mysterious castle returns|A pale long-haired swordsman beside an upside-down castle and a red moon.
+Ghosts 'n Goblins|Ghosts and Goblins|A knight crosses a monster-filled realm|A tiny armored knight with a lance beside ghosts and a graveyard, with heart-patterned shorts nearby.
+Kirby|Kirby's Dream Land;Kirby Dream Land|A round pink hero inhales unusual powers|A pink round creature sucking in a star beside a hammer-wielding penguin king.
+Yoshi's Island|Super Mario World 2|A dinosaur carries a tiny passenger|A green dinosaur carrying a baby with a red cap beside large spotted eggs in a crayon-like landscape.
+Donkey Kong Country||A jungle pair seeks stolen treasure|A brown gorilla and small red-capped monkey swinging past bananas and wooden barrels.
+Diddy Kong Racing||Animal friends race across different terrains|A small red-capped monkey driving a kart beside a hovercraft, airplane and smiling tiger.
+Super Smash Bros.|Super Smash Brothers;Smash Bros|Familiar game characters meet in a fighting arena|A red-capped plumber, yellow electric mouse and green-clad hero on floating platforms.
+Luigi's Mansion||A nervous hero explores a haunted house|A green-capped mustached man with a vacuum backpack catching a ghost beside a spooky mansion.
+Super Mario Galaxy||A platforming adventure across tiny worlds|A red-capped plumber leaping between tiny planets beside a yellow star creature.
+Super Mario Odyssey||A globe-trotting platform adventure|A red-capped plumber throwing a cap with eyes beside a small hat-shaped airship and city skyline.
+Super Mario Sunshine||A sunny vacation becomes a cleanup mission|A red-capped plumber using a water-jet backpack beside paint splashes and a tropical island.
+Super Mario Maker||Players build their own platforming courses|A yellow-hard-hat plumber placing bricks, pipes and platforms on a grid with a stylus.
+Paper Mario||A familiar hero enters a paper world|A flat paper plumber and paper mushroom companion walking through folded scenery.
+Mario Party||A board-game celebration with familiar characters|Colorful characters rolling a die on a giant board with stars and small minigame props.
+Mario Tennis||Familiar characters take to the tennis court|A red-capped plumber and green dinosaur swinging rackets over a tennis net.
+Dr. Mario||A falling-capsule puzzle|A doctor-costumed plumber beside red, blue and yellow cartoon viruses and colored capsules.
+WarioWare||A rapid collection of tiny games|A broad mustached man in a yellow biker helmet surrounded by miniature odd game scenes.
+Wii Fit||A balance-focused living-room fitness game|A person balancing on a white rectangular board beside a yoga silhouette and scale without numbers.
+Ring Fit Adventure||Exercise powers a colorful fantasy quest|An athlete holding a circular exercise ring beside a muscular purple dragon.
+Splatoon||Teams compete by covering the arena in ink|Two squid-like teenagers spraying bright orange and blue ink across a city arena.
+Pikmin||Tiny helpers assist a stranded explorer|A tiny helmeted astronaut leading red, yellow and blue plant-headed creatures around enormous fruit.
+Star Fox||Animal pilots defend a star system|A fox pilot in a small angular spacecraft beside a rabbit and blue bird on communications screens.
+F-Zero||A high-speed futuristic racing game|A blue hovering race car speeding along a twisting elevated track beside a helmeted racer.
+Punch-Out!!||An underdog boxer challenges unusual opponents|A small green-gloved boxer facing an enormous opponent with a trainer holding a towel.
+Duck Hunt||An early home-console target game|A laughing brown dog emerging from grass beneath flying ducks and a light-gun silhouette.
+Excitebike||A side-scrolling motorcycle racer|A red motorcycle jumping over a dirt ramp beside two other racers.
+Kid Icarus||A winged hero ascends through a mythic world|A young white-winged archer with a laurel crown flying above Greek columns.
+Ice Climber|Ice Climbers|Two climbers scale icy peaks|Two parka-wearing climbers in blue and pink with mallets jumping up icy ledges.
+Balloon Fight||A floating arcade challenge|A tiny helmeted person suspended by two balloons above a lake and floating platforms.
+DuckTales||A wealthy duck explores for treasure|A top-hatted duck bouncing on a cane beside gems, a treasure chest and a moon landscape.
+Chip 'n Dale Rescue Rangers|Chip and Dale Rescue Rangers;Rescue Rangers|Two tiny detectives tackle oversized foes|Two chipmunks throwing crates across giant household platforms.
+Aladdin||A platform adventure through a magical kingdom|A streetwise boy swinging a sword beside a flying carpet, blue genie and palace rooftops.
+The Lion King||A young cub grows through a platform adventure|A lion cub jumping across giraffe heads beside a warthog and meerkat.
+Kingdom Hearts||A young hero travels between familiar fantasy worlds|A spiky-haired boy holding a giant key beside a duck magician and tall dog-like knight.
+Final Fantasy VII|Final Fantasy 7;FF7|A mercenary joins a planetary struggle|A spiky blond swordsman with an enormous blade beside a flower girl and industrial city.
+Final Fantasy X|Final Fantasy 10;FFX|A traveler joins a summoner's pilgrimage|A blond athlete and staff-carrying summoner beside a blue water ball and a huge sea creature.
+Dragon Quest||A colorful fantasy role-playing adventure|A blue smiling slime beside a young swordsman, old stone castle and green dragon.
+Chrono Trigger||A time-traveling party changes history|A spiky red-haired swordsman beside a frog knight, robot and glowing time portal.
+Secret of Mana||A trio seeks to restore a world's balance|Three young adventurers with a sword, spear and boomerang beneath an enormous magical tree.
+EarthBound|Mother 2|Children investigate a strange modern-world threat|A boy in a red cap and striped shirt with a baseball bat beside a psychic girl and walking trash can.
+Undertale||A child explores an underground monster world|A striped-shirt child beside two skeleton brothers, a goat-like guardian and a smiling flower.
+Deltarune||Students enter an unusual dark world|A blue-cloaked teenager, purple reptilian girl and green-robed goat-like companion beside a dark fountain.
+Persona 5|Persona Five|Students lead secret lives as phantom thieves|A black-coated masked boy beside a small black cat and red theatrical background.
+Persona 4|Persona Four|Students investigate a mystery through televisions|A bespectacled teen holding a sword beside a round bear mascot emerging from a television.
+Fire Emblem||A tactical adventure of armies and relationships|A blue-haired sword-wielding hero and mounted knight on a checker-like battlefield.
+Xenoblade Chronicles||A young hero explores enormous living worlds|A blond boy holding a red glowing sword on a grassy landscape shaped like a giant's body.
+Monster Hunter||Adventurers track enormous creatures|An armored hunter with an oversized sword beside a small armored cat and a huge winged beast.
+Dark Souls||A challenging journey through a fading kingdom|An armored knight resting at a sword stuck in a bonfire beneath a ruined castle.
+Elden Ring||A wanderer seeks power in a broken fantasy land|A cloaked rider on a horned horse beneath an enormous golden tree and broken glowing ring.
+Bloodborne||A hunter explores a city of dark secrets|A long-coated hunter with a folded saw weapon beneath gothic towers and a blood-red moon, no gore.
+Sekiro: Shadows Die Twice|Sekiro|A shinobi protects a young lord|A topknotted shinobi with a mechanical arm leaping toward a Japanese castle using a grappling hook.
+Demon's Souls||A warrior confronts a fog-covered kingdom|An armored knight before a wall of mist beside a monumental demon silhouette.
+Ghost of Tsushima||A warrior defends an island homeland|A masked samurai in a field of tall white grass with red maple leaves blowing past.
+Assassin's Creed||A secret order moves through history|A white-hooded figure leaping from a tower toward a haystack with an eagle overhead.
+Assassin's Creed IV: Black Flag|Assassins Creed Black Flag;Black Flag|A seafaring assassin explores the Caribbean|A hooded pirate steering a sailing ship beside crossed blades and a tropical island.
+Prince of Persia: The Sands of Time|Sands of Time|A prince must undo a disastrous release of power|A prince holding a glowing sand-filled dagger beside an hourglass and palace ledges.
+Tomb Raider|Lara Croft|An archaeologist explores dangerous ruins|A brown-braided adventurer with a turquoise top and backpack climbing ancient stone ruins.
+Uncharted||A treasure hunter follows historical mysteries|A half-tucked-shirt adventurer hanging from a wrecked train above a snowy cliff.
+Indiana Jones and the Great Circle|Indiana Jones Great Circle|An archaeologist follows a globe-spanning mystery|A fedora-wearing explorer with a whip beside a stone globe, ancient ruins and a travel map.
+God of War||A mythic warrior faces gods and monsters|A pale bald warrior with a red stripe and beard beside a young archer and frost-covered axe.
+Horizon Zero Dawn|Horizon|A hunter uncovers the origins of a machine-filled world|A red-braided hunter with a bow beside a huge robotic dinosaur and overgrown ruins.
+The Last of Us||Two survivors travel through a changed world|A bearded man and teenage girl with backpacks beside fungal growth and an overgrown city.
+Death Stranding||A courier connects isolated communities|A heavily loaded courier with a chest-mounted amber pod carrying a baby beside a tall ladder and mountains.
+Red Dead Redemption||An outlaw faces the end of an era|A cowboy on horseback beside a desert train, revolver holster and setting sun.
+Grand Theft Auto|GTA;Grand Theft Auto V;GTA 5|An open-world crime series|A sports car pursued by police in a palm-lined city beside three contrasting adult protagonists.
+Bully||A student navigates a chaotic boarding school|A shaven-headed schoolboy in a blue sweater vest beside a slingshot, bicycle and school gates.
+L.A. Noire|LA Noire|A detective investigates a postwar city|A suited detective with fedora examining clues beside a vintage police car under streetlamps.
+Saints Row||An extravagant open-world gang adventure|A purple-clad crew beside a customized purple sports car and city skyline.
+Watch Dogs||A hacker turns a connected city to his advantage|A cap-wearing man using a phone to control traffic lights beside surveillance cameras.
+Sleeping Dogs||An undercover officer navigates Hong Kong|A tattooed man on a motorcycle beneath Hong Kong neon with a police badge partly hidden.
+Yakuza|Like a Dragon;Yakuza Like a Dragon|A crime saga mixes drama with city life|A gray-suited man with a red shirt beside a dragon-shaped tattoo motif, karaoke microphone and neon streets.
+Shenmue||A young martial artist searches for answers|A brown-jacketed young man beside a forklift, capsule toy machine and Japanese shopping street.
+Hitman||A meticulous professional plans elaborate missions|A bald suited man with a red tie beside a disguise, briefcase and distant target silhouette.
+Metal Gear Solid|Metal Gear|A stealth agent confronts a walking weapon|A bandanna-wearing soldier hiding in a cardboard box beside an enormous bipedal machine.
+Splinter Cell|Tom Clancy's Splinter Cell|An operative works from the shadows|A dark-suited agent with three green night-vision lenses hanging from a pipe.
+Dishonored||A masked protector explores a troubled industrial city|A metal-masked figure with a folding blade beside a whale-oil lamp and mechanical city rooftops.
+Deus Ex||A cybernetic investigator uncovers hidden conspiracies|A black-coated man with angular sunglasses and mechanical arms beside a golden futuristic city.
+Cyberpunk 2077|Cyberpunk|A mercenary navigates a neon future city|A jacketed figure with a mechanical arm beside a neon city, motorcycle and holographic musician.
+System Shock||A space-station disaster pits a hacker against an intelligence|A hacker facing a huge green digital face across a damaged space station corridor.
+BioShock||A visitor discovers a city beneath the sea|A bulky brass diving suit protecting a small girl beside an underwater art-deco city.
+BioShock Infinite||A rescue takes place in a city above the clouds|A woman in a blue dress beside a floating city, mechanical bird and sky-hook rail.
+Half-Life||A laboratory incident opens a dangerous breach|A bespectacled scientist in an orange armored suit holding a crowbar beside a headcrab creature.
+Left 4 Dead|Left For Dead|Four survivors cooperate through a zombie outbreak|Four survivors with backpacks beside a safe-room door and distant zombie silhouettes, no gore.
+Team Fortress 2|TF2|Distinctive classes compete in team battles|A hard-hatted engineer, bulky gloved man and masked spy in contrasting red and blue teams.
+Counter-Strike|CSGO;CS2|A tactical team-based competitive shooter|Two masked tactical teams facing opposite sides of a dusty courtyard beside a bomb-defusal tool kit.
+Valorant||Tactical teams combine aim with unusual abilities|A white-haired agile agent and bow-wielding scout beside colored ability clouds on a clean arena.
+Overwatch||A team shooter with a cast of unusual heroes|An orange-goggled woman, robotic monk and armored gorilla standing together in a futuristic city.
+Apex Legends||Squads compete in a futuristic survival arena|Three futuristic competitors descending toward a canyon arena, including a cheerful grappling robot.
+PUBG: Battlegrounds|PUBG;PlayerUnknown's Battlegrounds|A battle royale built around shrinking safe zones|A helmeted figure with a frying pan beside a parachute and a blue boundary ring over an island.
+Call of Duty|COD|A long-running military action series|A soldier in tactical gear beside a helicopter, dog tags and a battlefield map without labels.
+Battlefield||Large teams fight across land and air|A soldier, tank, helicopter and jet crossing a broad battlefield, no injury detail.
+Halo||An armored hero defends humanity in space|A green armored helmet with a gold visor beside a vast ring-shaped world in the sky.
+Destiny||Guardians explore a science-fiction solar system|Three armored guardians with a small floating angular robot beneath a huge white sphere.
+Gears of War|Gears|Armored fighters defend a world under siege|Bulky armored soldiers behind cover beside a red cog-shaped emblem with no letters.
+Doom||A lone fighter faces an invasion from another realm|A green armored space marine facing horned monster silhouettes on a red rocky planet, no gore.
+Quake||A fast-paced shooter in grim otherworldly arenas|A rugged armored character beside gothic stone arches and a large nail-shaped projectile.
+Wolfenstein||An alternate-history resistance shooter|A muscular resistance fighter beside a retro-futuristic metal robot and fortress, no real-world insignia.
+Borderlands||Treasure hunters explore a chaotic frontier planet|A cel-shaded masked wanderer beside a little yellow single-wheeled robot and desert junkyard.
+Titanfall||Pilots fight alongside enormous machines|A pilot running along a wall toward a large bipedal robot with an open cockpit.
+Warframe||Agile warriors travel through a distant future|A sleek biomechanical ninja with a curved sword leaping inside a futuristic spacecraft.
+Helldivers 2|Helldivers|Cooperative troops face overwhelming alien threats|Caped armored soldiers beside a landing pod and enormous insect silhouette on an alien world.
+Deep Rock Galactic||Dwarven miners explore dangerous alien caves|Four bearded armored dwarves with headlamps and pickaxes in a glowing mineral cavern.
+Sea of Thieves||Crews share a multiplayer pirate world|Cartoon pirates steering a sailing ship toward a skull-shaped cloud beside a treasure chest.
+No Man's Sky||A traveler explores a vast generated universe|A spacesuited explorer beside a bright spacecraft, strange dinosaur-like creatures and colorful planets.
+Elite Dangerous||A space pilot trades and explores the galaxy|A cockpit framing a large space station, distant planet and cargo ship.
+EVE Online|Eve|An online universe of ships and alliances|A fleet of very different spacecraft around a space station and asteroid belt.
+Starfield||Explorers search a settled space frontier|A spacesuited explorer beside a modular spaceship and mysterious ring-shaped artifact.
+Mass Effect||A commander gathers allies across the galaxy|An armored human commander beside a blue-skinned alien, angular alien companion and sleek ship.
+Star Wars: Knights of the Old Republic|Knights of the Old Republic;KOTOR|A role-playing journey through an earlier galaxy|A robed lightsaber wielder beside a small astromech and a rust-colored assassin droid.
+Star Wars Jedi: Fallen Order|Jedi Fallen Order;Fallen Order|A young survivor rediscovers his abilities|A red-haired young man with a blue light blade beside a tiny white shoulder droid and ancient temple.
+Star Wars Battlefront|Battlefront|Familiar galactic armies meet on the battlefield|White-armored troopers and rebels beneath enormous walking machines and small starfighters.
+LEGO Star Wars||A familiar space saga rebuilt in toy bricks|Toy-brick Jedi with colored light blades beside a brick-built walker and small droid.
+StarCraft||Three civilizations compete across space|A human space marine, golden alien warrior and insect-like alien beside mineral crystals.
+Warcraft||Fantasy armies battle for a divided world|A green orc and human knight facing each other beside a castle and axe.
+World of Warcraft|WOW|An online adventure across a fantasy world|An orc, elf and armored human beside a towering dragon and glowing portal.
+Diablo||Adventurers descend into a dark fantasy world|An armored adventurer facing a horned red demon silhouette in a cathedral doorway, no gore.
+Path of Exile||An exile develops powers in a harsh fantasy land|A stranded warrior beside a branching web of glowing gems and a dark coastal ruin.
+Baldur's Gate 3|BG3|An unlikely party faces a mind-altering threat|A fantasy party beside a purple tentacle-faced creature and an oversized twenty-sided die without numbers.
+Divinity: Original Sin 2||A party of outcasts explores a magical conflict|A red lizard noble, skeleton scholar and elf beside elemental fire and water surfaces.
+The Elder Scrolls V: Skyrim|Skyrim;Elder Scrolls Skyrim|A traveler discovers a connection to dragons|A horned-helmet warrior beneath a dragon over snowy mountains beside an ancient stone doorway.
+Fallout||A survivor emerges into a retro-futuristic wasteland|A blue-and-yellow-suited vault dweller beside bulky power armor, a dog and a ruined diner.
+Dragon Age||A party confronts threats in a fantasy kingdom|A warrior, mage and horned companion facing a dark dragon above a medieval fortress.
+Fable||A hero's choices shape a fantasy life|A young adventurer with a dog beside a village, with angelic and devilish shadows diverging.
+The Witcher 3: Wild Hunt|The Witcher;Witcher 3;Wild Hunt|A monster hunter searches for a missing companion|A white-haired swordsman with two swords beside a horse and glowing wolf medallion.
+Hogwarts Legacy||A student explores a famous magical school|A robed student with a wand flying a broom toward a lakeside castle beside a small magical creature.
+Harry Potter: Quidditch Champions|Quidditch Champions;Quidditch|Witches and wizards compete in an aerial sport|Broom-riding players chasing a winged gold ball through three tall hoops.
+Hades||A prince attempts to escape the underworld|A dark-haired prince with a laurel crown beside a three-headed dog and a river of souls.
+Hollow Knight||A small traveler explores a ruined insect kingdom|A tiny white horned mask on a black cloak holding a nail-shaped sword in a cavern.
+Silksong|Hollow Knight Silksong|A nimble warrior journeys through a new insect kingdom|A white horned figure in a red cloak wielding a needle with flowing silk thread.
+Celeste||A young climber faces a difficult mountain|A red-haired girl jumping between snowy ledges with a pink hair trail beside a strawberry.
+Cuphead||A cartoon hero faces elaborate boss battles|Two small characters with cup-shaped heads, red and blue shorts and drinking-straw noses.
+Ori and the Blind Forest|Ori|A glowing spirit restores a dying woodland|A small white glowing creature beside a blue light and enormous luminous forest tree.
+Ori and the Will of the Wisps|Will of the Wisps|A small spirit searches for a lost friend|A white glowing creature flying beside a young purple owl through luminous woodland.
+Dead Cells||A shifting warrior explores a changing fortress|A headless warrior with a bright flame-like head beside a green glass flask and stone dungeon.
+Shovel Knight||A knight sets out with an unusual tool|A blue armored knight with curved horns holding a shovel like a sword.
+Shantae||A half-genie protects her home|A purple-ponytailed dancer in red pants whipping her hair beside a monkey transformation.
+Rayman||A limbless hero explores whimsical worlds|A blond-haired character with floating hands and shoes beside colorful musical plants.
+Crash Bandicoot||A spinning hero crosses island obstacle courses|An orange bandicoot in blue shorts spinning beside wooden crates and a floating feathered mask.
+Spyro the Dragon|Spyro|A small dragon rescues a colorful world|A purple dragon with yellow horns beside a glowing dragonfly and gems.
+Banjo-Kazooie||A bear and bird share a platform adventure|A brown bear in yellow shorts with a red bird emerging from his blue backpack beside a golden puzzle piece.
+Conker's Bad Fur Day|Conker|A squirrel has a very unusual journey home|An orange squirrel in a blue hoodie beside a frying pan and an absurd singing mound, family-safe depiction.
+Jak and Daxter||Two friends search for a way to reverse a transformation|A blond pointed-eared boy beside an orange otter-weasel companion and glowing colored energy.
+Ratchet & Clank||An inventor and a robot explore the galaxy|A large-eared feline mechanic with a wrench beside a small silver robot with green eyes.
+Sly Cooper||A raccoon thief follows a family legacy|A raccoon in a blue cap and eye mask holding a hooked cane beside a turtle and hippo.
+Sackboy: A Big Adventure|Sackboy|A knitted hero explores crafted worlds|A small brown knitted figure with a zipper walking through fabric and cardboard scenery.
+LittleBigPlanet|LBP|A creative platform world built from everyday materials|A brown knitted doll beside sponge platforms, cloth stars and a cardboard rocket.
+Astro Bot||A little robot rescues friends across playful worlds|A small white robot with a blue screen face beside a controller-shaped spaceship.
+Psychonauts||A young psychic enters unusual minds|A goggle-wearing boy with a helmet floating beside a brain-shaped landscape and circus props.
+It Takes Two||Two transformed parents must cooperate|Two handmade dolls, one clay and one wood, crossing a giant workshop beside a talking book.
+A Way Out||Two prisoners cooperate to escape|Two men climbing over a prison wall together beside split paths and a getaway truck.
+Unravel||A small yarn creature follows a family's memories|A tiny red yarn figure crossing an enormous garden while trailing red thread.
+Unravel Two|Unravel 2|Two yarn companions work together|Red and blue yarn figures tied together swinging across a forest gap.
+Limbo||A child travels through a dark landscape|A black silhouette boy with white eyes beside a giant spider in a misty monochrome forest.
+Inside||A child uncovers an unsettling industrial secret|A small red-shirted boy hiding behind a crate in a dark factory with watching spotlights.
+Little Nightmares||A tiny traveler navigates an oversized nightmare|A small child in a yellow raincoat beneath enormous furniture and a long-armed shadow.
+Stray||A cat explores a city without humans|An orange cat with a small backpack beside friendly robots and glowing city alleys.
+Untitled Goose Game|Goose Game|A mischievous bird disrupts a village|A white goose carrying stolen keys past a surprised gardener and picnic basket.
+Goat Simulator||An unruly animal causes absurd chaos|A goat with an impossibly long tongue bouncing beside a trampoline and overturned objects.
+Katamari Damacy|Katamari|A tiny prince rolls objects into a growing ball|A tiny green prince pushing a ball covered with household objects beside a giant crowned head.
+Super Monkey Ball|Monkey Ball|Monkeys roll through tilting courses|A monkey inside a transparent sphere rolling along a narrow floating platform beside bananas.
+LocoRoco||Singing blobs roll through a colorful world|Bright yellow and red round blobs rolling down a tilted flower-covered hill.
+Patapon||A tiny army marches through rhythm|Small black-and-white one-eyed warriors with spears marching beneath drum-shaped symbols.
+Rhythm Heaven||A collection of playful rhythm challenges|A choir trio, a clapping monkey and bouncing objects arranged around a metronome.
+PaRappa the Rapper|Parappa|A paper-thin hero learns through rap|A flat cartoon dog in an orange beanie beside an onion-headed karate teacher and microphone.
+Dance Dance Revolution|DDR|Players step to musical directions|A dancer on a four-arrow floor pad facing an arcade cabinet without text.
+Just Dance||A colorful movement-based party game|Brightly colored dancer silhouettes mirroring a person in front of a television.
+Rock Band||Friends perform as a virtual group|A toy guitar, drum kit and microphone facing a cheering virtual audience.
+Beat Saber||A virtual-reality rhythm challenge|Two glowing red and blue blades slicing matching cubes with directional cut shapes.
+Osu!||A rhythm game about precise taps and movements|A stylus tracing curved sliders between colorful circles on a screen, no digits.
+Geometry Dash||A rhythmic platformer with a jumping square|A bright square jumping over triangular spikes toward a glowing circular portal.
+Super Meat Boy||A tiny hero tackles unforgiving platform courses|A red cube-like boy leaping between saw-shaped obstacles toward a pink bandaged cube, no gore.
+VVVVVV||A gravity-flipping platform puzzle|A tiny cyan character flipping between floor and ceiling in a room of spikes.
+Fez||A small adventurer discovers another dimension|A white pixel-like figure wearing a red fez beside a rotating cube-shaped world.
+Braid||A puzzle adventure involving time|A small suited figure beside a bending clock without digits and a painterly platform landscape.
+The Witness||An island puzzle built around observation|A bright island with a large mountain and standing panels containing simple maze lines.
+The Talos Principle||A philosophical puzzle among ancient ruins|A robot holding a luminous puzzle cube beside classical ruins and a laser barrier.
+The Stanley Parable||An office worker explores branching possibilities|An empty office corridor splitting into two open doors beside a desk and computer.
+Superliminal||A puzzle about perspective and apparent size|A person holding a tiny chess piece whose shadow makes it appear enormous in a room.
+Viewfinder||Photographs reshape a three-dimensional world|A hand holding a photo of stairs that becomes real stairs in the surrounding landscape.
+Monument Valley||A traveler crosses impossible architecture|A small white-robed figure climbing an impossible pastel staircase beside a tall totem.
+The Room||An intricate mechanical puzzle box|An ornate wooden puzzle box with gears, hidden compartments and a mysterious eyepiece.
+Myst||A mysterious island invites careful exploration|An island with a clock tower, strange gears and an open linking book.
+Return of the Obra Dinn|Obra Dinn|An investigator reconstructs a ship's lost voyage|A monochrome sailing ship beside a skull-decorated pocket watch and an open logbook with blank pages.
+Papers, Please||A border inspector faces difficult decisions|An inspection booth with blank passports, stamp pads and a queue of travelers.
+Her Story||A mystery unfolds through recorded interviews|An old desktop computer showing a woman's interview beside scattered blank evidence cards.
+Pentiment||An artist investigates a historical mystery|A medieval illustrator holding a quill beside a monastery and illuminated manuscript without text.
+Disco Elysium||An unusual detective investigates a troubled city|A disheveled detective in a green jacket beside a neat bespectacled partner and waterfront ruin.
+Professor Layton|Layton|A gentleman solves elaborate puzzles|A professor in a tall brown top hat and young assistant beside puzzle pieces and a magnifying glass.
+Phoenix Wright: Ace Attorney|Ace Attorney;Phoenix Wright|A defense lawyer uncovers courtroom contradictions|A blue-suited lawyer pointing dramatically across a courtroom beside a gavel and evidence papers with no writing.
+Danganronpa||Students face a mysterious school competition|A black-and-white split-color bear beside a classroom, courtroom podiums and a locked school gate.
+The Secret of Monkey Island|Monkey Island|An aspiring pirate begins a comic adventure|A blond pirate with a rubber chicken beside a three-headed monkey and ghost ship.
+Grim Fandango||A travel agent uncovers an afterlife conspiracy|A skeleton in a sharp suit beside a giant orange driver and art-deco city.
+Day of the Tentacle||Friends travel through time to stop a strange threat|A purple tentacle creature beside three odd friends and a portable-toilet time machine.
+Sam & Max||Two unusual freelance detectives take cases|A suited dog detective and small grinning rabbit beside a battered police car.
+Broken Sword||A tourist uncovers a globe-spanning mystery|A blond tourist and dark-haired journalist beside a cracked sword and Paris cafe.
+Machinarium||A small robot searches a mechanical city|A rusty little robot with an extendable body beside a tall junk-built city and another small robot.
+Samorost||A tiny traveler explores organic worlds|A small white-capped gnome beside a trumpet and a mossy asteroid shaped like a tree root.
+Botanicula||Small forest creatures protect their home|Five tiny plant-like creatures carrying a seed along a sunlit tree branch.
+The Walking Dead||A group faces difficult choices after an outbreak|A man protecting a girl in a baseball cap beside a treehouse and distant undead silhouettes, no gore.
+Life Is Strange||A student discovers she can rewind time|A short-haired girl with an instant camera beside a blue butterfly, lighthouse and tornado.
+Detroit: Become Human||Androids confront their place in society|Three androids with tiny temple lights beside a futuristic city and a mechanical hand reaching toward a human hand.
+Heavy Rain||Several lives intersect around a mysterious crime|An origami bird in a hand beneath heavy rain beside a child's red balloon.
+Five Nights at Freddy's|FNAF|A night guard watches unsettling entertainers|A brown animatronic bear with a top hat beside a security monitor and dim pizza restaurant.
+Poppy Playtime||An abandoned toy factory hides strange secrets|A long-limbed blue toy creature beside red-and-blue extendable gloves and a factory hallway.
+Bendy and the Ink Machine|Bendy|A cartoon studio hides an inky mystery|A smiling black-and-white cartoon devil beside a projector and pools of black ink.
+Hello Neighbor||A curious newcomer investigates the house next door|A mustached man in a sweater vest peeking from a strange tall house beside a key.
+Baldi's Basics||A strange school turns into a survival puzzle|A bald cartoon teacher holding a ruler beside simple school desks and blank notebooks.
+Resident Evil||Survivors confront an unusual biological disaster|A police officer and a woman in red beside a mansion, green herb and typewriter, no gore.
+Silent Hill||A traveler searches a fog-covered town|A lone figure with a flashlight beside a foggy street, abandoned wheelchair and pyramid-shaped helmet silhouette.
+Alan Wake||A writer searches for answers in a dark town|A writer in a gray coat holding a flashlight beside a typewriter and dark pine forest.
+Control||A new director explores an impossible agency building|A red-haired woman levitating objects inside a stark brutalist office with floating figures.
+Phasmophobia||A team investigates haunted places|Ghost investigators with a flashlight, handheld meter and camera inside a dark house.
+Lethal Company||Workers collect scrap in dangerous abandoned facilities|Orange-suited workers carrying metal scrap toward a tiny ship under a threatening moon.
+Among the Sleep||A very young child enters a nightmarish world|A toddler in pajamas holding a teddy bear beneath enormous furniture and a dark doorway.
+Slender: The Eight Pages|Slender;Slender Man|A forest search becomes increasingly unsettling|A tall faceless suited figure among dark trees beside a flashlight and blank pages.
+Amnesia: The Dark Descent|Amnesia|A frightened traveler explores a ruined castle|A lantern illuminating a crumbling castle corridor beside a potion bottle and torn diary.
+Alien: Isolation||A survivor evades a relentless creature aboard a station|A woman hiding with a small motion tracker beneath a long-headed alien silhouette in a spaceship corridor.
+Subnautica||A castaway explores an alien ocean|A small yellow submarine above a colorful coral reef with a huge sea-creature shadow below.
+Raft||Survivors expand a tiny floating home|A makeshift wooden raft with a small sail, purifier and palm tree while a shark circles.
+Valheim||Fallen warriors explore a mythic wilderness|A Viking with a round shield beside a timber hall, longship and enormous tree in the sky.
+Rust||Survivors gather resources in a harsh shared world|A person holding a rock beside a rough wooden shelter, furnace and metal door.
+ARK: Survival Evolved|Ark|Survivors build lives among prehistoric creatures|A human riding a saddled dinosaur beside a futuristic glowing obelisk.
+Palworld||Creatures help build a strange survival settlement|A colorful fluffy creature helping a human build a wooden base beside a floating island.
+Terraria||A two-dimensional world of building and exploration|A pixel-like adventurer digging from a little house into layered caverns beneath floating islands.
+Starbound||A space traveler explores colorful side-scrolling planets|A small astronaut beside a spaceship, alien trees and layered underground tunnels.
+Don't Starve||An unusual cast struggles through a hostile wilderness|A spiky-haired scientist beside a campfire, shadow hands and a lanky spider in a sketchy forest.
+Don't Starve Together||Friends cooperate to survive a strange world|Several unusual survivors around a campfire beside a giant bird and shadow creatures.
+Grounded||Shrunken children survive a giant backyard|Tiny children with grass spears beside an enormous ant, juice box and blades of grass.
+Astroneer||Explorers reshape colorful planetary surfaces|A round-helmeted astronaut with a terrain tool beside oxygen tethers and a small rover.
+Satisfactory||A pioneer builds enormous factories on an alien planet|Conveyor belts and machines stretching across colorful terrain beside a helmeted builder and huge gentle alien.
+Factorio||Automation turns raw resources into a factory|A top-down web of conveyor belts moving iron plates between furnaces, robot arms and assembly machines.
+Dyson Sphere Program||Factories expand from planets to stars|Factory-covered planets sending materials toward a partly built sphere around a star.
+Oxygen Not Included||A tiny colony survives beneath an asteroid's surface|Small cartoon workers building ladders, pipes and oxygen machines in layered underground rooms.
+RimWorld||A colony grows through unpredictable stories|Small settlers around a crash-landed pod beside farm plots, rooms and a watchful animal.
+Dwarf Fortress||A settlement grows deep beneath a mountain|Bearded dwarves mining a cross-section of mountain rooms beside barrels and a lava forge.
+Frostpunk||A city struggles through an extreme winter|A huge glowing steam generator surrounded by circular rows of snow-covered homes.
+This War of Mine||Civilians try to survive a ruined city|Ordinary people tending a small stove and garden inside a cross-section of a damaged apartment building.
+Oregon Trail||Travelers guide a wagon across the frontier|A covered wagon crossing a river beside oxen, supplies and distant mountains.
+Where in the World Is Carmen Sandiego?|Carmen Sandiego|A detective follows clues around the globe|A red-hatted woman in a red coat beside a globe, magnifying glass and famous landmarks.
+SimCity||A classic city-building simulation|An isometric city with roads, zoning-like colored blocks, power plant and tiny disaster cloud.
+Cities: Skylines||A modern city grows around your plans|A detailed miniature skyline with highway interchanges, train tracks and residential neighborhoods.
+RollerCoaster Tycoon||A theme-park management simulation|A miniature park with a winding roller coaster, food stalls and queue lines.
+Planet Coaster||A builder creates a detailed amusement park|An elaborate roller coaster looping around themed scenery, balloons and smiling visitors.
+Planet Zoo||A zoo grows around animal care and conservation|A zoo habitat with giraffes, elephants and keepers beside visitor paths and a glass viewing wall.
+Zoo Tycoon||A management game about animal parks|A top-down zoo with lion, penguin and elephant enclosures beside colorful visitor paths.
+Jurassic World Evolution||A park manager handles prehistoric attractions|A dinosaur paddock beside a visitor center, jeep and helicopter carrying a tranquilized dinosaur safely.
+Theme Hospital||An unusual hospital treats absurd illnesses|A cartoon doctor beside a patient with an inflated head and a small hospital reception desk.
+Two Point Hospital||A comic hospital management challenge|A doctor treating a patient with a glowing light bulb for a head beside a hospital machine.
+Transport Tycoon||A transport company grows across a landscape|Trains, buses, ships and planes linking small industrial towns on a miniature map.
+Microsoft Flight Simulator|Flight Simulator;MS Flight Simulator|A detailed civilian aviation simulation|An airliner cockpit framing a realistic runway, clouds and distant city.
+Euro Truck Simulator 2|Euro Truck Simulator;ETS2|A long-haul driving game across Europe|A large truck hauling a trailer along a European highway beside a road map without labels.
+Farming Simulator||A detailed agricultural management game|A green tractor, combine harvester and rows of crops beside a grain silo.
+PowerWash Simulator||A satisfying game about cleaning grimy objects|A pressure-washer jet revealing a clean stripe across a dirty van and patio.
+House Flipper||A renovation game about restoring properties|A hand holding a paint roller inside a room split between ruined and freshly renovated halves.
+Car Mechanic Simulator||A workshop game about repairing vehicles|A car raised on a lift with an engine, wrench and wheel parts laid out nearby.
+PC Building Simulator||A workshop game about assembling computers|An open desktop computer with neatly arranged motherboard, graphics card and screwdriver.
+Cooking Simulator||A first-person kitchen challenge|Hands preparing a meal beside a pan, chopped vegetables and a chef's knife on a counter.
+Job Simulator||A virtual-reality look at ordinary work|Robotic screens watching floating hands make coffee and handle office supplies.
+Surgeon Simulator||A deliberately awkward medical game|A cartoon gloved hand fumbling harmless medical tools beside a covered patient and plastic skeleton.
+Harvest Moon||A countryside farming and relationship game|A young farmer in a cap beside a cow, turnips and a bright farmhouse.
+Disney Dreamlight Valley|Dreamlight Valley|A life simulation with familiar animated neighbors|A gardener beside a mouse-eared neighbor, pumpkin garden and fairy-tale castle.
+Spiritfarer||A gentle journey about caring for passengers|A large-hatted girl and cat aboard a glowing houseboat with gentle animal spirits.
+Cozy Grove||A camper helps spirits on a changing island|A scout tending a little campfire beside friendly ghost bears and hand-drawn island trees.
+A Short Hike||A small traveler explores a mountain park|A little bird with a backpack walking toward a snowy summit beside golden feathers.
+Alba: A Wildlife Adventure|Alba|A child helps wildlife on a Mediterranean island|A young girl photographing birds beside a sunny island village and rescued animal.
+Lil Gator Game||A young alligator creates a pretend adventure|A small green alligator with a toy sword and cardboard shield beside handmade monster cutouts.
+Ooblets||A life simulation with dancing plant creatures|A farmer beside small colorful plant-like creatures dancing among garden plots.
+Slime Rancher||A rancher raises unusual bouncing creatures|A rancher with a vacuum tool beside pink, blue and cat-eared slime blobs in glass corrals.
+Viva Piñata||A garden attracts colorful paper animals|Bright paper piñata animals visiting a lush garden with candy, flowers and a watering can.
+Nintendogs||A handheld game about caring for puppies|A puppy reaching toward a handheld console stylus beside a food bowl and toy ball.
+Neopets||A virtual world of colorful collectible pets|Three fantastical pets beside food, a treasure map and a tiny browser-like shop window without text.
+Tamagotchi||A pocket-sized virtual pet|An egg-shaped handheld device with three buttons and a tiny pixel-like pet on its screen.
+Club Penguin||A social world of winter activities|Colorful penguins in hats beside an igloo, sled and fluffy pet puffball.
+Roblox||A platform of player-created worlds|Blocky toy-like avatars jumping between a city, obstacle course and fantasy portal.
+Rocket League||A sport combining driving and an oversized ball|A rocket-powered car flying toward an enormous soccer ball in a stadium.
+Trackmania||A racing game of precise stunts and custom tracks|A small race car looping around an impossible elevated track with jumps and banked curves.
+Forza Horizon||A festival-style open-world racer|Colorful supercars on a scenic coastal road beside festival flags and hot-air balloons.
+Gran Turismo||A long-running driving simulation|A sleek sports car racing past pit lanes and checkered flags on a detailed circuit.
+Need for Speed||A fast-paced racing series|Two customized sports cars racing through city neon beside a pursuing police car.
+Burnout||An arcade racing series with spectacular crashes|A sports car skidding through flying harmless debris and sparks on a city road.
+Crazy Taxi||A frantic arcade driving job|A yellow convertible taxi jumping a city hill with a surprised passenger and checker-pattern trim.
+Out Run||A sunny arcade road trip|A red open-top sports car on a palm-lined coastal road with a fork ahead.
+Ridge Racer||An arcade racing series known for drifting|A colorful sports car drifting through a broad city corner with smoke curling from its tires.
+Daytona USA|Daytona|A stock-car arcade racing game|Stock cars circling a banked oval track beside a checkered flag, no car numbers.
+Sega Rally|Sega Rally Championship|An arcade rally through changing terrain|A rally car splashing through mud beside a forest track and mountain hairpin.
+Wipeout||A futuristic anti-gravity racing series|Sleek hovering racers speeding through an elevated neon track above a city.
+Road Rash||Motorcyclists compete in a chaotic road race|Leather-clad riders racing motorcycles down a country highway with exaggerated cartoon elbow jostling.
+Trials|Trials Evolution;Trials Fusion|A motorcycle balance and obstacle challenge|A rider balancing a dirt bike on a narrow beam above barrels and ramps.
+Excite Truck||An arcade off-road racing game|A huge off-road truck launching from a dirt ramp above trees and hills.
+Tony Hawk's Pro Skater|Tony Hawk|A skateboarding trick and exploration series|A skateboarder grinding a rail beside a half-pipe and a hawk-shaped shadow.
+Skate||A skateboarding simulation|A skater performing a kickflip above a city stair set and handrail.
+SSX||A high-speed snowboarding series|A brightly dressed snowboarder flipping above a snowy mountain ramp.
+1080° Snowboarding||A mountain snowboarding challenge|A snowboarder spinning over a mountain jump with a circular trail indicating rotation.
+Steep||An open-mountain winter sports game|A skier, snowboarder and wingsuit flyer descending a huge snowy mountain.
+Riders Republic||A large-scale outdoor sports playground|Cyclists, skiers and wingsuit flyers converging on a dramatic mountain landscape.
+NBA Jam||An exaggerated arcade basketball classic|A basketball player jumping absurdly high for a dunk with a flaming ball and oversized head.
+NBA 2K||A long-running basketball simulation|Two realistic basketball players competing under an arena hoop beside a courtside bench.
+FIFA|EA Sports FC;EA FC|A long-running football simulation series|Football players competing on a stadium pitch beside a ball and trophy, no logos.
+Madden NFL|Madden|An American football simulation|Helmeted football players lined up on a field beside a play diagram using arrows only.
+NHL||An ice-hockey simulation series|Hockey players chasing a puck across an ice rink beside a goalie mask and net.
+Wii Sports Resort||A collection of island sports activities|A tropical island with a swordplay platform, jet ski, basketball hoop and hang glider.
+Golf With Your Friends|Golf With Friends|A multiplayer miniature-golf challenge|Colorful golf balls rolling around a whimsical course with ramps, a windmill and a giant hole.
+Everybody's Golf|Hot Shots Golf|A friendly golf series|A cheerful cartoon golfer teeing off beside a colorful course and small caddie.
+Punch Club||A management game about training a fighter|A boxer training with a punching bag beside a gym, grocery bag and retro city street.
+WWE 2K|WWE|A professional wrestling simulation|Two colorful wrestlers posing on ropes around a wrestling ring beside a championship belt.
+Tekken||A three-dimensional fighting series|A spiky-haired martial artist facing a jaguar-masked wrestler beside a giant panda.
+Mortal Kombat||A fantasy martial-arts tournament|A yellow masked ninja and blue masked ninja facing each other beside a dragon-shaped medallion, no gore.
+Marvel vs. Capcom|Marvel Versus Capcom|Heroes from two worlds enter one arena|A web-slinging hero beside a blue robot boy and white-gi martial artist on opposing teams.
+Gang Beasts||Wobbly characters tussle in hazardous places|Soft colorful jelly-like people grappling on a rooftop beside a moving elevator.
+Human: Fall Flat||A physics puzzle with floppy adventurers|A soft white featureless figure clinging to a ledge beside crates and a swinging rope.
+Overcooked||A cooperative kitchen under pressure|Tiny chefs rushing ingredients between counters inside a kitchen split by a river.
+Moving Out||A comic cooperative furniture-removal game|Colorful movers carrying an oversized sofa through a window toward a truck.
+PlateUp!||A restaurant-building and cooking challenge|Small chefs arranging kitchen counters and serving meals to tables in a floor-plan view.
+Keep Talking and Nobody Explodes|Keep Talking|A cooperative puzzle about careful communication|One person inspecting a cartoon bomb with colored wires while another reads a manual with diagrams but no text.
+Jackbox Party Pack|Jackbox|A collection of phone-controlled party games|Friends holding phones around a television displaying funny drawings and blank answer cards.
+Drawful||A party game about interpreting bad drawings|A wobbly hand-drawn creature on a screen beside players drawing on their phones.
+Gartic Phone||A drawing-and-guessing telephone game|A chain of phones transforming a simple cat drawing into an absurd dragon drawing.
+Skribbl.io|Skribbl|An online drawing-and-guessing game|A hand drawing a colorful doodle while several simple avatars watch beside blank answer boxes.
+Goose Goose Duck||Birds try to identify hidden impostors|Colorful goose astronauts staring suspiciously at a duck beside a spaceship hatch.
+Bloons TD 6|Bloons;Bloons Tower Defense|Monkeys defend winding paths from balloons|Dart-throwing monkeys and small towers popping colorful balloons along a looping path.
+Kingdom Rush||A fantasy tower-defense series|Archers, wizards and small barracks defending a winding path from cartoon goblins.
+Clash of Clans||Players build villages and lead raids|A blond mustached barbarian beside village walls, cannons and a purple-haired archer.
+Clash Royale||A card-based battle between opposing towers|Two crowned kings in blue and red towers with tiny troops crossing two bridges.
+Dungeon Defenders||Heroes defend crystals through traps and teamwork|A young knight, wizard and archer protecting a glowing crystal with traps and towers.
+Orcs Must Die!||A trap-based fantasy defense game|A grinning young mage setting spring traps beneath a crowd of cartoon orcs.
+Slay the Spire||A deck-building climb through a dangerous tower|A cloaked adventurer holding blank illustrated cards beside a tall twisting spire.
+Balatro||A poker-inspired deck-building game|A grinning joker card beside playing-card suits, poker chips and flame-like neon shapes, no letters or digits.
+Inscryption||A mysterious card game in a remote cabin|Animal-themed cards on a wooden table beside glowing eyes in darkness and a candle.
+Hearthstone||A fantasy card-battling game|A tavern table with ornate illustrated cards, glowing gems and a mug.
+Gwent||A strategic card game from a fantasy world|Two rows of illustrated fantasy cards beside a white-haired warrior and a wooden tavern table.
+Marvel Snap||A fast card-battling game with comic heroes|Superhero cards arranged in three small locations with a snapping gloved hand above.
+Magic: The Gathering Arena|Magic the Gathering;MTG Arena|A digital collectible fantasy card game|Fantasy cards releasing a dragon and elemental energy across a tabletop arena.
+Legends of Runeterra||A strategic card game in a familiar fantasy world|Illustrated champion cards beside blue crystals and a colorful fantasy landscape.
+Pokémon Trading Card Game|Pokemon TCG|A collectible card adventure with familiar creatures|A yellow electric mouse emerging from an illustrated card beside stacks of creature cards.
+Chess||A classic strategy game of kings and pieces|A black-and-white chessboard with a king, queen, knight and fallen pawn.
+Tetris Effect||A familiar falling-block puzzle becomes an audiovisual journey|Bright falling blocks against a luminous ocean of stars and swimming particles.
+Dr. Kawashima's Brain Training|Brain Age;Brain Training|Daily puzzles exercise mental skills|A stylus beside a handheld screen, floating brain and small puzzle shapes without text.
+Big Brain Academy||A friendly collection of thinking challenges|A cartoon professor beside a large brain, scales and colored shape puzzles.
+Lumines||A music-driven falling-block puzzle|Two-colored square blocks falling beside a vertical sweeping light beam and headphones.
+Puyo Puyo||A colorful chain-reaction puzzle|Colored jelly blobs with eyes stacked in a tall well and bursting in connected groups.
+Columns||A gem-matching falling-piece puzzle|Vertical stacks of colorful gems forming diagonal matches inside a tall frame.
+Bejeweled||A classic gem-swapping puzzle|A grid of sparkling colored gems with three matching diamonds swapping into a row.
+Candy Crush Saga|Candy Crush|A colorful sweet-matching puzzle|A grid of candies with striped sweets, wrapped candy and a chocolate sprinkle ball.
+Cut the Rope||A small creature waits for a suspended treat|A green round creature with a wide mouth below a candy dangling from ropes.
+Where's My Water?||A puzzle about getting water to a waiting alligator|A friendly alligator in a bathtub below dirt tunnels guiding blue water.
+Angry Birds Space||A slingshot puzzle with planetary gravity|Round birds launched around small planets toward green pigs in bubble helmets.
+Bad Piggies||Pigs build improbable vehicles|Green pigs riding a homemade cart with balloons, fans and wooden wheels.
+Peggle||A bouncing-ball puzzle of bright targets|A silver ball bouncing through orange and blue pegs beneath a smiling unicorn.
+Zuma||A rolling-ball matching puzzle|A stone frog launching colored balls at a chain winding toward a skull-shaped opening.
+Wordle||A daily five-letter guessing puzzle|A six-by-five grid of empty green, yellow and gray tiles beside a pencil; no letters.
+2048||A sliding-tile puzzle about combining values|A square grid of warm-colored tiles merging into brighter larger tiles, without numbers.
+Threes!||A sliding puzzle with expressive tiles|Small red, blue and cream tiles with faces sliding together inside a grid, no digits.
+Minesweeper||A deduction puzzle hiding dangerous squares|A grid of unopened gray squares, little red flags and one cartoon mine, no digits.
+Solitaire||A classic single-player card arrangement|Playing cards arranged in descending columns beside a face-down deck, suits only.
+Mahjong||A tile-matching tabletop classic|A layered pile of white tiles decorated with bamboo, circles and flower shapes, no writing.
+Mini Metro||A minimalist transport-network puzzle|Colored subway lines connecting circles, triangles and squares across a river.
+Mini Motorways||A minimalist road-network puzzle|Tiny colored houses connected by roads and roundabouts to matching buildings.
+Dorfromantik||A peaceful landscape-building puzzle|Hexagonal tiles forming fields, forests, a river, a village and a train track.
+Townscaper||A playful town-building toy|Colorful houses rising directly from blue water with arches, towers and small staircases.
+Islanders||A minimalist island-city builder|Tiny colorful buildings fitting around a small island with farms, mills and harbor docks.
+Unpacking||A story told through arranging belongings|Open cardboard boxes with books, toys and clothes being placed in a cozy bedroom.
+A Little to the Left||A puzzle about arranging everyday objects|Hands aligning pencils by length, stacked dishes and a mischievous cat's paw.
+Baba Is You||A puzzle where rules can change|A small white rabbit-like creature beside a flag, rock and blank movable word tiles; use objects only.
+Snake||A classic growing arcade creature|A segmented green snake following an apple inside a square playfield.
+Crossy Road||A hopping journey across busy paths|A blocky chicken crossing roads, railway tracks and a river of floating logs.
+Temple Run||An endless escape from an ancient site|An explorer running along ruined temple bridges while a large shadowy creature follows.
+Subway Surfers||An endless runner through a railway yard|A cap-wearing teenager on a hoverboard dodging colorful trains beside a guard and dog.
+Jetpack Joyride||An endless flight through a secret facility|A suited man flying with a jetpack past laboratory scientists, coins and laser obstacles.
+Doodle Jump||A tiny creature keeps climbing|A small green long-snouted creature hopping between hand-drawn platforms beside a spring and jetpack.
+Flappy Bird||A deceptively simple flying challenge|A little yellow bird with large lips flapping between green pipes.
+Talking Tom|My Talking Tom|A virtual pet repeats and reacts|A smiling gray cat looking out from a phone beside food, soap and a toy.
+Pou||A small virtual creature needs daily care|A brown rounded triangular pet with large eyes beside food, soap and a lamp.
+My Singing Monsters||Players build islands of musical creatures|Colorful strange monsters singing and drumming on a tiny grassy island.
+Hay Day||A friendly farming and trading game|A red barn beside crops, smiling cows and a roadside produce stall.
+FarmVille||A social farming simulation|A small farm with neat crop plots, a red tractor, cows and neighbors' gift baskets.
+Gardenscapes||A gardener restores a neglected estate|A mustached butler beside an overgrown fountain, garden tools and colorful matching fruit pieces.
+Homescapes||A family home receives a puzzle-driven renovation|A mustached butler fixing a shabby room beside a sofa, paint roller and colorful puzzle pieces.
+Monopoly GO!||A mobile board game of property and chance|A top-hatted mustached gentleman beside a circular board, dice and miniature houses.
+Pokémon GO||Players find creatures in the real world|A phone showing a yellow creature in a park beside a red-and-white catching ball.
+Pikmin Bloom||Walking helps tiny plant companions grow|A walker with a phone beside small plant-headed creatures leaving flowers in their footsteps.
+Ingress||A location-based contest over invisible portals|A phone revealing glowing blue and green triangular links around a city landmark.
+Genshin Impact||A traveler explores an elemental fantasy world|A blond adventurer beside a tiny floating white-haired companion, glider wings and a bright fantasy city.
+League of Legends|LOL|Teams compete through champions and lanes|A blue crystal nexus, stone towers and a tiny mage facing an armored warrior on a three-path arena.
+Dota 2|Dota|Teams defend ancient structures through hero battles|Two opposing ancient tree-and-stone structures with fantasy heroes and small creeps along forest paths.
+Smite||Mythic gods meet in a team arena|A thunderbolt-wielding god, jackal-headed deity and armored goddess facing off beside ancient temples.
+Pokémon Unite||Creatures compete in a team-based arena|A yellow electric creature and orange dragon carrying glowing balls toward circular goal zones.
+Teamfight Tactics|TFT|Players assemble teams for automatic battles|Tiny fantasy champions arranged on a hexagonal board beside a cute penguin-like tactician.
+Age of Empires||Civilizations develop from villages to empires|Villagers gathering wood beside a castle, farm, cavalry and an ancient siege machine.
+Age of Mythology||Ancient armies receive help from legendary beings|Greek soldiers beside a minotaur, Egyptian temple and a lightning bolt from the sky.
+Civilization|Sid Meier's Civilization;Civ|A society grows across the ages|A hexagonal world with a stone village, modern city, world wonder and rocket.
+Rise of Nations||Nations develop through many eras|Ancient soldiers and a modern tank beside a city evolving from stone walls to skyscrapers.
+Command & Conquer|CNC|Factions compete through bases and armies|Harvesters gathering green crystals beside tanks, power plants and opposing bases.
+Red Alert|Command and Conquer Red Alert|An alternate-history strategy war|A Tesla coil emitting blue lightning beside tanks, an airship and a fortified base.
+Company of Heroes||A tactical strategy game set in wartime Europe|A small infantry squad taking cover beside a tank and ruined farmhouse, no injury detail.
+Total War||Large armies meet alongside empire management|Ranks of cavalry, archers and infantry beneath banners beside a strategic map without labels.
+Total War: Warhammer||Fantasy armies meet in enormous battles|Dwarves, green orcs and armored humans facing a dragon on a broad fantasy battlefield.
+XCOM||A team defends Earth from alien incursions|Armored human operatives beside a small gray alien and underground base cutaway.
+Advance Wars||A colorful turn-based military strategy game|Toy-like red and blue tanks, infantry and helicopters arranged on a square terrain grid.
+Into the Breach||Small teams defend cities from enormous creatures|Three compact robots facing giant insects on a tiny grid of city blocks.
+FTL: Faster Than Light|FTL;Faster Than Light|A spaceship crew races across a dangerous galaxy|A cutaway spaceship with crew in engine, shield and medical rooms beside incoming asteroids.
+Kerbal Space Program|Kerbal;KSP|Small green astronauts build and fly rockets|Three small green astronauts beside a wobbly homemade rocket on a launchpad.
+Besiege||A builder creates improbable siege machines|A wooden contraption with wheels, catapults and propellers rolling toward a tiny castle.
+Totally Accurate Battle Simulator|TABS|A playful battle simulator with wobbling units|Red and blue floppy warriors with oversized eyes tumbling around a mammoth and catapult.
+Universe Sandbox||A simulation explores astronomical interactions|A hand-like cursor moving planets around a sun with orbital trails and colliding moons.
+Spore||A creature evolves from microscopic beginnings|A tiny cell becoming a quirky creature, village leader and spaceship pilot across connected scenes.
+Black & White||A god game with a giant creature companion|An enormous hand hovering over villagers beside a giant upright cow split between gentle and fierce poses.
+Populous||An early god game about shaping terrain|A giant hand raising square land tiles beside small villages and a spreading flood.
+Dungeon Keeper||A villain manages an underground stronghold|A horned demon overseeing a dungeon cross-section with imps mining gold and building rooms.
+Evil Genius||A mastermind builds a secret base|A bald villain with a pet cat overlooking a mountain base filled with traps and minions.
+Overlord||A dark ruler commands mischievous followers|An armored horned ruler beside a crowd of small grinning goblin-like minions.
+Cult of the Lamb||A small leader builds a strange woodland following|A cute lamb in a red cape with a floating crown beside animal followers and a tiny forest shrine.
+Vampire Survivors||A survivor faces enormous waves of creatures|A cloaked character surrounded by a spiral of bats, gems and orbiting protective weapons.
+Brotato||A potato faces swarms with assorted equipment|A round potato character with several tiny arms holding cartoon tools and weapons beside alien blobs.
+Enter the Gungeon||Adventurers descend through a bullet-filled dungeon|A small adventurer facing walking bullet-shaped creatures beside a dungeon door.
+The Binding of Isaac||A small hero explores changing underground rooms|A small crying cartoon child beside a basement hatch, flies and strange toy-like creatures, no gore.
+Risk of Rain 2|Risk of Rain|Survivors explore an increasingly dangerous alien planet|A helmeted survivor beside a teleporter, strange stone golem and floating alien landscape.
+Spelunky||A cave explorer seeks treasure through changing tunnels|A small explorer with a fedora and whip beside gems, a pug and a minecart.
+Downwell||A descent through a dangerous well|A tiny figure with boot-mounted flashes falling down a black-and-white well beside red gems.
+LEGO Batman||A caped hero's city rebuilt in bricks|A black-caped toy-brick hero beside a brick-built car and grinning green-haired villain.
+LEGO Harry Potter|Lego Harry Potter Game|A magical school adventure rebuilt in bricks|A bespectacled toy-brick wizard beside a castle, owl and toy-brick broom.
+LEGO Indiana Jones|Lego Indiana Jones Game|An archaeologist's adventures rebuilt in bricks|A fedora-wearing toy figure with a whip beside a rolling brick boulder and temple.
+LEGO Jurassic World|Lego Jurassic World Game|A prehistoric park rebuilt in bricks|Toy-brick visitors beside a brick dinosaur, park gate and small jeep.
+Skylanders||Toy figures enter a fantasy game world|A small dragon and armored creature standing on a glowing circular toy portal.
+Disney Infinity||Toy figures unlock shared imaginative worlds|Toy-like animated characters beside a glowing hexagonal base and a buildable castle world.
+Disney Epic Mickey|Epic Mickey|A familiar mouse paints through a forgotten world|A mouse-eared character holding a magic paintbrush beside splashes of blue paint and a ruined cartoon castle.
+Toontown Online|Toontown|Cartoon citizens cooperate against businesslike robots|Colorful animal cartoon characters throwing pies at gray suited robots in a whimsical town.
+Wizard101||Young wizards study and battle through magical cards|A robed student on a broom beside illustrated spell cards and a wizard school tower.
+RuneScape||An online fantasy world of skills and quests|A simple armored adventurer beside a fishing rod, mining pickaxe and medieval town.
+MapleStory||A colorful side-scrolling online adventure|A cute adventurer beside a smiling orange mushroom, green slime and huge maple leaf.
+To the Moon||Two specialists explore a patient's memories|Two lab-coated figures beside a piano, origami rabbit and a large moon reflected in water.
+Outer Wilds||A space explorer investigates a repeating mystery|A four-eyed alien astronaut beside a wooden spaceship, campfire and tiny planet beneath a bright sun.
+The Outer Worlds||A traveler explores a corporate-controlled frontier|A retro spacesuited traveler beside a colorful alien landscape, robot and old-fashioned spacecraft.
+Journey||A silent traveler crosses a vast desert|A red-robed figure with a long flowing scarf walking toward a bright mountain across dunes.
+Abzû||A diver explores a vibrant underwater world|A lone diver swimming among schools of fish, rays and ancient underwater columns.
+Flower||A breeze guides petals through changing landscapes|A stream of colorful flower petals flying over grassy hills toward wind turbines.
+Sky: Children of the Light|Sky|Small travelers bring light to a floating world|Cloaked children with glowing capes holding candles among floating islands and clouds.
+Jusant||A quiet climbing journey up a colossal tower|A young climber with rope and a small blue water creature ascending a vast abandoned stone tower.
+Sable||A young traveler explores a desert world|A masked rider on a hovering bike passing enormous desert ruins and a beetle-like creature.
+Gris||A young woman's journey restores color to a world|A blue-haired girl in a flowing geometric dress beneath watercolor ruins changing from gray to bright colors.
+Neva||A traveler and a wolf cross a changing landscape|A cloaked traveler beside a white antlered wolf beneath autumn trees and floating dark shapes.
+Okami||A divine wolf restores a painted world|A white wolf with red markings and a flaming disk on its back beside a giant ink brush.
+The Last Guardian||A child bonds with a huge mysterious creature|A small boy beside an enormous feathered cat-bird creature with tiny horns among stone ruins.
+Shadow of the Colossus||A lone rider faces towering ancient beings|A small swordsman on a black horse looking up at a giant moss-covered stone creature.
+Ico||Two captives seek escape from a vast castle|A horned boy holding the hand of a pale glowing girl across a castle bridge.
+Beyond Good & Evil||A reporter uncovers a planetary conspiracy|A dark-haired woman with a camera beside a pig mechanic and a small hovercraft.

@@ -1,0 +1,323 @@
+Jurassic Park||A prehistoric adventure
+Titanic||A romance at sea
+The Wizard of Oz|Wizard of Oz|A journey to a magical city
+Star Wars||A space saga
+Jaws||Trouble at the beach
+The Lion King|Lion King|An animated animal kingdom
+Harry Potter||A young wizard's world
+Back to the Future||An adventure through time
+E.T.|ET;E T the Extra Terrestrial|An unexpected visitor
+Ghostbusters|Ghost Busters|A supernatural comedy
+Finding Nemo||An underwater search
+Toy Story||A playroom adventure
+Frozen||An icy animated musical
+The Matrix|Matrix|Reality is not what it seems
+The Lord of the Rings|Lord of the Rings;LOTR|An epic fantasy quest
+Pirates of the Caribbean||A swashbuckling adventure
+King Kong||An enormous visitor to the city
+Batman|The Dark Knight|A masked city's protector
+Spider-Man|Spiderman;Spider Man|A web-slinging hero
+Indiana Jones||An archaeologist's adventure
+The Little Mermaid|Little Mermaid|A musical under the sea
+Up||An airborne animated adventure
+WALL-E|Wall E;Walle|A lonely little robot
+Ratatouille||An unlikely chef
+Shrek||A fairy-tale comedy
+The Hunger Games|Hunger Games|A dystopian competition
+Inception||A mind-bending heist
+Barbie||Life in a very pink world
+The Avengers|Avengers|A team of superheroes
+Willy Wonka|Charlie and the Chocolate Factory;Willy Wonka and the Chocolate Factory|A fantastical factory
+Alien||A science-fiction nightmare aboard a spaceship|A long-headed alien silhouette, a cracked egg and a frightened astronaut in a spaceship corridor.
+Aliens||A rescue mission on an infested space colony|A woman in a yellow industrial power loader facing an enormous alien queen, no violence.
+Avatar||A journey to a luminous alien world|A tall blue forest-dweller with a long braid riding a winged creature above floating mountains.
+Beetlejuice||A mischievous ghostly comedy|A wild-haired ghost in a black-and-white striped suit beside a model town and a sandworm.
+Edward Scissorhands||A gentle outsider with unusual hands|A pale young man with scissor-shaped fingers trimming an elaborate garden hedge.
+The Nightmare Before Christmas||Two very different holidays collide|A thin skeleton in a pinstripe suit on a curled hill beneath a full moon, with a tiny ghost dog.
+Coraline||A doorway leads to a disturbing other home|A blue-haired girl in a yellow raincoat beside a tiny door, black cat and button eyes.
+Corpse Bride||An unexpected wedding in the underworld|A shy groom beside a blue-skinned bride with a torn veil and a skeletal dog.
+The Princess Bride||A storybook rescue with swordplay and wit|A masked swordsman, a princess and a giant beside a cliff and a castle.
+The NeverEnding Story||A reader enters a world of fantasy|A child riding a long white luckdragon above clouds, with an ornate open book below.
+Labyrinth||A young heroine navigates a magical maze|A girl facing a huge stone labyrinth, a glittering goblin king and a white owl.
+The Dark Crystal||A quest to heal a fractured magical world|Two small elf-like travelers beside a cracked purple crystal and a towering birdlike creature.
+The Goonies||Children hunt for legendary treasure|Children with a treasure map entering a cavern containing a pirate ship and skull-shaped rocks.
+Gremlins||A cute pet comes with unusual rules|A fuzzy big-eared creature beside mischievous green monsters and a spilled glass of water.
+Home Alone||A child defends his house during the holidays|A wide-eyed boy holding his cheeks, with paint cans on ropes and toy cars across a staircase.
+Elf||An oversized visitor to a holiday workshop|A tall man in a green elf suit beside tiny elves, a Christmas tree and syrup-covered spaghetti.
+The Polar Express||A magical winter train ride|A steam train in deep snow with a child in pajamas, a golden bell and warm glowing windows.
+The Santa Clause||An ordinary father inherits a holiday job|A surprised man growing a white beard beside a red suit and a reindeer sleigh on a rooftop.
+How the Grinch Stole Christmas|The Grinch;Grinch|A green outsider tries to ruin a holiday|A green furry figure in a Santa coat hauling a sack of gifts with a tiny antler-wearing dog.
+A Christmas Story||A boy's unforgettable holiday wish|A child in a pink bunny suit beside a leg-shaped lamp and a snowy suburban window.
+National Lampoon's Christmas Vacation|Christmas Vacation|A chaotic family holiday at home|A house overloaded with holiday lights, a tangled light string and a squirrel in the Christmas tree.
+Die Hard||A holiday party becomes a skyscraper siege|A barefoot man in a white undershirt crawling through an air vent above a tall office tower.
+Top Gun||A high-flying naval aviation adventure|A fighter jet, aviator sunglasses and a pilot helmet on an aircraft carrier at sunset.
+Mission: Impossible||A team tackles seemingly impossible spy missions|A black-clad spy dangling horizontally from a cable over a laser-lined floor.
+James Bond|007;Bond|A suave secret agent on a dangerous mission|A tuxedoed spy with a bow tie beside a silver sports car and a martini glass.
+The Terminator||A relentless machine arrives from the future|A metal robot skull with one red eye, black sunglasses and a leather jacket.
+RoboCop||A futuristic armored law enforcer|A silver armored police officer with a narrow black visor standing beside a patrol car.
+Predator||An unseen hunter stalks a jungle team|A camouflaged alien with dreadlock-like tubes and a mask among jungle vines.
+Men in Black|MIB|Secret agents handle extraterrestrial visitors|Two suited agents in dark sunglasses beside a small alien and a glowing memory-erasing pen.
+Independence Day||Earth faces a vast alien invasion|A giant flying saucer hovering over the White House with smaller spacecraft in the sky.
+The Fifth Element||An unusual passenger holds the key to survival|An orange-haired woman, a flying yellow taxi and five symbolic stones in a futuristic city.
+Tron||An adventure inside a computer world|Glowing blue and orange light cycles racing across a dark grid beside luminous discs.
+Blade Runner||A detective searches a rain-soaked future city|A trench-coated detective beneath neon-colored skyscrapers, with an origami unicorn and flying car.
+Dune||A struggle over a valuable desert world|A gigantic sandworm rising behind a cloaked desert traveler with bright blue eyes.
+Interstellar||Explorers search beyond our solar system|An astronaut beside a tiny spacecraft, enormous ocean wave and ring-shaped black hole.
+Gravity||Two astronauts are stranded above Earth|An astronaut drifting away from a damaged space station above the curved Earth.
+The Martian||An astronaut must survive alone on Mars|An astronaut tending potato plants inside a habitat on a red desert planet.
+Arrival||Visitors arrive with a mysterious language|A tall oval spacecraft above a misty field and a glass barrier facing a many-limbed alien; no glyphs.
+Close Encounters of the Third Kind|Close Encounters|A mysterious mountain draws unlikely visitors|A flat-topped rock tower beneath a huge glowing spaceship and a small mountain made of mashed potatoes.
+Planet of the Apes||Explorers discover a surprising civilization|An intelligent ape in armor beside a half-buried Statue of Liberty on a beach.
+2001: A Space Odyssey|2001;A Space Odyssey|A mysterious object links humanity and space|A black monolith beside an astronaut, a rotating space station and a red computer eye.
+Spaceballs||A comic adventure in a familiar galaxy|A space helmet comically too large for its wearer, a flying motorhome and a furry co-pilot.
+Galaxy Quest||Actors are mistaken for real space heroes|TV actors in matching space uniforms aboard a real spaceship facing a friendly tentacled alien.
+Guardians of the Galaxy|Guardians|An unlikely crew saves the cosmos|A tree-person, a raccoon with tools and a retro cassette player beside a colorful spaceship.
+Black Panther||A hidden kingdom chooses its path|A black feline superhero mask, crossed clawed gloves and a futuristic African city.
+Iron Man||An inventor builds a powerful armored suit|A red-and-gold armored hero with glowing chest circle and palm lights.
+Captain America|Captain America The First Avenger|A shield-bearing hero from another era|A blue-uniformed hero with a round red-white-blue shield and a vintage aircraft.
+Thor||A thunderous visitor from a mythic realm|A long-haired hero with a red cape, short-handled hammer and bolts of lightning.
+Doctor Strange||A surgeon discovers a world of magic|A red-cloaked sorcerer making circular glowing portals above folding city buildings.
+Ant-Man||A hero learns to think very small|A tiny red-and-silver helmeted hero riding an ant beside an enormous coin.
+Wonder Woman||A warrior leaves her hidden island|An armored woman with a golden lasso, bracelets and a round shield.
+Aquaman||A royal struggle beneath the sea|A long-haired hero with a trident riding a sea creature above an underwater city.
+Superman||A visitor becomes Earth's flying protector|A red-caped figure flying above a city with a phone booth and glasses below, no logo.
+Deadpool||A wisecracking masked antihero|A red-and-black masked figure with crossed sheathed swords and a tiny unicorn toy.
+The Incredibles||A family returns to superhero life|A family of five in matching red superhero suits, with an elastic arm and a speed trail.
+Big Hero 6|Big Hero Six|A young inventor befriends an inflatable helper|A large white inflatable robot with two dot eyes beside a small armored boy.
+Despicable Me||An ambitious villain becomes a parent|A bald long-nosed man with a striped scarf, three girls and small yellow goggle-wearing helpers.
+Minions||Tiny yellow helpers seek a new boss|Three yellow pill-shaped characters with goggles, blue overalls and a banana.
+Monsters, Inc.|Monsters Incorporated|Two workers discover a child in their world|A large blue furry monster, a small green one-eyed monster and a little girl beside colorful doors.
+Monsters University||Two rivals learn to work together at college|A blue furry monster and green one-eyed monster in college jackets beside a campus arch.
+Cars||A racing champion takes an unexpected detour|A smiling red race car with windshield eyes beside a rusty tow truck on a desert road.
+Inside Out||Emotions guide a young girl's inner life|Colorful personified emotions around a control console filled with glowing memory spheres.
+Coco||A young musician visits a colorful afterlife|A boy with a white guitar crossing a marigold bridge beside friendly skeletons and a hairless dog.
+Moana||A young voyager follows an ocean calling|A Polynesian girl on an outrigger canoe beside a large fishhook and a small rooster.
+Encanto||A magical family faces a fading miracle|A girl with round green glasses before a colorful living house, butterflies and a glowing candle.
+Zootopia||An unlikely pair solves an animal-city mystery|A small rabbit police officer and a sly fox in a city built for animals.
+Tangled||A hidden princess ventures beyond her tower|A girl with extraordinarily long golden hair, a frying pan and floating lanterns beside a tower.
+Brave||A young archer challenges an ancient custom|A red-haired girl with a bow beside a bear and small blue forest wisps.
+Lilo & Stitch||A Hawaiian girl adopts a strange visitor|A girl in a red leaf-pattern dress holding a blue four-armed alien beside a surfboard.
+The Emperor's New Groove||A selfish ruler undergoes a strange transformation|A llama wearing royal jewelry beside an Incan palace and a cheerful villager.
+Mulan||A young woman takes her father's place|A young warrior with a sword, a tiny red dragon and a white horse beside a blossom tree.
+Aladdin||A street thief discovers a magical lamp|A brass lamp releasing a blue genie beside a flying carpet and palace.
+Beauty and the Beast||A visitor finds enchantment in a secluded castle|A yellow-gowned woman and horned beast beside an enchanted rose under glass.
+Sleeping Beauty||A kingdom falls under a powerful sleeping curse|A sleeping princess beside a spinning wheel and thorn-covered castle.
+Snow White and the Seven Dwarfs|Snow White|A princess finds shelter with seven miners|A dark-haired princess, red apple and seven small miners with colorful hats.
+Cinderella||A magical evening changes a young woman's life|A glass slipper, pumpkin carriage and blue ball gown beside palace steps.
+Peter Pan||Children fly to a place beyond growing up|A green-clad boy flying over a clock tower with a tiny fairy and pirate hook.
+Alice in Wonderland||A curious girl enters a strange world|A blue-dressed girl, white rabbit with pocket watch and a grinning striped cat at a tea table.
+Dumbo||An unusual young elephant discovers a gift|A baby elephant flying with enormous ears while holding a small feather.
+Bambi||A young woodland animal grows up|A spotted fawn beside a rabbit and skunk in a sunlit forest.
+Lady and the Tramp||Two very different dogs share an adventure|Two dogs sharing a strand of spaghetti across a candlelit plate.
+101 Dalmatians|One Hundred and One Dalmatians|A spotted family faces a fashionable villain|A crowd of spotted puppies beside a woman with half-black half-white hair.
+The Jungle Book||A boy grows up among jungle animals|A boy in red shorts with a large gray bear and black panther beneath vines.
+Robin Hood||An outlaw helps those in need|A green-clad fox archer beside a bear companion and a bag of coins.
+Hercules||A young hero tries to earn his place|A muscular young hero with a winged horse and small goat-legged trainer.
+Tarzan||A jungle-raised man meets new visitors|A long-haired man swinging on a vine beside a gorilla and jungle treehouse.
+Pocahontas||Two worlds meet beside a great river|A woman in a fringed dress beside a raccoon, hummingbird and colorful swirling leaves.
+The Hunchback of Notre Dame||A bell ringer ventures beyond his tower|A gentle hunched bell ringer swinging beside enormous cathedral bells and stone gargoyles.
+The Aristocats||A family of cats journeys home|A white mother cat with three kittens beside a jazz-playing alley cat and piano.
+The Rescuers||Two tiny agents undertake a rescue|Two small mice riding an albatross beside a message bottle and swamp reeds.
+The Sword in the Stone||A young apprentice discovers his destiny|A boy pulling a sword from a stone beside a blue-robed wizard and owl.
+The Fox and the Hound||An unlikely woodland friendship|A young red fox and floppy-eared hound touching noses in a forest.
+The Princess and the Frog||A wish leads to an unexpected transformation|Two green frogs beside a trumpet-playing alligator and a glowing firefly in a bayou.
+Wreck-It Ralph||An arcade villain seeks a different role|A huge-handed man in overalls beside a small candy-racing girl and a broken arcade wall.
+Frozen II|Frozen 2|Two sisters follow a mysterious call|A blonde ice queen on a watery horse beside autumn woods and stone giants.
+Finding Dory||A forgetful fish searches for her family|A blue tang fish beside a red octopus, a marine park bucket and two clownfish.
+A Bug's Life||A small colony seeks unlikely defenders|A blue ant holding a leaf beside a ladybug, caterpillar and towering grasshopper.
+The Good Dinosaur||A timid dinosaur befriends a wild child|A gentle green long-necked dinosaur carrying a small wild-haired boy beside a river.
+Soul||A musician explores what makes life meaningful|A jazz pianist beside a blue glowing soul and a mischievous cat at a piano.
+Luca||Two friends share a secret seaside summer|Two boys partly transforming into sea creatures beside a red scooter on an Italian coast.
+Turning Red||A teenager faces a very unusual transformation|A giant fluffy red panda beside a bespectacled schoolgirl and a backpack.
+Elemental||An unexpected connection forms in an elemental city|A fiery young woman holding hands with a translucent water figure near a city canal.
+Onward||Two brothers attempt a magical reunion|Two elf brothers with a wizard staff beside a van and a walking pair of trousers.
+Kung Fu Panda||An unlikely student discovers his strength|A round panda practicing kung fu beside bamboo and a bowl of dumplings.
+How to Train Your Dragon|How To Train A Dragon|A young Viking befriends an unexpected creature|A boy riding a sleek black dragon with large green eyes and a repaired tail fin.
+Madagascar||Zoo animals find themselves far from home|A lion, zebra, giraffe and hippo beside a lemur on a tropical island.
+Ice Age||An unlikely herd journeys through a frozen world|A mammoth, sloth and saber-toothed cat beside a squirrel clutching an acorn on ice.
+The Croods||A prehistoric family enters a strange new world|A cave family beneath giant colorful plants beside unusual prehistoric animals.
+Megamind||A blue-headed villain faces a new challenge|A blue-skinned man with an enormous head beside a fish in a robot suit.
+Shark Tale||A small fish tells a very big story|A small colorful fish beside a gentle shark in a bustling underwater city.
+Bee Movie||A bee questions the human use of honey|A bee in a tiny sweater beside a courtroom gavel and a honey jar.
+Chicken Run||Farmyard prisoners plan a daring escape|Chickens building a homemade aircraft behind a farm fence.
+Wallace & Gromit: The Curse of the Were-Rabbit|Wallace and Gromit;Curse of the Were Rabbit|An inventor and his dog face a giant garden menace|A bald inventor, clever dog and enormous rabbit beside giant vegetables.
+Shaun the Sheep Movie|Shaun the Sheep|A flock causes chaos in the city|A small sheep with a black face leading disguised sheep through a city beside a farm dog.
+Flushed Away||A pampered pet discovers an underground city|A well-dressed rat in a tiny boat beside sewer pipes and a regal toad.
+Rango||An unlikely outsider becomes a western hero|A chameleon in a cowboy hat beside a desert-town water tower.
+Rio||A rare bird discovers a colorful city|Two blue macaws flying over Rio rooftops with carnival feathers below.
+Happy Feet||A young penguin has an unusual talent|A fluffy penguin tap dancing on ice while other penguins sing.
+Surf's Up||A young penguin enters the surfing world|A penguin balancing on a surfboard inside a large turquoise wave.
+The Secret Life of Pets||City pets have adventures while their owners are away|A small terrier, shaggy dog and white rabbit in a New York apartment.
+Sing||A struggling theater hosts a singing contest|A koala in a suit presenting a stage with a pig, gorilla and porcupine holding microphones.
+Trolls||Colorful friends face an unexpected threat|Tiny brightly colored creatures with huge upright hair dancing among flowers.
+The Lego Movie||An ordinary builder enters an extraordinary adventure|A yellow toy construction worker beside a black-cloaked toy hero and a rainbow cat-unicorn.
+The Iron Giant||A boy befriends a towering visitor|A giant metal robot with round yellow eyes gently holding a small boy in a forest.
+The Super Mario Bros. Movie|Super Mario Movie;Mario Movie|Two plumbers enter a colorful kingdom|A red-capped plumber, green pipe, mushroom and enormous turtle king, no lettering.
+Sonic the Hedgehog|Sonic|A fast blue visitor needs help on Earth|A blue hedgehog racing past golden rings beside a red shoe and a villain's flying machine.
+Pokémon Detective Pikachu|Detective Pikachu|A small detective helps solve a disappearance|A yellow electric mouse in a deerstalker hat with a magnifying glass in a neon city.
+Paddington||A polite bear arrives in London|A brown bear in a red hat and blue duffel coat carrying a suitcase and marmalade sandwich.
+Peter Rabbit||A mischievous garden visitor causes trouble|A rabbit in a blue jacket escaping a vegetable garden with carrots.
+Stuart Little||A tiny new family member has a big adventure|A white mouse in a sweater driving a tiny red convertible beside a house cat.
+Babe||An unusual farm animal learns a new skill|A small pink pig guiding a flock of sheep beside a farmhouse.
+Charlotte's Web||A farm friendship changes a young animal's fate|A pig beneath a spider in a large web beside a barn; no words in the web.
+Free Willy||A boy befriends a captive ocean giant|A black-and-white orca leaping over a boy on a stone breakwater.
+Marley & Me||A family grows alongside a mischievous dog|A yellow Labrador puppy chewing a newspaper beside a happy family; no print.
+Air Bud||A dog joins the basketball team|A golden retriever bouncing a basketball toward a hoop.
+Space Jam||An athlete joins a cartoon sports team|A basketball player beside a gray cartoon rabbit and tiny aliens on a space basketball court.
+Jumanji||A mysterious game brings adventure into the real world|An open board game releasing a rhinoceros, vines and a monkey into a living room.
+Zathura||A board game launches a house into space|Two children beside a mechanical space board game in a house floating among planets.
+Night at the Museum||A new guard discovers an extraordinary night shift|A museum guard beside a living dinosaur skeleton, tiny cowboy and Easter Island head.
+Honey, I Shrunk the Kids||A backyard becomes an enormous wilderness|Tiny children riding an ant beside towering blades of grass and a giant cookie.
+The Mask||A mysterious object transforms a timid man|A green-faced man in a yellow suit and hat beside a small dog and wooden mask.
+Bruce Almighty||An ordinary man receives extraordinary powers|A man parting a bowl of soup while a glowing moon hangs outside his window.
+Liar Liar||A lawyer faces a day without deception|A frantic lawyer with his lips tugged shut beside a birthday cake with candles.
+Ace Ventura: Pet Detective|Ace Ventura|An unconventional detective searches for animals|A man with a towering quiff and tropical shirt surrounded by pets and a dolphin.
+Dumb and Dumber||Two unlikely friends take a road trip|Two grinning men in bright orange and pale blue tuxedos beside a shaggy dog-shaped van.
+Mrs. Doubtfire||A father takes an unusual job to see his children|A gray-haired nanny with glasses, cardigan and feather duster beside a rubber face mask.
+The Parent Trap||Two summer campers discover an unexpected connection|Identical red-haired girls holding halves of a photograph at a summer camp.
+Freaky Friday||A mother and daughter experience each other's lives|A mother and teenage daughter looking astonished in a mirror beside a cracked fortune cookie.
+Big||A child's wish has an unexpected result|An adult in an oversized suit dancing on a giant floor piano beside a carnival fortune machine.
+Groundhog Day||A weather reporter relives the same day|A groundhog beside an alarm clock, a snowy town and a looping circular arrow.
+Back to the Future Part II|Back to the Future 2|A time traveler visits a surprising future|A hoverboard, self-lacing sneakers and flying stainless-steel car over a futuristic street.
+Ghost||A romance continues beyond a sudden loss|A translucent man guiding a woman's hands at a pottery wheel.
+Dirty Dancing||A summer holiday leads to an unforgettable dance|A dancer lifting his partner overhead beside a lakeside holiday resort.
+Footloose||A newcomer challenges a town's dancing rules|A teenager dancing in a warehouse with bright shoes and a crossed-out dance silhouette nearby.
+Grease||A summer romance returns at school|A leather-jacketed young man and blonde woman beside a classic hot rod and diner.
+Hairspray||A teenager dreams of dancing on television|A cheerful girl with a huge beehive hairstyle beside a vintage TV dance show.
+Mamma Mia!||A wedding on a Greek island raises questions|A bride and three possible fathers on a blue-and-white Greek island with dancing guests.
+The Sound of Music||A musical governess changes a family|A woman singing on an Alpine hillside with seven children in matching play clothes.
+Mary Poppins||A magical nanny arrives with the wind|A nanny floating with a black umbrella and carpetbag above London rooftops.
+La La Land||Two artists pursue their dreams in Los Angeles|A yellow-dressed woman and suited man dancing under a streetlamp above a city sunset.
+The Greatest Showman||An ambitious entertainer builds a spectacle|A ringmaster in a red coat and top hat beside a trapeze artist under a circus tent.
+School of Rock||A substitute teacher forms an unusual class band|A scruffy guitarist leading schoolchildren with instruments in a classroom.
+Pitch Perfect||A college singing group finds its sound|A row of women singing without instruments beside stacked plastic cups and a stage.
+Rocketman||A flamboyant pianist's musical journey|A pianist in enormous glittering glasses and a feathered costume at a grand piano.
+Bohemian Rhapsody||A legendary band's rise to the stage|A mustached singer with a half microphone stand beside a grand piano and stadium crowd.
+Elvis||A rock-and-roll performer's life in the spotlight|A singer with a black quiff in a white jeweled jumpsuit beside a pink vintage car.
+Walk the Line||A country musician finds his voice|A black-clad guitarist walking a narrow line toward a stage microphone.
+Rocky||An underdog boxer earns a chance|A boxer raising gloved fists at the top of wide museum steps.
+The Karate Kid||A young student learns from an unexpected mentor|A teenager holding a crane stance beside a bonsai tree and a wise teacher.
+Cool Runnings||An unlikely winter sports team takes the ice|Four athletes in Jamaican-colored helmets squeezed into a bobsled on ice.
+The Mighty Ducks||An inexperienced hockey team finds its spirit|Young ice-hockey players in duck-colored jerseys beside a goalie mask and puck, no logos.
+A League of Their Own||Women take the field in wartime baseball|Women in vintage baseball uniforms beside a bat, glove and old stadium.
+Field of Dreams||A farmer follows a mysterious baseball calling|A baseball diamond carved into a cornfield with ghostly players emerging from the stalks.
+Cast Away||A lone survivor builds a life on an island|A bearded castaway beside a volleyball with a red handprint face and a tiny raft.
+Forrest Gump||An unlikely life touches moments in history|A man in a pale suit on a park bench with a box of chocolates and floating white feather.
+The Truman Show||An ordinary life hides an extraordinary secret|A man touching a painted sky wall at the top of stairs above an artificial sea.
+The Shawshank Redemption||Hope endures inside a prison|A man with arms outstretched in rain beside a rock hammer and tunnel through a cell wall.
+The Green Mile||A prison guard witnesses an unusual gift|A towering gentle prisoner holding a tiny mouse with a glowing healing light.
+The Godfather||A powerful family faces a changing world|A tuxedoed older man holding a cat beside a red rose and shadowy office.
+Goodfellas||A young man's rise inside organized crime|Three suited men at a restaurant table beside a luxury car and stacks of blank banknotes.
+Scarface||An ambitious outsider builds a dangerous empire|A white-suited man beside a grand staircase, palm trees and piles of blank banknotes.
+Pulp Fiction||Several crime stories collide|A black-bobbed woman, two suited men and a glowing open briefcase beside a diner milkshake.
+Reservoir Dogs||A heist aftermath unravels among strangers|A line of men in black suits and sunglasses walking past an empty warehouse.
+Kill Bill||A determined warrior seeks revenge|A woman in a yellow tracksuit holding a sheathed sword beside a motorcycle helmet.
+The Big Lebowski||A mistaken identity draws a bowler into trouble|A bearded man in a bathrobe holding a bowling ball beside a rug and creamy drink.
+Fargo||A snowy crime story goes badly wrong|A pregnant police officer in a winter hat beside a snowy road and woodchipper, no injury.
+Ocean's Eleven|Ocean's 11|A stylish crew plans a casino heist|A group of suited thieves beside casino chips, a vault and Las Vegas lights.
+Catch Me If You Can||A young impostor stays ahead of an investigator|A young man with pilot, doctor and lawyer costumes on a rack beside a pursuing detective.
+The Italian Job||A heist depends on small cars and teamwork|Three small red, white and blue cars escaping with gold bars through a tunnel.
+National Treasure||A historical clue starts a modern treasure hunt|A treasure hunter with an old parchment beside the Liberty Bell and a hidden golden chamber.
+The Da Vinci Code||An artwork conceals a historical mystery|A cryptex cylinder, Mona Lisa portrait and glass pyramid, with no letters on the cylinder.
+Sherlock Holmes||A famous detective faces an elaborate puzzle|A Victorian detective with a magnifying glass and violin beside a London carriage.
+Knives Out||A detective untangles a wealthy family's secrets|A detective before a circular display of knives with a grand mansion and coffee mug.
+Clue||Dinner guests investigate a mansion mystery|Colorful dinner guests around a board-like mansion with a candlestick, rope and magnifying glass.
+Murder on the Orient Express||A detective investigates aboard a luxury train|A mustached detective beside a snowbound luxury steam train and magnifying glass.
+The Grand Budapest Hotel||A concierge and lobby boy share a remarkable adventure|A symmetrical pink hotel, purple-uniformed concierge and tiny pastry box.
+Fantastic Mr. Fox|Fantastic Mister Fox|A clever animal outwits neighboring farmers|A fox in a brown suit beside a badger, cider bottles and underground tunnels.
+Isle of Dogs||A boy searches an island of exiled pets|A boy in a silver flight suit surrounded by scruffy dogs on a trash island.
+Moonrise Kingdom||Two young runaways create their own refuge|A scout and girl with binoculars beside a small yellow tent on a rocky island.
+The Royal Tenenbaums||An eccentric family reunites|A woman in a fur coat, a tennis player with headband and matching red-tracksuit children outside a townhouse.
+Sweeney Todd|Sweeney Todd The Demon Barber of Fleet Street|A gothic musical set above a pie shop|A white-streak-haired barber holding a closed razor beside a barber chair and pie, no violence.
+Sleepy Hollow||A detective investigates a headless legend|A headless horseman carrying a glowing pumpkin on a dark bridge.
+The Addams Family||A delightfully strange family faces an unexpected visitor|A gothic family beside a crawling disembodied hand and a hairy cousin in sunglasses.
+Casper||A friendly ghost makes an unlikely friend|A smiling translucent childlike ghost floating beside a girl in a dusty mansion.
+Hocus Pocus||Three witches return on Halloween|Three witches with distinctive red, blonde and dark hair flying above a black cat and candle.
+Practical Magic||Two sisters live with a complicated magical legacy|Two witch sisters stirring a cauldron in a cozy kitchen beside a black cat and herb jars.
+The Witches||A child discovers a secret gathering|A small mouse beside a glamorous bald witch, purple potion and hotel ballroom.
+Matilda||A gifted child faces cruel adults|A small girl making books and a glass of water float above a desk.
+James and the Giant Peach||A boy finds extraordinary traveling companions|A giant peach floating above the ocean with friendly insects and a small boy.
+The BFG|Big Friendly Giant|A child befriends a dream-catching giant|A gentle big-eared giant holding a little girl beside glowing dream jars and a trumpet-like horn.
+Pinocchio||A wooden puppet longs to become a real child|A wooden boy with a long nose, a tiny cricket and a whale in the distance.
+The Little Prince||A young traveler explores small worlds|A blond child in a scarf standing on a tiny planet beside a rose under glass and a fox.
+Spirited Away||A girl works in a mysterious spirit bathhouse|A girl beside a white dragon, masked faceless spirit and glowing bathhouse.
+My Neighbor Totoro|My Neighbour Totoro;Totoro|Two sisters meet a gentle forest spirit|A huge gray round forest creature holding an umbrella beside two girls at a rainy bus stop.
+Howl's Moving Castle||A young woman enters a wandering magical home|A ramshackle castle walking on metal legs beside a small fire spirit and an old woman.
+Kiki's Delivery Service||A young witch starts a new life|A girl with a large red bow flying on a broom beside a black cat and bakery.
+Ponyo||A small sea creature dreams of living on land|A red-haired little girl running across giant fish-shaped waves beside a toy boat.
+Princess Mononoke||A conflict grows between industry and the forest|A wolf-riding girl with a red mask beside a deer-like forest spirit.
+Castle in the Sky|Laputa|Two children search for a floating civilization|A floating island castle with ancient robots and a glowing blue pendant.
+The Cat Returns||A young woman enters a feline kingdom|A formally dressed cat with top hat and cane beside a girl surrounded by royal cats.
+Akira||A futuristic city faces an extraordinary power|A red futuristic motorcycle beside a red-jacketed rider and a neon city skyline.
+Your Name|Kimi no Na wa|Two strangers share an unusual connection|A boy and girl reaching across a split city-and-countryside sky beneath a bright comet.
+The Boy and the Heron||A child enters an unusual other world|A boy beside a tall gray heron and a mysterious stone tower with tiny white spirits.
+The Wild Robot||A machine learns to live among island animals|A round-headed robot gently holding a gosling beside a fox in a wild forest.
+Flow||Animals share a boat in a flooded world|A black cat, capybara, dog, lemur and white bird in a small sailboat among flooded ruins.
+KPop Demon Hunters||A pop group protects its audience from hidden threats|Three female pop performers with stylized weapons beside a blue tiger and a dark bird, no violence.
+Wicked||Two very different students meet in a magical land|A green-skinned witch with broom beside a blonde woman with a bubble wand and a distant emerald city.
+Twister||Storm chasers confront a dangerous tornado|A tornado lifting a cow beside a weather-instrument truck on a rural road.
+The Day After Tomorrow||A sudden climate disaster freezes cities|An ice-covered Statue of Liberty and frozen New York skyscrapers.
+Armageddon||An unlikely team travels to stop an asteroid|Oil drillers in spacesuits beside a drill on a rocky asteroid above Earth.
+Deep Impact||Earth prepares for a comet's arrival|A huge comet above Earth and a towering ocean wave approaching a city.
+Apollo 13||A space mission becomes a struggle to get home|Three astronauts in a damaged capsule beside the moon and a frozen control panel.
+The Perfect Storm||A fishing crew faces extraordinary seas|A small fishing boat climbing an enormous dark ocean wave.
+Life of Pi||A young survivor shares a lifeboat with an unusual companion|A boy and a tiger in a small lifeboat on a glowing ocean.
+The Jungle Cruise||River travelers search for a mysterious tree|A battered riverboat with a skipper beside jungle vines, a jaguar and glowing tree flowers.
+The Mummy||An ancient burial unleashes an adventure|A bandaged mummy, adventurers and pyramids in a swirling sandstorm.
+Gladiator||A fallen general enters the arena|An armored gladiator in a Roman arena with a helmet, shield and wheat stalks.
+300||A small force defends a narrow pass|A row of red-caped warriors with round shields at a rocky coastal pass.
+Troy||An ancient war turns on a famous deception|A giant wooden horse outside a walled ancient city.
+Braveheart||A Scottish rebel challenges a king|A long-haired warrior with blue face paint, tartan and a sword on a green hillside.
+The Last Samurai||An outsider enters a changing warrior culture|A samurai in red armor beneath cherry blossoms beside a mountain village.
+Crouching Tiger, Hidden Dragon||A legendary sword draws warriors together|Two robed warriors balancing on bending bamboo branches with a green sword.
+House of Flying Daggers||A secret organization draws a soldier into intrigue|A dancer with long flowing sleeves and small daggers suspended among bamboo.
+Kung Fu Hustle||An unlikely neighborhood hides martial arts masters|A slipper-wearing landlady, a lollipop and suited men with axes in a crowded courtyard, no combat.
+Everything Everywhere All at Once|Everything Everywhere|An ordinary family faces countless possible worlds|A woman with a googly eye on her forehead beside a giant dark bagel and laundry machines.
+The Mask of Zorro|Zorro|A masked swordsman trains a successor|A black-masked swordsman with a cape, broad hat and black horse.
+The Three Musketeers||A young swordsman joins a loyal band|Three feather-hatted swordsmen crossing rapiers with a fourth young companion.
+The Man in the Iron Mask||A royal secret hides behind a metal face|A prisoner wearing an iron face mask beside royal robes and crossed swords.
+Master and Commander|Master and Commander The Far Side of the World|A captain pursues an enemy across distant seas|A tall sailing warship with a captain's hat, telescope and violin.
+The Hunt for Red October||A submarine captain makes a dangerous move|A red-lit submarine beneath icy seas beside a captain's cap and sonar circles.
+Das Boot||A submarine crew faces the pressures of war|A cramped submarine control room with a periscope, pipes and worried sailors.
+Pearl Harbor||A wartime romance meets a historic attack|Vintage fighter planes above a harbor of battleships beside two pilots and a nurse.
+Saving Private Ryan||Soldiers search for one man amid war|A small squad walking from beach obstacles toward a distant ruined village, no injuries.
+Dunkirk||An army waits for rescue on a beach|Rows of soldiers on a wide beach as small civilian boats approach and planes fly overhead.
+1917||Two soldiers carry a critical message|Two soldiers moving through a trench beside a pocket watch and a lone tree.
+Oppenheimer||A scientist leads a world-changing project|A thin man in a broad hat beside a desert test tower and a distant mushroom-shaped cloud.
+The Imitation Game||A mathematician confronts a wartime puzzle|A mathematician beside a wall of rotating code-breaking machine drums, no text.
+Hidden Figures||Three mathematicians help launch a space program|Three women at chalkboards with blank diagrams beside a rocket and vintage computer.
+The Theory of Everything||A scientist's life changes amid major discoveries|A scientist in a wheelchair beside a swirling galaxy and a simple cosmology diagram without text.
+Amadeus||A musical rivalry unfolds in an imperial city|A laughing composer in a powdered wig beside a piano and a dark masked figure.
+The Pianist||A musician survives a devastated city|A lone pianist at a grand piano inside a ruined building with snow beyond.
+Whiplash||An ambitious drummer faces a demanding teacher|A sweating young drummer at a jazz drum kit facing a stern conductor, no injury.
+Black Swan||A dancer struggles with a demanding dual role|A ballerina split between white feathers and black feathers in a mirrored studio.
+Billy Elliot||A boy discovers an unexpected love of dance|A boy in boxing gloves practicing ballet beside a barre in a mining town.
+Little Miss Sunshine||A family takes an unusual road trip|A family pushing a bright yellow van with a little girl wearing a beauty-pageant crown.
+The Devil Wears Prada||A new assistant enters a demanding fashion world|A red high heel with a pitchfork-shaped heel beside a stern silver-haired editor and clothing rack.
+Legally Blonde||An underestimated student enters law school|A blonde woman in a pink suit holding a tiny dog beside law books and a gavel.
+Clueless||A fashionable teenager plays matchmaker|A blonde schoolgirl in a yellow plaid suit beside a matching outfit rack and mobile phone.
+Mean Girls||A newcomer navigates school social politics|Three pink-clad schoolgirls beside a new student and a pink scrapbook with blank cover.
+The Breakfast Club||Five students spend a Saturday together|Five differently dressed teenagers seated in a school library beside a clock without digits.
+Ferris Bueller's Day Off|Ferris Bueller|A teenager plans an elaborate day away from school|A teenager in a vest beside a red sports car, parade float and school backpack.
+Sixteen Candles|16 Candles|A teenager's birthday is overshadowed|A birthday cake covered with candles beside a teenage girl and forgotten gift.
+Pretty in Pink||A school romance crosses social boundaries|A red-haired teenager sewing a pink prom dress beside a record player.
+10 Things I Hate About You|Ten Things I Hate About You|A school dating plan becomes complicated|Two teenage couples beside stadium bleachers, a guitar and a paintball splatter.
+She's the Man||A teenager takes her brother's place on a team|A girl holding a short wig beside a soccer ball and school uniform.
+Bring It On||A cheerleading squad faces unexpected competition|Two rival cheerleading teams with pom-poms forming contrasting human pyramids.
+High School Musical||Two students challenge expectations through song|A basketball player and a girl singing beside a piano on a school stage.
+Camp Rock||A summer music camp brings a chance to perform|Teenagers with guitars and microphones beside lakeside cabins and a stage.
+Enchanted||A fairy-tale visitor arrives in the modern city|A princess in a large white gown stepping from a sewer into New York beside a chipmunk.
+The Princess Diaries||An ordinary teenager learns a royal secret|A schoolgirl with glasses holding a tiara beside a regal grandmother.
+Ella Enchanted||A young woman tries to break an unusual spell|A girl beside a fairy, a magical open book and a medieval castle.
+Stardust||A traveler searches for a fallen star|A glowing young woman beside a young traveler and a flying pirate ship among stars.
+The Golden Compass||A girl journeys north with a mysterious instrument|A girl holding a golden compass beside an armored polar bear and snowy mountains.
+The Chronicles of Narnia|Narnia;The Lion the Witch and the Wardrobe|Children discover a kingdom beyond a wardrobe|An open wardrobe leading to a snowy lamp post, a lion and a white witch's sleigh.
+Bridge to Terabithia|Terabithia|Two friends create an imagined woodland kingdom|Two children crossing a rope over a creek toward a fantasy forest treehouse.
+The Spiderwick Chronicles|Spiderwick|A field guide reveals hidden creatures|Children with an old illustrated book beside a small goblin and a mysterious country house.
+Percy Jackson & the Olympians: The Lightning Thief|Percy Jackson;The Lightning Thief|A teenager discovers a connection to ancient gods|A young hero with a sword beside a trident, winged shoes and storm clouds.
+Holes||A strange camp makes its residents dig|A boy with a shovel amid a desert field of holes, with an onion and small spotted lizard.
+Journey to the Center of the Earth||Explorers discover a world beneath the surface|Explorers inside a vast glowing cavern with giant mushrooms and a dinosaur.
+Journey 2: The Mysterious Island|Journey 2;Mysterious Island|Travelers reach an impossible island|Explorers riding giant bees above enormous flowers and tiny elephants.
+The Adventures of Tintin|Tintin|A young reporter follows a maritime mystery|A young reporter with an upright quiff, white dog and bearded captain beside a model ship.
+The Muppets||A beloved troupe reunites for a show|A green frog, glamorous pig and wild drummer beneath a theater curtain.
+Who Framed Roger Rabbit|Roger Rabbit|A detective enters a world shared with cartoons|A cartoon white rabbit in red overalls beside a trench-coated detective and a red-haired singer.

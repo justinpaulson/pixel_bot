@@ -1,0 +1,24 @@
+Eiffel Tower|The Eiffel Tower|A famous Paris landmark
+Statue of Liberty||A New York harbor landmark
+Great Wall of China|Great Wall|A vast historic fortification
+Taj Mahal||A marble monument in India
+Sydney Opera House||A harborside performance venue
+Big Ben||A famous London clock tower
+Golden Gate Bridge||A San Francisco landmark
+Mount Fuji|Fuji|A famous Japanese mountain
+Pyramids of Giza|Pyramids;Great Pyramid;Egyptian Pyramids|Ancient monuments in Egypt
+Stonehenge||A prehistoric stone circle
+Leaning Tower of Pisa|Pisa;Tower of Pisa|An unusually tilted Italian landmark
+Colosseum|Roman Colosseum|An ancient Roman arena
+Grand Canyon||A vast American canyon
+Mount Rushmore||A mountain with famous faces
+Venice||An Italian city of canals
+Paris||A European city of romance
+New York City|New York;NYC|The city that never sleeps
+Las Vegas|Vegas|A desert city of bright lights
+Hollywood||A famous filmmaking neighborhood
+Antarctica||The southernmost continent
+Easter Island|Rapa Nui|An island of enormous stone heads
+Niagara Falls||A famous waterfall on a border
+Santorini||A Greek island with blue domes
+Machu Picchu||An ancient city high in the Andes

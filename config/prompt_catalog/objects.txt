@@ -1,0 +1,30 @@
+Astronaut||A visitor to outer space
+Bicycle|Bike|A two-wheeled ride
+Jellyfish||A drifting ocean animal
+Lighthouse||A coastal guide
+Hot Air Balloon|Balloon|A colorful way to fly
+Typewriter||An old-fashioned writing machine
+Cactus||A prickly desert plant
+Octopus||An eight-armed ocean animal
+Roller Coaster|Rollercoaster|A thrilling amusement-park ride
+Snow Globe|Snowglobe|A tiny winter scene
+Campfire|Camp Fire|The center of a camping evening
+Skateboard||A four-wheeled board
+Pineapple||A tropical fruit with a crown
+Telescope||A tool for stargazing
+Popcorn||A favorite movie snack
+Robot||A mechanical helper
+Treehouse|Tree House|A hideaway in the branches
+Dragon||A mythical fire-breather
+Unicorn||A horse with something extra
+Treasure Chest||A pirate's prized possession
+Carousel|Merry Go Round;Merry-go-round|A spinning amusement ride
+Espresso Machine|Coffee Machine;Coffee Maker|A café essential
+Gramophone|Record Player;Phonograph|A vintage music player
+Volcano||A mountain with a fiery temper
+Chameleon||A color-changing reptile
+Origami Crane|Paper Crane;Origami|A folded-paper bird
+Ferris Wheel||A giant wheel at a fair
+Submarine||An underwater vessel
+Windmill||A building powered by the breeze
+Honeybee|Bee;Honey Bee|A busy garden pollinator
