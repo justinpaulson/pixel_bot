@@ -13,7 +13,7 @@ module ApplicationHelper
         node.remove_attribute(attribute.name) if attribute.name == "style" || attribute.name.start_with?("on")
       end
     end
-    fragment.at_css("a")["aria-label"] = "Tip Pixel (opens Stripe in a new tab)"
+    fragment.at_css("a")["aria-label"] = "Tip jar for Pixel (opens Stripe in a new tab)"
     fragment.at_css("svg")["aria-hidden"] = "true"
     fragment.at_css("svg")["focusable"] = "false"
     fragment.to_html.html_safe
