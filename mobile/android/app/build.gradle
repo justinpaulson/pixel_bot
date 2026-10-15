@@ -7,6 +7,7 @@ if (signingFile.exists()) signingFile.withInputStream { uploadSigning.load(it) }
 android {
     namespace = "com.lillybitgames.pixel"
     compileSdk = rootProject.ext.compileSdkVersion
+    testBuildType "release"
     defaultConfig {
         applicationId "com.lillybitgames.pixel"
         minSdkVersion rootProject.ext.minSdkVersion

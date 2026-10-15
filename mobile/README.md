@@ -38,7 +38,7 @@ cd android
 ./gradlew assembleDebug bundleRelease
 ```
 
-Set `JAVA_HOME` to JDK 21 and configure `ANDROID_HOME` or an ignored `android/local.properties` with `sdk.dir`. Debug APK: `android/app/build/outputs/apk/debug/app-debug.apk`. Release bundle: `android/app/build/outputs/bundle/release/app-release.aab` (unsigned until a release signing configuration is supplied). iOS simulator app: `ios/DerivedData/Build/Products/Debug-iphonesimulator/App.app`.
+Set `JAVA_HOME` to JDK 21 and configure `ANDROID_HOME` or an ignored `android/local.properties` with `sdk.dir`. Debug APK: `android/app/build/outputs/apk/debug/app-debug.apk`. Release bundle: `android/app/build/outputs/bundle/release/app-release.aab`. Release APK: `android/app/build/outputs/apk/release/app-release.apk`. An ignored `android/signing.properties` supplies `storeFile`, `storePassword`, `keyAlias`, and `keyPassword`; keep the key and credentials outside source control. A build without this file is unsigned. iOS simulator app: `ios/DerivedData/Build/Products/Debug-iphonesimulator/App.app`.
 
 `npm run icons` renders the existing Pixel mark into native icon and launch assets. `npm run sync` copies the interface and updates native dependency references. Keep both native projects in source control; generated web copies, SDK paths, credentials, and build outputs are ignored.
 
@@ -52,4 +52,18 @@ Share sends the existing HTTPS room URL so friends can play on the web. In Pixel
 
 App identifiers: `com.lillybitgames.pixel` on both platforms; initial version 1.0 (1). iOS supports iPhone and iPad on iOS 15+, Android supports API 24+. Gameplay requires an internet connection, just like the web game. No analytics, ads, tip jar, or purchases are included in the mobile client.
 
-These are application projects and development builds, not store submissions. Before a store release: configure the Apple team/provisioning and Android upload key, provide store privacy/support metadata and screenshots, verify a full game and native sharing on physical iPhone/iPad and Android, and upload through the normal review tracks. The iOS privacy manifest declares the UserDefaults access used by Preferences; no tracking permission is requested.
+Beta releases use Lilly Bit Games / LILLY BIT LLC (Apple team `SD8D6GX2BC`). `release/ExportOptions.plist` uploads an archive to App Store Connect using the signed-in Xcode account. Public support and privacy pages are `/support` and `/privacy`. See `release/beta-1.0.json` for verified distribution status. Public store release still requires screenshots, complete store disclosures/ratings, and production review. The iOS privacy manifest declares the UserDefaults access used by Preferences; no tracking permission is requested.
+
+## Physical Android beta smoke test
+
+This opt-in instrumentation test uses the live service and creates one three-round solo game. It verifies the signed release's native HTTP bridge, drawing screen, wrong-guess response, saved credential/room recovery after activity recreation, three reveals, and return to the menu. It does not test a physical keyboard or native sharing.
+
+```sh
+cd android
+./gradlew assembleReleaseAndroidTest
+adb -s DEVICE_SERIAL install -r app/build/outputs/apk/release/app-release.apk
+adb -s DEVICE_SERIAL install -r app/build/outputs/apk/androidTest/release/app-release-androidTest.apk
+adb -s DEVICE_SERIAL shell am instrument -w -r -e class com.lillybitgames.pixel.BetaSmokeTest com.lillybitgames.pixel.test/androidx.test.runner.AndroidJUnitRunner
+```
+
+The local sideload is signed with Pixel's upload key. Google Play uses its managed app-signing key; switching an already installed sideload to the Play version may require uninstalling the sideload first. Preserve any wanted room link before switching.

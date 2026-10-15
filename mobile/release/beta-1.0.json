@@ -1,0 +1,69 @@
+{
+  "version": "1.0",
+  "build": 1,
+  "bundle_id": "com.lillybitgames.pixel",
+  "apple_app_id": "6823369834",
+  "google_play_app_id": "4974257085578662094",
+  "android": {
+    "status": "Available to internal testers",
+    "track_id": "4701610559008255593",
+    "release_id": 1,
+    "tester_lists": [
+      "Deco Beta",
+      "Pin the Hex Internal"
+    ],
+    "join_url": "https://play.google.com/apps/internaltest/4701610559008255593",
+    "device_install": "Moto G (2025), Android 16, signed release installed",
+    "device_test": "3-round live solo game, wrong guess, activity recreation and resume, reveals and return to menu passed",
+    "temporary_store_name": "com.lillybitgames.pixel (unreviewed)",
+    "console_url": "https://play.google.com/console/u/1/developers/8869960870896496455/app/4974257085578662094/tracks/4701610559008255593/releases/1/details"
+  },
+  "ios": {
+    "upload": "accepted 2026-10-15T22:13:10Z",
+    "internal_group": "Lilly Bit Games",
+    "internal_testers": 3,
+    "external_group": "Pixel Beta",
+    "review_status": "Waiting for Review",
+    "internal_status": "Testing; 3 testers Invited",
+    "build_id": "84e84c3a-2a2d-4863-92d3-a4b3ac966ff0",
+    "external_join_url": "https://testflight.apple.com/join/nktWNchB",
+    "external_link_limit": 100,
+    "external_link_status": "Testers cannot join until the group has an approved build",
+    "console_url": "https://appstoreconnect.apple.com/teams/69a6de6e-7a34-47e3-e053-5b8c7c11a4d1/apps/6823369834/testflight/ios/84e84c3a-2a2d-4863-92d3-a4b3ac966ff0"
+  },
+  "validation": {
+    "rails": "59 tests, 473 assertions",
+    "web_system": "1 test, 19 assertions",
+    "android_lint": "Passed",
+    "android_release_instrumentation": "1 test passed on physical Moto G; 93.477s",
+    "ci": "Both verification jobs passed; deployment succeeded. First runner stalled in the web system test; retry passed."
+  },
+  "artifacts": {
+    "Pixel-1.0-beta.apk": {
+      "sha256": "f24b83f839915bda88d8975689a898bb6eaf27e4b244ccdc1c18dfbc0b22705a",
+      "bytes": 3213815
+    },
+    "Pixel-1.0-beta.aab": {
+      "sha256": "5d43e7708654e9f3503203147ee550075dfc8ec0203a59fe648807a0fe7c0a11",
+      "bytes": 3056059
+    }
+  },
+  "evidence": [
+    "../artifacts/android-device-home.png",
+    "../artifacts/android-device-game.png",
+    "../artifacts/play-beta-published.png",
+    "../artifacts/testflight-internal-testing.png",
+    "../artifacts/testflight-beta-review.png"
+  ],
+  "verified_at": "2026-10-15T22:19:37.916309+00:00",
+  "web_deployment": {
+    "commit": "41109f51cf3d667c6607ce04eb673d9b1f3bf0d0",
+    "workflow": "https://github.com/justinpaulson/pixel_bot/actions/runs/38814997843",
+    "attempt": 2,
+    "status": "success",
+    "public_pages": [
+      "https://pixel.justinpaulson.com/privacy",
+      "https://pixel.justinpaulson.com/support"
+    ]
+  }
+}
