@@ -29,7 +29,7 @@
           </form>
           <p data-game-target="feedback" class="guess-feedback" role="status" aria-live="polite"></p>
           <p data-game-target="hint" class="hint" hidden></p>
-          <div data-game-target="reveal" class="answer-reveal" hidden><span class="eyebrow">ANSWER</span><h2 data-game-target="answer"></h2></div>
+          <div data-game-target="reveal" class="answer-reveal" hidden><span class="eyebrow">ANSWER</span><h2 data-game-target="answer"></h2><p class="next-round-countdown" data-game-target="nextCountdown" role="timer" aria-live="off" hidden></p></div>
         </div>
       </div>
       <aside class="room-sidebar">
@@ -39,7 +39,6 @@
         <% end %>
         <div class="host-controls">
           <button class="button primary full-width" data-game-target="startButton" data-action="game#start" hidden>Start game</button>
-          <button class="button primary full-width" data-game-target="nextButton" data-action="game#next" hidden>Next drawing</button>
           <button class="button primary full-width" data-game-target="retryButton" data-action="game#retry" hidden>Retry drawing</button>
           <button class="text-button reveal-button" data-game-target="skipButton" data-action="game#skip" hidden>Reveal & end round</button>
           <p class="waiting-note" data-game-target="waitingNote"></p>

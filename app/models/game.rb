@@ -26,11 +26,12 @@ class Game < ApplicationRecord
     true
   end
 
-  def advance!(round_id)
+  def advance!(round_id, automatic: false)
     activated = nil
     with_lock do
       round = current_round
       return false unless round && round.id == round_id.to_i && round.status == "revealed" && !completed?
+      return false if automatic && (!round.next_round_at || Time.current < round.next_round_at)
       update!(active_round_number: active_round_number + 1)
       prepare_rounds!
       next_round = current_round

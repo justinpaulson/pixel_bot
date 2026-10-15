@@ -10,11 +10,11 @@ Solo or private rooms for up to 12 players, with 3, 5, or 10 rounds. Every round
 - The current round and two upcoming rounds are prepared as soon as a game starts. That buffer refills on every advance, up to the selected round limit. Production has three drawing workers and a separate worker for cache lookups and round timers.
 - Completed drawings are reused for the same answer, category, hint, model, and artwork version, including artwork saved before this feature. They are sanitized again before reuse. Cache misses call GPT-6 Astra through OpenAI's Responses API and typically take about a minute; cache hits need no provider call. Future answers and artwork are never sent to clients early.
 - While waiting, Pixel’s sketchbook draws five playful warm-up illustrations stroke by stroke, adds color, and cycles every 12 seconds. Players can choose the next doodle; these are clearly labeled as unrelated to the answer. An elapsed wait clock reassures players that the round timer has not started. Reduced-motion mode shows a finished doodle with manual switching, and animation pauses in hidden tabs and stops when the round is ready.
-- The 15-second timer starts only when the drawing becomes playable. A descriptive hint appears after 5 seconds.
+- The 20-second timer starts only when the drawing becomes playable. A descriptive hint appears after 5 seconds.
 - All players, including the host, can guess. Matching ignores case, punctuation, accents, and articles, supports curated aliases, and tolerates small typos in longer answers.
 - A correct answer earns 1,000 minus 10 points per elapsed second, with a floor of 100. Each player can score once per round. Others continue guessing without seeing the correct answer.
-- The round reveals when everyone has guessed, time runs out, or the host explicitly ends it. The host advances after a reveal; the final round completes the game. Finished illustrations form a gallery.
-- Failures show a retry button. Requests recover stalled generation after three minutes and expired timers even if a scheduled job is delayed.
+- The round reveals when everyone has guessed, time runs out, or the host explicitly ends it. Everyone sees a 12-second countdown before the next round starts automatically, without a host click. If its drawing is still being prepared, the sketchbook appears until it is playable. The final round completes the game and leaves the results on screen. Finished illustrations form a gallery.
+- Failures show a retry button. Requests recover stalled generation after three minutes, expired timers, and overdue round transitions even if a scheduled job is delayed.
 
 ## Development
 

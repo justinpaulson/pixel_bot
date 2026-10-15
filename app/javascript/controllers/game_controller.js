@@ -20,12 +20,12 @@ export default class extends Controller {
     "hint",
     "reveal",
     "answer",
+    "nextCountdown",
     "scoreTitle",
     "scoreboard",
     "shareUrl",
     "copyButton",
     "startButton",
-    "nextButton",
     "retryButton",
     "skipButton",
     "waitingNote",
@@ -83,7 +83,8 @@ export default class extends Controller {
     const playing = phase === "playing";
     const revealed = round?.status === "revealed";
     const generating = ["pending", "generating", "ready"].includes(phase);
-    if (this.roundId !== round?.id) {
+    const roundChanged = this.roundId !== round?.id;
+    if (roundChanged) {
       if (this.roundId) this.headingTarget.scrollIntoView({ block: "start" });
       this.roundId = round?.id;
       this.guessInputTarget.value = "";
@@ -134,12 +135,11 @@ export default class extends Controller {
     this.hintTarget.hidden = !playing || !round.hint;
     this.hintTarget.textContent = round?.hint ? `Hint: ${round.hint}` : "";
     this.startButtonTarget.hidden = !state.host || phase !== "lobby";
-    this.nextButtonTarget.hidden = !state.host || phase !== "revealed";
     this.retryButtonTarget.hidden = !state.host || phase !== "failed";
     this.skipButtonTarget.hidden = !state.host || !playing;
     this.againButtonTarget.hidden = phase !== "complete";
     this.waitingNoteTarget.textContent =
-      !state.host && ["lobby", "revealed", "failed"].includes(phase)
+      !state.host && ["lobby", "failed"].includes(phase)
         ? "Waiting for host…"
         : "";
     this.scoreTitleTarget.textContent =
@@ -147,7 +147,7 @@ export default class extends Controller {
     this.renderScores(state.players);
     this.renderGallery(state.gallery);
     this.updateClock();
-    if (sketchbookHadFocus && playing && !round.solved) this.guessInputTarget.focus();
+    if ((sketchbookHadFocus || roundChanged) && playing && !round.solved) this.guessInputTarget.focus();
   }
 
   renderScores(players) {
@@ -202,15 +202,7 @@ export default class extends Controller {
 
   updateClock() {
     if (!this.state) return;
-    const seconds = this.state.round?.ends_at
-      ? Math.max(
-          0,
-          Math.ceil(
-            (Date.parse(this.state.round.ends_at) - Date.now() - this.offset) /
-              1000,
-          ),
-        )
-      : 0;
+    const seconds = this.secondsUntil(this.state.round?.ends_at);
     const active = this.state.phase === "playing";
     this.timerTarget.textContent = active
       ? `${seconds}s`
@@ -220,6 +212,20 @@ export default class extends Controller {
     this.timerTarget.classList.toggle("urgent", active && seconds <= 5);
     this.guessInputTarget.disabled = !active || seconds <= 0 || this.submitting;
     this.guessButtonTarget.disabled = this.guessInputTarget.disabled;
+    const nextRoundAt = this.state.phase === "revealed" && this.state.round?.next_round_at;
+    this.nextCountdownTarget.hidden = !nextRoundAt;
+    if (nextRoundAt) {
+      const remaining = this.secondsUntil(nextRoundAt);
+      this.nextCountdownTarget.textContent = remaining > 0
+        ? `Next round in ${remaining}s`
+        : "Starting next round…";
+    }
+  }
+
+  secondsUntil(timestamp) {
+    return timestamp
+      ? Math.max(0, Math.ceil((Date.parse(timestamp) - Date.now() - this.offset) / 1000))
+      : 0;
   }
 
   async guess(event) {
@@ -287,9 +293,6 @@ export default class extends Controller {
 
   start() {
     this.action(`${this.baseUrlValue}/start`);
-  }
-  next() {
-    this.action(`${this.baseUrlValue}/advance`, { round_id: this.roundId });
   }
   retry() {
     this.action(`/rounds/${this.roundId}/retry_drawing`);

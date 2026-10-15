@@ -7,6 +7,7 @@ class GameState
     round = @game.current_round
     round&.refresh!
     @game.reload
+    round = @game.current_round
     scores = Score.joins(:round).where(rounds: { game_id: @game.id }).group(:user_id).sum(:points)
     solved = round ? round.scores.pluck(:user_id) : []
     {
@@ -17,6 +18,7 @@ class GameState
       round: round && {
         id: round.id, number: round.number, category: PromptCatalog::CATEGORIES.dig(round.category, :name),
         status: round.status, ends_at: round.deadline&.iso8601(3), solved: solved.include?(@user.id),
+        next_round_at: @game.completed? ? nil : round.next_round_at&.iso8601(3),
         image_url: round.svg.present? ? Rails.application.routes.url_helpers.drawing_round_path(round) : nil,
         hint: round.started_at && Time.current >= round.started_at + Round::HINT_DELAY ? round.hint : nil,
         answer: round.status == "revealed" ? round.word : nil, error: round.status == "failed" ? round.error_message : nil

@@ -24,7 +24,7 @@ class PrepareDrawingJobTest < ActiveSupport::TestCase
     assert_equal "playing", round.reload.status
     assert_equal SvgSanitizer.call(source.svg), round.svg
     assert_equal 0, round.generation_seconds
-    assert_equal Time.current + 15.seconds, round.deadline
+    assert_equal Time.current + 20.seconds, round.deadline
   end
 
   test "cached future rounds stay private and start a fresh timer only when advanced" do
@@ -45,7 +45,7 @@ class PrepareDrawingJobTest < ActiveSupport::TestCase
       first.update!(status: "revealed")
       game.advance!(first.id)
       assert_equal "playing", second.reload.status
-      assert_equal Time.current + 15.seconds, second.deadline
+      assert_equal Time.current + 20.seconds, second.deadline
     end
   end
 

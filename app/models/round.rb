@@ -1,5 +1,6 @@
 class Round < ApplicationRecord
-  DURATION = 15.seconds
+  DURATION = 20.seconds
+  REVEAL_DURATION = 12.seconds
   HINT_DELAY = 5.seconds
   GENERATION_TIMEOUT = 3.minutes
   has_many :messages, dependent: :destroy
@@ -9,6 +10,7 @@ class Round < ApplicationRecord
 
   validates :status, inclusion: { in: %w[pending generating ready playing revealed failed] }
   after_create_commit -> { PrepareDrawingJob.perform_later(id) if game.edition == 2 && status == "pending" }
+  after_update_commit :schedule_next_round, if: -> { saved_change_to_status? && status == "revealed" }
 
   # Both cached art and provider results use the same guarded activation path.
   # A stale provider response must not replace a timeout or a newer attempt.
@@ -47,7 +49,15 @@ class Round < ApplicationRecord
     started_at && started_at + DURATION
   end
 
+  def next_round_at
+    ended_at + REVEAL_DURATION if status == "revealed" && ended_at && number < game.round_limit
+  end
+
   def refresh!
+    if next_round_at && Time.current >= next_round_at
+      game.advance!(id, automatic: true)
+      return
+    end
     expired = status == "playing" && Time.current >= deadline
     stalled = %w[pending generating].include?(status) && (generation_started_at || created_at) < GENERATION_TIMEOUT.ago
     return unless expired || stalled
@@ -100,5 +110,13 @@ class Round < ApplicationRecord
     end
     PrepareDrawingJob.perform_later(id)
     true
+  end
+
+  private
+
+  def schedule_next_round
+    if game.edition == 2 && next_round_at && !game.completed?
+      AdvanceRoundJob.set(wait_until: next_round_at).perform_later(id)
+    end
   end
 end
