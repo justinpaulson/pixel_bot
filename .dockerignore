@@ -45,3 +45,7 @@
 # Ignore Docker-related files
 /.dockerignore
 /Dockerfile*
+
+# Native clients and their build dependencies are not served by Rails.
+/mobile
+/marketing

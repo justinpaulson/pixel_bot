@@ -7,6 +7,7 @@
     <% else %>
       <h1>Join game</h1><p><%= PromptCatalog::CATEGORIES.fetch(@game.category)[:name] %></p>
       <%= form_with url: join_game_path(@game), data: { turbo: false } do |form| %><%= label_tag :display_name, "Nickname" %><%= text_field_tag :display_name, Current.user&.display_name, maxlength: 24, autocomplete: "nickname" %><%= form.submit "Join game", class: "button primary" %><% end %>
+      <%= link_to "Open in Pixel app", "pixelguess://games/#{@game.id}", class: "text-button native-app-link" %>
     <% end %>
   </section>
 <% else %>

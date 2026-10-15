@@ -64,3 +64,7 @@ bundle exec kamal deploy
 ```
 
 The October 2026 migrations preserve historical games and users. Legacy rooms display a restart invitation because their drawing/prompting rules are incompatible. A pre-migration SQLite backup is stored on the production volume at `/rails/storage/backups/pre-redesign-2026-10-15.sqlite3`. Roll back application code with Kamal if necessary; additive schema changes allow the old release to boot. Restoring a database backup would discard subsequent games and should be a deliberate recovery action.
+
+## iOS and Android
+
+The [`mobile/`](mobile/README.md) directory contains the bundled mobile interface and native iOS/Android projects. It keeps the web game’s modes, artists, timing, scoring, and shared rooms with a compact interface, native sharing, secure guest sessions, and resume support. The `/api/v1` endpoints use scoped bearer sessions and the same game rules and sanitized drawing service as the web. Browser cookie authentication and CSRF protection remain in the web controllers.

@@ -40,3 +40,22 @@ jobs:
           RAILS_ENV: production
           SECRET_KEY_BASE_DUMMY: "1"
         run: bin/rails assets:precompile
+
+  mobile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: mobile
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: mobile/package-lock.json
+      - run: npm ci
+      - run: npm audit
+      - run: npm run build
+      - run: npx playwright install --with-deps chromium webkit
+      - run: npm test -- --workers=2

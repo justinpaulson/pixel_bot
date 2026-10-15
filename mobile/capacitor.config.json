@@ -1,0 +1,30 @@
+{
+  "appId": "com.lillybitgames.pixel",
+  "appName": "Pixel",
+  "webDir": "dist",
+  "backgroundColor": "#f5f6ef",
+  "ios": {
+    "contentInset": "never",
+    "preferredContentMode": "mobile",
+    "backgroundColor": "#f5f6ef"
+  },
+  "android": {
+    "backgroundColor": "#f5f6ef"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchAutoHide": true,
+      "launchShowDuration": 500,
+      "backgroundColor": "#f5f6ef",
+      "showSpinner": false
+    },
+    "Keyboard": {
+      "resize": "native",
+      "resizeOnFullScreen": true
+    },
+    "CapacitorHttp": {
+      "enabled": false
+    }
+  },
+  "loggingBehavior": "none"
+}

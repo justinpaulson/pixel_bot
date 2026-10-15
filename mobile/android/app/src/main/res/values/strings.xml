@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Pixel</string>
+    <string name="title_activity_main">Pixel</string>
+    <string name="package_name">com.lillybitgames.pixel</string>
+    <string name="custom_url_scheme">com.lillybitgames.pixel</string>
+</resources>
