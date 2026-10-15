@@ -83,6 +83,10 @@ a {
   justify-content: space-between;
   margin-bottom: 18px;
 }
+.home-shell .topbar {
+  height: 44px;
+  margin-bottom: 8px;
+}
 .wordmark {
   display: flex;
   align-items: center;
@@ -119,7 +123,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 .eyebrow {
   font-size: 10px;
@@ -136,6 +140,10 @@ h1 {
 }
 h1 span {
   color: #6d9281;
+}
+.hero h1 {
+  font-size: 30px;
+  margin-top: 4px;
 }
 h2 {
   font-size: 22px;
@@ -156,12 +164,12 @@ p {
   border: 1px solid #dde4d8;
   border-radius: 24px;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   box-shadow: 0 5px 0 #e6eadd;
 }
 .preview-card > img {
   width: 100%;
-  height: 160px;
+  height: clamp(100px, 16dvh, 140px);
   display: block;
   object-fit: contain;
   padding: 9px;
@@ -206,12 +214,12 @@ p {
   box-shadow: 0 2px 5px #173f400c;
 }
 .modes {
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 .setup-row {
   display: flex;
   gap: 16px;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 .category {
   width: 56%;
@@ -279,7 +287,7 @@ fieldset {
   border-radius: 15px;
   padding: 12px 9px 10px;
   text-align: left;
-  min-height: 77px;
+  min-height: 64px;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -343,7 +351,7 @@ fieldset {
 }
 .launch {
   width: 100%;
-  margin-top: 22px;
+  margin-top: 16px;
 }
 .launch svg {
   margin-left: auto;
@@ -356,7 +364,7 @@ fieldset {
   align-items: center;
   justify-content: center;
   gap: 26px;
-  margin-top: 14px;
+  margin-top: 8px;
 }
 .text-button {
   display: inline-flex;
@@ -1001,28 +1009,25 @@ fieldset {
     margin-bottom: 10px;
   }
   .hero {
-    margin-bottom: 13px;
+    margin-bottom: 10px;
   }
   h1 {
     font-size: 30px;
   }
   .preview-card {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
   }
   .preview-card > img {
-    height: 118px;
+    height: clamp(100px, 16dvh, 118px);
   }
   .modes {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
   }
   .setup-row {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
   }
   .launch {
-    margin-top: 17px;
-  }
-  .home-links {
-    margin-top: 8px;
+    margin-top: 12px;
   }
   .canvas-card {
     max-height: 52dvh;

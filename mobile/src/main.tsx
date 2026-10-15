@@ -432,7 +432,7 @@ function PixelApp() {
     award?.gameId === game?.id && award?.roundId === round?.id ? award : null;
 
   return (
-    <div className="app-shell">
+    <div className={`app-shell${game ? "" : " home-shell"}`}>
       <header className="topbar">
         {game ? (
           <button
