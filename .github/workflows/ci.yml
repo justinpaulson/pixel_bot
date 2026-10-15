@@ -29,6 +29,8 @@ jobs:
         env:
           RAILS_ENV: test
         run: bin/rails db:test:prepare test
+      - name: Test sketchbook animation lifecycle and accessibility
+        run: node --test test/javascript/*.mjs
       - name: Verify production assets without credentials
         env:
           RAILS_ENV: production

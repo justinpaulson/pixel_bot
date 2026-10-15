@@ -8,6 +8,7 @@ Solo or private rooms for up to 12 players, with 3, 5, or 10 rounds. Every round
 
 - Join with a nickname; accounts are optional. Share the room's private URL for multiplayer.
 - GPT-6 Astra creates a fresh drawing through OpenAI's Responses API. The initial drawing typically takes about a minute. One drawing is prepared ahead during play; it is never sent to clients early.
+- While waiting, Pixel’s sketchbook draws five playful warm-up illustrations stroke by stroke, adds color, and cycles every 12 seconds. Players can choose the next doodle; these are clearly labeled as unrelated to the answer. An elapsed wait clock reassures players that the round timer has not started. Reduced-motion mode shows a finished doodle with manual switching, and animation pauses in hidden tabs and stops when the round is ready.
 - The 15-second timer starts only when the drawing becomes playable. A descriptive hint appears after 5 seconds.
 - All players, including the host, can guess. Matching ignores case, punctuation, accents, and articles, supports curated aliases, and tolerates small typos in longer answers.
 - A correct answer earns 1,000 minus 10 points per elapsed second, with a floor of 100. Each player can score once per round. Others continue guessing without seeing the correct answer.
@@ -32,6 +33,7 @@ Development uses the in-process Active Job adapter. Production runs Solid Queue 
 
 ```sh
 bin/rails db:test:prepare test
+node --test test/javascript/*.mjs
 bin/rubocop
 bin/brakeman --no-pager
 bin/importmap audit

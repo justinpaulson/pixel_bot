@@ -10,7 +10,7 @@ export default class extends Controller {
     "timer",
     "drawing",
     "placeholder",
-    "mascot",
+    "sketchbook",
     "canvasTitle",
     "canvasCopy",
     "guessForm",
@@ -102,14 +102,16 @@ export default class extends Controller {
     this.roundLabelTarget.textContent = round
       ? `Round ${round.number} / ${state.round_limit}`
       : `${state.round_limit} rounds · ${state.round_duration_seconds} seconds each`;
-    this.drawingTarget.hidden = !round?.image_url;
-    this.placeholderTarget.hidden = Boolean(round?.image_url);
+    const sketchbookHadFocus = this.sketchbookTarget.contains(document.activeElement);
+    this.sketchbookTarget.hidden = !generating;
+    this.sketchbookTarget.dataset.sketchbookRoundValue = generating ? String(round.id) : "";
+    this.drawingTarget.hidden = generating || !round?.image_url;
+    this.placeholderTarget.hidden = generating || Boolean(round?.image_url);
     if (
       round?.image_url &&
       this.drawingTarget.getAttribute("src") !== round.image_url
     )
       this.drawingTarget.src = round.image_url;
-    this.mascotTarget.classList.toggle("is-drawing", generating);
     this.canvasTitleTarget.textContent =
       phase === "lobby"
         ? "Ready?"
@@ -145,6 +147,7 @@ export default class extends Controller {
     this.renderScores(state.players);
     this.renderGallery(state.gallery);
     this.updateClock();
+    if (sketchbookHadFocus && playing && !round.solved) this.guessInputTarget.focus();
   }
 
   renderScores(players) {
