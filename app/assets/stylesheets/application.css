@@ -250,9 +250,69 @@ select {
   justify-content: flex-end;
   gap: 20px;
 }
-.site-footer a {
-  text-decoration: underline;
-  text-underline-offset: 3px;
+.pixel-tip-jar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: var(--pine);
+  color: var(--surface);
+  box-shadow: 0 3px 10px #173f401a;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: background 160ms ease, box-shadow 160ms ease;
+}
+.pixel-tip-jar:hover,
+.pixel-tip-jar:focus-visible {
+  background: var(--ink);
+  box-shadow: 0 4px 14px #173f4026;
+}
+.pixel-tip-jar > span:first-child,
+.pixel-tip-jar svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+.pixel-tip-jar .tipjar-coin-drop-new {
+  opacity: 0;
+}
+.pixel-tip-jar:hover .tipjar-coin-drop-new,
+.pixel-tip-jar:focus-visible .tipjar-coin-drop-new {
+  animation: pixel-tip-coin 2.5s ease-in-out infinite;
+}
+@keyframes pixel-tip-coin {
+  0%, 100% { opacity: 0; }
+  0% { transform: translateY(0); }
+  10% { opacity: 1; }
+  70% { transform: translateY(15.5px); opacity: 1; }
+  100% { transform: translateY(16.3px); }
+}
+@media (min-width: 741px) {
+  .site-footer--home .pixel-tip-jar {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 10;
+    padding: 12px;
+    gap: 0;
+  }
+  .site-footer--home .tipjar-text {
+    max-width: 0;
+    overflow: hidden;
+    transition: max-width 160ms ease, margin-left 160ms ease;
+  }
+  .site-footer--home .pixel-tip-jar:hover .tipjar-text,
+  .site-footer--home .pixel-tip-jar:focus-visible .tipjar-text {
+    max-width: 100px;
+    margin-left: 8px;
+  }
+  .site-footer--home {
+    min-height: 96px;
+  }
 }
 .flash {
   margin: 20px 0;

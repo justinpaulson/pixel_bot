@@ -33,6 +33,8 @@
       <% end %>
       <%= yield %>
     </main>
-    <footer class="site-footer"><a href="https://buy.stripe.com/9B600i4VY3Be3CT4AOfrW00" target="_blank" rel="noopener">Support Pixel</a></footer>
+    <footer class="site-footer <%= "site-footer--home" if current_page?(root_path) %>">
+      <%= pixel_tip_jar %>
+    </footer>
   </body>
 </html>
