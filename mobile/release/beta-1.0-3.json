@@ -1,0 +1,59 @@
+{
+  "version": "1.0",
+  "build": 3,
+  "bundle_id": "com.lillybitgames.pixel",
+  "apple_app_id": "6823369834",
+  "google_play_app_id": "4974257085578662094",
+  "source_commit": "7208e8371d0b9f1bdccd4cc449011eeb87658dbf",
+  "changes": [
+    "Replace the two-line slogan with THE AI DRAWING GAME and a right-aligned help button on iOS and Android",
+    "Restore room around the preview and controls while keeping Join room fully visible on phone screens"
+  ],
+  "ios": {
+    "upload": "accepted 2026-10-15T23:02:24Z",
+    "build_id": "d88def18-35d4-4ad9-82f2-b4e617263c89",
+    "internal_group": "Lilly Bit Games",
+    "internal_testers": 3,
+    "internal_status": "Testing",
+    "external_group": "Pixel Beta",
+    "review_status": "Waiting for Review",
+    "automatic_tester_notification": true,
+    "supersedes": "Build 2 removed from Beta App Review; build 3 submitted",
+    "console_url": "https://appstoreconnect.apple.com/teams/69a6de6e-7a34-47e3-e053-5b8c7c11a4d1/apps/6823369834/testflight/ios/d88def18-35d4-4ad9-82f2-b4e617263c89"
+  },
+  "android": {
+    "status": "Available to internal testers",
+    "track_id": "4701610559008255593",
+    "release_id": 3,
+    "release_name": "1.0 (3) - Roomier main menu",
+    "join_url": "https://play.google.com/apps/internaltest/4701610559008255593",
+    "console_url": "https://play.google.com/console/u/1/developers/8869960870896496455/app/4974257085578662094/tracks/4701610559008255593/releases/3/details"
+  },
+  "validation": {
+    "mobile_browser": "16 tests passed: WebKit iPhone and Chromium Android",
+    "phone_layout": "No vertical overflow with safe-area padding at 402x874 (WebKit) and 393x851 (Chromium); help sheet opens and closes",
+    "ios": "Signed archive and upload succeeded; processing complete and internal Testing verified",
+    "android": "Signed release APK/AAB and lintRelease passed",
+    "ci": "Both verification jobs and deployment passed",
+    "workflow": "https://github.com/justinpaulson/pixel_bot/actions/runs/38820851567",
+    "physical_device": "This layout update was not newly tested on a physical device"
+  },
+  "artifacts": {
+    "Pixel-1.0-3-beta.apk": {
+      "sha256": "26ccd65890d34c2e57b933128903c5956229d5582bcd65e347f18bbdacb1ddec",
+      "bytes": 3214579
+    },
+    "Pixel-1.0-3-beta.aab": {
+      "sha256": "513e5fd60431f3d3301a6a959f9c1d7e28da0488bbe8fa26d3db606a4c3f44a6",
+      "bytes": 3056832
+    }
+  },
+  "evidence": [
+    "../artifacts/iphone17pro-build3-menu.png",
+    "../artifacts/android-build3-menu.png",
+    "../artifacts/testflight-build3-internal.jpg",
+    "../artifacts/testflight-build3-review.jpg",
+    "../artifacts/play-build3-published.jpg"
+  ],
+  "verified_at": "2026-10-15T23:06:21.500980+00:00"
+}
