@@ -34,13 +34,9 @@
     <% if mobile_menu %>
       <%= stylesheet_link_tag "mobile_menu", "data-turbo-track": "reload" %>
     <% end %>
-    <%= stylesheet_link_tag "studio_launch", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
   <body <%= tag.attributes(class: "mobile-menu-page", data: { controller: "mobile-menu" }) if mobile_menu %>>
-    <div class="studio-launch" data-controller="studio-launch" data-turbo-temporary role="status" aria-label="Lilly Bit Games">
-      <img src="/lilly-bit-games.png" alt="Lilly Bit Games" width="1254" height="1254" fetchpriority="high">
-    </div>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <%= link_to root_path, class: "brand", aria: { label: "Pixel home" } do %>
