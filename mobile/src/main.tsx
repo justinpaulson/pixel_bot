@@ -1,3 +1,4 @@
+import { StudioLaunch } from './StudioLaunch';
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { App as NativeApp } from "@capacitor/app";
@@ -1033,4 +1034,4 @@ function PixelApp() {
 }
 
 startDrawingControllers();
-createRoot(document.getElementById("root")!).render(<PixelApp />);
+createRoot(document.getElementById("root")!).render(<StudioLaunch><PixelApp /></StudioLaunch>);

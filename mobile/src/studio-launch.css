@@ -1,0 +1,15 @@
+.studio-launch {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483647;
+  display: grid;
+  place-items: center;
+  background: rgb(98% 97% 95%);
+}
+.studio-launch img {
+  display: block;
+  width: min(360px, 72vmin);
+  height: auto;
+  max-height: 72dvh;
+  object-fit: contain;
+}
